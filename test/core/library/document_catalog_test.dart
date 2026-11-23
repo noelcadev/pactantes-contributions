@@ -29,10 +29,10 @@ void main() {
     );
     expect(() => catalog.all.clear(), throwsUnsupportedError);
   });
-  test('only the integrated Spanish Heidelberg edition is readable', () {
+  test('Heidelberg and Dort are available in the offline reader', () {
     expect(
       catalog.available.map((ReadingDocument document) => document.id),
-      <String>['heidelberg-catechism'],
+      <String>['heidelberg-catechism', 'canons-of-dort'],
     );
   });
   test('catalog does not guess edition-specific reading totals', () {

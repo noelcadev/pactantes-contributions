@@ -9,6 +9,7 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:pactantes/core/database/sqflite_reading_database.dart';
 import 'package:pactantes/core/database/reading_database.dart';
 import 'package:pactantes/features/reader/repository/sources/reading_content_source.dart';
+import 'package:pactantes/features/reader/repository/sources/dort_reading_content_source.dart';
 import 'package:pactantes/features/reader/repository/sources/heidelberg_reading_content_source.dart';
 import 'package:pactantes/l10n/localized_bible_book_names.dart';
 import 'package:pactantes/core/preferences/preferences_store.dart';
@@ -107,12 +108,13 @@ String format(ReadingContent document, ReadingUnit unit) =>
 Future<void> render(
   WidgetTester tester,
   ReaderViewModel model, {
+  Locale locale = const Locale('es'),
   ValueChanged<String>? copied,
   void Function(String text, Rect origin)? shared,
 }) async {
   await tester.pumpWidget(
     MaterialApp(
-      locale: const Locale('es'),
+      locale: locale,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: ReaderView(
@@ -133,6 +135,7 @@ Future<void> render(
 
 ReaderContentLocalRepository contentRepository(ReadingDatabase database) =>
     ReaderContentLocalRepositoryImpl(<String, ReadingContentSource>{
+      'canons-of-dort': DortReadingContentSource(database),
       'heidelberg-catechism': HeidelbergReadingContentSource(
         database,
         const LocalizedBibleBookNames(),
@@ -762,67 +765,144 @@ void main() {
     await model.pendingWrites;
   });
 
-  testWidgets('Spanish sharing and copying stay Spanish on an English device', (
-    WidgetTester tester,
-  ) async {
-    final Fixture fixture = Fixture();
-    fixture.content.document = const ReadingContent(
-      documentId: 'sample',
-      title: 'Edición española',
-      languageCode: 'es',
-      units: <ReadingUnit>[
-        ReadingUnit(
-          id: 'a',
-          number: 1,
-          question: 'Pregunta de prueba?',
-          body: 'Respuesta de prueba.',
-          parentTitle: 'Día del Señor 1',
-          references: <String>['Romanos 3:9'],
+  testWidgets(
+    'Spanish excerpts include the edition credits on an English device',
+    (WidgetTester tester) async {
+      final Fixture fixture = Fixture();
+      const String editionCredits =
+          'Spanish edition. Source: https://example.com/edition\n'
+          'CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/';
+      fixture.content.document = const ReadingContent(
+        documentId: 'sample',
+        title: 'Edición española',
+        languageCode: 'es',
+        attribution: editionCredits,
+        units: <ReadingUnit>[
+          ReadingUnit(
+            id: 'a',
+            number: 1,
+            question: 'Pregunta de prueba?',
+            body: 'Respuesta de prueba.',
+            parentTitle: 'Día del Señor 1',
+            references: <String>['Romanos 3:9'],
+          ),
+        ],
+      );
+      final ReaderViewModel model = fixture.model();
+      addTearDown(model.dispose);
+      String? shared;
+      String? copied;
+      await tester.pumpWidget(
+        MaterialApp(
+          locale: const Locale('en'),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: ReaderView(
+            viewModel: model,
+            documentId: 'sample',
+            documentTitle: 'Sample',
+            onShare: (String text, Rect origin) async {
+              shared = text;
+            },
+            onCopy: (String text) async {
+              copied = text;
+            },
+          ),
         ),
-      ],
-    );
-    final ReaderViewModel model = fixture.model();
-    addTearDown(model.dispose);
-    String? shared;
-    String? copied;
-    await tester.pumpWidget(
-      MaterialApp(
-        locale: const Locale('en'),
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        supportedLocales: AppLocalizations.supportedLocales,
-        home: ReaderView(
-          viewModel: model,
-          documentId: 'sample',
-          documentTitle: 'Sample',
-          onShare: (String text, Rect origin) async {
-            shared = text;
-          },
-          onCopy: (String text) async {
-            copied = text;
-          },
-        ),
-      ),
-    );
-    await tester.pumpAndSettle();
-    await tester.tap(find.byTooltip('Share'));
-    await tester.pumpAndSettle();
-    expect(shared, contains('Día del Señor 1 · Pregunta 1'));
-    expect(shared, contains('*P. Pregunta de prueba?*'));
-    expect(shared, contains('R. Respuesta de prueba.'));
-    expect(shared, contains('*Referencias bíblicas:*'));
-    expect(shared, contains('Compartido desde Pactantes'));
-    expect(shared, isNot(contains('Question')));
-    expect(shared, isNot(contains('Biblical references')));
-    await tester.tap(find.byTooltip('More options'));
-    await tester.pumpAndSettle();
-    await tester.tap(find.text('Copy text'));
-    await tester.pumpAndSettle();
-    expect(copied, shared);
-    await model.pendingWrites;
-  });
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byTooltip('Share'));
+      await tester.pumpAndSettle();
+      expect(shared, contains('Día del Señor 1 · Pregunta 1'));
+      expect(shared, contains('*P. Pregunta de prueba?*'));
+      expect(shared, contains('R. Respuesta de prueba.'));
+      expect(shared, contains('*Referencias bíblicas:*'));
+      expect(shared, contains(editionCredits));
+      expect(shared, contains('Compartido desde Pactantes'));
+      expect(shared, isNot(contains('Question')));
+      expect(shared, isNot(contains('Biblical references')));
+      await tester.tap(find.byTooltip('More options'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Edition credits'));
+      await tester.pumpAndSettle();
+      expect(
+        find.widgetWithText(SelectableText, editionCredits),
+        findsOneWidget,
+      );
+      await tester.tap(find.byTooltip('Close'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byTooltip('More options'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Copy text'));
+      await tester.pumpAndSettle();
+      expect(copied, shared);
+      await model.pendingWrites;
+    },
+  );
+
+  testWidgets(
+    'translation options reflect the available editions and preserve saved preferences',
+    (WidgetTester tester) async {
+      final Fixture fixture = Fixture();
+      final ReaderPreferencesLocalRepository preferences =
+          ReaderPreferencesLocalRepositoryImpl(fixture.store);
+      await preferences.save(
+        const ReaderPreferences(translation: ReaderTranslation.portuguese),
+      );
+      fixture.content.document = const ReadingContent(
+        documentId: 'sample',
+        title: 'Spanish edition',
+        languageCode: 'es',
+        availableLanguageCodes: <String>{'en', 'es'},
+        units: <ReadingUnit>[
+          ReadingUnit(id: 'a', number: 1, title: 'Artículo 1', body: 'Texto.'),
+        ],
+      );
+      final ReaderViewModel model = fixture.model();
+      addTearDown(model.dispose);
+      const Locale locale = Locale('pt', 'BR');
+      final AppLocalizations strings = lookupAppLocalizations(
+        const Locale('pt'),
+      );
+      await render(tester, model, locale: locale);
+
+      Future<void> openTranslations() async {
+        await tester.tap(find.byTooltip(strings.moreOptions));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text(strings.readerTranslation));
+        await tester.pumpAndSettle();
+      }
+
+      await openTranslations();
+      expect(find.text(strings.readerPortuguese), findsNothing);
+      expect(find.text(strings.readerEnglish), findsOneWidget);
+      final ListTile spanish = tester.widget<ListTile>(
+        find.widgetWithText(ListTile, strings.readerSpanish),
+      );
+      expect(spanish.selected, isTrue);
+      expect(
+        (await preferences.read()).translation,
+        ReaderTranslation.portuguese,
+      );
+
+      await tester.tap(find.text(strings.readerDeviceLanguage));
+      await tester.pumpAndSettle();
+      await openTranslations();
+      final ListTile device = tester.widget<ListTile>(
+        find.widgetWithText(ListTile, strings.readerDeviceLanguage),
+      );
+      expect(device.selected, isTrue);
+      expect(
+        find.text(strings.readerCurrentEdition(strings.readerSpanish)),
+        findsOneWidget,
+      );
+      expect((await preferences.read()).translation, ReaderTranslation.device);
+      expect(tester.takeException(), isNull);
+    },
+  );
 
   test(
-    'first-launch asset installation queries the real offline corpus',
+    'a corpus upgrade loads the bundled edition credits offline',
     () async {
       sqfliteFfiInit();
       final Directory directory = await Directory.systemTemp.createTemp(
@@ -832,7 +912,7 @@ void main() {
       final String previous = await factory.getDatabasesPath();
       await factory.setDatabasesPath(directory.path);
       try {
-        final String oldPath = '${directory.path}/reformed_documents_v2.db';
+        final String oldPath = '${directory.path}/reformed_documents_v4.db';
         final ByteData asset = await rootBundle.load(
           'assets/db/reformed_documents.db',
         );
@@ -843,6 +923,10 @@ void main() {
         await oldCorpus.rawUpdate(
           "UPDATE heidelberg_catechism SET answer = 'Old truncated answer' WHERE language_code = 'en' AND question_number = 1",
         );
+        await oldCorpus.update(
+          'document_sources',
+          <String, Object?>{'attribution': 'Old edition credits'},
+        );
         await oldCorpus.close();
         final SqfliteReadingDatabase database = SqfliteReadingDatabase(
           factory,
@@ -851,6 +935,22 @@ void main() {
         final ReadingContent document = await contentRepository(database)
             .read('heidelberg-catechism');
         expect(document.units, hasLength(128));
+        expect(
+          document.attribution,
+          allOf(
+            contains('Aviso de esa edición: “Used by permission'),
+            contains('Reformed Church in America'),
+            contains('Book of Praise'),
+            endsWith(
+              'https://www.crcna.org/sites/default/files/'
+              'Catecismo%20de%20Heidelberg.pdf',
+            ),
+          ),
+        );
+        expect(
+          format(document, document.units.first),
+          contains(document.attribution),
+        );
         expect(await File(oldPath).exists(), isTrue);
         final Database preservedCorpus = await factory.openDatabase(
           oldPath,
@@ -869,6 +969,22 @@ void main() {
               .read('heidelberg-catechism', languageCode: language);
           expect(localized.languageCode, language);
           expect(localized.units, hasLength(129));
+          expect(
+            localized.attribution,
+            allOf(
+              contains('Book of Praise'),
+              contains(
+                language == 'en'
+                    ? '© 1973, 1978, 1984 Biblica'
+                    : 'Marcos Vasconcelos',
+              ),
+              contains('https://www.heidelberg-catechism.com/pdf/'),
+            ),
+          );
+          expect(
+            format(localized, localized.units.first),
+            contains(localized.attribution),
+          );
           final ReadingUnit twelve = localized.units[11];
           final String exodus = language == 'en' ? 'Exodus' : 'Êxodo';
           final String romans = language == 'en' ? 'Romans' : 'Romanos';
@@ -989,7 +1105,7 @@ void main() {
         ).read('heidelberg-catechism');
         expect(reopened.units.last.body, document.units.last.body);
         final Database handle = await factory.openDatabase(
-          '${directory.path}/reformed_documents_v3.db',
+          '${directory.path}/reformed_documents_v5.db',
           options: OpenDatabaseOptions(readOnly: true),
         );
         await handle.close();

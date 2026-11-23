@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../design_system/widgets/edition_credits_sheet.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../models/reading_content.dart';
 import '../models/reader_preferences.dart';
@@ -134,6 +135,8 @@ class _ReaderViewState extends State<ReaderView> {
   }
 
   Future<void> _translations(BuildContext context) async {
+    final ReaderViewModel vm = widget.viewModel;
+    final ReadingContent content = vm.content!;
     final ReaderTranslation? selected =
         await showModalBottomSheet<ReaderTranslation>(
           context: context,
@@ -143,12 +146,14 @@ class _ReaderViewState extends State<ReaderView> {
           builder: (BuildContext context) => _sheetSurface(
             context,
             ReaderTranslationSheet(
-              selected: widget.viewModel.preferences.translation,
+              selected: vm.preferences.translation,
+              availableLanguageCodes: content.availableLanguageCodes,
+              resolvedLanguageCode: content.languageCode,
             ),
           ),
         );
     if (mounted && selected != null) {
-      await widget.viewModel.changeTranslation(selected);
+      await vm.changeTranslation(selected);
     }
   }
 
@@ -204,6 +209,7 @@ class _ReaderViewState extends State<ReaderView> {
           builder: (BuildContext context) {
             final AppLocalizations strings = AppLocalizations.of(context);
             final bool ready = vm.state == ReaderState.ready;
+            final String? attribution = vm.content?.attribution?.trim();
             return Scaffold(
               body: SafeArea(
                 bottom: false,
@@ -220,6 +226,15 @@ class _ReaderViewState extends State<ReaderView> {
                       onSettings: () => _settings(context),
                       onTranslation: () => unawaited(_translations(context)),
                       onCopy: () => unawaited(_copy(strings)),
+                      onEditionCredits:
+                          ready && attribution != null && attribution.isNotEmpty
+                          ? () => unawaited(
+                              showEditionCreditsSheet(
+                                context,
+                                attribution: attribution,
+                              ),
+                            )
+                          : null,
                     ),
                     Expanded(
                       child: switch (vm.state) {

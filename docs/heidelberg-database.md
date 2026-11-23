@@ -1,27 +1,29 @@
 # Heidelberg Catechism database
 
-`assets/db/reformed_documents.db` uses schema version 2. It contains 129 English,
+`assets/db/reformed_documents.db` uses schema version 3. Its Heidelberg tables contain 129 English,
 129 Portuguese, and 128 Spanish questions and answers, with an offline FTS4 index.
-The Flutter reader installs the corpus revision 3 asset into a separate read-only local file, preserving earlier installed files and mutable user preferences.
+The Flutter reader installs the corpus revision 5 asset into a separate read-only local file, preserving earlier installed files and mutable user preferences. The same database also contains the [Canons of Dort](dort-database.md).
 
 ## Sources and text
 
-- [English PDF](https://www.heidelberg-catechism.com/pdf/lords-days/Heidelberg-Catechism.pdf),
-  Book of Praise, printed pages 519–558 (40 PDF pages).
-- [Portuguese PDF](https://www.heidelberg-catechism.com/pdf/lords-days/O%20CATECISMO%20DE%20HEIDELBERG%20(Portuguese).pdf),
-  29 PDF pages.
-- User-supplied `Catecismo de Heidelberg.pdf`, 16 PDF pages, SHA-256
-  `3c269dae25fc1a986f1fa9bae8c662ab5deb0955e9fb06eac6d0c8a8a25e6995`.
-  This matches the Spanish source already recorded in the database. Its attribution
-  is “Used by permission of the Reformed Church in America”.
+- English uses the 2010 *Book of Praise* Authorized Provisional Version, printed pages 519–558 (40 PDF pages). The Standing Committee for the Publication of the *Book of Praise* of the Canadian Reformed Churches holds the 2010 copyright. The volume credits biblical quotations to the New International Version (NIV), © 1973, 1978, 1984 Biblica. [Publisher's attribution on the source site](https://www.heidelberg-catechism.com/en/lords-days/1.html) · [Exact source PDF](https://www.heidelberg-catechism.com/pdf/lords-days/Heidelberg-Catechism.pdf) · [Biblica permissions](https://www.biblica.com/permissions/)
+- Portuguese uses a 29-page PDF whose wording matches the Centro de Literatura Reformada (CLIRE) edition attributed to Marcos Vasconcelos. The specific printing remains unconfirmed. Question 18 includes wording from the Almeida Revista e Atualizada (ARA), © 1993 Sociedade Bíblica do Brasil. [Exact source PDF](https://www.heidelberg-catechism.com/pdf/lords-days/O%20CATECISMO%20DE%20HEIDELBERG%20(Portuguese).pdf) · [CLIRE edition](https://www.editoraclire.com.br/as-tres-formas-de-unidade) · [ARA 1 Corinthians 1](https://www.sbb.org.br/biblia/ARA/1CO.1)
+- The supplied Spanish PDF matches the copy published by the Christian Reformed Church in North America byte for byte (16 pages, SHA-256 `3c269dae25fc1a986f1fa9bae8c662ab5deb0955e9fb06eac6d0c8a8a25e6995`). Page 16 states “Used by permission of the Reformed Church in America” about that edition. [Exact CRCNA source PDF](https://www.crcna.org/sites/default/files/Catecismo%20de%20Heidelberg.pdf)
 
 `document_sources` records each PDF's hash, URL, attribution, and content version.
+The edition credits appear in the reader and accompany copies and shares. The
+Spanish and Portuguese credits also identify the *Book of Praise* as the source
+of the app's separate reference index.
+
+Permission to distribute these translations through Pactantes remains pending for
+all three editions. Before public distribution, confirm the scope for offline
+bundling, copied and shared passages, and any third-party Scripture quotations
+and reference notes with the respective rights holders.
+
 PDF page metadata is one-based and refers to the physical PDF page, not the
 printed page number. Whitespace and line breaks are normalized; wording, source
 spelling, punctuation, numbered lists, and inline reference markers are retained.
-Footnote apparatus is separated from answers. The English and Portuguese PDFs do
-not state a redistribution license; source metadata records that fact without
-asserting permission.
+Footnote apparatus is separated from answers.
 
 All 128 Spanish questions and answers were compared with the supplied PDF. No
 question or answer was missing from that source. Re-extraction repairs four words

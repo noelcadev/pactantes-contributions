@@ -15,6 +15,8 @@
   "home": "Inicio",
   "bible": "Biblia",
   "library": "Biblioteca",
+  "libraryTextUnavailable": "Texto aún no disponible",
+  "libraryEmptyCategory": "Todavía no hay documentos en esta categoría.",
   "search": "Buscar",
   "community": "Comunidad",
   "moreOptions": "Más opciones",
@@ -62,7 +64,9 @@
   "readerNavigation": "Navegación del documento",
   "readerTheme": "Tema",
   "readerTranslation": "Traducción",
+  "readerEditionCredits": "Créditos de la edición",
   "readerDeviceLanguage": "Idioma del dispositivo",
+  "readerCurrentEdition": "Edición actual: {language}",
   "readerEnglish": "Inglés",
   "readerPortuguese": "Portugués",
   "readerSpanish": "Español",
@@ -73,7 +77,8 @@
   "homeCreedsSummary": "Símbolos de la fe",
   "homeDocumentsSummary": "Textos históricos",
   "homeScriptureQuote": "“Porque por gracia sois salvos por la fe; y esto no de vosotros, pues es don de Dios:”",
-  "homeScriptureReference": "EFESIOS 2:8",
+  "homeScriptureReference": "EFESIOS 2:8 · REINA-VALERA 1909",
+  "homeScriptureAttribution": "Santa Biblia, Reina-Valera 1909. Dominio público.\nhttps://ebible.org/spaRV1909/EPH02.htm\nhttps://ebible.org/spaRV1909/copyright.htm",
   "bibleBookName": "{book, select, book1Chr{1 Crónicas} book1Cor{1 Corintios} book1John{1 Juan} book1Kgs{1 Reyes} book1Pet{1 Pedro} book1Sam{1 Samuel} book1Thess{1 Tesalonicenses} book1Tim{1 Timoteo} book2Chr{2 Crónicas} book2Cor{2 Corintios} book2Kgs{2 Reyes} book2Pet{2 Pedro} book2Sam{2 Samuel} book2Thess{2 Tesalonicenses} book2Tim{2 Timoteo} bookActs{Hechos} bookCol{Colosenses} bookDan{Daniel} bookDeut{Deuteronomio} bookEccl{Eclesiastés} bookEph{Efesios} bookExod{Éxodo} bookEzek{Ezequiel} bookGal{Gálatas} bookGen{Génesis} bookHab{Habacuc} bookHeb{Hebreos} bookIsa{Isaías} bookJas{Santiago} bookJer{Jeremías} bookJob{Job} bookJoel{Joel} bookJohn{Juan} bookJosh{Josué} bookJude{Judas} bookLev{Levítico} bookLuke{Lucas} bookMark{Marcos} bookMatt{Mateo} bookMic{Miqueas} bookNah{Nahúm} bookNum{Números} bookPhil{Filipenses} bookProv{Proverbios} bookPs{Salmos} bookRev{Apocalipsis} bookRom{Romanos} bookTitus{Tito} bookZech{Zacarías} other{{code}}}",
   "language": "Idioma"
 }

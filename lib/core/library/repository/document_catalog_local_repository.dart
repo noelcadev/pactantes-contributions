@@ -34,7 +34,7 @@ class DocumentCatalogLocalRepositoryImpl
       title: 'Cánones de Dort',
       type: DocumentType.confession,
       collectionId: 'three-forms-of-unity',
-      isAvailable: false,
+      isAvailable: true,
     ),
     ReadingDocument(
       id: 'belgic-confession',

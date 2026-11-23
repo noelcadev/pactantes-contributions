@@ -16,7 +16,8 @@ class HeidelbergReadingContentSource implements ReadingContentSource {
     final List<Map<String, Object?>> rows = await _database.query(
       '''
       SELECT c.canonical_question_number, c.question_number, c.question, c.answer,
-        q.lords_day_number, d.label, s.title, c.language_code
+        q.lords_day_number, d.label, s.title, c.language_code,
+        s.attribution, s.source_url
       FROM heidelberg_catechism c
       JOIN heidelberg_questions q USING (canonical_question_number)
       JOIN heidelberg_lords_day_labels d USING (language_code)
@@ -52,6 +53,7 @@ class HeidelbergReadingContentSource implements ReadingContentSource {
       documentId: documentId,
       title: rows.first['title']! as String,
       languageCode: rows.first['language_code']! as String,
+      attribution: '${rows.first['attribution']}\n${rows.first['source_url']}',
       canonicalUnitIds: List<String>.unmodifiable(
         canonical.map(
           (Map<String, Object?> row) =>

@@ -15,6 +15,8 @@
   "home": "Home",
   "bible": "Bible",
   "library": "Library",
+  "libraryTextUnavailable": "Text not yet available",
+  "libraryEmptyCategory": "There are no documents in this category yet.",
   "search": "Search",
   "community": "Community",
   "moreOptions": "More options",
@@ -100,7 +102,14 @@
   "readerNavigation": "Document navigation",
   "readerTheme": "Theme",
   "readerTranslation": "Translation",
+  "readerEditionCredits": "Edition credits",
   "readerDeviceLanguage": "Device language",
+  "readerCurrentEdition": "Current edition: {language}",
+  "@readerCurrentEdition": {
+    "placeholders": {
+      "language": { "type": "String" }
+    }
+  },
   "readerEnglish": "English",
   "readerPortuguese": "Portuguese",
   "readerSpanish": "Spanish",
@@ -110,8 +119,9 @@
   "homeCatechismsSummary": "Questions and answers",
   "homeCreedsSummary": "Statements of faith",
   "homeDocumentsSummary": "Historical texts",
-  "homeScriptureQuote": "“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:”",
-  "homeScriptureReference": "EPHESIANS 2:8",
+  "homeScriptureQuote": "“for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,”",
+  "homeScriptureReference": "EPHESIANS 2:8 · WORLD ENGLISH BIBLE",
+  "homeScriptureAttribution": "World English Bible Classic (WEB). Public domain.\nhttps://ebible.org/eng-web/EPH02.htm\nhttps://ebible.org/eng-web/copyright.htm",
   "bibleBookName": "{book, select, book1Chr{1 Chronicles} book1Cor{1 Corinthians} book1John{1 John} book1Kgs{1 Kings} book1Pet{1 Peter} book1Sam{1 Samuel} book1Thess{1 Thessalonians} book1Tim{1 Timothy} book2Chr{2 Chronicles} book2Cor{2 Corinthians} book2Kgs{2 Kings} book2Pet{2 Peter} book2Sam{2 Samuel} book2Thess{2 Thessalonians} book2Tim{2 Timothy} bookActs{Acts} bookCol{Colossians} bookDan{Daniel} bookDeut{Deuteronomy} bookEccl{Ecclesiastes} bookEph{Ephesians} bookExod{Exodus} bookEzek{Ezekiel} bookGal{Galatians} bookGen{Genesis} bookHab{Habakkuk} bookHeb{Hebrews} bookIsa{Isaiah} bookJas{James} bookJer{Jeremiah} bookJob{Job} bookJoel{Joel} bookJohn{John} bookJosh{Joshua} bookJude{Jude} bookLev{Leviticus} bookLuke{Luke} bookMark{Mark} bookMatt{Matthew} bookMic{Micah} bookNah{Nahum} bookNum{Numbers} bookPhil{Philippians} bookProv{Proverbs} bookPs{Psalms} bookRev{Revelation} bookRom{Romans} bookTitus{Titus} bookZech{Zechariah} other{{code}}}",
   "@bibleBookName": {
     "description": "Bible book display name for a stable corpus book code; unknown codes remain unchanged.",

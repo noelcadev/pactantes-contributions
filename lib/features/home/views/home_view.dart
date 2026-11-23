@@ -2,9 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../../../core/library/models/reading_document.dart';
 import '../../../design_system/theme/app_theme.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../reader/models/reader_preferences.dart';
+import '../../../design_system/widgets/edition_credits_sheet.dart';
+import 'components/library_documents_view.dart';
 import '../../reader/views/components/reader_translation_sheet.dart';
 import '../models/home_reading_item.dart';
 import '../view_models/home_view_model.dart';
@@ -73,6 +76,42 @@ class _HomeViewState extends State<HomeView> {
     SnackBar(content: Text(AppLocalizations.of(context).readerActionError)),
   );
 
+  void _openLibrary() {
+    Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (BuildContext libraryContext) {
+          final AppLocalizations strings = AppLocalizations.of(libraryContext);
+          return Scaffold(
+            appBar: AppBar(title: Text(strings.library)),
+            bottomNavigationBar: _MainNavigation(
+              librarySelected: true,
+              onSwitch: () => Navigator.of(libraryContext).pop(),
+            ),
+            body: SafeArea(
+              top: false,
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 800),
+                  child: ListView(
+                    padding: const EdgeInsets.all(16),
+                    children: <Widget>[
+                      _LibrarySection(
+                        strings: strings,
+                        viewModel: widget.viewModel,
+                        onOpenReading: widget.onOpenReading,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final AppLocalizations strings = AppLocalizations.of(context);
@@ -117,36 +156,9 @@ class _HomeViewState extends State<HomeView> {
           ),
         ],
       ),
-      bottomNavigationBar: DecoratedBox(
-        decoration: const BoxDecoration(
-          border: Border(top: BorderSide(color: AppColors.border)),
-        ),
-        child: BottomNavigationBar(
-          currentIndex: 0,
-          onTap: (_) {},
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.home_outlined),
-              label: strings.home,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.import_contacts_outlined),
-              label: strings.bible,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.menu_book_outlined),
-              label: strings.library,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.search),
-              label: strings.search,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.people_outline),
-              label: strings.community,
-            ),
-          ],
-        ),
+      bottomNavigationBar: _MainNavigation(
+        librarySelected: false,
+        onSwitch: _openLibrary,
       ),
       body: SafeArea(
         top: false,
@@ -253,7 +265,12 @@ class _HomeViewState extends State<HomeView> {
                 SliverPadding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   sliver: SliverToBoxAdapter(
-                    child: _LibrarySection(strings: strings),
+                    child: _LibrarySection(
+                      title: strings.exploreLibrary,
+                      strings: strings,
+                      viewModel: widget.viewModel,
+                      onOpenReading: widget.onOpenReading,
+                    ),
                   ),
                 ),
                 SliverFillRemaining(
@@ -281,6 +298,9 @@ class _HomeViewState extends State<HomeView> {
                             color: AppColors.softRed,
                             fontSize: 12,
                           ),
+                        ),
+                        EditionCreditsButton(
+                          attribution: strings.homeScriptureAttribution,
                         ),
                       ],
                     ),
@@ -343,66 +363,177 @@ class _BibleEntry extends StatelessWidget {
   );
 }
 
-class _LibrarySection extends StatelessWidget {
-  const _LibrarySection({required this.strings});
-  final AppLocalizations strings;
+class _MainNavigation extends StatelessWidget {
+  const _MainNavigation({
+    required this.librarySelected,
+    required this.onSwitch,
+  });
+  final bool librarySelected;
+  final VoidCallback onSwitch;
+
   @override
   Widget build(BuildContext context) {
-    final List<(String, String)> categories = <(String, String)>[
-      (strings.confessions, strings.homeConfessionsSummary),
-      (strings.catechisms, strings.homeCatechismsSummary),
-      (strings.creeds, strings.homeCreedsSummary),
-      (strings.documents, strings.homeDocumentsSummary),
-    ];
-    Widget card((String, String) category) => HomeAction(
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        border: Border.all(color: AppColors.border),
-        borderRadius: BorderRadius.circular(12),
+    final AppLocalizations strings = AppLocalizations.of(context);
+    return DecoratedBox(
+      decoration: const BoxDecoration(
+        border: Border(top: BorderSide(color: AppColors.border)),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(14),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              category.$1,
-              style: const TextStyle(fontSize: 14, color: AppColors.navy),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              category.$2,
-              style: const TextStyle(
-                fontSize: 12,
-                height: 1.4,
-                color: AppColors.mutedInk,
-              ),
-            ),
-          ],
+      child: BottomNavigationBar(
+        currentIndex: librarySelected ? 2 : 0,
+        onTap: (int index) {
+          if (index == (librarySelected ? 0 : 2)) onSwitch();
+        },
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.home_outlined),
+            label: strings.home,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.import_contacts_outlined),
+            label: strings.bible,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.menu_book_outlined),
+            label: strings.library,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.search),
+            label: strings.search,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.people_outline),
+            label: strings.community,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _LibrarySection extends StatelessWidget {
+  const _LibrarySection({
+    this.title,
+    required this.strings,
+    required this.viewModel,
+    required this.onOpenReading,
+  });
+
+  final String? title;
+  final AppLocalizations strings;
+  final HomeViewModel viewModel;
+  final ValueChanged<HomeReadingItem>? onOpenReading;
+
+  void _open(BuildContext context, String heading, [DocumentType? category]) {
+    Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => LibraryDocumentsView(
+          title: heading,
+          category: category,
+          viewModel: viewModel,
+          onOpenReading: onOpenReading,
         ),
       ),
     );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final List<(DocumentType, String, String)> categories =
+        <(DocumentType, String, String)>[
+          (
+            DocumentType.confession,
+            strings.confessions,
+            strings.homeConfessionsSummary,
+          ),
+          (
+            DocumentType.catechism,
+            strings.catechisms,
+            strings.homeCatechismsSummary,
+          ),
+          (DocumentType.creed, strings.creeds, strings.homeCreedsSummary),
+          (
+            DocumentType.document,
+            strings.documents,
+            strings.homeDocumentsSummary,
+          ),
+        ];
+    Widget card((DocumentType, String, String) category) {
+      void open() => _open(context, category.$2, category.$1);
+      return Semantics(
+        button: true,
+        label: '${category.$2}. ${category.$3}',
+        excludeSemantics: true,
+        onTap: open,
+        child: HomeAction(
+          onTap: open,
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            border: Border.all(color: AppColors.border),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Text(
+                        category.$2,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppColors.navy,
+                        ),
+                      ),
+                    ),
+                    const Icon(
+                      Icons.chevron_right,
+                      size: 18,
+                      color: AppColors.mutedInk,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  category.$3,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    height: 1.4,
+                    color: AppColors.mutedInk,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Row(
           children: <Widget>[
-            Expanded(
-              child: Text(
-                strings.exploreLibrary,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.navy,
+            if (title != null)
+              Expanded(
+                child: Text(
+                  title!,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.navy,
+                  ),
                 ),
-              ),
-            ),
+              )
+            else
+              const Spacer(),
             const SizedBox(width: 8),
             Flexible(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => _open(context, strings.library),
                   child: Text(
                     strings.seeAll,
                     textAlign: TextAlign.end,

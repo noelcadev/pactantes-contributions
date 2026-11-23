@@ -56,6 +56,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get library => 'Library';
 
   @override
+  String get libraryTextUnavailable => 'Text not yet available';
+
+  @override
+  String get libraryEmptyCategory =>
+      'There are no documents in this category yet.';
+
+  @override
   String get search => 'Search';
 
   @override
@@ -209,7 +216,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readerTranslation => 'Translation';
 
   @override
+  String get readerEditionCredits => 'Edition credits';
+
+  @override
   String get readerDeviceLanguage => 'Device language';
+
+  @override
+  String readerCurrentEdition(String language) {
+    return 'Current edition: $language';
+  }
 
   @override
   String get readerEnglish => 'English';
@@ -240,10 +255,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeScriptureQuote =>
-      '“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:”';
+      '“for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,”';
 
   @override
-  String get homeScriptureReference => 'EPHESIANS 2:8';
+  String get homeScriptureReference => 'EPHESIANS 2:8 · WORLD ENGLISH BIBLE';
+
+  @override
+  String get homeScriptureAttribution =>
+      'World English Bible Classic (WEB). Public domain.\nhttps://ebible.org/eng-web/EPH02.htm\nhttps://ebible.org/eng-web/copyright.htm';
 
   @override
   String bibleBookName(String book, String code) {

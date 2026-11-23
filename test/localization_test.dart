@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pactantes/l10n/generated/app_localizations.dart';
 import 'package:pactantes/main.dart';
 import 'package:pactantes/core/library/repository/document_catalog_local_repository.dart';
 
@@ -48,6 +49,56 @@ void main() {
           'es': 'Atrás',
         }[languageCode],
       );
+    });
+  }
+
+  for (final MapEntry<String, String> source in <String, String>{
+    'en': 'World English Bible Classic',
+    'es': 'Reina-Valera 1909',
+    'pt': '© Diego Santos, Mario Sérgio e Marco Teles',
+  }.entries) {
+    testWidgets('the Home verse has offline edition credits in ${source.key}', (
+      tester,
+    ) async {
+      final Locale locale = Locale(source.key);
+      tester.platformDispatcher.localesTestValue = <Locale>[locale];
+      addTearDown(tester.platformDispatcher.clearLocalesTestValue);
+      await tester.pumpWidget(
+        MainApp(
+          createHomeViewModel: () => HomeViewModel(
+            _EmptyRepository(),
+            const DocumentCatalogLocalRepositoryImpl(),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      final AppLocalizations strings = lookupAppLocalizations(locale);
+      final Finder footer = find.text(strings.homeScriptureReference);
+      final Finder vertical = find.byWidgetPredicate(
+        (widget) =>
+            widget is Scrollable && widget.axisDirection == AxisDirection.down,
+      );
+      await tester.scrollUntilVisible(footer, 300, scrollable: vertical.first);
+      final Finder credits = find.widgetWithText(
+        TextButton,
+        strings.readerEditionCredits,
+      );
+      await tester.scrollUntilVisible(
+        credits.hitTestable(),
+        150,
+        scrollable: vertical.first,
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(credits);
+      await tester.pumpAndSettle();
+      final String notice = tester
+          .widget<SelectableText>(find.byType(SelectableText))
+          .data!;
+      expect(notice, contains(source.value));
+      expect(notice, contains('https://'));
+      if (source.key == 'pt') {
+        expect(notice, contains('creativecommons.org/licenses/by/3.0/br/'));
+      }
     });
   }
 

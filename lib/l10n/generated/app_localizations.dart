@@ -190,6 +190,18 @@ abstract class AppLocalizations {
   /// **'Library'**
   String get library;
 
+  /// No description provided for @libraryTextUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Text not yet available'**
+  String get libraryTextUnavailable;
+
+  /// No description provided for @libraryEmptyCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no documents in this category yet.'**
+  String get libraryEmptyCategory;
+
   /// No description provided for @search.
   ///
   /// In en, this message translates to:
@@ -472,11 +484,23 @@ abstract class AppLocalizations {
   /// **'Translation'**
   String get readerTranslation;
 
+  /// No description provided for @readerEditionCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'Edition credits'**
+  String get readerEditionCredits;
+
   /// No description provided for @readerDeviceLanguage.
   ///
   /// In en, this message translates to:
   /// **'Device language'**
   String get readerDeviceLanguage;
+
+  /// No description provided for @readerCurrentEdition.
+  ///
+  /// In en, this message translates to:
+  /// **'Current edition: {language}'**
+  String readerCurrentEdition(String language);
 
   /// No description provided for @readerEnglish.
   ///
@@ -535,14 +559,20 @@ abstract class AppLocalizations {
   /// No description provided for @homeScriptureQuote.
   ///
   /// In en, this message translates to:
-  /// **'“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:”'**
+  /// **'“for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,”'**
   String get homeScriptureQuote;
 
   /// No description provided for @homeScriptureReference.
   ///
   /// In en, this message translates to:
-  /// **'EPHESIANS 2:8'**
+  /// **'EPHESIANS 2:8 · WORLD ENGLISH BIBLE'**
   String get homeScriptureReference;
+
+  /// No description provided for @homeScriptureAttribution.
+  ///
+  /// In en, this message translates to:
+  /// **'World English Bible Classic (WEB). Public domain.\nhttps://ebible.org/eng-web/EPH02.htm\nhttps://ebible.org/eng-web/copyright.htm'**
+  String get homeScriptureAttribution;
 
   /// Bible book display name for a stable corpus book code; unknown codes remain unchanged.
   ///

@@ -31,12 +31,16 @@ class ReadingContent {
     required this.languageCode,
     required this.units,
     this.canonicalUnitIds = const <String>[],
+    this.availableLanguageCodes = const <String>{'en', 'pt', 'es'},
+    this.attribution,
   });
   final String documentId;
   final String title;
   final String languageCode;
   final List<ReadingUnit> units;
   final List<String> canonicalUnitIds;
+  final Set<String> availableLanguageCodes;
+  final String? attribution;
 
   int resolveUnitIndex(String? unitId) {
     final Map<String, int> positions = <String, int>{

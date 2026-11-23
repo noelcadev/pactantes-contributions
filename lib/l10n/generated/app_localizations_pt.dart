@@ -56,6 +56,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get library => 'Biblioteca';
 
   @override
+  String get libraryTextUnavailable => 'Texto ainda não disponível';
+
+  @override
+  String get libraryEmptyCategory => 'Ainda não há documentos nesta categoria.';
+
+  @override
   String get search => 'Buscar';
 
   @override
@@ -211,7 +217,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get readerTranslation => 'Tradução';
 
   @override
+  String get readerEditionCredits => 'Créditos da edição';
+
+  @override
   String get readerDeviceLanguage => 'Idioma do aparelho';
+
+  @override
+  String readerCurrentEdition(String language) {
+    return 'Edição atual: $language';
+  }
 
   @override
   String get readerEnglish => 'Inglês';
@@ -242,10 +256,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeScriptureQuote =>
-      '“Pois pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus.”';
+      '“Porque pela graça sois salvos, por meio da fé; e isto não vem de vós; é dom de Deus;”';
 
   @override
-  String get homeScriptureReference => 'EFÉSIOS 2:8';
+  String get homeScriptureReference => 'EFÉSIOS 2:8 · BÍBLIA LIVRE';
+
+  @override
+  String get homeScriptureAttribution =>
+      'Bíblia Livre (BLIVRE), edição Textus Receptus, fevereiro de 2018. © Diego Santos, Mario Sérgio e Marco Teles. Creative Commons Atribuição 3.0 Brasil (CC BY 3.0 BR).\nhttps://sites.google.com/site/biblialivre/\nhttps://creativecommons.org/licenses/by/3.0/br/';
 
   @override
   String bibleBookName(String book, String code) {

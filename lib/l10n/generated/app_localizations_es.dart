@@ -56,6 +56,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get library => 'Biblioteca';
 
   @override
+  String get libraryTextUnavailable => 'Texto aún no disponible';
+
+  @override
+  String get libraryEmptyCategory =>
+      'Todavía no hay documentos en esta categoría.';
+
+  @override
   String get search => 'Buscar';
 
   @override
@@ -211,7 +218,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get readerTranslation => 'Traducción';
 
   @override
+  String get readerEditionCredits => 'Créditos de la edición';
+
+  @override
   String get readerDeviceLanguage => 'Idioma del dispositivo';
+
+  @override
+  String readerCurrentEdition(String language) {
+    return 'Edición actual: $language';
+  }
 
   @override
   String get readerEnglish => 'Inglés';
@@ -245,7 +260,11 @@ class AppLocalizationsEs extends AppLocalizations {
       '“Porque por gracia sois salvos por la fe; y esto no de vosotros, pues es don de Dios:”';
 
   @override
-  String get homeScriptureReference => 'EFESIOS 2:8';
+  String get homeScriptureReference => 'EFESIOS 2:8 · REINA-VALERA 1909';
+
+  @override
+  String get homeScriptureAttribution =>
+      'Santa Biblia, Reina-Valera 1909. Dominio público.\nhttps://ebible.org/spaRV1909/EPH02.htm\nhttps://ebible.org/spaRV1909/copyright.htm';
 
   @override
   String bibleBookName(String book, String code) {

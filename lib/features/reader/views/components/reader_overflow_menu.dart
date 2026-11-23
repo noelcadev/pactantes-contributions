@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../l10n/generated/app_localizations.dart';
 
-enum _ReaderAction { favorite, settings, translation, copy }
+enum _ReaderAction { favorite, settings, translation, editionCredits, copy }
 
 class ReaderOverflowMenu extends StatelessWidget {
   const ReaderOverflowMenu({
@@ -13,6 +13,7 @@ class ReaderOverflowMenu extends StatelessWidget {
     required this.onSettings,
     required this.onCopy,
     required this.onTranslation,
+    this.onEditionCredits,
     super.key,
   });
   final bool favorite;
@@ -22,6 +23,7 @@ class ReaderOverflowMenu extends StatelessWidget {
   final VoidCallback onSettings;
   final VoidCallback onCopy;
   final VoidCallback onTranslation;
+  final VoidCallback? onEditionCredits;
   @override
   Widget build(BuildContext context) {
     final AppLocalizations strings = AppLocalizations.of(context);
@@ -40,6 +42,8 @@ class ReaderOverflowMenu extends StatelessWidget {
             onCopy();
           case _ReaderAction.translation:
             onTranslation();
+          case _ReaderAction.editionCredits:
+            onEditionCredits?.call();
         }
       },
       itemBuilder: (BuildContext context) => <PopupMenuEntry<_ReaderAction>>[
@@ -80,6 +84,17 @@ class ReaderOverflowMenu extends StatelessWidget {
             ],
           ),
         ),
+        if (onEditionCredits != null)
+          PopupMenuItem<_ReaderAction>(
+            value: _ReaderAction.editionCredits,
+            child: Row(
+              children: <Widget>[
+                const Icon(Icons.info_outline),
+                const SizedBox(width: 12),
+                Flexible(child: Text(strings.readerEditionCredits)),
+              ],
+            ),
+          ),
         PopupMenuItem<_ReaderAction>(
           value: _ReaderAction.copy,
           child: Row(

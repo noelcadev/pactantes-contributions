@@ -5,6 +5,7 @@ import 'package:share_plus/share_plus.dart';
 
 import '../core/database/reading_database.dart';
 import '../features/reader/repository/sources/reading_content_source.dart';
+import '../features/reader/repository/sources/dort_reading_content_source.dart';
 import '../features/reader/repository/sources/heidelberg_reading_content_source.dart';
 import '../l10n/localized_bible_book_names.dart';
 import '../core/database/sqflite_reading_database.dart';
@@ -41,6 +42,7 @@ void registerDependencies(GetIt container) {
         container<ReadingDatabase>(),
         const LocalizedBibleBookNames(),
       ),
+      'canons-of-dort': DortReadingContentSource(container<ReadingDatabase>()),
     }),
   );
   container.registerLazySingleton<ReaderPreferencesLocalRepository>(

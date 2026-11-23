@@ -20,17 +20,34 @@ class HomeViewModel extends ChangeNotifier {
     this._readerPreferencesRepository,
     this._readerContentRepository,
   }) {
-    _readingItems = _suggestions();
+    _items = _suggestions();
   }
 
   final ReaderContentLocalRepository? _readerContentRepository;
   String _languageCode = 'es';
   final ReadingProgressLocalRepository _repository;
   final DocumentCatalogLocalRepository _catalog;
-  List<HomeReadingItem> _readingItems = const <HomeReadingItem>[];
-  List<HomeReadingItem> get readingItems => _readingItems;
+  List<HomeReadingItem> _items = const <HomeReadingItem>[];
+  List<HomeReadingItem> get readingItems {
+    final List<HomeReadingItem> continuing = _items
+        .where((HomeReadingItem item) => item.progress != null)
+        .toList(growable: false);
+    return continuing.isEmpty ? _items : continuing;
+  }
+
+  List<HomeReadingItem> get libraryItems {
+    final Map<String, HomeReadingItem> byId = <String, HomeReadingItem>{
+      for (final HomeReadingItem item in _items) item.document.id: item,
+    };
+    return <HomeReadingItem>[
+      for (final ReadingDocument document in _catalog.all)
+        if (document.type != DocumentType.collection)
+          byId[document.id] ?? HomeReadingItem(document: document),
+    ];
+  }
+
   bool get hasReadingProgress =>
-      _readingItems.any((HomeReadingItem item) => item.progress != null);
+      _items.any((HomeReadingItem item) => item.progress != null);
   HomeReadingState _readingState = HomeReadingState.initial;
   HomeReadingState get readingState => _readingState;
   bool _disposed = false;
@@ -124,14 +141,21 @@ class HomeViewModel extends ChangeNotifier {
         items.add(HomeReadingItem(document: document, progress: progress));
       }
       if (_disposed || generation != _loadGeneration) return;
-      final List<HomeReadingItem> candidates = items.isEmpty
-          ? _suggestions()
-          : items;
+      final Set<String> started = items
+          .map((HomeReadingItem item) => item.document.id)
+          .toSet();
+      final List<HomeReadingItem> candidates = <HomeReadingItem>[
+        ...items,
+        ..._suggestions().where(
+          (HomeReadingItem item) => !started.contains(item.document.id),
+        ),
+      ];
       final ReaderPreferences preferences =
           await _readerPreferencesRepository?.read() ??
           const ReaderPreferences();
       final List<HomeReadingItem> hydrated = <HomeReadingItem>[];
       for (final HomeReadingItem item in candidates) {
+        if (_disposed || generation != _loadGeneration) return;
         if (_readerContentRepository == null || !item.document.isAvailable) {
           hydrated.add(item);
           continue;
@@ -153,11 +177,12 @@ class HomeViewModel extends ChangeNotifier {
             unit: unit,
             sourceTitle: content.title,
             languageCode: content.languageCode,
+            attribution: content.attribution,
           ),
         );
       }
       if (_disposed || generation != _loadGeneration) return;
-      _readingItems = List<HomeReadingItem>.unmodifiable(hydrated);
+      _items = List<HomeReadingItem>.unmodifiable(hydrated);
       _readingState = HomeReadingState.ready;
     } on Exception {
       if (_disposed || generation != _loadGeneration) return;

@@ -80,7 +80,11 @@ Future<void> render(WidgetTester tester, List<ReadingProgress> items) async {
   );
 }
 
-Future<void> renderModel(WidgetTester tester, HomeViewModel model) async {
+Future<void> renderModel(
+  WidgetTester tester,
+  HomeViewModel model, {
+  ValueChanged<HomeReadingItem>? onOpenReading,
+}) async {
   addTearDown(model.dispose);
   await tester.pumpWidget(
     MaterialApp(
@@ -88,13 +92,110 @@ Future<void> renderModel(WidgetTester tester, HomeViewModel model) async {
       locale: const Locale('es'),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: HomeView(viewModel: model),
+      home: HomeView(viewModel: model, onOpenReading: onOpenReading),
     ),
   );
   await tester.pumpAndSettle();
 }
 
 void main() {
+  testWidgets(
+    'Library tab browses confessions and distinguishes catalog previews',
+    (WidgetTester tester) async {
+      final HomeViewModel model = HomeViewModel(
+        FakeRepository(<ReadingProgress>[]),
+        FakeDocumentCatalog(
+          availableIds: <String>{'heidelberg-catechism', 'canons-of-dort'},
+        ),
+      );
+      final List<HomeReadingItem> opened = <HomeReadingItem>[];
+      await renderModel(tester, model, onOpenReading: opened.add);
+      final AppLocalizations strings = lookupAppLocalizations(
+        const Locale('es'),
+      );
+      final Finder tabs = find.byType(BottomNavigationBar);
+      await tester.tap(
+        find.descendant(of: tabs, matching: find.text(strings.library)),
+      );
+      await tester.pumpAndSettle();
+      expect(tester.widget<BottomNavigationBar>(tabs).currentIndex, 2);
+      await tester.tap(find.text(strings.confessions));
+      await tester.pumpAndSettle();
+      final Finder preview = find.widgetWithText(
+        ListTile,
+        'Confesión de Fe de Westminster',
+      );
+      expect(tester.widget<ListTile>(preview).enabled, isFalse);
+      await tester.tap(find.widgetWithText(ListTile, 'Cánones de Dort'));
+      await tester.pumpAndSettle();
+      expect(opened.single.document.id, 'canons-of-dort');
+      expect(preview, findsOneWidget);
+      await tester.tap(
+        find.byTooltip(
+          MaterialLocalizations.of(tester.element(find.byType(ListTile).first))
+              .backButtonTooltip,
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(tester.widget<BottomNavigationBar>(tabs).currentIndex, 2);
+      await tester.tap(
+        find.descendant(of: tabs, matching: find.text(strings.home)),
+      );
+      await tester.pumpAndSettle();
+      expect(tester.widget<BottomNavigationBar>(tabs).currentIndex, 0);
+    },
+  );
+
+  testWidgets(
+    'library opens an unread confession while preserving Continue and resume',
+    (WidgetTester tester) async {
+      const String heidelberg = 'heidelberg-catechism';
+      const String dort = 'canons-of-dort';
+      final HomeViewModel model = HomeViewModel(
+        FakeRepository(<ReadingProgress>[item(id: heidelberg)]),
+        FakeDocumentCatalog(availableIds: <String>{heidelberg, dort}),
+      );
+      final List<HomeReadingItem> opened = <HomeReadingItem>[];
+      await renderModel(tester, model, onOpenReading: opened.add);
+
+      expect(model.hasReadingProgress, isTrue);
+      expect(model.readingItems.single.document.id, heidelberg);
+      final AppLocalizations strings = lookupAppLocalizations(
+        const Locale('es'),
+      );
+      final Finder confessions = find.text(strings.confessions);
+      await tester.scrollUntilVisible(confessions, 200);
+      await tester.tap(confessions);
+      await tester.pumpAndSettle();
+      expect(
+        find.widgetWithText(ListTile, 'Catecismo de Heidelberg'),
+        findsNothing,
+      );
+      await tester.tap(find.widgetWithText(ListTile, 'Cánones de Dort'));
+      await tester.pumpAndSettle();
+      expect(opened.single.document.id, dort);
+      expect(opened.single.progress, isNull);
+      await tester.tap(
+        find.byTooltip(
+          MaterialLocalizations.of(tester.element(find.byType(ListTile).first))
+              .backButtonTooltip,
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      final Finder seeAll = find.text(strings.seeAll);
+      await tester.scrollUntilVisible(seeAll, 200);
+      await tester.tap(seeAll);
+      await tester.pumpAndSettle();
+      await tester.tap(
+        find.widgetWithText(ListTile, 'Catecismo de Heidelberg'),
+      );
+      await tester.pumpAndSettle();
+      expect(opened.last.progress?.sectionId, 'chapter-1');
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   test(
     'repository ignores missing, malformed and incomplete records',
     () async {
@@ -235,7 +336,7 @@ void main() {
   });
 
   testWidgets(
-    'static sections render with only Inicio selected and inert entries',
+    'Home starts selected and keeps its position for upcoming destinations',
     (WidgetTester tester) async {
       tester.view.physicalSize = const Size(800, 1000);
       tester.view.devicePixelRatio = 1;
@@ -259,13 +360,7 @@ void main() {
       expect(find.text('COMENZAR A LEER'), findsOneWidget);
       for (final String label in <String>[
         'Biblia Santa',
-        'Ver todo',
-        'Confesiones de fe',
-        'Catecismos',
-        'Credos históricos',
-        'Documentos reformados',
         'Biblia',
-        'Biblioteca',
         'Buscar',
         'Comunidad',
       ]) {

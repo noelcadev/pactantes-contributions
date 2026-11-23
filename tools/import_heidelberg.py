@@ -168,6 +168,32 @@ PORTUGUESE_URL = (
     'https://www.heidelberg-catechism.com/pdf/lords-days/'
     'O%20CATECISMO%20DE%20HEIDELBERG%20(Portuguese).pdf'
 )
+SPANISH_URL = 'https://www.crcna.org/sites/default/files/Catecismo%20de%20Heidelberg.pdf'
+BOOK_OF_PRAISE_CREDIT = (
+    'Book of Praise, Authorized Provisional Version (2010), pp. 519–558. '
+    '© 2010 Standing Committee for the Publication of the Book of Praise of the '
+    'Canadian Reformed Churches.'
+)
+CREDITS = {
+    'en': (
+        f'{BOOK_OF_PRAISE_CREDIT} Biblical quotations from the New International Version '
+        '(NIV), © 1973, 1978, 1984 Biblica.'
+    ),
+    'pt': (
+        'O Catecismo de Heidelberg. O texto corresponde à tradução de Marcos Vasconcelos, '
+        'publicada pelo Centro de Literatura Reformada (CLIRE). '
+        'A edição específica deste PDF ainda precisa de confirmação. '
+        'Entre as citações bíblicas há texto da Almeida Revista e Atualizada (ARA), '
+        '© 1993 Sociedade Bíblica do Brasil. '
+        f'Referências bíblicas do {BOOK_OF_PRAISE_CREDIT}'
+    ),
+    'es': (
+        'Catecismo de Heidelberg. Edición publicada por la Christian Reformed Church '
+        'in North America. Aviso de esa edición: “Used by permission of the '
+        'Reformed Church in America”. '
+        f'Referencias bíblicas del {BOOK_OF_PRAISE_CREDIT}'
+    ),
+}
 
 
 def parse_passages(citation):
@@ -281,9 +307,11 @@ def import_database(database, english_pdf, portuguese_pdf, spanish_pdf):
     translations = {'en': english(english_pdf), 'pt': portuguese(portuguese_pdf),
                     'es': spanish(spanish_pdf)}
     with sqlite3.connect(f'{database.resolve().as_uri()}?mode=ro', uri=True) as original:
-        sources = original.execute('SELECT * FROM document_sources').fetchall()
-        spanish_source = next(row for row in sources if row[2] == 'es')
-        if hashlib.sha256(spanish_pdf.read_bytes()).hexdigest() != spanish_source[4]:
+        spanish_key = 'heidelberg_catechism'
+        source = original.execute(
+            'SELECT source_sha256 FROM document_sources WHERE document_key = ?', (spanish_key,)
+        ).fetchone()
+        if source is None or hashlib.sha256(spanish_pdf.read_bytes()).hexdigest() != source[0]:
             raise ValueError('The Spanish PDF differs from the existing database source')
         sections = dict(original.execute(
             "SELECT question_number, section FROM heidelberg_catechism WHERE language_code = 'es'"
@@ -316,10 +344,7 @@ def import_database(database, english_pdf, portuguese_pdf, spanish_pdf):
                         f'heidelberg_catechism_{language}', title, language,
                         url.rsplit('/', 1)[1].replace('%20', ' '),
                         hashlib.sha256(pdf.read_bytes()).hexdigest(),
-                        ('Book of Praise, Heidelberg Catechism, pp. 519–558; '
-                         if language == 'en' else 'O Catecismo de Heidelberg, Portuguese PDF; ')
-                        + 'source supplied by the user; hosted by heidelberg-catechism.com; '
-                        'no redistribution license stated in the supplied PDF.', url, 2 if language == 'en' else 1,
+                        CREDITS[language], url, 2 if language == 'en' else 1,
                     ))
                 for language, rows in translations.items():
                     for row in rows:
@@ -333,9 +358,12 @@ def import_database(database, english_pdf, portuguese_pdf, spanish_pdf):
                         ''', (number, canonical, row['question'], row['answer'],
                               sections[number] if language == 'es' else section_for(number, language),
                               language, row['source_page_start'], row['source_page_end'],
-                              spanish_source[0] if language == 'es' else f'heidelberg_catechism_{language}'))
-                db.execute("UPDATE document_sources SET content_version = 2 WHERE language_code = 'es' AND document_key = ?",
-                           (spanish_source[0],))
+                              spanish_key if language == 'es' else f'heidelberg_catechism_{language}'))
+                db.execute('''
+                    UPDATE document_sources
+                    SET attribution = ?, source_url = ?, content_version = 2
+                    WHERE document_key = ?
+                ''', (CREDITS['es'], SPANISH_URL, spanish_key))
                 for row in translations['en']:
                     for group in reference_groups(row):
                         key = (row['question_number'], group['number'])
@@ -350,7 +378,8 @@ def import_database(database, english_pdf, portuguese_pdf, spanish_pdf):
                     INSERT INTO heidelberg_catechism_search(docid, question, answer, section)
                     SELECT id, question, answer, section FROM heidelberg_catechism ORDER BY id
                 ''')
-                db.execute('PRAGMA user_version = 2')
+                if db.execute('PRAGMA user_version').fetchone()[0] < 2:
+                    db.execute('PRAGMA user_version = 2')
                 validate(db, translations)
                 db.commit()
             os.replace(temporary, database)

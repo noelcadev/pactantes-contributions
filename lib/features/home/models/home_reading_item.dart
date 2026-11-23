@@ -12,6 +12,7 @@ class HomeReadingItem {
     this.unit,
     this.sourceTitle,
     this.languageCode,
+    this.attribution,
   });
 
   final ReadingDocument document;
@@ -19,4 +20,5 @@ class HomeReadingItem {
   final ReadingUnit? unit;
   final String? sourceTitle;
   final String? languageCode;
+  final String? attribution;
 }

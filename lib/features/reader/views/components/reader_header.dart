@@ -13,6 +13,7 @@ class ReaderHeader extends StatelessWidget {
     required this.onSettings,
     required this.onTranslation,
     required this.onCopy,
+    this.onEditionCredits,
     super.key,
   });
   final bool enabled;
@@ -23,6 +24,7 @@ class ReaderHeader extends StatelessWidget {
   final VoidCallback onSettings;
   final VoidCallback onTranslation;
   final VoidCallback onCopy;
+  final VoidCallback? onEditionCredits;
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +73,7 @@ class ReaderHeader extends StatelessWidget {
                 onSettings: onSettings,
                 onTranslation: onTranslation,
                 onCopy: onCopy,
+                onEditionCredits: onEditionCredits,
               ),
             ),
           ],

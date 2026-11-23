@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../design_system/theme/app_theme.dart';
+import '../../../../design_system/widgets/edition_credits_sheet.dart';
 import '../../../../l10n/generated/app_localizations.dart';
 import '../../../../core/library/models/reading_document.dart';
 import '../../models/home_reading_item.dart';
@@ -145,6 +146,7 @@ class _ReadingCard extends StatelessWidget {
         ? strings
         : lookupAppLocalizations(Locale(item.languageCode!));
     final String? excerpt = item.unit?.question ?? item.unit?.body;
+    final String? attribution = item.attribution?.trim();
     return HomeAction(
       onTap: item.document.isAvailable && onOpen != null
           ? () => onOpen!(item)
@@ -154,6 +156,19 @@ class _ReadingCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.border),
       ),
+      footer:
+          excerpt != null &&
+              excerpt.trim().isNotEmpty &&
+              attribution != null &&
+              attribution.isNotEmpty
+          ? Padding(
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 4),
+              child: Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: EditionCreditsButton(attribution: attribution),
+              ),
+            )
+          : null,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

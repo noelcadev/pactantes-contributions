@@ -12,6 +12,7 @@ class ReadingShareFormatter {
     required String referencesLabel,
     required String attribution,
   }) {
+    final String? editionAttribution = document.attribution?.trim();
     final List<String> parts = <String>[
       '*${document.title}*',
       '_${<String>[if (unit.parentTitle != null) unit.parentTitle!, unitLabel].join(' · ')}_',
@@ -19,6 +20,8 @@ class ReadingShareFormatter {
       if (unit.question != null) '$answerPrefix ${unit.body}' else unit.body,
       if (unit.references.isNotEmpty)
         '*$referencesLabel*\n${unit.references.join('\n')}',
+      if (editionAttribution != null && editionAttribution.isNotEmpty)
+        editionAttribution,
       '_${attribution}_',
     ];
     return parts.join('\n\n');

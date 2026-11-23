@@ -70,7 +70,7 @@ class PendingPreviewContent extends PreviewContent {
   @override
   Future<ReadingContent> read(String documentId, {String languageCode = 'es'}) {
     if (languageCode == 'es') {
-      started.complete();
+      if (!started.isCompleted) started.complete();
       return pending.future;
     }
     return super.read(documentId, languageCode: languageCode);
@@ -99,7 +99,10 @@ void main() {
           await model.changeTranslation(ReaderTranslation.english),
           isTrue,
         );
-        expect(model.readingItems.single.languageCode, 'en');
+        expect(model.readingItems.map((item) => item.languageCode), [
+          'en',
+          'en',
+        ]);
         if (staleFailure) {
           content.pending.completeError(const FormatException('Stale content'));
         } else {
@@ -109,7 +112,10 @@ void main() {
         }
         await initial;
         expect(model.readingState, HomeReadingState.ready);
-        expect(model.readingItems.single.languageCode, 'en');
+        expect(model.readingItems.map((item) => item.languageCode), [
+          'en',
+          'en',
+        ]);
       },
     );
   }
@@ -130,7 +136,7 @@ void main() {
     );
     await initial;
     expect(model.readingState, HomeReadingState.ready);
-    expect(model.readingItems.single.languageCode, 'pt');
+    expect(model.readingItems.map((item) => item.languageCode), ['pt', 'pt']);
   });
 
   testWidgets(
