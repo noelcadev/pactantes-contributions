@@ -33,7 +33,10 @@ class HomeAction extends StatelessWidget {
             : Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisSize: MainAxisSize.min,
-                children: <Widget>[action, footer!],
+                children: <Widget>[
+                  Flexible(child: action),
+                  footer!,
+                ],
               ),
       ),
     );

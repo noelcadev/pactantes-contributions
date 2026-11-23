@@ -77,27 +77,30 @@ class _ReadingSectionState extends State<ReadingSection> {
                   child: SingleChildScrollView(
                     key: ObjectKey(widget.items),
                     scrollDirection: Axis.horizontal,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        for (final (int index, HomeReadingItem item)
-                            in widget.items.indexed)
-                          SizedBox(
-                            width: itemWidth,
-                            child: Padding(
-                              padding: EdgeInsets.only(
-                                left: index == 0 ? AppSpacing.page : 12,
-                                right: 2,
-                                bottom: 4,
-                              ),
-                              child: _ReadingCard(
-                                item: item,
-                                onOpen: widget.onOpen,
+                    child: IntrinsicHeight(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          for (final (int index, HomeReadingItem item)
+                              in widget.items.indexed)
+                            SizedBox(
+                              width: itemWidth,
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.only(
+                                  start: index == 0 ? AppSpacing.page : 12,
+                                  end: 2,
+                                  bottom: 4,
+                                ),
+                                child: _ReadingCard(
+                                  item: item,
+                                  onOpen: widget.onOpen,
+                                  fillHeight: true,
+                                ),
                               ),
                             ),
-                          ),
-                        SizedBox(width: constraints.maxWidth - itemWidth),
-                      ],
+                          SizedBox(width: constraints.maxWidth - itemWidth),
+                        ],
+                      ),
                     ),
                   ),
                 );
@@ -135,10 +138,16 @@ class _ReadingSectionState extends State<ReadingSection> {
 }
 
 class _ReadingCard extends StatelessWidget {
-  const _ReadingCard({required this.item, this.onOpen, this.heading});
+  const _ReadingCard({
+    required this.item,
+    this.onOpen,
+    this.heading,
+    this.fillHeight = false,
+  });
   final HomeReadingItem item;
   final ValueChanged<HomeReadingItem>? onOpen;
   final String? heading;
+  final bool fillHeight;
   @override
   Widget build(BuildContext context) {
     final AppLocalizations strings = AppLocalizations.of(context);
@@ -147,6 +156,7 @@ class _ReadingCard extends StatelessWidget {
         : lookupAppLocalizations(Locale(item.languageCode!));
     final String? excerpt = item.unit?.question ?? item.unit?.body;
     final String? attribution = item.attribution?.trim();
+    final bool showPercentage = item.progress != null && item.unit != null;
     return HomeAction(
       onTap: item.document.isAvailable && onOpen != null
           ? () => onOpen!(item)
@@ -258,6 +268,7 @@ class _ReadingCard extends StatelessWidget {
                   ],
                 ),
               ),
+            if (fillHeight) const Spacer(),
             if (item.progress != null)
               Padding(
                 padding: const EdgeInsets.only(top: 2, bottom: 8),
@@ -272,11 +283,17 @@ class _ReadingCard extends StatelessWidget {
                 ),
               ),
             const SizedBox(height: 4),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+            OverflowBar(
+              alignment: showPercentage
+                  ? MainAxisAlignment.spaceBetween
+                  : MainAxisAlignment.end,
+              overflowAlignment: OverflowBarAlignment.end,
+              spacing: AppSpacing.small,
+              overflowSpacing: 4,
+              // Use full label widths when measuring whether the actions wrap.
               children: <Widget>[
-                if (item.progress != null && item.unit != null)
-                  Expanded(
+                if (showPercentage)
+                  IntrinsicWidth(
                     child: Text(
                       strings.completed(item.progress!.percentage),
                       style: const TextStyle(
@@ -285,22 +302,30 @@ class _ReadingCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                Flexible(
-                  child: Text(
-                    item.progress == null
-                        ? strings.homeBeginStudy
-                        : strings.homeResumeStudy,
-                    style: const TextStyle(
-                      color: AppColors.softRed,
-                      fontSize: 14,
-                    ),
+                IntrinsicWidth(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Flexible(
+                        child: Text(
+                          item.progress == null
+                              ? strings.homeBeginStudy
+                              : strings.homeResumeStudy,
+                          textAlign: TextAlign.end,
+                          style: const TextStyle(
+                            color: AppColors.softRed,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      const Icon(
+                        Icons.chevron_right,
+                        size: 18,
+                        color: AppColors.softRed,
+                      ),
+                    ],
                   ),
-                ),
-                const SizedBox(width: 4),
-                const Icon(
-                  Icons.chevron_right,
-                  size: 18,
-                  color: AppColors.softRed,
                 ),
               ],
             ),
