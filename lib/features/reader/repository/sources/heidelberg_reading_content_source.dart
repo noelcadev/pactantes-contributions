@@ -27,14 +27,21 @@ class HeidelbergReadingContentSource implements ReadingContentSource {
     );
     if (rows.isEmpty) throw const ReadingDatabaseException();
     final List<Map<String, Object?>> references = await _database.query('''
-      SELECT * FROM heidelberg_scripture_references
+      SELECT r.*, g.reference_kind
+      FROM heidelberg_scripture_references r
+      JOIN heidelberg_reference_groups g
+        USING (canonical_question_number, reference_number)
       ORDER BY canonical_question_number, reference_number, passage_number
     ''');
-    final Map<int, List<String>> referencesByQuestion = <int, List<String>>{};
+    final Map<int, Map<int?, List<String>>> referencesByQuestion = {};
     for (final Map<String, Object?> reference in references) {
       final int canonical = reference['canonical_question_number']! as int;
+      final int? note = reference['reference_kind'] == 'footnote'
+          ? reference['reference_number']! as int
+          : null;
       referencesByQuestion
-          .putIfAbsent(canonical, () => <String>[])
+          .putIfAbsent(canonical, () => <int?, List<String>>{})
+          .putIfAbsent(note, () => <String>[])
           .add(_reference(reference, languageCode));
     }
     final List<Map<String, Object?>> canonical = await _database.query(
@@ -55,21 +62,58 @@ class HeidelbergReadingContentSource implements ReadingContentSource {
         rows.map((Map<String, Object?> row) {
           final int canonical = row['canonical_question_number']! as int;
           final int day = row['lords_day_number']! as int;
+          final Map<int?, List<String>> groups =
+              referencesByQuestion[canonical] ?? {};
+          final bool markNotes =
+              (languageCode == 'en' || languageCode == 'pt') &&
+              groups.isNotEmpty &&
+              !groups.containsKey(null);
+          final Set<int> markers = <int>{};
+          String formatText(String text) => markNotes
+              ? text.replaceAllMapped(_noteMarker, (Match match) {
+                  final String digits = match[2]!;
+                  markers.add(int.parse(digits));
+                  return '${match[1]}${_superscript(digits)}';
+                })
+              : text;
+
+          final String question = formatText(row['question']! as String);
+          final String answer = formatText(row['answer']! as String);
+          // Some Portuguese notes differ from the groups in the English index.
+          final bool numbered =
+              markers.isNotEmpty && markers.every(groups.containsKey);
           return ReadingUnit(
             id: 'question-$canonical',
             number: row['question_number']! as int,
-            question: row['question']! as String,
-            body: row['answer']! as String,
+            question: question,
+            body: answer,
             parentId: 'lords-day-$day',
             parentTitle: '${row['label']} $day',
-            references: List<String>.unmodifiable(
-              referencesByQuestion[canonical] ?? <String>[],
-            ),
+            hasNumberedReferences: numbered,
+            references: List<String>.unmodifiable(<String>[
+              for (final MapEntry<int?, List<String>> group in groups.entries)
+                if (numbered)
+                  '${_superscript(group.key!.toString())} ${group.value.join(' · ')}'
+                else
+                  ...group.value,
+            ]),
           );
         }),
       ),
     );
   }
+
+  // The PDFs attach notes to words or punctuation, sometimes with a space.
+  // Keep list numbers ("1.") and Scripture chapter/verse numbers as printed.
+  static final RegExp _noteMarker = RegExp(
+    r'(\p{L}[.,;:!?”]*) ?([1-9][0-9]*)(?=$|\s|”|\p{Lu})',
+    unicode: true,
+  );
+
+  static String _superscript(String digits) => digits
+      .split('')
+      .map((String digit) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[int.parse(digit)])
+      .join();
 
   String _reference(Map<String, Object?> row, String language) {
     final String code = row['book_code']! as String;

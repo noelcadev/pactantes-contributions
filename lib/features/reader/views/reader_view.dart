@@ -449,7 +449,7 @@ class _ReadingPage extends StatelessWidget {
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              unit.references.join(' · '),
+                              unit.referenceText,
                               style: TextStyle(
                                 color: colors.reference,
                                 fontSize: viewModel.preferences.textSize * .8,

@@ -850,23 +850,48 @@ void main() {
               .read('heidelberg-catechism', languageCode: language);
           expect(localized.languageCode, language);
           expect(localized.units, hasLength(129));
+          final ReadingUnit twelve = localized.units[11];
+          final String exodus = language == 'en' ? 'Exodus' : 'Êxodo';
+          final String romans = language == 'en' ? 'Romans' : 'Romanos';
+          final String isaiah = language == 'en' ? 'Isaiah' : 'Isaías';
+          expect(twelve.body, contains('.¹ '));
+          expect(twelve.body, endsWith('.²'));
+          final String notes =
+              '¹ $exodus 20:5 · $exodus 23:7 · $romans 2:1–11\n'
+              '² $isaiah 53:11 · $romans 8:3 · $romans 8:4';
+          expect(twelve.referenceText, notes);
+          expect(format(localized, twelve), contains(notes));
+          expect(localized.units[46].question, endsWith('¹'));
+          expect(localized.units[22].body, contains('1.'));
+          expect(
+            localized.units[70].body,
+            contains(language == 'en' ? '28:19' : '28.19'),
+          );
           if (language == 'en') {
+            expect(localized.units[91].body, contains('1. You shall'));
+            expect(localized.units[91].body, endsWith('.¹'));
             expect(
               localized.units.first.question,
               'What is your only comfort in life and death?',
             );
             expect(
               localized.units.first.body,
-              contains('my faithful Saviour Jesus Christ.3'),
+              contains('my faithful Saviour Jesus Christ.³'),
             );
             expect(
               localized.units.first.body,
-              endsWith('from now on to live for him.10'),
+              endsWith('from now on to live for him.¹⁰'),
             );
             expect(
               format(localized, localized.units.first),
               contains(localized.units.first.body),
             );
+          }
+          if (language == 'pt') {
+            expect(localized.units[41].body, endsWith('.²'));
+            expect(localized.units[41].referenceText, startsWith('João'));
+            expect(localized.units[31].body, contains('unção,²'));
+            expect(localized.units[91].hasNumberedReferences, isFalse);
           }
 
           expect(localized.groups, hasLength(52));
@@ -891,6 +916,8 @@ void main() {
         }
 
         expect(document.groups, hasLength(52));
+        expect(document.units[11].body, endsWith('por algún otro.'));
+        expect(document.units[11].body, isNot(contains('¹')));
         expect(document.units.first.references, isNotEmpty);
         expect(document.units.last.number, 128);
         expect(document.units[79].id, 'question-81');

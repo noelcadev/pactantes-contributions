@@ -12,6 +12,8 @@ The navigation sheet groups actual units by parent identity and positions the cu
 
 ## Editorial hierarchy
 
+The Heidelberg reader displays the English and Portuguese editions’ footnote calls as superscripts in questions and answers. Each numbered line below the text contains that note’s passages in source order. If the edition has extra markers compared with the shared reference index, the reader keeps its markers and displays the passages without numbers. Spanish keeps its original wording and markers. Inline Bible citations and numbered lists retain their original digits.
+
 The full document name appears once as a small, uppercase editorial label above the parent heading, with a compact 12-pixel gap below the minimal header. When present, the parent grouping (such as Lord's Day) is the main serif heading, followed by a smaller, secondary unit label. Units without a parent keep their own title as the main heading. Question text is italic; answers retain the normal reading style. Question and answer indicators keep their muted accent color.
 
 ## User data

@@ -8,6 +8,7 @@ class ReadingUnit {
     this.parentId,
     this.parentTitle,
     this.references = const <String>[],
+    this.hasNumberedReferences = false,
   });
   final String id;
   final int number;
@@ -17,6 +18,10 @@ class ReadingUnit {
   final String? parentId;
   final String? parentTitle;
   final List<String> references;
+  final bool hasNumberedReferences;
+
+  String get referenceText =>
+      references.join(hasNumberedReferences ? '\n' : ' · ');
 }
 
 class ReadingContent {
