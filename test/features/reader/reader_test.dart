@@ -369,10 +369,17 @@ void main() {
   testWidgets(
     'reader isolates controls, settings apply live, copy uses full formatter',
     (WidgetTester tester) async {
+      tester.view.padding = const FakeViewPadding(top: 24);
+      addTearDown(tester.view.resetPadding);
       final ReaderViewModel model = Fixture().model();
       addTearDown(model.dispose);
       String? copied;
       await render(tester, model, copied: (String text) => copied = text);
+      expect(SystemChrome.latestStyle?.statusBarBrightness, Brightness.light);
+      expect(
+        SystemChrome.latestStyle?.statusBarIconBrightness,
+        Brightness.dark,
+      );
       expect(find.byType(BottomNavigationBar), findsNothing);
       expect(find.text('1 / 2'), findsOneWidget);
       final IconButton previous = tester.widget<IconButton>(
@@ -403,10 +410,22 @@ void main() {
       await tester.tap(find.text('Oscuro'));
       await tester.pumpAndSettle();
       expect(model.preferences.palette, ReaderPalette.dark);
+      expect(SystemChrome.latestStyle?.statusBarBrightness, Brightness.dark);
+      expect(
+        SystemChrome.latestStyle?.statusBarIconBrightness,
+        Brightness.light,
+      );
       expect(
         ReaderTheme.of(tester.element(find.byType(ReaderSettingsSheet)))
             .background,
         const Color(0xFF1B222A),
+      );
+      await tester.tap(find.text('Papel'));
+      await tester.pumpAndSettle();
+      expect(SystemChrome.latestStyle?.statusBarBrightness, Brightness.light);
+      expect(
+        SystemChrome.latestStyle?.statusBarIconBrightness,
+        Brightness.dark,
       );
       await tester.tap(find.byTooltip('Cerrar'));
       await tester.pumpAndSettle();

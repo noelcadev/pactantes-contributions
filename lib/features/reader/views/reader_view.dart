@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../../l10n/generated/app_localizations.dart';
 import '../models/reading_content.dart';
@@ -195,8 +196,10 @@ class _ReaderViewState extends State<ReaderView> {
     listenable: widget.viewModel,
     builder: (BuildContext context, Widget? child) {
       final ReaderViewModel vm = widget.viewModel;
-      return Theme(
-        data: ReaderTheme(vm.preferences.palette).data(Theme.of(context)),
+      final ThemeData theme = ReaderTheme(vm.preferences.palette)
+          .data(Theme.of(context));
+      final Widget reader = Theme(
+        data: theme,
         child: Builder(
           builder: (BuildContext context) {
             final AppLocalizations strings = AppLocalizations.of(context);
@@ -269,6 +272,15 @@ class _ReaderViewState extends State<ReaderView> {
             );
           },
         ),
+      );
+      return AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle(
+          statusBarBrightness: theme.brightness,
+          statusBarIconBrightness: theme.brightness == Brightness.dark
+              ? Brightness.light
+              : Brightness.dark,
+        ),
+        child: reader,
       );
     },
   );
