@@ -39,6 +39,8 @@ ReaderContentLocalRepository createReaderContentRepository(
     ),
     'canons-of-dort': DortReadingContentSource(database),
     'westminster-confession': historical,
+    'westminster-larger-catechism': historical,
+    'nicene-creed': historical,
     'belgic-confession': historical,
     'scots-confession': historical,
     'augustine-confessions': historical,

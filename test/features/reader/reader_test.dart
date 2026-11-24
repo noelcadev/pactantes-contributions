@@ -922,7 +922,7 @@ void main() {
   );
 
   test(
-    'a corpus upgrade loads new titles and edition credits offline',
+    'a corpus upgrade removes the editorial notes from the active catechism',
     () async {
       sqfliteFfiInit();
       final Directory directory = await Directory.systemTemp.createTemp(
@@ -932,37 +932,63 @@ void main() {
       final String previous = await factory.getDatabasesPath();
       await factory.setDatabasesPath(directory.path);
       try {
-        final String oldPath = '${directory.path}/reformed_documents_v7.db';
-        final ByteData asset = await rootBundle.load(
-          'assets/db/reformed_documents.db',
-        );
-        await File(oldPath).writeAsBytes(
-          asset.buffer.asUint8List(asset.offsetInBytes, asset.lengthInBytes),
-        );
+        final String oldPath = '${directory.path}/reformed_documents_v10.db';
+        // Representative old rows let the test verify both the new corpus and
+        // the old file after opening the reader.
         final Database oldCorpus = await factory.openDatabase(oldPath);
-        await oldCorpus.rawUpdate(
-          "UPDATE heidelberg_catechism SET answer = 'Old truncated answer' WHERE language_code = 'en' AND question_number = 1",
+        await oldCorpus.execute('PRAGMA user_version = 7');
+        await oldCorpus.execute(
+          'CREATE TABLE historical_units (document_key TEXT, unit_id TEXT, '
+          'reference_text TEXT, edition_notes TEXT)',
         );
-        await oldCorpus.update('document_sources', <String, Object?>{
+        await oldCorpus.insert('historical_units', <String, Object?>{
+          'document_key': 'westminster_larger_catechism_es',
+          'unit_id': 'question-58',
+          'reference_text': 'o) Tit. 3:5, 6; Juan 16:7, 8.',
+          'edition_notes': 'Previous editorial note',
+        });
+        await oldCorpus.execute(
+          'CREATE TABLE heidelberg_catechism '
+          '(language_code TEXT, question_number INTEGER, answer TEXT)',
+        );
+        await oldCorpus.insert('heidelberg_catechism', <String, Object?>{
+          'language_code': 'en',
+          'question_number': 1,
+          'answer': 'Old truncated answer',
+        });
+        await oldCorpus.execute(
+          'CREATE TABLE document_sources '
+          '(document_key TEXT PRIMARY KEY, title TEXT, attribution TEXT)',
+        );
+        await oldCorpus.insert('document_sources', <String, Object?>{
+          'document_key': 'augustine_confessions_es',
+          'title': 'Confesiones',
           'attribution': 'Old edition credits',
         });
-        await oldCorpus.update(
-          'document_sources',
-          <String, Object?>{'title': 'Confesiones'},
-          where: 'document_key = ?',
-          whereArgs: <Object?>['augustine_confessions_es'],
-        );
         await oldCorpus.close();
         final SqfliteReadingDatabase database = SqfliteReadingDatabase(
           factory,
           rootBundle,
         );
-        final ReadingContent document = await createReaderContentRepository(database)
-            .read('heidelberg-catechism');
+        final ReaderContentLocalRepository repository =
+            createReaderContentRepository(database);
+        final ReadingContent larger = await repository.read(
+          'westminster-larger-catechism',
+        );
+        final ReadingContent creed = await repository.read('nicene-creed');
+        expect(larger.units, hasLength(196));
+        expect(larger.units.last.id, 'question-196');
+        expect(larger.units[57].referenceText, contains('Juan 16:7'));
+        expect(larger.units[57].editionNotes, isEmpty);
+        expect(creed.units.single.id, 'creed');
+        final ReadingContent document = await repository.read(
+          'heidelberg-catechism',
+        );
         expect(document.units, hasLength(128));
-        final ReadingContent augustine = await createReaderContentRepository(
-          database,
-        ).read('augustine-confessions', languageCode: 'es');
+        final ReadingContent augustine = await repository.read(
+          'augustine-confessions',
+          languageCode: 'es',
+        );
         expect(augustine.title, 'Confesiones de san Agustín');
         expect(augustine.units, hasLength(453));
         expect(
@@ -987,6 +1013,11 @@ void main() {
           options: OpenDatabaseOptions(readOnly: true),
         );
         expect(
+          (await preservedCorpus.query('historical_units'))
+              .single['edition_notes'],
+          'Previous editorial note',
+        );
+        expect(
           (await preservedCorpus.rawQuery(
             "SELECT answer FROM heidelberg_catechism WHERE language_code = 'en' AND question_number = 1",
           )).single['answer'],
@@ -1004,8 +1035,10 @@ void main() {
         await preservedCorpus.close();
 
         for (final String language in <String>['en', 'pt']) {
-          final ReadingContent localized = await createReaderContentRepository(database)
-              .read('heidelberg-catechism', languageCode: language);
+          final ReadingContent localized = await repository.read(
+            'heidelberg-catechism',
+            languageCode: language,
+          );
           expect(localized.languageCode, language);
           expect(localized.units, hasLength(129));
           expect(
@@ -1144,7 +1177,7 @@ void main() {
         ).read('heidelberg-catechism');
         expect(reopened.units.last.body, document.units.last.body);
         final Database handle = await factory.openDatabase(
-          '${directory.path}/reformed_documents_v8.db',
+          '${directory.path}/reformed_documents_v11.db',
           options: OpenDatabaseOptions(readOnly: true),
         );
         await handle.close();

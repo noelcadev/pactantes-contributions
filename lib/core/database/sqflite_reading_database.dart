@@ -16,7 +16,10 @@ class SqfliteReadingDatabase implements ReadingDatabase {
     // Versioned corpus files never overwrite user preferences or a previous corpus.
     final String directory = await _factory.getDatabasesPath();
     await Directory(directory).create(recursive: true);
-    final String destination = path.join(directory, 'reformed_documents_v8.db');
+    final String destination = path.join(
+      directory,
+      'reformed_documents_v11.db',
+    );
     if (!await File(destination).exists()) {
       final ByteData bytes = await _assets.load(
         'assets/db/reformed_documents.db',
@@ -48,10 +51,24 @@ class SqfliteReadingDatabase implements ReadingDatabase {
         );
         if (editions.length != 2) throw const ReadingDatabaseException();
         final List<Map<String, Object?>> passages = await candidate.rawQuery(
-          '''SELECT u.unit_id FROM historical_editions e
+          '''SELECT e.document_id, u.unit_id, u.question, s.language_code, s.content_version
+             FROM historical_editions e JOIN document_sources s USING (document_key)
              LEFT JOIN historical_units u ON u.document_key = e.document_key AND u.position = 1''',
         );
         if (passages.isEmpty || passages.any((row) => row['unit_id'] == null)) {
+          throw const ReadingDatabaseException();
+        }
+        final bool hasLargerCatechism = passages.any(
+          (row) =>
+              row['document_id'] == 'westminster-larger-catechism' &&
+              row['language_code'] == 'es' &&
+              (row['content_version']! as int) >= 3 &&
+              row['question'] is String,
+        );
+        final bool hasNiceneCreed = passages.any(
+          (row) => row['document_id'] == 'nicene-creed',
+        );
+        if (!hasLargerCatechism || !hasNiceneCreed) {
           throw const ReadingDatabaseException();
         }
         final List<Map<String, Object?>> aliases = await candidate.rawQuery(

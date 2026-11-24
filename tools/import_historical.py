@@ -10,6 +10,24 @@ from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
 CONTENT = TOOLS / "content" / "historical"
+LETTERED_CALLOUT = re.compile(r"(?<![\w(])(ll|[a-zñ])\)")
+LETTERED_REFERENCE = re.compile(r"^(ll|[a-zñ])\)\s+\S")
+
+
+def validate_lettered_references(unit):
+    callouts = LETTERED_CALLOUT.findall(unit["question"] + "\n" + unit["body"])
+    labels = []
+    for line in unit.get("references", []):
+        match = LETTERED_REFERENCE.match(line)
+        if not match:
+            raise ValueError(f"{unit['id']}: reference has no letter")
+        labels.append(match[1])
+
+    # A printed note can refer to a clause omitted by this Spanish edition.
+    unanchored = set(unit.get("unanchored_references", []))
+    if (unanchored != set(labels) - set(callouts)
+            or [label for label in labels if label not in unanchored] != callouts):
+        raise ValueError(f"{unit['id']}: references do not match the calls in reading order")
 
 
 def load_edition(edition, directory):
@@ -36,8 +54,13 @@ def load_edition(edition, directory):
             seen_units.add(unit_id)
             if not unit["title"].strip() or not unit["body"].strip():
                 raise ValueError(f"Empty passage: {unit_id}")
+            if "question" in unit and not unit["question"].strip():
+                raise ValueError(f"Empty question: {unit_id}")
             if any(not line.strip() or "\n" in line for line in unit.get("references", [])):
                 raise ValueError(f"Invalid reference lines: {unit_id}")
+            if (edition["document_key"] == "westminster_larger_catechism_es"
+                    and edition.get("content_version", 1) >= 2):
+                validate_lettered_references(unit)
             if "source_pages" in unit:
                 pages = unit["source_pages"]
                 if (not isinstance(pages, list) or len(pages) != 2
@@ -63,10 +86,11 @@ def insert_edition(db, edition, groups):
             position += 1
             db.execute("""
                 INSERT INTO historical_units
-                    (document_key, group_id, unit_id, position, title, body, reference_text, edition_notes)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    (document_key, group_id, unit_id, position, title, body, reference_text, edition_notes, question)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (key, group["id"], unit["id"], position, unit["title"],
-                      unit["body"], "\n".join(unit.get("references", [])), "\n\n".join(unit.get("notes", []))))
+                      unit["body"], "\n".join(unit.get("references", [])),
+                      "\n\n".join(unit.get("notes", [])), unit.get("question")))
 
 
 def insert_augustine_aliases(db, edition, groups, directory):
@@ -104,10 +128,13 @@ def import_database(database, directory=CONTENT):
     texts = [(edition, load_edition(edition, directory)) for edition in editions]
     with closing(sqlite3.connect(f"{database.resolve().as_uri()}?mode=rw", uri=True)) as db, db:
         db.execute("PRAGMA foreign_keys = ON")
-        db.executescript("BEGIN IMMEDIATE;\n" + (TOOLS / "historical_schema.sql").read_text())
+        # The index is rebuilt from all historical units below, including questions.
+        db.executescript("BEGIN IMMEDIATE;\nDROP TABLE IF EXISTS historical_search;\n"
+                         + (TOOLS / "historical_schema.sql").read_text())
+        if "question" not in {row[1] for row in db.execute("PRAGMA table_info(historical_units)")}:
+            db.execute("ALTER TABLE historical_units ADD COLUMN question TEXT")
         # Only editions managed by this importer are replaced.
         old_keys = db.execute("SELECT document_key FROM historical_editions").fetchall()
-        db.execute("DELETE FROM historical_search")
         db.execute("DELETE FROM historical_unit_aliases")
         db.execute("DROP TABLE IF EXISTS historical_facsimile_ranges")
         db.execute("DELETE FROM historical_units")
@@ -118,8 +145,8 @@ def import_database(database, directory=CONTENT):
             insert_edition(db, edition, groups)
             insert_augustine_aliases(db, edition, groups, directory)
         db.execute("""
-            INSERT INTO historical_search (docid, group_title, title, body, reference_text, edition_notes)
-            SELECT u.id, g.title, u.title, u.body, u.reference_text, u.edition_notes
+            INSERT INTO historical_search (docid, group_title, title, body, reference_text, edition_notes, question)
+            SELECT u.id, g.title, u.title, u.body, u.reference_text, u.edition_notes, u.question
             FROM historical_units u JOIN historical_groups g USING (document_key, group_id)
             ORDER BY u.id
             """)
@@ -128,8 +155,8 @@ def import_database(database, directory=CONTENT):
             "PRAGMA integrity_check"
         ).fetchall() != [("ok",)]:
             raise ValueError("Corpus integrity check failed")
-        if db.execute("PRAGMA user_version").fetchone()[0] < 6:
-            db.execute("PRAGMA user_version = 6")
+        if db.execute("PRAGMA user_version").fetchone()[0] < 7:
+            db.execute("PRAGMA user_version = 7")
 
 
 if __name__ == "__main__":

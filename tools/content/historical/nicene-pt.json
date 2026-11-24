@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "id": "creed",
+      "title": null,
+      "units": [
+        {
+          "id": "creed",
+          "title": "Texto do credo",
+          "body": "Creio em um só Deus, Pae Omnipotente, Creador do céo e da terra, e de todas as cousas visiveis e invisiveis:\n\nE em um só Senhor, Jesus Christo, Filho Unigenito de Deus, Gerado de seu Pae ante todos os seculos, Deus de Deus, Luz de Luz, Verdadeiro Deus de Verdadeiro Deus, Gerado e não feito, Consubstancial ao Pae, Por quem todas as cousas foram feitas; O qual por nós homens, e pela nossa salvação, desceu do céo, E incarnou por obra do Espirito Sancto, de Maria Virgem, E foi feito homem; Foi tambem crucificado por nós sob o poder de Poncio Pilatos: Padeceu e foi sepultado, E ao terceiro dia resuscitou, segundo as Escripturas; Subiu ao céo, e está sentado á mão direita de Deus Pae: E virá outra vez com gloria julgar os vivos e os mortos: E o seu reino não terá fim.\n\nE creio no Espirito Sancto, Senhor e doador da vida, Procedente do Pae e do Filho, O qual, com o Pae e o Filho juntamente é adorado e glorificado, O qual fallou pelos prophetas. E creio n'uma só Egreja Catholica e Apostolica: Confesso um só baptismo para remissão dos peccados: E espero a resurreição dos mortos e a vida eterna. Amen.",
+          "references": [],
+          "notes": []
+        }
+      ]
+    }
+  ]
+}

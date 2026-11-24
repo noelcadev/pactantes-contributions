@@ -83,7 +83,7 @@ Future<void> _seedFixture(Database database) async {
   await database.execute('''
     CREATE TABLE historical_units (
       document_key TEXT, unit_id TEXT, position INTEGER, group_id TEXT, title TEXT,
-      body TEXT, reference_text TEXT, edition_notes TEXT,
+      body TEXT, reference_text TEXT, edition_notes TEXT, question TEXT,
       PRIMARY KEY (document_key, unit_id)
     )
   ''');
@@ -115,7 +115,7 @@ Future<void> _seedFixture(Database database) async {
     ]);
     for (final (int position, String unitId) in edition.value.indexed) {
       seed.rawInsert(
-        'INSERT INTO historical_units VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+        'INSERT INTO historical_units VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
         <Object?>[
           language,
           unitId,
@@ -125,6 +125,7 @@ Future<void> _seedFixture(Database database) async {
           unitId,
           '',
           '',
+          null,
         ],
       );
     }

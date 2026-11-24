@@ -1,15 +1,17 @@
 # Historical reading editions
 
-The library places Westminster, the Belgic Confession and the Scots Confession under **Confessions of faith**. The first belongs to the Westminster Standards and the second to the Three Forms of Unity. Augustine’s *Confessions*, a spiritual autobiography in the form of a prayer, appears under **Historical writings**.
+The library places Westminster, the Belgic Confession and the Scots Confession under **Confessions of faith**. The first belongs to the Westminster Standards and the second to the Three Forms of Unity. The Westminster Larger Catechism also belongs to the Westminster Standards and appears under **Catechisms**. The Nicene Creed appears under **Historical creeds**. Augustine’s *Confessions*, a spiritual autobiography in the form of a prayer, appears under **Historical writings**.
 
 | Work | Spanish | English | Portuguese | Reading divisions |
 | --- | --- | --- | --- | --- |
 | Westminster Confession | CLIR, 2010 | Westminster Assembly, original 1647 recension | — | 33 chapters, 172 sections |
+| Westminster Larger Catechism | Spanish PDF, 2008 | T. Nelson and Sons, London, 1860 | Lisbon Presbyterian edition, 1907 | 196 questions and answers |
+| Nicene Creed | Gracia Sobre Gracia | US Book of Common Prayer, 1892 | Igreja Lusitana, 1884 | One continuous reading in three paragraphs |
 | Belgic Confession | Reformed Church in America | Reformed Dutch Church, 1840 | Ressources chrétiennes, 2022 | 37 articles |
 | Scots Confession | HombreReformado.org, 2011 | Cuthbert Lennox, 1905 | Edition revised by Franklin Ferreira | 25 chapters including the final prayer |
 | Augustine’s *Confessions* | Alfredo Encuentra Ortega, Gredos, 2010 | E. B. Pusey, 1838 | Une Sacra, edition 1 | 13 books, 453 Spanish paragraphs and 461 English or Portuguese sections |
 
-Pactantes includes the supplied Spanish editions and the Portuguese Scots edition with the project’s confirmed permission. The respective credits accompany the text in the reader, on Home excerpts and when sharing. Source hashes identify the precise copies used.
+The project confirmed permission for the supplied Spanish Westminster, Belgic and Scots confessions, the Spanish Augustine edition and the Portuguese Scots edition. The respective credits accompany the text in the reader, on Home excerpts and when sharing. Source hashes identify the precise copies used.
 
 ## Westminster
 
@@ -18,6 +20,20 @@ The Spanish text comes from physical pages 32–148 of *Los estándares de Westm
 The English text follows the Edinburgh printing of 1647 in Philip Schaff’s *The Creeds of Christendom*, volume III. Schaff retains the original clauses in XX.4 and XXIII.3 and all five sections of XXXI. The reader includes the English text and all 581 groups of Scripture references. Each group’s call is numbered within its section. [English text and references](https://ccel.org/ccel/schaff/creeds3/creeds3.iv.xvii.ii.html) · [CCEL source and rights](https://www.ccel.org/s/schaff/creeds3/cache/creeds3.html3)
 
 The Mexican Spanish edition of 1897 and the Portuguese edition printed in Rio in 1876 follow the American Presbyterian revision, which omits the original XXXI.2 and rewrites the magistrate’s duties in XXIII.3. The bundled editions use the recension in the supplied Spanish PDF. [Arellano facsimile](https://archive.org/details/comentariodelaco00hodg) · [1876 Portuguese facsimile](https://archive.org/details/confissaodefeetc00west_0)
+
+## Westminster Larger Catechism
+
+The Spanish PDF contains all 196 questions and answers. Its metadata credits Marcelo Sánchez as the author of the 2008 file and gives no translator credit. The edition preserves the Spanish questions, answers and printed transition after question 90. Pactantes checked the lettered Scripture references against other editions of the Larger Catechism, including the Philadelphia printing. [Spanish PDF](https://ibe.org.mx/wp-content/uploads/2025/09/catecismo-mayor-de-westminster.pdf) · [Philadelphia printing](https://archive.org/details/constitutionof00pre)
+
+The English text follows the 1860 London printing by T. Nelson and Sons, pp. 127–281. Ian Buchanan’s CC0 transcription supplies all 196 questions and answers. The transition after question 90 comes from the printed edition. The original Scripture proofs are available in the facsimile linked in the reader’s credits. [Printed edition](https://archive.org/details/confessionoffait00westuoft/page/127/mode/1up) · [Versioned transcription](https://github.com/iandbuchanan/confessions-corpus/blob/01ed626ffaabccbe14f3df3ff25c3e7b1b7935d6/json/corpus.json) · [Transcription license](https://github.com/iandbuchanan/confessions-corpus/blob/01ed626ffaabccbe14f3df3ff25c3e7b1b7935d6/LICENSE-TEXTS.md)
+
+The Portuguese text comes from *A confissão de fé e os catecismos da egreja presbyteriana*, Lisbon, Typ. de João Ferreira de Medeiros, 1907, pp. 81–181. The reading follows the historical spelling and includes the Scripture references printed with the questions and answers. The title page names the printer and gives no individual translator. All three editions use the same question numbers, so a reader can change language and resume at the same question. [Portuguese facsimile](https://archive.org/details/confissaodefeeos00west/page/81/mode/1up)
+
+## Nicene Creed
+
+The supplied Spanish sheet from Iglesia Gracia Sobre Gracia (Bautista Reformada) credits *La Biblia de Estudio de La Reforma*, page 2335. Its three paragraphs follow the Western Niceno-Constantinopolitan text, including the procession from the Father and the Son. The reader preserves the asterisk after “universal” and the accompanying editorial note. [Spanish PDF](https://graciasobregracia.org/storage/documents/MDLF21_Recursos_Credo_Niceno.pdf)
+
+The English text comes from the US Episcopal Church’s *Book of Common Prayer*, printed in New York for the General Convention in 1892, pp. 224–225. The Portuguese text comes from the Igreja Lusitana’s *O Livro de Oração Commum*, Porto, 1884, pp. 67–68. Both historical editions profess the creed in the singular. The reader preserves their wording and the Portuguese spelling of the period. [English facsimile](https://archive.org/details/bookcommonpraye00conggoog) · [Portuguese facsimile](https://thefpec.org/prayer-book/scans/pt-BR-001-070.pdf)
 
 ## Belgic Confession
 
@@ -45,6 +61,6 @@ The alignment file maps the beginning of every Pusey section to its Gredos parag
 
 ## Storage and verification
 
-`tools/content/historical/editions.json` records each edition’s source, credit, SHA-256 and section counts. The JSON transcriptions supply the ordered groups, texts and apparatus. The importer rebuilds the historical editions, passage aliases and FTS4 index in one transaction. The bundled SQLite database uses schema version 6 and installs as `reformed_documents_v8.db`. Mutable progress, favorites and preferences stay in their existing user stores.
+`tools/content/historical/editions.json` records each edition’s source, credit, SHA-256 and section counts. The JSON transcriptions supply the ordered groups, questions, texts and apparatus. The SQLite full-text index includes both the question and the answer in separate fields. The importer rebuilds the historical editions, passage aliases and FTS4 index in one transaction. The bundled SQLite database uses schema version 7 and installs as `reformed_documents_v11.db`. Mutable progress, favorites and preferences stay in their existing user stores.
 
 Run `python3 tools/import_historical.py --database assets/db/reformed_documents.db` to rebuild the historical tables. Run `python3 -m unittest discover -s tools -p 'test_import_*.py'` in the importer environment and `flutter test` to verify transcription integrity, indexing, offline installation and reader behavior.

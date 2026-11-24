@@ -92,6 +92,14 @@
   "readerPrevious": "Previous unit",
   "readerNext": "Next unit",
   "readerReferences": "Biblical references:",
+  "readerReferenceLink": "Open biblical reference {marker}, note {number}",
+  "@readerReferenceLink": {
+    "description": "Accessibility label for an inline link to a biblical reference",
+    "placeholders": {
+      "marker": { "type": "String" },
+      "number": { "type": "int" }
+    }
+  },
   "readerQuestionPrefix": "Q.",
   "readerAnswerPrefix": "A.",
   "readerAttribution": "Shared from Pactantes — Reformed Resources.",

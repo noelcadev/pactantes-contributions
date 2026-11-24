@@ -371,33 +371,102 @@ class _ReaderPagesState extends State<_ReaderPages> {
         key: ValueKey<String>(units[index].id),
         viewModel: widget.viewModel,
         unit: units[index],
+        isCurrent: index == widget.viewModel.index,
         onNavigation: widget.onNavigation,
       ),
     );
   }
 }
 
-class _ReadingPage extends StatelessWidget {
+class _ReadingPage extends StatefulWidget {
   const _ReadingPage({
     required this.viewModel,
     required this.unit,
+    required this.isCurrent,
     required this.onNavigation,
     super.key,
   });
   final ReaderViewModel viewModel;
   final ReadingUnit unit;
+  final bool isCurrent;
   final VoidCallback onNavigation;
+
+  @override
+  State<_ReadingPage> createState() => _ReadingPageState();
+}
+
+class _ReadingPageState extends State<_ReadingPage> {
+  late List<GlobalKey> _referenceTargets;
+  int? _selectedReference;
+
+  @override
+  void initState() {
+    super.initState();
+    _resetReferences();
+  }
+
+  @override
+  void didUpdateWidget(_ReadingPage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.unit != oldWidget.unit) {
+      _resetReferences();
+    } else if (!widget.isCurrent) {
+      _selectedReference = null;
+    }
+  }
+
+  void _resetReferences() {
+    final ReadingUnit unit = widget.unit;
+    _selectedReference = null;
+    _referenceTargets = List<GlobalKey>.generate(
+      unit.referenceLinks == null ? 0 : unit.references.length,
+      (_) => GlobalKey(),
+    );
+  }
+
+  void _showReference(int index) {
+    if (!widget.isCurrent) return;
+    final BuildContext? targetContext = _referenceTargets[index].currentContext;
+    final RenderObject? target = targetContext?.findRenderObject();
+    if (targetContext == null || target == null) return;
+
+    setState(() => _selectedReference = index);
+    // Reveal the note within this page without moving the horizontal reader.
+    final ScrollPosition position = Scrollable.of(
+      targetContext,
+      axis: Axis.vertical,
+    ).position;
+    unawaited(
+      position.ensureVisible(
+        target,
+        alignment: .2,
+        duration: MediaQuery.disableAnimationsOf(context)
+            ? Duration.zero
+            : const Duration(milliseconds: 250),
+        curve: Curves.easeOutCubic,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final ReadingUnit unit = widget.unit;
+    final ReaderViewModel viewModel = widget.viewModel;
     final ReaderTheme colors = ReaderTheme.of(context);
     final AppLocalizations strings = lookupAppLocalizations(
       Locale(viewModel.content!.languageCode),
     );
+    final AppLocalizations interfaceStrings = AppLocalizations.of(context);
     final TextStyle readingStyle = TextStyle(
       fontFamily: 'SourceSerif4',
       fontSize: viewModel.preferences.textSize,
       height: viewModel.preferences.spacing.lineHeight,
       color: colors.primaryText,
+    );
+    final TextStyle referenceStyle = TextStyle(
+      color: colors.reference,
+      fontSize: viewModel.preferences.textSize * .8,
+      height: viewModel.preferences.spacing.lineHeight,
     );
     return SingleChildScrollView(
       child: Center(
@@ -423,7 +492,7 @@ class _ReadingPage extends StatelessWidget {
                 _ReadingUnitHeading(
                   unit: unit,
                   strings: strings,
-                  onNavigation: onNavigation,
+                  onNavigation: widget.onNavigation,
                 ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 32),
@@ -434,6 +503,9 @@ class _ReadingPage extends StatelessWidget {
                     prefix: strings.readerQuestionPrefix,
                     text: unit.question!,
                     style: readingStyle.copyWith(fontStyle: FontStyle.italic),
+                    calls: unit.referenceLinks?.question ?? const [],
+                    strings: interfaceStrings,
+                    onReference: _showReference,
                   ),
                   const SizedBox(height: 20),
                 ],
@@ -443,12 +515,35 @@ class _ReadingPage extends StatelessWidget {
                       : strings.readerAnswerPrefix,
                   text: unit.body,
                   style: readingStyle,
+                  calls: unit.referenceLinks?.body ?? const [],
+                  strings: interfaceStrings,
+                  onReference: _showReference,
                 ),
-                for (final (String label, String text) in <(String, String)>[
+                for (final (String label, Widget text) in <(String, Widget)>[
                   if (unit.references.isNotEmpty)
-                    (strings.readerReferences, unit.referenceText),
+                    (
+                      strings.readerReferences,
+                      unit.referenceLinks == null
+                          ? Text(unit.referenceText, style: referenceStyle)
+                          : Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: <Widget>[
+                                for (final (int index, String reference)
+                                    in unit.references.indexed)
+                                  _ReadingReferenceRow(
+                                    key: _referenceTargets[index],
+                                    text: reference,
+                                    style: referenceStyle,
+                                    selected: index == _selectedReference,
+                                  ),
+                              ],
+                            ),
+                    ),
                   if (unit.editionNotes.isNotEmpty)
-                    (strings.readerEditionNotes, unit.editionNotes),
+                    (
+                      strings.readerEditionNotes,
+                      Text(unit.editionNotes, style: referenceStyle),
+                    ),
                 ]) ...<Widget>[
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 32),
@@ -475,15 +570,7 @@ class _ReadingPage extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 8),
-                            Text(
-                              text,
-                              style: TextStyle(
-                                color: colors.reference,
-                                fontSize: viewModel.preferences.textSize * .8,
-                                height:
-                                    viewModel.preferences.spacing.lineHeight,
-                              ),
-                            ),
+                            text,
                           ],
                         ),
                       ),
@@ -567,14 +654,86 @@ class _ReadingUnitHeading extends StatelessWidget {
 }
 
 class _ReadingParagraph extends StatelessWidget {
+  static final RegExp _spaceBeforeCall = RegExp(r' $');
+
   const _ReadingParagraph({
     required this.prefix,
     required this.text,
     required this.style,
+    required this.calls,
+    required this.strings,
+    required this.onReference,
   });
   final String? prefix;
   final String text;
   final TextStyle style;
+  final List<ReadingReferenceCall> calls;
+  final AppLocalizations strings;
+  final ValueChanged<int> onReference;
+
+  Widget _readingText(BuildContext context) {
+    if (calls.isEmpty) return Text(text, style: style);
+
+    final ReaderTheme colors = ReaderTheme.of(context);
+    final List<InlineSpan> spans = <InlineSpan>[];
+    int offset = 0;
+    for (final ReadingReferenceCall call in calls) {
+      final String marker = text.substring(call.start, call.end);
+      // Keep a call with the clause it follows when a narrow line wraps.
+      final String preceding = text.substring(offset, call.start);
+      spans.add(
+        TextSpan(text: preceding.replaceFirst(_spaceBeforeCall, '\u00a0')),
+      );
+      spans.add(
+        WidgetSpan(
+          alignment: PlaceholderAlignment.aboveBaseline,
+          baseline: TextBaseline.alphabetic,
+          child: Semantics(
+            container: true,
+            link: true,
+            label: strings.readerReferenceLink(
+              marker.substring(0, marker.length - 1),
+              call.referenceIndex + 1,
+            ),
+            onTap: () => onReference(call.referenceIndex),
+            child: Material(
+              type: MaterialType.transparency,
+              child: InkWell(
+                excludeFromSemantics: true,
+                borderRadius: BorderRadius.circular(4),
+                focusColor: colors.selectedBackground,
+                onTap: () => onReference(call.referenceIndex),
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    left: 3,
+                    right: 3,
+                    bottom: style.fontSize! * .14,
+                  ),
+                  child: ExcludeSemantics(
+                    child: Text(
+                      marker,
+                      style: style.copyWith(
+                        color: colors.heading,
+                        fontSize: style.fontSize! * .72,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600,
+                        height: 1.15,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+      offset = call.end;
+    }
+    spans.add(TextSpan(text: text.substring(offset)));
+    return Text.rich(TextSpan(children: spans), style: style);
+  }
+
   @override
   Widget build(BuildContext context) => Row(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -591,7 +750,49 @@ class _ReadingParagraph extends StatelessWidget {
             ),
           ),
         ),
-      Expanded(child: Text(text, style: style)),
+      Expanded(child: _readingText(context)),
     ],
   );
+}
+
+class _ReadingReferenceRow extends StatelessWidget {
+  const _ReadingReferenceRow({
+    required super.key,
+    required this.text,
+    required this.style,
+    required this.selected,
+  });
+
+  final String text;
+  final TextStyle style;
+  final bool selected;
+
+  @override
+  Widget build(BuildContext context) {
+    final ReaderTheme colors = ReaderTheme.of(context);
+    return Semantics(
+      container: true,
+      selected: selected ? true : null,
+      liveRegion: selected,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6),
+          color: selected ? colors.selectedBackground : null,
+          border: Border.all(
+            color: selected ? colors.accent : Colors.transparent,
+          ),
+        ),
+        child: Text(
+          text,
+          style: selected
+              ? style.copyWith(
+                  color: colors.selectedForeground,
+                  fontWeight: FontWeight.w600,
+                )
+              : style,
+        ),
+      ),
+    );
+  }
 }

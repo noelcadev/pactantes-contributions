@@ -29,4 +29,4 @@ python3 tools/import_dort.py --database assets/db/reformed_documents.db
 python3 -m unittest discover -s tools -p test_import_dort.py
 ```
 
-The importer replaces both editions and their index in a single transaction. It checks unit coverage and order, source pages, full-text matches, foreign keys and database integrity. Flutter installs the resulting asset locally as corpus revision 8.
+The importer replaces both editions and their index in a single transaction. It checks unit coverage and order, source pages, full-text matches, foreign keys and database integrity. Flutter installs the resulting asset locally as corpus revision 11.

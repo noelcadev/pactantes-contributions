@@ -1,0 +1,1790 @@
+{
+  "groups": [
+    {
+      "id": "introduction",
+      "title": null,
+      "units": [
+        {
+          "id": "question-1",
+          "title": "Pergunta 1",
+          "question": "Qual é o fim supremo e principal do homem?",
+          "body": "O fim supremo e principal do homem é glorificar a Deus e gozal-o para sempre.",
+          "references": [
+            "Rom. 11:36; I Cor. 10:31; Psa. 73:24-26; João 17:22-24."
+          ]
+        },
+        {
+          "id": "question-2",
+          "title": "Pergunta 2",
+          "question": "Donde se infere que ha um Deus?",
+          "body": "A propria luz da natureza no espirito do homem e as obras de Deus claramente manifestam que existe um Deus: porém só a sua Palavra e o seu Espirito o revelam de um modo sufficiente e efficazmente aos homens para a sua salvação.",
+          "references": [
+            "Rom. 1:19-20; I Cor. 2:9-10; II Tim. 3:15-17."
+          ]
+        },
+        {
+          "id": "question-3",
+          "title": "Pergunta 3",
+          "question": "Que é a Palavra de Deus?",
+          "body": "As Escripturas Sagradas, o Velho e o Novo Testamento, são a Palavra de Deus, a unica regra de fé e pratica.",
+          "references": [
+            "II Tim. 3:16; II Pedro 1:19-21; Isa. 8:20; Luc. 16:29, 31; Gal. 1:8-9."
+          ]
+        },
+        {
+          "id": "question-4",
+          "title": "Pergunta 4",
+          "question": "Como se demonstra que as Escripturas são a Palavra de Deus?",
+          "body": "Demonstra-se que as Escripturas são a Palavra de Deus, pela magestade e pureza do seu contheudo, pela harmonia de todas as suas partes, e pelo proposito do seu conjuncto, que é dar toda a gloria a Deus; pela sua luz e pelo poder que possuem para convencer e converter os peccadores e para edificar e confortar os crentes para a salvação. O Espirito de Deus, porém, dando testemunho pelas Escripturas e juntamente com ellas no coração do homem, é o unico capaz de completamente persuadil-o de que ellas são realmente a Palavra de Deus.",
+          "references": [
+            "Hos. 8:12; I Cor. 2:6-7. Psa. 119:18, 129, 140; Psa. 12:6; Luc. 24:27; Act. 10:43 e 26:22; Rom. 16:25-27; Act. 28:28; Heb. 4:12; Thiago 1:18; Psa. 19:7-9; Rom. 15:4; Act. 20:32; João 16:13-14."
+          ]
+        },
+        {
+          "id": "question-5",
+          "title": "Pergunta 5",
+          "question": "Que é o que as Escripturas principalmente ensinam?",
+          "body": "As Escripturas ensinam principalmente o que o homem deve crer ácerca de Deus e o dever que Deus requer do homem.",
+          "references": [
+            "João 20:31; II Tim. 1:13."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-to-believe",
+      "title": "O que o homem deve crer ácerca de Deus",
+      "units": [
+        {
+          "id": "question-6",
+          "title": "Pergunta 6",
+          "question": "Que revelam as Escripturas ácerca de Deus?",
+          "body": "As Escripturas revelam o que Deus é, quantas pessoas ha na Divindade, os seus decretos e como Elle os executa.",
+          "references": [
+            "Math. 3:16-17; Isa. 46:9-10; Act. 4:27-28."
+          ]
+        },
+        {
+          "id": "question-7",
+          "title": "Pergunta 7",
+          "question": "Quem é Deus?",
+          "body": "Deus é espirito, em si e por si infinito em seu ser, gloria, bemaventurança e perfeição; todo - sufficiente, eterno, immutavel, insondavel, omnipresente, infinito em poder, sabedoria, santidade, justiça, misericordia e clemencia, longanimo e cheio de bondade e verdade.",
+          "references": [
+            "João 4:24; Exo. 3:14; Job. 11:7-9; Actos 5:2; I Tim. 6:15; Math. 5:48; Rom. 11:35-36; Psa. 90:2, e 145:3 e 139:1, 2, 7; Mal. 2:6; Apoc. 4:8; Heb. 4:13; Rom. 16:27; Isa. 6:3; Deut. 32:4; Exo. 34:6."
+          ]
+        },
+        {
+          "id": "question-8",
+          "title": "Pergunta 8",
+          "question": "Ha mais que um Deus?",
+          "body": "Ha um só Deus, o Deus vivo e verdadeiro.",
+          "references": [
+            "Deut. 6:4; Jer. 10:10; I Cor. 8:4."
+          ]
+        },
+        {
+          "id": "question-9",
+          "title": "Pergunta 9",
+          "question": "Quantas pessoas ha na Divindade?",
+          "body": "Ha tres pessoas na Divindade: o Pae, o Filho e o Espirito Santo; estas tres pessoas são um só Deus verdadeiro e eterno, da mesma substancia, eguaes em poder e gloria, embora distinctas pelas suas propriedades pessoaes.",
+          "references": [
+            "Math. 3:16-17, e 28:19; II Cor. 13:14; João 10:30."
+          ]
+        },
+        {
+          "id": "question-10",
+          "title": "Pergunta 10",
+          "question": "Quaes são as propriedades pessoaes das tres pessoas da Divindade?",
+          "body": "O Pae gerou o Filho, o Filho foi gerado pelo Pae, e o Espirito Santo procede do Pae e do Filho, desde toda a eternidade.",
+          "references": [
+            "Heb. 1:5-6; João 1:14 e 15:26; Gal. 4:6."
+          ]
+        },
+        {
+          "id": "question-11",
+          "title": "Pergunta 11",
+          "question": "Donde se infere que o Filho e o Espirito Santo são Deus, eguaes ao Pae?",
+          "body": "As Escripturas revelam que o Filho e o Espirito Santo são Deus egualmente com o Pae, attribuindo-lhes os mesmos nomes, attributos, obras e culto que só a Deus pertencem.",
+          "references": [
+            "Jer. 23:6; Isa. 6:3, 5, 8; João 12:41; Act. 28:25; I João 5:20; Psa. 45:6; Act. 5:3-4; João 1:1; Isa. 9:6; João 2:24-25; I Cor. 2:10-11; Col. 1:16; Gen. 1:2; Math. 28:19; II Cor. 13:14."
+          ]
+        },
+        {
+          "id": "question-12",
+          "title": "Pergunta 12",
+          "question": "Que são os decretos de Deus?",
+          "body": "Os decretos de Deus são os actos sabios, livres e santos do conselho da sua vontade. pelos quaes, desde toda a eternidade, Elle, para a sua propria gloria, immutavelmente predestinou tudo o que acontece, especialmente com referencia aos anjos e aos homens.",
+          "references": [
+            "Isa. 45:6-7; Eph. 1:11; Rom. 11:33; Psa. 33:11, Eph. 1:4, 11; Rom. 9:22-23."
+          ]
+        },
+        {
+          "id": "question-13",
+          "title": "Pergunta 13",
+          "question": "Que decretou Deus especialmente com referencia aos anjos e aos homens?",
+          "body": "Deus, por um decreto eterno e immutavel, unicamente do seu amor e para patentear a sua gloriosa graça, que tinha de ser manifestada em tempo devido, elegeu alguns anjos para a gloria, e, em Christo, escolheu alguns homens para a vida eterna e os meios para conseguil-a; e tambem, segundo o seu soberano poder e o conselho inexcrutavel da sua propria vontade (pela qual elle concede, ou não, os seus favores conforme lhe apraz), deixou e predestinou os mais á deshonra e á ira, que lhes serão infligidas por causa dos seus peccados, para patentear a gloria da sua justiça.",
+          "references": [
+            "I Tim. 5:21; Eph. 2:10; II Thess. 2:13-14; I Pedro 1:2; Rom. 9:17-18, 21-22; Judas 4; Math. 11:25-26."
+          ]
+        },
+        {
+          "id": "question-14",
+          "title": "Pergunta 14",
+          "question": "Como executa Deus os seus decretos?",
+          "body": "Deus executa os seus decretos nas obras da creação e da providencia, segundo a sua presciencia infallivel e o livre e immutavel conselho da sua vontade.",
+          "references": [
+            "Dan. 4:35; Eph. 1:11."
+          ]
+        },
+        {
+          "id": "question-15",
+          "title": "Pergunta 15",
+          "question": "Que é a obra da creação?",
+          "body": "A obra da creação é aquella pela qual Deus, pela palavra do seu poder, fez do nada o mundo e tudo quanto n'elle ha, para si, no espaço de seis dias, e tudo muito bom.",
+          "references": [
+            "Gen. 1; Heb. 11:3; Apoc. 4:11; Rom. 11:36."
+          ]
+        },
+        {
+          "id": "question-16",
+          "title": "Pergunta 16",
+          "question": "Como creou Deus os anjos?",
+          "body": "Deus creou todos os anjos como espiritos immortaes, santos, poderosos e excellentes em conhecimento, para executarem os seus mandamentos e louvarem o seu nome, todavia sujeitos á mudança.",
+          "references": [
+            "Col. 1:16; Math. 22:30; Luc. 20:36; Math. 25:31, e 24:36; I Pedro 1:12; II Thess. 1:7; Psa. 91:11-12; Math. 13:39; Psa. 103:20 21, II Pedro 2:4."
+          ]
+        },
+        {
+          "id": "question-17",
+          "title": "Pergunta 17",
+          "question": "Como creou Deus o homem?",
+          "body": "Depois de ter feito todas as mais creaturas, Deus creou o homem, macho e femea; formou-o do pó, e a mulher da costella do homem; dotou-os de almas viventes, racionaes e immortaes; fel-os conforme a sua propria imagem, em conhecimento, rectidão e santidade, tendo a lei de Deus escripta em seus corações e poder para a cumprir, com dominio sobre as creaturas, comtudo sujeitos a cair.",
+          "references": [
+            "Gen. 1:7, e 2:7, 32 e 1:26; Math. 19:4; Eccl. 12:9; Math. 10:28; Col. 3:10; Eph. 4:24; Rom. 2:14-15; Gen. 3:6, e 1:28, e 3:1-19."
+          ]
+        },
+        {
+          "id": "question-18",
+          "title": "Pergunta 18",
+          "question": "Quaes são as obras da providencia de Deus.",
+          "body": "As obras da providencia de Deus são a sua mui santa, sabia e poderosa maneira de preservar e governar todas as suas creaturas e todas as suas acções, para a sua propria gloria.",
+          "references": [
+            "Lev. 21:8; Psa. 104:24; Isa. 28:29; Neh. 9:6; Heb. 1:3; Psa. 103:19; Math. 10:29-30; Gen. 45:7; Rom. 11:36; Isa. 63:14."
+          ]
+        },
+        {
+          "id": "question-19",
+          "title": "Pergunta 19",
+          "question": "Qual é a providencia de Deus para com os anjos?",
+          "body": "Deus, pela sua providencia, permittiu que alguns dos anjos, voluntaria e irremediavelmente, caissem em peccado e perdição, limitando e ordenando isso, como todos os peccados d'elles, para a sua propria gloria; e estabeleceu os mais em santidade e felicidade, empregando-os todos, conforme lhe apraz, na administração do seu poder, misericordia e justiça.",
+          "references": [
+            "Judas 6; Luc. 10:17; Mar. 8:38; I Tim. 5:21; Heb. 12:22; Psa. 103:20; Heb. 1:14."
+          ]
+        },
+        {
+          "id": "question-20",
+          "title": "Pergunta 20",
+          "question": "Qual foi a providencia de Deus para com o homem no estado em que elle foi creado?",
+          "body": "A providencia de Deus para com o homem no estado em que elle foi creado consistiu: em collocal-o no Paraiso, designando-o para o cultivar, dando-lhe liberdade para comer do fructo da terra; pondo as creaturas sob o seu dominio; e ordenando o matrimonio para o seu auxilio; em conceder-lhe communhão com Deus, instituindo o dia de descanço, entrando em um pacto de vida com elle, sob a condição de obediencia pessoal, perfeita e perpetua, da qual a arvore da vida era um penhor, e prohibindo-lhe comer da arvore da sciencia do bem e do mal, sob pena de morte.",
+          "references": [
+            "Gen. 1:28, e 21:15-16, e 1:26, e 3:8, e 2:3. Exo. 20:11; Gal. 3:12; Gen. 2:9, 16-17."
+          ]
+        },
+        {
+          "id": "question-21",
+          "title": "Pergunta 21",
+          "question": "Continuou o homem no estado em que Deus o creou no principio?",
+          "body": "Nossos primeiros paes, sendo deixado á liberdade da sua propria vontade, pela tentação de Satanaz transgrediram o mandamento de Deus, comendo do fructo prohibido, e por isso cairam do estado de innocencia em que foram creados.",
+          "references": [
+            "Gen. 3:6-8, 13."
+          ]
+        },
+        {
+          "id": "question-22",
+          "title": "Pergunta 22",
+          "question": "Caiu todo o genero humano na primeira transgressão?",
+          "body": "O pacto sendo feito com Adão, como representante, não para si sómente, mas para toda a sua posteridade, todo o genero humano, descendendo d'elle por geração ordinaria, peccou n'elle e caiu com elle na primeira rtansgressão.",
+          "references": [
+            "Act. 17:26; Gen. 2:17."
+          ]
+        },
+        {
+          "id": "question-23",
+          "title": "Pergunta 23",
+          "question": "A que estado ficou reduzido o genero humano por essa queda?",
+          "body": "Essa queda reduziu o genero humano a um estado de peccado e miseria.",
+          "references": [
+            "Rom. 5:12; Gal. 3:10."
+          ]
+        },
+        {
+          "id": "question-24",
+          "title": "Pergunta 24",
+          "question": "Que é peccado?",
+          "body": "Peccado é qualquer falta de conformidade com a lei de Deus, ou a transgressão de qualquer lei por Elle dada como regra á creatura racional.",
+          "references": [
+            "Rom. 3:23; I João 3:4; Gal. 3:10-12."
+          ]
+        },
+        {
+          "id": "question-25",
+          "title": "Pergunta 25",
+          "question": "Em que consiste o peccado d'esse estado em que o homem caiu?",
+          "body": "O peccado d'esse estado em que o homem caiu, consiste na culpa do primeiro peccado de Adão, na falta da rectidão na qual elle foi creado e na corrupção da sua natureza pela qual se tornou inteiramente indisposto, incapaz e opposto a todo o bem espiritual e inclinado a todo o mal, e isso continuamente; o que geralmente se chama peccado original, do qual procedem todas as transgressões actuaes.",
+          "references": [
+            "Rom. 5:12, 19, e 5:6, e 3:10-12; Eph. 2:3; Rom. 8:7-8; Gen. 6:1; Thiago 1:14-15; Math. 15:19."
+          ]
+        },
+        {
+          "id": "question-26",
+          "title": "Pergunta 26",
+          "question": "Como é o peccado original transmittido de nossos primeiros paes á sua posteridade?",
+          "body": "O peccado original é transmittido de nossos primeiros paes á sua posteridade por geração natural, de maneira que todos os que assim procedem d'elles são concebidos e nascem em peccado.",
+          "references": [
+            "Psa. 51:15. João 3:6."
+          ]
+        },
+        {
+          "id": "question-27",
+          "title": "Pergunta 27",
+          "question": "Qual é a miseria que a queda trouxe sobre o genero humano?",
+          "body": "A queda trouxe sobre o genero humano a perda da communhão com Deus, o seu desagrado e maldição; de modo que somos por natureza filhos da ira, escravos de Satanaz, e justamente expostos a todas as punições, n'este mundo e no vindouro.",
+          "references": [
+            "Gen. 3:8, 24; Eph. 2:2-3; II Tim. 2:26; Luc. 11:21-22; Heb. 2:14; Lam. 3:39; Rom. 6:23; Math. 25:41, 46."
+          ]
+        },
+        {
+          "id": "question-28",
+          "title": "Pergunta 28",
+          "question": "Quaes são as punições do peccado n'este mundo?",
+          "body": "As punições do peccado n'este mundo são: ou interiores, como cegueira do entendimento, sentimentos depravados, fortes illusões, dureza de coração, remorso na consciencia e affectos baixos; ou exteriores, como a maldição de Deus sobre as creaturas por nossa causa e todos os outros males que caem sobre nós, em nossos corpos, nossos bens, relações e empregos — juntamente com a morte.",
+          "references": [
+            "Eph. 4:18; Rom. 1:28; II Thess. 2:11; Rom. 2:5; Isa. 33:14; Rom. 1:26; Gen. 3:17, Deut. 28:15; Rom. 6:21, 23."
+          ]
+        },
+        {
+          "id": "question-29",
+          "title": "Pergunta 29",
+          "question": "Quaes são as punições do peccado no mundo vindouro?",
+          "body": "As punições do peccado no mundo vindouro são a separação eterna da presença consoladora de Deus e os tormentos mais penosos na alma e no corpo, sem intermissão, no fogo do inferno para sempre.",
+          "references": [
+            "II Thess. 1:9; Mar. 9:47-48; Luc. 16:24, 26; Apoc. 14:11."
+          ]
+        },
+        {
+          "id": "question-30",
+          "title": "Pergunta 30",
+          "question": "Deixa Deus todo o genero humano perecer no estado de peccado e miseria?",
+          "body": "Deus não deixa todos os homens perecer no estado de peccado e miseria em que cairam pela violação do primeiro pacto commummente chamado o pacto das obras; mas por puro amor e misericordia livra os seus escolhidos d'esse estado e os introduz n'um estado de salvação pelo segundo pacto commummente chamado o pacto da graça.",
+          "references": [
+            "I Thess. 5:9; Gal. 3:10; Tito 3:4-7, e 1:2."
+          ]
+        },
+        {
+          "id": "question-31",
+          "title": "Pergunta 31",
+          "question": "Com quem foi feito o pacto da graça?",
+          "body": "O pacto da graça foi feito com Christo, como o segundo Adão, e n'Elle, com todos os eleitos, como sua semente.",
+          "references": [
+            "Gal. 3:16; Isa. 53:10-11; e 59:21."
+          ]
+        },
+        {
+          "id": "question-32",
+          "title": "Pergunta 32",
+          "question": "Como é manifestada a graça de Deus no segundo pacto?",
+          "body": "A graça de Deus é manifestada no segundo pacto em elle livremente prover e offerecer aos peccadores um Mediador e a vida e a salvação por Elle; exigindo a fé como condição de interessal-os n'Elle, promette e dá o Espirito Santo a todos os seus eleitos, para n'elles operar essa fé, com todas as mais graças salvadoras, e para os habilitar a praticar toda a santa obediencia, como evidencia da sinceridade da sua fé e gratidão para com Deus e como o caminho que Deus lhes designou para a salvação.",
+          "references": [
+            "Gen. 3:15; Isa. 4 3:6; João 3:16, e 6:27; Tito 2:5; I João 5:11-12; João 3:36, e 1:2; Prov. 1:23; Luc. 11:13; I Cor. 12-3, 9; Gal. 5:22-23. Eze. 34:27; Thiago 2:18, 12; II Cor. 5:14-15; Eph. 2:10."
+          ]
+        },
+        {
+          "id": "question-33",
+          "title": "Pergunta 33",
+          "question": "Foi o pacto da graça sempre administrado de uma só maneira?",
+          "body": "O pacto da graça não foi administrado da mesma maneira; mas as suas administrações no Velho Testamento eram differentes das debaixo do Novo.",
+          "references": [
+            "I Cor. 3:6-9; Heb. 8:7-13."
+          ]
+        },
+        {
+          "id": "question-34",
+          "title": "Pergunta 34",
+          "question": "Como foi administrado o pacto da graça no Velho Testamento?",
+          "body": "O pacto da graça foi administrado no Velho Testamento por promessas, prophecias, sacrificios, pela circumcisão, pela paschoa e por outros symbolos e ordenanças; todos os quaes typificaram o Christo, que havia de vir, e eram n'aquelle tempo sufficientes para edificar os eleitos na fé do Messias promettido, por quem tiveram, ainda n'esse tempo, a plena remissão do peccado e a salvação eterna.",
+          "references": [
+            "Rom. 15:8; Act. 3:24; Heb. 10:1; Rom. 4:11; I Cor. 5:7; Heb. 11:13; Gal. 3:7-9, 14."
+          ]
+        },
+        {
+          "id": "question-35",
+          "title": "Pergunta 35",
+          "question": "Como é o pacto da graça administrado no Novo Testamento?",
+          "body": "No Novo Testamento, quando Christo, a substancia, foi manifestado, o mesmo pacto da graça foi, e continúa a ser, administrado na prégação da palavra e na celebração dos sacramentos do baptismo e da ceia do Senhor; e assim a graça e a salvação são manifestadas em maior plenitude, evidencia e efficacia a todas as nações.",
+          "references": [
+            "Luc. 24:47-48; Math. 28:19-20; I Cor. 11:23-25; Rom. 1:16; II Cor. 3:6."
+          ]
+        },
+        {
+          "id": "question-36",
+          "title": "Pergunta 36",
+          "question": "Quem é o Mediador do pacto da graça?",
+          "body": "O unico Mediador do pacto da graça é o Senhor Jesus Christo, que, sendo o eterno Filho de Deus, da mesma substancia e egual ao Pae, no cumprimento do tempo fez-se homem, e assim foi, e continúa a ser. Deus e homem em duas naturezas perfeitas e distinctas e uma só pessoa para sempre.",
+          "references": [
+            "João 14:6; I Tim. 2:5; João 1-1, e 10:30; Phil. 2:6; Gal. 4:4; Luc. 1:35; Rom. 9:5; Col. 2:9; Heb. 13:8."
+          ]
+        },
+        {
+          "id": "question-37",
+          "title": "Pergunta 37",
+          "question": "Sendo Christo o Filho de Deus, como se fez homem?",
+          "body": "Christo, o Filho de Deus, fez-se homem tomando para si um verdadeiro corpo e uma alma racional, sendo concebido pelo poder do Espirito Santo no ventre da Virgem Maria, da sua substancia e nascido d'ella, mas sem peccado.",
+          "references": [
+            "João 1:14; Math. 26:38, Luc. 1:31, 35:42; Heb. 4:15, e 7:26."
+          ]
+        },
+        {
+          "id": "question-38",
+          "title": "Pergunta 38",
+          "question": "Qual a necessidade do Mediador ser Deus?",
+          "body": "Era necessario que o Mediador fosse Deus para poder sustentar a natureza humana e guardal-a de cair debaixo da ira infinita de Deus e do poder da morte; para dar valor e efficacia aos seus soffrimentos, obediencia e intercessão; e para satisfazer a justiça de Deus, conseguir o seu favor, adquirir um povo peculiar, dar a este povo o seu Espirito, vencer todos os seus inimigos, e conduzil-o á salvação eterna.",
+          "references": [
+            "Act. 2:24; Rom. 1:4; Act. 20:28; Heb. 7:25; Rom. 3:24-26; Eph. 1:6; Tito 2:14; João 15:26; Luc. 1:69, 71, 74; Heb. 5:9."
+          ]
+        },
+        {
+          "id": "question-39",
+          "title": "Pergunta 39",
+          "question": "Qual a necessidade do Mediador ser homem?",
+          "body": "Era necessario que o Mediador fosse homem para poder levantar a nossa natureza e obedecer á lei, soffrer e interceder por nós em nossa natureza, e sympathizar com as nossas enfermidades; para que recebessemos a adopção de filhos, e tivessemos conforto e accesso com confiança ao throno da graça.",
+          "references": [
+            "Rom. 8:34; II Ped. 1:4; Math. 5:17; Gal. 4:4; Rom. 5:19; Heb. 2:4, e 7:24-25, e 4:15-16; Gal. 4:5."
+          ]
+        },
+        {
+          "id": "question-40",
+          "title": "Pergunta 40",
+          "question": "Qual a necessidade do Mediador ser Deus e homem em uma só pessoa?",
+          "body": "Era necessario que o Mediador, que havia de reconciliar o homem com Deus, fosse Deus e homem, e isto em uma só pessoa, para que as obras proprias de cada natureza fossem acceites por Deus a nosso favor e que nós confiassemos n'ellas como as obras da pessoa inteira.",
+          "references": [
+            "Math. 1:21, 23, e 3:17; I Pedro 2:6."
+          ]
+        },
+        {
+          "id": "question-41",
+          "title": "Pergunta 41",
+          "question": "Porque foi o nosso Mediador chamado Jesus?",
+          "body": "O nosso Mediador foi chamado Jesus, porque salva o seu povo dos seus peccados.",
+          "references": [
+            "Math. 1:21."
+          ]
+        },
+        {
+          "id": "question-42",
+          "title": "Pergunta 42",
+          "question": "Porque foi o nosso Mediador chamado Christo?",
+          "body": "O nosso Mediador foi chamado Christo, porque foi acima de toda a medida ungido com o Espirito Santo; e assim separado e plenamente revestido com toda a auctoridade e poder para exercer as funcções de propheta, sacerdote, e rei da sua egreja, tanto no estado da sua humiliação, como no da sua exaltação.",
+          "references": [
+            "Math. 3:16; João 3:24; Psa. 45:7; João 6:27; Act. 3:22; Luc. 4:18, 21; Heb. 5:5-6; Isa. 9:6-7."
+          ]
+        },
+        {
+          "id": "question-43",
+          "title": "Pergunta 43",
+          "question": "Como exerce Christo as funcções de propheta?",
+          "body": "Christo exerce as funcções de propheta revelando á egreja em todos os tempos, pelo seu Espirito e Palavra, por diversos modos de administração, toda a vontade de Deus, em todas as coisas concernentes á sua edificação e salvação.",
+          "references": [
+            "João 1:18; I Pedro 1:10-12; Heb. 1:1-2; João 15:15; Eph. 4:11-13; João 20:31."
+          ]
+        },
+        {
+          "id": "question-44",
+          "title": "Pergunta 44",
+          "question": "Como exerce Christo as funcções de sacerdote?",
+          "body": "Christo exerce as funcções de sacerdote offerecendo-se a si mesmo uma vez em sacrificio, sem macula, a Deus, para ser a reconciliação pelos peccados do seu povo, e fazendo continua intercessão por elle.",
+          "references": [
+            "Heb. 9:14, 28, e 2:17, e 7:35."
+          ]
+        },
+        {
+          "id": "question-45",
+          "title": "Pergunta 45",
+          "question": "Como exerce Christo as funcções de rei?",
+          "body": "Christo exerce as funcções de rei chamando do mundo um povo para si, dando-lhe officiaes, leis, e disciplinas para visivelmente o governar; dando a graça salvadora aos seus eleitos; recompensando a sua obediencia e corrigindo-os por causa dos seus peccados; preservando-os e sustentando-os em todas as tentações e soffrimentos; restringindo e vencendo todos os seus inimigos, e poderosamente dirigindo todas as coisas para a sua propria gloria e para o bem do seu povo; e tambem castigando os que não conhecem a Deus nem obedecem ao evangelho.",
+          "references": [
+            "Isa. 55:5; Gen. 49:10; I Cor. 12:28; João 15-14; Math. 18:17-18; Act. 5:31; Apoc. 22:12, e 3:19; Rom. 8:37-39; I Cor. 15:25; Rom. 14:11, e 8:28; II Thess. 1:8; Psa. 2:9."
+          ]
+        },
+        {
+          "id": "question-46",
+          "title": "Pergunta 46",
+          "question": "Qual foi o estado da humiliação de Christo?",
+          "body": "O estado da humiliação de Christo foi aquella baixa condição, na qual, por amor de nós, despindo-se da sua gloria, Elle tomou a fórma de servo em sua concepção e nascimento, em sua vida, em sua morte e depois até á sua resurreição.",
+          "references": [
+            "Phil. 2:6-8; II Cor. 8:9."
+          ]
+        },
+        {
+          "id": "question-47",
+          "title": "Pergunta 47",
+          "question": "Como se humilhou Christo na sua concepção e nascimento?",
+          "body": "Christo humilhou-se na sua concepção e nascimento, em ser, desde toda a eternidade, o Filho de Deus no seio do Pae, quem aprouve, no cumprimento do tempo, tornar-se Filho do homem, nascendo de uma mulher de humilde posição, com diversas circumstancias de humilhação fóra do commum.",
+          "references": [
+            "I João 1:14, 18; Luc. 2:7."
+          ]
+        },
+        {
+          "id": "question-48",
+          "title": "Pergunta 48",
+          "question": "Como se humilhou Christo na sua vida?",
+          "body": "Christo humilhou-se na sua vida, sujeitando-se á lei, a qual perfeitamente cumpriu, e luctando com as indignidades do mundo, as tentações de Satanaz, e as enfermidades da carne, quer communs a natureza do homem, quer as procedentes d'essa baixa condição.",
+          "references": [
+            "Gal. 4:4; Math. 5:17; Isa. 53:2-3; Heb. 12:2-3; Math. 4:1; Heb. 2:17-18."
+          ]
+        },
+        {
+          "id": "question-49",
+          "title": "Pergunta 49",
+          "question": "Como se humilhou Christo na sua morte?",
+          "body": "Christo humilhou-se na sua morte porque, tendo sido trahido por Judas, abandonado pelos seus discipulos, escarnecido e rejeitado pelo mundo, condemnado por Pilatos, e atormentado pelos seus perseguidores, tendo tambem luctado com os terrores da morte e os poderes das trevas, tendo sentido e supportado o peso da ira de Deus, Elle deu a sua vida como offerta pelo peccado, soffrendo a penosa, vergonhosa e maldita morte da cruz.",
+          "references": [
+            "Math. 27:4, e 26:56; Isa. 53:3; Math. 27:26; Luc. 22:44; Math. 27:46; Isa. 53:10; Math. 20:28; Phil. 2:8; Gal. 3:13."
+          ]
+        },
+        {
+          "id": "question-50",
+          "title": "Pergunta 50",
+          "question": "Em que consistiu a humilhação de Christo depois da sua morte?",
+          "body": "A humilhação de Christo depois da sua morte consistiu em ser elle sepultado, em continuar no estado dos mortos e sob o poder da morte até ao terceiro dia; o que aliás tem sido exprimido n'estas palavras: Elle desceu ao inferno (Hades).",
+          "references": [
+            "I Cor. 15:3-4; Math. 12:40."
+          ]
+        },
+        {
+          "id": "question-51",
+          "title": "Pergunta 51",
+          "question": "Qual é o estado de exaltação de Christo?",
+          "body": "O estado de exaltação de Christo comprehende a sua resurreição, ascenção, o estar sentado á dextra do Pae, e a sua segunda vinda para julgar o mundo.",
+          "references": [
+            "I Cor. 15:4; Luc. 24:51; Eph. 4:10, e 1:20; Act. 1:11."
+          ]
+        },
+        {
+          "id": "question-52",
+          "title": "Pergunta 52",
+          "question": "Como foi Christo exaltado na sua resurreição?",
+          "body": "Christo foi exaltado na sua resurreição em não ter visto a corrupção na morte (pela qual não era possivel que Elle fosse retido), e o mesmo corpo em que soffrera, com as suas propriedades essenciaes (sem a mortalidade e outras enfermidades communs a esta vida), tendo realmente unido á sua alma, resurgiu d'entre os mortos ao terceiro dia, pelo seu proprio poder, e por essa resurreição declarou se Filho de Deus, haver satisfeito a justiça divina, ter vencido a morte e aquelle que tinha o poder sobre ella, e ser o Senhor dos vivos e dos mortos. Tudo isto fez Elle na sua capacidade representativa, como cabeça da sua Egreja, para a justificação e vivificação d'ella na graça, e apoio contra os inimigos, e para lhe assegurar a sua resurreição dos mortos no ultimo dia.",
+          "references": [
+            "Act. 2-24; Psa. 16:10; Luc. 24:39; Rom. 6:9; Apoc. 1:18; João 2:19, e 10:18; Rom. 1:4 e 8:33-34; Heb. 2:14; Rom. 14:9; I Cor. 15:21-22; Eph. 1:22-23; Rom. 4:25; Eph. 2:5-6; I Cor. 15:20, 25-26; I Thess. 4:14."
+          ]
+        },
+        {
+          "id": "question-53",
+          "title": "Pergunta 53",
+          "question": "Como foi Christo exaltado na sua ascenção?",
+          "body": "Christo foi exaltado na sua ascenção em ter, depois da sua resurreição, apparecido muitas vezes aos seus apostolos e conversado com elles, fallando-lhes das coisas pertencentes ao seu reino, impondo-lhes o dever de prégarem o evangelho a todos os povos, e em subir aos mais altos céus, no fim de quarenta dias, levando a nossa natureza e, como nosso cabeça, triumphando sobre os inimigos, para ali, á dextra de Deus, receber dons para os homens, elevar os nossos affectos e apparelhar-nos um logar onde Elle está e estará até á sua segunda vinda no fim do mundo.",
+          "references": [
+            "Act. 1:2-3; Math. 28:19; Heb. 6:20; Eph. 4:8, 10; Act. 1:9; Psa. 68:18, Col. 3:1 2; João 14:2-3, Act. 3:21."
+          ]
+        },
+        {
+          "id": "question-54",
+          "title": "Pergunta 54",
+          "question": "Como é Christo exaltado em sentar-se á dextra de Deus?",
+          "body": "Christo é exaltado em sentar-se á dextra de Deus em ser Elle, como Deus-homem, elevado ao mais alto favor de Deus o Pae, tendo toda a plenitude de gozo, gloria e poder sobre todas as coisas no céu e na terra; em reunir e defender a sua Egreja e subjugar os seus inimigos; em fornecer aos seus ministros e ao seu povo dons e graças, e em fazer intercessão por elles.",
+          "references": [
+            "Phil. 2:9; Act. 2:28; João 17:5; Eph. 1:22; Math. 28:18; Eph. 4:11-12; Rom. 8:34."
+          ]
+        },
+        {
+          "id": "question-55",
+          "title": "Pergunta 55",
+          "question": "Como faz Christo a sua intercessão?",
+          "body": "Christo faz a sua intercessão, apresentando-se em nossa natureza continuamente perante o Pae no céu, pelo merito da sua obediencia e sacrificio cumpridos na terra, declarando ser a sua vontade que seja applicado a todos os crentes; respondendo a todas as accusações contra elles; adquirindo-lhes paz de consciencia, não obstante as faltas diarias. dando-lhes accesso com confiança ao throno da graça e aceitação das suas pessoas e serviços.",
+          "references": [
+            "Heb. 9:24 e 1:3; João 17:9, 20, 24; Rom. 8:35, e 5:1-2; I João 2:1-2; Heb. 4:16; Eph. 1:6; I Ped. 2:5."
+          ]
+        },
+        {
+          "id": "question-56",
+          "title": "Pergunta 56",
+          "question": "Como ha de ser Christo exaltado em vir segunda vez para julgar o mundo?",
+          "body": "Christo ha de ser exaltado na sua vinda para julgar o mundo, em que, tendo sido injustamente julgado e condemnado pelos homens maus, virá segunda vez no ultimo dia com grande poder e na plena manifestação da sua gloria e da do seu Pae, com todos os seus santos anjos, com brado, com voz de archanjo e com o trombeta de Deus, para julgar o mundo em rectidão.",
+          "references": [
+            "Act. 3:14-15; Math. 24:30; Luc. 9:26; I Thess. 4:16; Act. 17:31."
+          ]
+        },
+        {
+          "id": "question-57",
+          "title": "Pergunta 57",
+          "question": "Quaes são os beneficios que Christo adquiriu pela sua mediação?",
+          "body": "Christo, pela sua mediação, adquiriu a redempção, juntamente com todos os mais beneficios do pacto da graça.",
+          "references": [
+            "Heb. 9:12; I Cor. 1:20."
+          ]
+        },
+        {
+          "id": "question-58",
+          "title": "Pergunta 58",
+          "question": "Como nos tornamos participantes dos beneficios que Christo adquiriu?",
+          "body": "Tornamo-nos participantes dos beneficios que Christo adquiriu, pela applicação d'elles a nós, que é especialmente a obra do Espirito Santo.",
+          "references": [
+            "João 1:12; Tito 3:5-6; João 16:14-15."
+          ]
+        },
+        {
+          "id": "question-59",
+          "title": "Pergunta 59",
+          "question": "Quem são feitos participantes da redempção mediante Christo?",
+          "body": "A redempção é applicada e efficazmente communicada a todos aquelles para quem Christo a adquiriu, os quaes são n'esta vida habilitados pelo Espirito Santo a crer em Christo conforme o evangelho.",
+          "references": [
+            "João 6:37, 39, e 10:15-16; Eph. 2:8; João 3:5."
+          ]
+        },
+        {
+          "id": "question-60",
+          "title": "Pergunta 60",
+          "question": "Poderão ser salvos por viver segundo a luz da natureza, aquelles que nunca ouviram o evangelho e por conseguinte não conhecem a Jesus Christo, nem n'Elle crêem?",
+          "body": "Aquelles que nunca ouviram o evangelho e não conhecem a Jesus Christo, nem n'Elle crêem, não poderão se salvar, por mais diligentes que sejam em conformar as suas vidas á luz da natureza, ou ás leis da religião que professam; nem ha salvação em nenhum outro, senão em Christo, que é o unico Salvador do seu corpo, a Egreja.",
+          "references": [
+            "Rom. 10:14; II Thess. 1:8-9; Eph. 2:12; João 3:18, e 8:24; I Cor. 1:21; Rom. 3:20, e 2:14-15; João 4:22; Act. 4:12; Eph. 5:23."
+          ]
+        },
+        {
+          "id": "question-61",
+          "title": "Pergunta 61",
+          "question": "Serão salvos todos os que ouvem o evangelho e pertencem á Egreja?",
+          "body": "Nem todos os que ouvem o evangelho e pertencem á Egreja visivel serão salvos. mas unicamente aquelles que são membros verdadeiros da Egreja invisivel.",
+          "references": [
+            "Rom. 9:6; Math. 7:21."
+          ]
+        },
+        {
+          "id": "question-62",
+          "title": "Pergunta 62",
+          "question": "Que é a Egreja visivel?",
+          "body": "A Egreja visivel é uma sociedade composta de todos quantos, em todos os tempos e logares do mundo, professam a verdadeira religião; juntamente com seus filhos.",
+          "references": [
+            "I Cor. 1:2; Gen. 17:7; Act. 2:39; I Cor. 7:14."
+          ]
+        },
+        {
+          "id": "question-63",
+          "title": "Pergunta 63",
+          "question": "Quaes são os privilegios da Egreja visivel?",
+          "body": "A Egreja visivel tem o privilegio de estar sob o cuidado e governo especial de Deus; de ser protegida e preservada em todos os tempos, não obstante a opposição de todos os inimigos; e de gozar da communhão dos santos, dos meios ordinarios de salvação, e das offertas da graça por Christo a todos os membros d'ella, no ministerio do evangelho, testificando que todo o que crer n'Elle será salvo, não excluindo a ninguem que queira vir a Elle.",
+          "references": [
+            "Isa. 4:5-6; Math. 16:18; Act. 2:42; Psa 147:19-20; Eph. 4:11-12; Rom. 8:9; João 6:37."
+          ]
+        },
+        {
+          "id": "question-64",
+          "title": "Pergunta 64",
+          "question": "Que é a Egreja invisivel?",
+          "body": "A Egreja invisivel é o numero completo dos eleitos, que teem sido e que hão de ser reunidos em um corpo sob Christo, a cabeça.",
+          "references": [
+            "Eph. 1:10, 22-23; João 11:52 e 10:16."
+          ]
+        },
+        {
+          "id": "question-65",
+          "title": "Pergunta 65",
+          "question": "Quaes são os beneficios especiaes de que gozam por Christo os membros da Egreja invisivel?",
+          "body": "Os membros da Egreja invisivel gozam por Christo de união e communhão com Elle em graça e gloria.",
+          "references": [
+            "João 17:21, 24; I João 1:3."
+          ]
+        },
+        {
+          "id": "question-66",
+          "title": "Pergunta 66",
+          "question": "Qual é a união que os eleitos teem com Christo?",
+          "body": "A união que os eleitos teem com Christo é a obra da graça de Deus, pela qual são elles, espiritual e mysticamente, ainda que real e inseparavelmente, unidos a Christo, sua cabeça e esposo; o que se effectua na sua vocação efficaz.",
+          "references": [
+            "Eph. 2:5; I Cor. 6:17; João 10:28; Eph. 5:23; I Cor. 1:9; I Pedro 5:10."
+          ]
+        },
+        {
+          "id": "question-67",
+          "title": "Pergunta 67",
+          "question": "Que é vocação efficaz?",
+          "body": "Vocação efficaz é a obra do poder e graça omnipotente de Deus, pela qual (do seu livre e especial amor para com os eleitos e sem que nada n'elles o leve a isto) Elle, no tempo acceitavel, os convida e attrae a Jesus Christo pela sua palavra e pelo seu Espirito, illuminando os seus entendimentos de uma maneira salvadora, renovando e poderosamente determinando as suas vontades, de modo que elles, embora em si mortos no peccado, tornam-se por isso promptos e capazes de livremente responder á sua chamada e de acceitar e abraçar a graça n'ella offerecida e communicada.",
+          "references": [
+            "Eph. 1:18-20; II Tim. 1:8-9; Tito 3:4-5; Rom. 9:11; II Cor. 5:20, e 6:2; João 6:44; II Thess. 2:13-14; Act. 26:18; Eze. 11:19; João 6:45; Phil. 2:13."
+          ]
+        },
+        {
+          "id": "question-68",
+          "title": "Pergunta 68",
+          "question": "Os eleitos são os unicos efficazmente chamados?",
+          "body": "Todos os eleitos, e sómente elles, são efficazmente chamados; ainda que outros o possam ser, e muitas vezes o são, exteriormente chamados pelo ministerio da palavra e tenham algumas operações communs do Espirito, comtudo, pela sua negligencia e desprezo voluntario da graça que é offerecida, são justamente deixados na sua incredulidade e nunca veem sinceramente a Jesus Christo.",
+          "references": [
+            "Act. 13:48, e 2:47; Math. 22:14, e 13:20-21; Psa. 81:11-12; João 12:38-40."
+          ]
+        },
+        {
+          "id": "question-69",
+          "title": "Pergunta 69",
+          "question": "Que é a communhão em graça que os membros da Egreja invisivel teem com Christo?",
+          "body": "A communhão em graça que os membros da Egreja invisivel teem com Christo é a participação da virtude da sua mediação, na justificação, adopção, santificação, e tudo o que n'esta vida manifesta a união com Elle.",
+          "references": [
+            "Rom. 8:30; Eph. 1:5; I Cor. 1:30."
+          ]
+        },
+        {
+          "id": "question-70",
+          "title": "Pergunta 70",
+          "question": "Que é justificação?",
+          "body": "Justificação é um acto da livre graça de Deus para com os peccadores, no qual Elle os perdôa, acceita e considera justas as suas pessoas deante d'Elle, não por qualquer coisa n'elles operada, nem por elles feita, mas unicamente pela perfeita obediencia e plena satisfação de Christo, a elles imputadas por Deus e recebidas só pela fé.",
+          "references": [
+            "Rom. 3:22-25, e 4:5; II Cor. 5:19, 21; Eph. 1:6-7; Rom. 3:24, 25, 28, e 5:17-19, e 4:6-8, e 5:1; Act. 10:43."
+          ]
+        },
+        {
+          "id": "question-71",
+          "title": "Pergunta 71",
+          "question": "Como é a justificação um acto da livre graça de Deus?",
+          "body": "Ainda que Christo, pela sua obediencia e morte, prestasse uma verdadeira satisfação real e plena á justiça de Deus a favor dos que são justificados, comtudo a sua justificação é de livre graça para elles, desde que Deus acceita a satisfação de um fiador, a qual podia ter exigido d'elles; e proveu este fiador, seu unico Filho, imputando-lhes a justiça d'este e não exigindo d'elles nada para a sua justificação senão a fé, a qual tambem é dom de Deus.",
+          "references": [
+            "Math. 20:28; Rom. 5:8-10, 19; I Tim. 2:5-6; Isa. 53:5-6; Heb. 7:22; Rom. 8:32; II Cor. 5:21; Rom. 3:25; Eph. 2:8, e 1:7."
+          ]
+        },
+        {
+          "id": "question-72",
+          "title": "Pergunta 72",
+          "question": "Que é a fé justificadora?",
+          "body": "A fé justificadora é a que salva. E' operada pelo Espirito e pela Palavra de Deus no coração do peccador que, sendo por elles convencido do seu peccado e miseria e da sua incapacidade, e da das mais creaturas, para o restaurar d'esse estado, não sómente acceita a verdade da promessa do evangelho, mas recebe e confia em Christo e na sua justiça, que lhe são offerecidos no evangelho, mas recebe e confia em Christo e na sua justiça, que lhe são offerecidas no evangelho, para o perdão de peccados e para que a sua pessoa seja acceite e reputada justa deante de Deus para a salvação.",
+          "references": [
+            "Heb. 10:39; I Cor. 12:3, 9; Rom. 10:14, 17; João 16:8-9; Act. 16:30; Eph. 1:13; Act. 10:43; Phil. 3:9; Act. 15:11."
+          ]
+        },
+        {
+          "id": "question-73",
+          "title": "Pergunta 73",
+          "question": "Como justifica a fé ao peccador deante de Deus?",
+          "body": "A fé justifica ao peccador deante de Deus, não por causa das outras graças que sempre a acompanham, nem por causa das boas obras que são os fructos d'ella, nem como se fosse a graça da fé, ou qualquer acto d'ella, que lhe é imputado para a justificação: mas unicamente porque a fé é o instrumento pelo qual o peccador recebe e applica a si Christo e a sua justiça.",
+          "references": [
+            "Gal. 3:11; Rom. 3:28, e 4:5; João 1:12; Gal. 2:16."
+          ]
+        },
+        {
+          "id": "question-74",
+          "title": "Pergunta 74",
+          "question": "Que é adopção?",
+          "body": "Adopção é um acto da livre graça de Deus, em seu unico Filho Jesus Christo e por amor d'Elle, pelo qual todos os que são justificados são recebidos no numero dos filhos de Deus, trazem o seu nome, recebem o Espirito do Filho, estão sob o seu cuidado e dispensações paternaes, são admittidos a todas as liberdades e privilegios dos filhos de Deus, feitos herdeiros de todas as promessas e coherdeiros com Christo na gloria.",
+          "references": [
+            "I João 3:1; Eph. 1:5; Gal. 4:4-5; João 1:12; II Cor. 6:18; Apoc 3:12; Gal. 4:6; Psa. 103:13; Math. 6:32; Rom. 8:17."
+          ]
+        },
+        {
+          "id": "question-75",
+          "title": "Pergunta 75",
+          "question": "Que é santificação?",
+          "body": "Santificação é a obra da graça de Deus, pela qual os que Deus escolheu, antes da fundação do mundo, para serem santos, são n'esta vida, pela poderosa operação do seu Espirito, applicando a morte e a resurreição de Christo, renovados no homem inteiro segundo a imagem de Deus, tendo os germens do arrependimento que conduz á vida e de todas as outras graças salvadoras implantadas em seus corações, e tendo essas graças de tal fórma excitadas, augmentadas e fortalecidas, que elles morrem cada vez mais para o peccado e resuscitam para novidade de vida.",
+          "references": [
+            "Eph. 1:4; I Cor. 6:11; II Thess. 2:13; Rom. 6:4-6; Phil. 3:10; Eph. 4:23-24; Act. 11:18; I João 3:9; Judas 20; Eph. 3:16-19; Col. 1:10-11; Rom. 6:4-6."
+          ]
+        },
+        {
+          "id": "question-76",
+          "title": "Pergunta 76",
+          "question": "Que é o arrependimento que conduz á vida?",
+          "body": "O arrependimento que conduz á vida é uma graça salvadora, operada no coração do peccador pelo Espirito e pela Palavra de Deus, pela qual, reconhecendo e sentindo, não sómente o perigo, mas tambem a torpeza e odiosidade dos seus peccados, e apprehendendo a misericordia de Deus em Christo para com os arrependidos, o peccador tanto se entristece pelos seus peccados e os aborrece, que se volta de todos elles para Deus, tencionando e esforçando-se a andar constantemente com Deus em todos os caminhos da nova obediencia.",
+          "references": [
+            "Luc. 24:47; II Tim. 2:25; João 16:8-9; Act. 11:18, 20-21; Eze. 18:30, 32; Luc. 15:17-18; Eze. 36:31, e 16:61, 63; Psa. 130:3-7; Joel 2:12-13; Jer. 31:18-19; II Cor. 7:11; Act. 26:18; I Reis 8:47-48; Eze. 14:6; Psa. 119:59, 128; Rom. 6:17-18; Luc. 19:8."
+          ]
+        },
+        {
+          "id": "question-77",
+          "title": "Pergunta 77",
+          "question": "Em que differe a justificação da santificação?",
+          "body": "Ainda que a santificação seja inseparavelmente unida com a justificação, comtudo ellas differem n'isto: na justificação Deus imputa a justiça de Christo, e na santificação o seu Espirito infunde a graça e dá forças para a exercer. Na justificação o peccado é perdoado, na santificação elle é subjugado; aquella liberta a todos os crentes egualmente da ira vingadora de Deus, e isto perfeitamente n'esta vida, de modo que elles nunca mais caem na condemnação; esta não é egual em todos os crentes e n'esta vida não é perfeita em crente algum, mas vae crescendo para a perfeição.",
+          "references": [
+            "I Cor. 6:11, e 1:30; Rom. 4:6, 8; Eze. 36:27; Rom. 6:6, 14, e 8:1, 33-34; Heb. 5:12-14; I João 1:8, 10; II Cor. 7:1; Phil. 3:12-14."
+          ]
+        },
+        {
+          "id": "question-78",
+          "title": "Pergunta 78",
+          "question": "Como é que a santificação dos crentes é imperfeita?",
+          "body": "A santificação dos crentes é imperfeita por causa dos restos do peccado que permanecem n'elles, e das perpetuas concupiscencias da carne contra o espirito; por isso são elles muitas vezes arrastados pelas tentações e caem em muitos peccados, são impedidos em todos os seus serviços espirituaes, e as suas melhores obras são imperfeitas e manchadas deante de Deus.",
+          "references": [
+            "Rom. 7:18, 23; Gal. 5:17; Heb. 12:1; Isa 64:6."
+          ]
+        },
+        {
+          "id": "question-79",
+          "title": "Pergunta 79",
+          "question": "Não poderão os crentes verdadeiros cair do estado de graça, em razão das suas imperfeições e das muitas tentações e peccados que os surprehendem?",
+          "body": "Os crentes verdadeiros, em razão do amor immutavel de Deus e do seu decreto e pacto de lhes dar a perseverança, da união inseparavel entre elles e Christo, da continua intercessão de Christo por elles e do Espirito e semente de Deus permanecendo n'elles, nunca poderão total e finalmente cair do estado da graça, mas são conservados pelo poder de Deus, mediante a fé para a salvação.",
+          "references": [
+            "Jer. 31:3; João 13:1; II Tim. 2:19; Heb. 13:20-21; II Sam. 23:5; I Cor. 1:8-9; Heb. 7:25; Luc. 22:32; I João 3:9, e 2:27; Jer. 32:40; João 10:28; I Ped. 1:5; Phil. 1:6."
+          ]
+        },
+        {
+          "id": "question-80",
+          "title": "Pergunta 80",
+          "question": "Poderão os crentes verdadeiros ter certeza infallivel de que estão no estado da graça e de que n'este estado perseverarão até á salvação?",
+          "body": "Aquelles que verdadeiramente crêem em Christo e se esforçam por andar perante Elle com toda a boa consciencia, podem, sem uma revelação extraordinaria, ter a certeza infallivel de que estão no estado de graça, e de que n'este estado perseverarão até á salvação, pela fé baseada na verdade das promessas de Deus e pelo Espirito que os habilita a discernir em si aquellas graças ás quaes são feitas as promessas da vida, testificando aos seus espiritos que elles são filhos de Deus.",
+          "references": [
+            "I João 2:3; I Cor. 2:12; I João 4:13, 16, e 3:14, 18-21, 24; Heb. 6:11-12; Rom. 8:16; I João 5:13; II Tim. 1:12."
+          ]
+        },
+        {
+          "id": "question-81",
+          "title": "Pergunta 81",
+          "question": "Teem todos os crentes sempre a certeza de que estão no estado da graça e de que serão salvos?",
+          "body": "A certeza da graça e salvação não sendo da essencia da fé, crentes verdadeiros podem esperar muito tempo antes de conseguil a; e depois de gozar d'ella podem sentir enfraquecida e interrompida essa certeza, por muitas perturbações, peccados, tentações e deserções; comtudo nunca são deixados sem uma tal presença e apoio do Espirito de Deus, que os guarda de cairem em desespero absoluto.",
+          "references": [
+            "II Ped. 1:10; I João 5:13; Psa. 77:7-9, e 22:1, e 31:22, e 73:13-15, 23; I João 3:9; Isa. 54:7-11."
+          ]
+        },
+        {
+          "id": "question-82",
+          "title": "Pergunta 82",
+          "question": "Em que tempo se realisa a communhão em gloria que os membros da Egreja invisivel teem com Christo?",
+          "body": "A communhão em gloria que os membros da Egreja invisivel teem com Christo realisa-se n'esta vida, e immediatamente depois da morte, e é finalmente aperfeiçoada na resurreição e no dia do juizo.",
+          "references": [
+            "II Cor. 3:18; Col. 3:3; Luc. 23:43; II Cor. 5:8; I Thess. 4:17."
+          ]
+        },
+        {
+          "id": "question-83",
+          "title": "Pergunta 83",
+          "question": "Qual é a communhão em gloria com Christo de que os membros da Egreja invisivel gozam n'esta vida?",
+          "body": "Aos membros da Egreja invisivel são communicadas, n'esta vida, as primicias da gloria com Christo, visto serem membros d'Elle, a cabeça, e, estando n'Elle, teem parte n'aquella gloria que na sua plenitude lhe pertence; e como penhor d'ella sentem o amor de Deus, a paz de consciencia, o gozo do Espirito Santo, e a esperança da gloria. Do mesmo modo, o sentimento da ira vingadora de Deus, o terror da consciencia, e uma terrivel expectação do juizo são para os impios o principio dos tormentos, que elles hão de soffrer depois da morte.",
+          "references": [
+            "Eph. 2:5-6; Rom. 5:5; II Cor. 1:22; Rom. 5:1-2, e 14:17; Gen. 4:13; Math. 27:4; Heb. 10:27; Mar. 19:48."
+          ]
+        },
+        {
+          "id": "question-84",
+          "title": "Pergunta 84",
+          "question": "Morrerão todos os homens?",
+          "body": "A morte, sendo imposta como o estipendio do peccado, está decretado a todos que uma vez morram, pois todos são peccadores.",
+          "references": [
+            "Rom. 6:23; Heb. 9:27; Rom. 5:12."
+          ]
+        },
+        {
+          "id": "question-85",
+          "title": "Pergunta 85",
+          "question": "A morte sendo o estipendio do peccado, porque não são os justos livrados d'ella, visto que todos os seus peccados são perdoados em Christo?",
+          "body": "Os justos no ultimo dia serão libertados da propria morte, e no acto de morrer. estarão isentos do aguilhão e maldição d'ella, de modo que, embora morram, comtudo vem isto do amor de Deus, para os livrar perfeitamente do peccado e miseria e os tornar capazes de maior communhão com Christo na gloria, na qual elles immediatamente entram.",
+          "references": [
+            "I Cor. 15:26, 55-57; Rom. 14:8; Psa. 116:15; Apoc. 14:13; Luc. 16:25, e 23:45; Phil. 1:23."
+          ]
+        },
+        {
+          "id": "question-86",
+          "title": "Pergunta 86",
+          "question": "Que é a communhão em gloria com Christo de que os membros da Egreja invisivel gozam immediatamente depois da morte?",
+          "body": "A communhão em gloria com Christo de que os membros da Egreja invisivel gozam immediatamente depois da morte, consiste em serem aperfeiçoadas em santidade as suas almas e recebidas nos mais altos céus, onde vêem a face de Deus em luz e gloria, esperando a plena redempção de seus corpos, os quaes até na morte continuam unidos a Christo, e descançam nas suas sepulturas, como em seus leitos, até que no ultimo dia sejam unidos novamente ás suas almas. Quanto ás almas dos impios, são immediatamente depois da sua morte lançadas no inferno; onde permanecem em tormentos e trevas exteriores; e os seus corpos ficam guardados nas suas sepulturas, como em carceres, até á resurreição e juizo do grande dia.",
+          "references": [
+            "Act. 7:55, 59; Apoc. 7:13-14, e 19:8; II Cor. 5:8; Phil. 1:23; Act. 3:21; Eph. 4:20; Apoc. 7:15; I Cor. 13:12; Rom. 8:11, 23; I Thess. 4:6; I Reis 2:10; João 11:11; I Thess. 4:14; Luc. 16:23-24; Judas 7."
+          ]
+        },
+        {
+          "id": "question-87",
+          "title": "Pergunta 87",
+          "question": "Que devemos crer ácerca da resurreição?",
+          "body": "Devemos crer que no ultimo dia haverá uma resurreição geral dos mortos, dos justos e dos injustos; então os que se acharem vivos serão mudados em um momento, e os mesmos corpos dos mortos, que teem jazido na sepultura, estando então novamente unidos ás suas almas para sempre, serão resuscitados pelo poder de Christo. Os corpos dos justos, pelo Espirito e em virtude da resurreição de Christo como cabeça d'elles, serão resuscitados em poder, espirituaes e incorruptiveis, e feitos semelhantes ao corpo glorioso d'Elle; e os corpos dos impios serão por Elle resuscitados para vergonha, como por um juiz offendido.",
+          "references": [
+            "Act. 24:15; I Cor. 15:51-53; I Thess. 4:15-17; I Cor. 15:21-23, 42-44; Phil. 3:21; João 5:28-29; Dan. 12:2."
+          ]
+        },
+        {
+          "id": "question-88",
+          "title": "Pergunta 88",
+          "question": "Que se seguirá immediatamente depois da resurreição?",
+          "body": "Immediatamente depois da resurreição se seguirá o juizo geral e final dos anjos e dos homens: o dia e a hora do qual, homem nenhum sabe, para que todos vigiem, orem, e estejam sempre promptos para a vinda do Senhor.",
+          "references": [
+            "Math. 16:27; II Ped. 2:4; II Cor. 5:10; Math. 26, 36, 42, 44."
+          ]
+        },
+        {
+          "id": "question-89",
+          "title": "Pergunta 89",
+          "question": "Que succederá aos impios no dia do juizo?",
+          "body": "No dia do juizo os impios serão postos á mão esquerda de Christo, e sob clara evidencia e plena convicção das suas proprias consciencias terão pronunciada contra si a terrivel, porém justa, sentença de condemnação; então serão excluidos da presença favoravel de Deus e da gloriosa communhão com Christo, com os seus santos, e com todos os santos anjos, e lançados no inferno, para serem punidos com tormentos indiziveis, do corpo e da alma, com o diabo e seus anjos para sempre.",
+          "references": [
+            "Math. 25:23, e 22:12; Luc. 19:22; Math. 25:41-42, 46; II Thess. 1:8-9."
+          ]
+        },
+        {
+          "id": "question-90",
+          "title": "Pergunta 90",
+          "question": "Que succederá aos justos no dia do juizo?",
+          "body": "No dia do juizo, os justos, sendo arrebatados para encontrar a Christo nas nuvens, serão postos á sua dextra e ali, abertamente reconhecidos e justificados, se unirão com Elle para julgar os reprobos, anjos e homens; e serão recebidos no céu, onde serão plenamente e para sempre libertados de todo o peccado e miseria, cheios de gozos ineffaveis, feitos perfeitamente santos e felizes, no corpo e na alma, na companhia de innumeraveis santos e anjos, mas especialmente na immediata visão e fruição de Deus o Pae, de nosso Senhor Jesus Christo, e do Espirito Santo por toda a eternidade. É esta a perfeita e plena communhão de que os membros da Egreja invisivel gozarão com Christo em gloria, na resurreição e no dia do juizo.",
+          "references": [
+            "I Thess. 4:17; Math. 25:33, e 10:32; I Cor. 6:2-3; Math. 25:34, 46; Eph. 5:27; Psa. 16:11; Heb. 12:22-23; I João 3:2; I Cor. 13:12; I Thess. 4:17-18."
+          ],
+          "notes": [
+            "Tendo visto o que as Escripturas principalmente nos ensinam a crer ácerca de Deus, resta-nos considerar o que ellas requerem como o dever do homem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-god-requires",
+      "title": "O dever que Deus requer do homem",
+      "units": [
+        {
+          "id": "question-91",
+          "title": "Pergunta 91",
+          "question": "Qual é o dever que Deus requer do homem?",
+          "body": "O dever que Deus requer do homem é obediencia á sua vontade revelada.",
+          "references": [
+            "Deut. 29:29; Miq. 6:8; I Sam. 15:22."
+          ]
+        },
+        {
+          "id": "question-92",
+          "title": "Pergunta 92",
+          "question": "Que revelou Deus primeiramente ao homem como regra da sua obediencia?",
+          "body": "A regra de obediencia revelada a Adão no estado de innocencia, e a todo o genero humano n'elle, além do mandamento especial de não comer do fructo da arvore da sciencia do bem e do mal, foi a lei moral.",
+          "references": [
+            "Gen. 1:27; Rom. 10:5, e 2:14-15; Gen. 2:17."
+          ]
+        },
+        {
+          "id": "question-93",
+          "title": "Pergunta 93",
+          "question": "Que é a lei moral?",
+          "body": "A lei moral é a declaração da vontade de Deus, feita ao genero humano, dirigindo e obrigando todas as pessoas á conformidade e obediencia pessoal, perfeita e perpetua a ella: nos appetites e disposições do homem inteiro, alma e corpo, e no cumprimento de todos aquelles deveres de santidade e rectidão que se deve a Deus e ao homem, promettendo vida pela obediencia e ameaçando com a morte a violação d'ella.",
+          "references": [
+            "Deut. 5:1, 31, 33; Luc. 10:26-28; Gal. 3:10; I Thess. 5:28; Luc. 1:75; Act. 24-16; Rom, 10:15."
+          ]
+        },
+        {
+          "id": "question-94",
+          "title": "Pergunta 94",
+          "question": "E' a lei moral de alguma utilidade ao homem, depois da queda?",
+          "body": "Embora nenhum homem, depois da queda, possa alcançar a rectidão e a vida pela lei moral, todavia ella é de grande utilidade a todos os homens, tendo uma utilidade especial aos não regenerados e outra aos regenerados.",
+          "references": [
+            "Rom. 8:3; Gal. 2:16; I Tim. 1:8."
+          ]
+        },
+        {
+          "id": "question-95",
+          "title": "Pergunta 95",
+          "question": "De que utilidade é a lei moral a todos os homens?",
+          "body": "A lei moral é de utilidade a todos os homens, para os instruir sobre a natureza e vontade de Deus e sobre os seus deveres para com Elle, obrigando-os a andar conforme essa vontade; para os convencer de que são incapazes de a guardar e do estado polluto e peccaminoso da sua natureza, corações e vidas; para os humilhar, fazendo-os sentir o seu peccado e miseria, e assim ajudando-os a ver melhor como precisam de Christo e da perfeição da sua obediencia.",
+          "references": [
+            "Lev. 20:7-8 Rom. 7:12; Thiago 2:10; Miq 6:8; Psa. 19:11-12; Rom. 3:9, 20, 23, e 7:7, 9, 13; Gal. 3:21-22; Rom. 10:4."
+          ]
+        },
+        {
+          "id": "question-96",
+          "title": "Pergunta 96",
+          "question": "De que utilidade especial é a lei moral aos homens não regenerados?",
+          "body": "A lei moral é de utilidade aos homens não regenerados para despertar as suas consciencias a fim de fugirem da ira vindoura e forçal-os a recorrer a Christo; ou para deixal-os inexcusaveis e sob a maldição do peccado, se continuarem n'esse estado e caminho.",
+          "references": [
+            "I Tim. 1:9-10; Gal. 3:10, 24; Rom. 1:20."
+          ]
+        },
+        {
+          "id": "question-97",
+          "title": "Pergunta 97",
+          "question": "De que utilidade especial é a lei moral aos regenerados?",
+          "body": "Embora os que são regenerados e crentes em Christo sejam libertados da lei moral, como pacto de obras, de modo que nem são justificados nem condemnados por ella; comtudo, além da utilidade geral d'esta lei commum a elles e a todos os homens, é ella, de utilidade especial para lhes mostrar quanto devem a Christo por cumpril-a e soffrer a maldição d'ella, em logar e para bem d'elles, e assim provocal-os a uma gratidão maior e a manifestar esta gratidão por maior cuidado da sua parte em conformarem-se a esta lei como regra de sua obediencia.",
+          "references": [
+            "Rom. 6:14, e 7:4,6; Gal. 4:4-5; Rom. 3:20, e 8:1,34, e 7:24-25; Gal. 3:13-14; Rom. 8:3-4; II Cor. 5:21; Col. 1:12-14; Rom. 7:22, e 12:2; Tito 2:11-14."
+          ]
+        },
+        {
+          "id": "question-98",
+          "title": "Pergunta 98",
+          "question": "Onde se acha a lei moral resumidamente comprehendida?",
+          "body": "A lei moral acha-se resumidamente comprehendida nos dez mandamentos, que foram dados pela voz de Deus no monte Sinai e por Elle escriptos em duas taboas de pedra, e estão registrados no capitulo vigesimo do Exodo. Os quatro primeiros mandamentos conteem os nossos deveres para com Deus, e os outros seis os nossos deveres para com o homem.",
+          "references": [
+            "Deut. 10:4; Math. 22:37-40."
+          ]
+        },
+        {
+          "id": "question-99",
+          "title": "Pergunta 99",
+          "question": "Que regras devem ser observadas para a boa comprehensão dos dez mandamentos?",
+          "body": "Para a boa comprehensão dos dez mandamentos as seguintes regras devem ser observadas:\n\n1.ª Que a lei é perfeita e obriga a todos á plena conformidade do homem inteiro á rectidão d'ella e á inteira obediencia para sempre; de modo que requer a summa perfeição de todos os deveres e prohibe o minimo grau de todo o peccado.\n\n2.ª Que a lei é espiritual, e assim se estende tanto ao entendimento, á vontade, aos affectos, e a todas as outras potencias da alma, — como ás palavras, ás obras e ao procedimento.\n\n3.ª Que uma e a mesma coisa, em respeitos diversos, é exigida ou prohibida em diversos mandamentos.\n\n4.ª Que onde um dever é prescripto, o peccado contrario é prohibido; e onde um peccado é prohibido, o dever contrario é prescripto: assim como onde uma promessa está annexa, a ameaça contraria está inclusa; e onde uma ameaça está annexa, a promessa contraria está inclusa.\n\n5.ª Que o que Deus prohibe não se ha de fazer em tempo algum, e o que El'e manda é sempre um dever; mas nem todo o dever especial é para se cumprir em todos os tempos.\n\n6.ª Que, sob um peccado ou um dever, todos os da mesma classe são prohibidos ou mandados, juntamente com todas as coisas, meios, occasiões, e apparencias d'elles e provocações a elles.\n\n7.ª Que aquillo que nos é prohibido ou mandado temos a obrigação, segundo o logar que occupamos, de procurar que seja evitado ou cumprido por outros, segundo o dever das suas posições.\n\n8.ª Que quanto ao que é mandado a outros, somos obrigados, segundo a nossa posição e vocação, a ajudal-os, e a cuidar em não participar com outros do que lhes é prohibido.",
+          "references": [
+            "1.ª Psa. 19:7; Thiago 2:10; Math. 5:21-22.",
+            "2.ª Rom. 7:14; Deut. 6:5; Math. 22:37-39 e 12:36-37.",
+            "3.ª Col. 3:5; I Tim. 6:10; Prov 1:19; Amós 8:5.",
+            "4.ª Isa. 58:13; Math. 15:4-6; Eph. 4:28; Exo. 20:12; Prov. 30:17; Jer. 18:7-8; Exo. 20-7.",
+            "5.ª Rom. 3:8; Deut. 4:9; Math. 12:7; Mar. 14:7.",
+            "6.ª Heb. 10:24-25; I Thess. 5:22; Gal. 5:26; Col. 3:21; Judas 23.",
+            "7.ª Exo. 20:10; Lev. 19:17; Gen. 18:19, Deut. 6:6-7; Jos. 24:15.",
+            "8.ª 11 Cor. 1:24; I Tim. 5:22; Eph. 5:7."
+          ]
+        },
+        {
+          "id": "question-100",
+          "title": "Pergunta 100",
+          "question": "Que pontos devemos considerar nos dez mandamentos?",
+          "body": "Devemos considerar nos dez mandamentos: o prefacio, o conteúdo dos mesmos mandamentos, e as divinas razões annexas a alguns d'elles para lhes dar maior força."
+        },
+        {
+          "id": "question-101",
+          "title": "Pergunta 101",
+          "question": "Qual é o prefacio dos dez mandamentos?",
+          "body": "O prefacio dos dez mandamentos é: «Eu sou o Senhor teu Deus, que te tirei da terra do Egypto, da casa da servidão.» N'estas palavras Deus manifesta a sua soberania como Jehovah (Senhor), o eterno, immutavel e todo-poderoso Deus, existindo em si e por si, cumprindo todas as suas palavras e obras, manifestando que é um Deus em pacto, com todo o seu povo e com o Israel antigo; que assim como tirou a estes da servidão do Egypto, assim nos libertou do captiveiro espiritual, e que, portanto, é nosso dever acceitar a Elle só por nosso Deus, e guardar todos os seus mandamentos.",
+          "references": [
+            "Exo. 20:2; Isa. 44:6; Exo. 3:14 e 6:3; Act. 17:24, 28; Gen. 17:7; Rom. 3:29; Luc. 1:74-75; I Pedro 1:15-18."
+          ]
+        },
+        {
+          "id": "question-102",
+          "title": "Pergunta 102",
+          "question": "Qual é o resumo dos quatro mandamentos que conteem o nosso dever para com Deus?",
+          "body": "O resumo dos quatro mandamentos que conteem o nosso dever para com Deus é amar ao Senhor nosso Deus de todo o nosso coração, de toda a nossa alma, de todas as nossas forças e de todo o nosso entendimento.",
+          "references": [
+            "Luc. 10:27."
+          ]
+        },
+        {
+          "id": "question-103",
+          "title": "Pergunta 103",
+          "question": "Qual é o primeiro mandamento?",
+          "body": "O primeiro mandamento é: «Não terás outros deuses além de mim.»",
+          "references": [
+            "Exo. 20:3."
+          ]
+        },
+        {
+          "id": "question-104",
+          "title": "Pergunta 104",
+          "question": "Quaes são os deveres exigidos no primeiro mandamento?",
+          "body": "Os deveres exigidos no primeiro mandamento são: o conhecer e reconhecer Deus como o unico verdadeiro Deus e nosso Deus, e adoral-o e glorifical-o como tal; pensar e meditar n'Elle, lembrar-nos d'Elle, altamente aprecial-o, honral-o, adoral o, escolhel-o, amal-o, desejal o, e temel-o; crêr n'Elle, confiando, esperando, deleitando-nos e regozijando nos n'Elle; ter zelo por Elle; invocal o, dando-lhe todo o louvor e agradecimentos, prestando-lhe toda a obediencia e a submissão do homem todo; ter cuidado de o agradar em tudo, e tristeza quando Elle é offendido em qualquer coisa: e andar humildemente com Elle.",
+          "references": [
+            "I Chron. 28:9; Deut. 26:17; Isa. 43:10; Psa. 95:6-7; Math. 4:10; Psa. 29:2; Mal. 3:16: Psa. 63:6; Ecc. 12:1; Psa. 71:19; Mal. 1:6; Isa. 45:23; Jos. 24:22; Deut. 6:5; Psa. 73:25; Isa. 8:13; Exo. 14:31; Isa. 26:4; Psa. 130:7. e 37:4, e 12:11; Rom. 12:11; Phil. 4:6; Jer. 7:23; Thiago 4:7; I João 3:22; Psa. 119:136; Jer. 31:18; Miq. 6:8."
+          ]
+        },
+        {
+          "id": "question-105",
+          "title": "Pergunta 105",
+          "question": "Quaes são os peccados prohibidos no primeiro mandamento?",
+          "body": "Os peccados prohibidos no primeiro mandamento são: o atheismo, negar ou não ter um Deus; a idolatria, ter ou adorar mais do que um Deus, ou qualquer outro juntamente com o verdadeiro Deus ou em logar d'Elle; o não tel-o e não confessal-o como Deus, e nosso Deus; a omissão ou a negligencia de qualquer coisa devida a Elle, exigida n'este mandamento; a ignorancia, o esquecimento, as más concepções, as falsas opiniões, os pensamentos indignos e impios quanto a Elle; o pesquizar audaz e curioso dos seus segredos; toda a impiedade, todo o odio de Deus, egoismo, espirito interesseiro, e toda a applicação desordenada e immoderada do nosso entendimento, vontade ou affectos a outras coisas e o desvio d'estes de Deus em tudo ou em parte; a vã credulidade, a incredulidade, a heresia, as crenças erroneas, a desconfiança, o desespero; a resistencia obstinada e a'insensibilidade sob os juizos de Deus; a dureza de coração; a soberba; a presumpção: a segurança carnal; o tentar a Deus; o uso de meios illicitos, a confiança nos licitos; os deleites e gozos carnaes; um zelo corrupto, cego e indiscreto: a tibieza e o amortecimento nas coisas de Deus; o alienar-nos e apostatar-nos de Deus; o orar ou pres. tar qualquer culto religioso aos santos, anjos, ou a qualquer outra creatura; todos os pactos com o diabo; o consultar com elle, e o dar ouvidos ás suas suggestões; o fazer aos homens senhores da nossa fé e consciencia; o fazer pouco caso e desprezar a Deus e aos seus mandamentos; o resistir e entristecer o seu Espirito; o descontentamento e impaciencia com as suas dispensações; accusal-o estultamente dos males com que Elle nos afflige, e o attribuir o louvor de qualquer bem que somos, temos; ou podemos fazer, á fortuna, aos idolos, a nós mesmos, ou a qualquer outra creatura.",
+          "references": [
+            "Psa. 14:1; Eph. 2:12; Jer. 2:27-28; I Thess. 1:9; Psa. 81:11; Isa. 43:22-23; Jer. 4:22; Ose. 4:1-6; Jer. 2:32; Act. 17:23,29; Isa. 40:18; Psa. 50:21; Deut. 29:29; Tito 1:16; Heb. 12:16; Rom. 1:30; II Tim. 3:2; Phil. 2:21; I João 2:15-16; e 4:1; Heb. 3:12; Gal. 5:20; Act. 26:9; Psa. 78:22; Gen. 4:13; Jer. 5:3; Isa. 43:25; Rom. 2:5; Jer. 13:15; Psa. 19:13; Zeph. 1:12; Math. 4:7; Rom. 3:8; Jer. 17:5; II Tim. 3:4; Gal. 4:17; Apo. 3:1, e 3:16; Ezz. 14:5; Isa 1:4-5; Ose. 4:12; Apoc. 19:10; Col. 2:18; Rom. 1:25; Lev. 20:6; Act. 5:3; II Cor. 1:24; Deut. 32-15; Prov. 13:13; Act. 7:51; Eph. 4:30; Psa. 73:2-3; Job 1:22; Luc. 12:19; Dan. 5:23; Deut. 8:17; Hab. 1:16."
+          ]
+        },
+        {
+          "id": "question-106",
+          "title": "Pergunta 106",
+          "question": "Que se nos ensina especialmente pelas palavras «além de mim» no primeiro mandamento?",
+          "body": "As palavras «além de mim» no primeiro mandamento ensinam-nos que Deus, que tudo vê, nota especialmente e se offende muito com o peccado de ter-se qualquer outro Deus: de maneira que ellas sirvam de argumento para nos dissuadir d'esse peccado, e de aggraval o como uma provocação mui ousada; assim como para nos persuadir a fazer como deante dos olhos de Deus tudo o que fizermos no seu serviço.",
+          "references": [
+            "Psa. 44:20-21; I Chron. 28:9."
+          ]
+        },
+        {
+          "id": "question-107",
+          "title": "Pergunta 107",
+          "question": "Qual é o segundo mandamento?",
+          "body": "O segundo mandamento é: «Não farás para ti imagem de esculptura, nem figura alguma de tudo o que ha em cima no céu, e do que ha em baixo na terra, nem de coisa que haja nas aguas debaixo da terra. Não as adorarás nem lhes darás culto: porque eu sou o Senhor teu Deus, o Deus forte e zeloso, que vinga a iniquidade dos paes nos filhos até á terceira e quarta geração d'aquelles que me aborrecem e que usa de misericordia até mil gerações com aquelles que me amam e que guardam os meus preceitos.",
+          "references": [
+            "Exo. 20:4-6."
+          ]
+        },
+        {
+          "id": "question-108",
+          "title": "Pergunta 108",
+          "question": "Quaes são os deveres exigidos no segundo mandamento?",
+          "body": "Os deveres exigidos no segundo mandamento são: o receber, observar, e guardar, puros e inalterados, todo o culto e todas as ordenanças' religiosas que Deus instituiu na sua Palavra, especialmente a oração e acções de graças em nome de Christo; a leitura, a prédica, e o ouvir da Palavra; a administração e a recepção dos sacramentos; o governo e a disciplina da egreja; o ministerio e a sua manutenção; o jejum religioso; o jurar em nome de Deus e o fazer os votos a Elle; bem como o desapprovar, detestar, e oppôr-nos a todo o culto falso, e, segundo a posição e vocação de cada um, o remover tal culto e todos os symbolos da idolatria.",
+          "references": [
+            "Deut. 32:46, Math. 28:20; I Tim. 6:13-14; Phil. 4:6; Eph. 5:20; Deut. 17:18-19; Act. 15:21; II Tim. 4:2; Act. 10:33; Math. 28:19, e 16:19, e 18:15-17; I Cor. 12:23; Eph. 4:11-12; I Tim. 5:17-18, Joel 2:12; I Cor. 7:5; Deut. 6:13; Psa. 76:11; Act. 17:16-17; Psa. 16:4; Deut. 7:5; Isa. 30:22."
+          ]
+        },
+        {
+          "id": "question-109",
+          "title": "Pergunta 109",
+          "question": "Quaes são os peccados prohibidos no segundo mandamento?",
+          "body": "Os peccados prohibidos no segundo mandamento são: o estabelecer, aconselhar, mandar, usar, e approvar de qualquer maneira de qualquer culto religioso não instituido por Deus; o fazer qualquer imagem de Deus, de todas ou de qualquer das tres pessoas, quer interiormente no espirito, quer exteriormente em qualquer fórma de imagem ou similhança de creatura alguma; toda a adoração d'ella, ou de Deus n'ella ou por meio d'ella; o fazer qualquer imagem de deuses imaginarios e todo o culto ou serviço a elles pertencentes; todas as invenções supersticiosas, corrompendo o culto de Deus, accrescentando ou tirando d'elle, quer sejam inventadas e adoptadas por nós, quer recebidas por tradição de outros, embora sob o titulo de antiguidade, de costume, de devoção, de boa intenção, ou por qualquer outro pretexto; a simonia, o sacrilegio; toda a negligencia, desprezo, impedimento e opposição ao culto e ordenanças que Deus instituiu.",
+          "references": [
+            "Num. 15:39; Deut. 13:6,8; Ose. 5:11; Miq. 6:16; I Reis 11:33, e 12:33; Deut. 12:30,32, e 4:15-16; Act. 17:29; Rom. 1:21-23,25; Gal. 4:8; Exo. 32:5,8; I Reis 18:26,28; Act. 17:22; Col. 2:21-23; Mal. 1:7-8,14; Deut. 4:2; Psa. 104:39; Math. 15:9; I Ped. 1:18; Jer. 44:17; Isa. 55:3-5; Gal. 1:13-14; I Sam. 13:12, e 15:21; Act. 8:18-19; Rom. 2:22; Mal. 3:8; e 1:7,13; Math. 22:5; e 23:13; Act 13:45."
+          ]
+        },
+        {
+          "id": "question-110",
+          "title": "Pergunta 110",
+          "question": "Quaes são as razões annexas ao segundo mandamento para lhe dar maior força?",
+          "body": "As razões annexas ao segundo mandamento, para lhe dar maior força, contidas n'estas palavras: «Porque eu sou o Senhor teu Deus, o Deus forte e zeloso, que vinga a iniquidade dos paes nos filhos até á terceira e quarta geração d'aquelles que me aborrecem e que usa de misericordia até mil gerações com aquelles que me amam e que guardam os meus preceitos», são: além da soberania de Deus sobre nós e o seu direito de propriedade em nós, o seu zelo fervoroso pelo seu culto e indignação vingadora contra todo o culto falso, considerando-o uma apostasia religiosa, tendo por inimigos os violadores d'esse mandamento e ameaçando punil-os até diversas gerações; e tendo por amigos os que guardam os seus mandamentos, promettendo-lhes misericordia até muitas gerações.",
+          "references": [
+            "Exo. 20:5-6; Psa. 14:11; Apoc. 15:3-4; Exo 34:13-14; I Cor. 10:20-22; Ose. 2:2-4; Deut. 5:29."
+          ]
+        },
+        {
+          "id": "question-111",
+          "title": "Pergunta 111",
+          "question": "Qual é o terceiro mandamento?",
+          "body": "O terceiro mandamento é: Não tomarás o nome do Senhor teu Deus em vão: porque o Senhor não terá por innocente aquelle que tomar em vão o nome do Senhor seu Deus».",
+          "references": [
+            "Exo. 20:7."
+          ]
+        },
+        {
+          "id": "question-112",
+          "title": "Pergunta 112",
+          "question": "Que exige o terceiro mandamento?",
+          "body": "O terceiro mandamento exige que o nome de Deus, os seus titulos, attributos, ordenanças, a Palavra, os sacramentos, a oração, os juramentos, os votos, as sortes, suas obras e tudo quanto pelo que Deus se faz conhecer, sejam santa e reverentemente usados em nossos pensamentos, meditações, palavras e escriptos, por uma profissão santa e um comportamento conveniente para a gloria de Deus e para o nosso bem e o do nosso proximo.",
+          "references": [
+            "Math. 6:9; Deut. 28:58; Psa. 68:4; Ecc. 5:1; Luc. 1:6; Psa. 138:2; I Cor. 11:28-29; I Tim. 2:8; Jer. 4:2; Ecc. 5:2, 4; Act. 1:24, 26; Job 36:24; Mal. 3:16; Psa. 8:1,3-4 e 105:2,5, e 102:18; I Pedro 3:15, e 2:12; Miq. 4:5. Phil. 1:27; I Cor. 10:31; Jer. 32:39."
+          ]
+        },
+        {
+          "id": "question-113",
+          "title": "Pergunta 113",
+          "question": "Quaes são os peccados prohibidos no terceiro mandamento?",
+          "body": "Os peccados prohibidos no terceiro mandamento são: o não usar o nome de Deus como é-nos exigido, e o abuso d'elle por uma ignorante, vã, irreverente, profana, supersticiosa, ou impia menção ou outro modo de usar dos titulos, attributos, ordenanças, ou obras de Deus; a blasphemia; o perjurio; todas as imprecações peccaminosas, juramentos, votos, e sortes impias; a violação dos nossos juramentos e votos; quando licitos, e o cumprimento d'elles, se por coisas illicitas; a murmuração e as queixas contra os decretos e providencias de Deus, a pesquiza curiosa e má applicação dos mesmos; a má interpretação, a má applicação ou qualquer perversão da Palavra, ou de qualquer parte d'ella; as zombarias profanas, questões curiosas e sem proveito, vãs contendas de palavras, ou a defeza de doutrinas falsas; o abuso da Palavra, das creaturas, ou de qualquer coisa comprehendida sob o nome de Deus, para encantamentos ou concupiscencias, e praticas peccaminosas; a maledicencia, desprezo, vituperação, ou qualquer opposição á verdade, graça e caminhos de Deus; a profissão da religião por hypocrisia ou para fins sinistros; o ter vergonha da religião ou o ser uma vergonha para ella, por uma conducta inconveniente, imprudente, infructifera e offensiva, ou por apostasia.",
+          "references": [
+            "Mal. 2:2; Act. 17:23; Prov. 30:9; Mal. 1:6-7,12; Jer. 7:4; I Sam. 4:3,5; Exo. 5:2; Psa. 139:20 e 50:16-17; I Cor. 11:21-23; Isa. 5:12; II Reis 19:22; Zach. 5:4; Rom. 12:14; Jer. 5:7, e 33:10; Math. 5:34; Deut. 23:18; Act. 23:12,14; Esth 9:24; Psa. 24:4; Eze. 17:16,18-19; Mar. 6:26; Rom. 9:14,19-20; Deut. 29:29; Rom. 3:5,7-8; Ecc. 8:11; Math. 5:38; Eze. 13:22; II Ped. 3:16; Math. 22:29; Jer. 23:34,36,38; I Tim. 6:4-5,20; II Tim. 2:14; Tito 3:9; Deut. 18:10-11; II Tim. 4:3-4; Act. 13:45; I João 3:12; II Ped. 3:3; Psa. 1:1; I Ped. 4:4; Act. 13:45,50, e 4:18; Math. 23:14; II Tim. 3:5; Mar. 8:38; Psa. 73:14-15; Eph. 5:15-17; Isa. 5:4; Rom. 2:23-24; Gal. 3:1,3."
+          ]
+        },
+        {
+          "id": "question-114",
+          "title": "Pergunta 114",
+          "question": "Quaes são as razões annexas ao terceiro mandamento?",
+          "body": "As razões annexas ao terceiro mandamento, contidas n'estas palavras: «O Senhor teu Deus,» e, «porque o Senhor não terá por innocente aquelle que tomar em vão o seu nome,» são: porque Elle é o Senhor e nosso Deus, portanto o seu nome não deve ser profanado nem por fórma alguma abusado por nós; especialmente porque Elle estará tão longe de absolver e poupar os transgressores d'este mandamento, que não deixará escapar do seu justo juizo, embora que escapem das censuras e punições dos homens.",
+          "references": [
+            "Exo. 20:7; Lev. 19:12; Deut. 28:58-59; I Sam. 3:13."
+          ]
+        },
+        {
+          "id": "question-115",
+          "title": "Pergunta 115",
+          "question": "Qual é o quarto mandamento?",
+          "body": "O quarto mandamento é: «Lembra-te de santificar o dia de Sabbado (descanço). Trabalharás seis dias e farás n'elles tudo o que tens para fazer. O setimo dia, porém, é o Sabbado do Senhor teu Deus. Não farás n'esse dia obra alguma, nem tu, nem teu filho, nem tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o peregrino que viver das tuas portas para dentro. Porque o Senhor fez em seis dias o céu, a terra, e o mar, e tudo o que n'elles ha, e descançou ao setimo dia: por isso o Senhor abençoou o dia setimo e o santificou.",
+          "references": [
+            "Exo. 20:8-11."
+          ]
+        },
+        {
+          "id": "question-116",
+          "title": "Pergunta 116",
+          "question": "Que se exige no quarto mandamento?",
+          "body": "O quarto mandamento exige de todos os homens o santificar ou o guardar santos para Deus todos os tempos especificados que Deus designou em sua Palavra, expressamente um dia inteiro em cada sete; que era o setimo desde o principio do mundo até á resurreição de Christo, e o primeiro dia da semana desde então até ao dia de hoje, e ha de assim continuar até ao fim do mundo; o qual é o sabbado christão, e no Novo Testamento é chamado o dia do Senhor (Domingo).",
+          "references": [
+            "Gen. 2:3; I Cor. 16:2; Act. 20:7; João 20:19,26; Apoc. 1:10."
+          ]
+        },
+        {
+          "id": "question-117",
+          "title": "Pergunta 117",
+          "question": "Como ha de ser santificado o Sabbado, ou Dia do Senhor?",
+          "body": "O Sabbado, ou Dia do Senhor, ha de ser santificado por um santo descanço por todo aquelle dia, não sómente de tudo quanto é sempre peccaminoso, mas até de todas as occupações e recreios seculares que são permittidos em outros dias; e em fazel-o o nosso deleite, passando todo o tempo (excepto aquella parte que se deve empregar em obras de necessidade e misericordia) nos exercicios publicos e particulares do culto de Deus. Para este fim havemos de preparar os nossos corações, e com toda a previsão, diligencia, e moderação dispôr e convenientemente arranjar os nossos negocios seculares, para que sejamos mais livres e mais promptos para os deveres d'esse dia.",
+          "references": [
+            "Exo. 20:8,10; e 16:25-26; Jer. 17:21-22; Math. 12:1-5; Lev. 23:3; Isa. 58:13; Luc. 4:16; Act. 20:7; Luc. 23:54,56; Neh. 18:19."
+          ]
+        },
+        {
+          "id": "question-118",
+          "title": "Pergunta 118",
+          "question": "Porque é o mandamento de guardar o Dia do Senhor (Domingo) mais especialmente dirigido aos chefes de familia e outros superiores?",
+          "body": "O mandamento de guardar o Dia do Senhor (Domingo) é mais especialmente dirigido aos chefes de familia e outros superiores, porque estes são obrigados, não sómente a guardal-o por si mesmos, mas a fazer que seja observado por todos os que. estão sob o seu cuidado; e porque são ás vezes propensos a impedil-os por trabalhos seus.",
+          "references": [
+            "Exo. 23:12."
+          ]
+        },
+        {
+          "id": "question-119",
+          "title": "Pergunta 119",
+          "question": "Quaes são os peccados prohibidos no quarto mandamento?",
+          "body": "Os peccados prohibidos no quarto mandamento são: toda a omissão dos deveres exigidos, todo o cumprimento descuidoso, negligente e sem proveito, e o ficar cançado d'elles; toda a profanação do dia por ociosidade e por fazer aquillo que é em si peccaminoso; e por todas as obras, palavras, e pensamentos desnecessarios, tocantes ás nossas occupações e recreios seculares.",
+          "references": [
+            "Eze. 22:26; Amós 8:5; Eze. 23:38; Jer. 17:27."
+          ]
+        },
+        {
+          "id": "question-120",
+          "title": "Pergunta 120",
+          "question": "Quaes são as razões annexas ao quarto mandamento para lhe dar maior força?",
+          "body": "As razões annexas ao quarto mandamento para lhe dar maior força são tiradas da equidade d'elle, concedendo-nos Deus seis dias de cada sete para os nossos trabalhos e reservando um só para si, n'estas palavras: «Seis dias trabalharás e farás tudo o que tens para fazer»; de Deus reclamar uma propriedade especial n'esse dia: «O setimo dia é o sabbado do Senhor teu Deus»; do exemplo de Deus, que «em seis dias fez o céu e a terra, o mar e tudo o que n'elles ha, e descançou no dia setimo»; e da benção que Deus conferiu a esse dia, não sómente santificando-o para ser um dia para o seu serviço, mas tambem determinando o para ser um meio de benção para nós em santifical-o, «portanto o Senhor abençoou o dia de sabbado e o santificou».",
+          "references": [
+            "Exo. 20:9-11."
+          ]
+        },
+        {
+          "id": "question-121",
+          "title": "Pergunta 121",
+          "question": "Porque se acha a palavra «lembra-te» collocada no principio do quarto mandamento?",
+          "body": "A palavra «lembra-te» acha-se collocada no principio do quarto mandamento, em parte pelo grande beneficio que ha em nos lembrarmos d'elle, sendo nós assim ajudados na nossa preparação para guardal-o; e porque em o guardar somos ajudados a guardar melhor todos os mais mandamentos, e a continuar uma grata recordação dos dois grandes beneficios da creação e da redempção, que conteem em si um breve compendio da religião; e em parte porque somos propensos a esquecer-nos d'este mandamento, visto haver menos luz da natureza para elle, e restringir a nossa liberdade natural quanto a coisas permittidas em outros dias; porque este dia vem sómente uma vez em cada sete, e muitos negocios seculares interveem e muitas vezes nos impedem de pensar n'esse dia, seja para nos prepararmos, seja para o santificar; e porque Satanaz, com os seus ins trumentos, se esforça para apagar a gloria e até a memoria d'esse dia para introduzir a irreligião e a impiedade.",
+          "references": [
+            "Exo. 20:8 e 16:23; Mar. 15:42; Eze. 20:12,19-20; Gen. 2:2-3; Psa. 118:22,24; Mar. 16:2-6; Apoc. 1:10; Eze. 22:26; Neh. 9:14; Exo. 34:21; Amós 8:5; Jer 17:21-23."
+          ]
+        },
+        {
+          "id": "question-122",
+          "title": "Pergunta 122",
+          "question": "Qual o resumo dos seis mandamentos que encerram o nosso dever para com Deus?",
+          "body": "O resumo dos seis mandamentos que encerram o nosso dever para com Deus, é amar o nosso proximo como a nós mesmos e fazer aos outros aquillo que desejamos que elles nos façam.",
+          "references": [
+            "Math. 22:39 e 7:12."
+          ]
+        },
+        {
+          "id": "question-123",
+          "title": "Pergunta 123",
+          "question": "Qual é o quinto mandamento?",
+          "body": "O quinto mandamento é: «Honrarás a teu pae e a tua mãe, para teres uma dilatada vida sobre a terra que o Senhor teu Deus te ha de dar».",
+          "references": [
+            "Exo. 20:12."
+          ]
+        },
+        {
+          "id": "question-124",
+          "title": "Pergunta 124",
+          "question": "Que significam as palavras «pae» e mãe» no quinto mandamento?",
+          "body": "As palavras «pae» e «mãe» no quinto mandamento abrangem não sómente os proprios paes, mas tambem todos os superiores em edade e dons; e especialmente todos aquelles que, por ordenação de Deus, estão collocados sobre nós em auctoridade, quer na familia, quer na Egreja, quer no Estado.",
+          "references": [
+            "Prov. 23:22,25; I Tim. 5:1-2; Gen. 4:20-21, e 14:8, e 45:8; II Reis 5:13; Gal. 4:19; II Reis 2:12; Isa. 49:23."
+          ]
+        },
+        {
+          "id": "question-125",
+          "title": "Pergunta 125",
+          "question": "Porque são os superiores chamados «pae» e «mãe»?",
+          "body": "Os superiores são chamados «pae» e «mãe», para lhes ensinar que, em todos os deveres para com os seus.inferiores devem elles, como verdadeiros paes, mostrar amor e ternura para com elles conforme as suas diversas relações; e para levar os inferiores a cumprirem os seus deveres para com os seus superiores prompta e alegremente, como se estes fossem seus paes.",
+          "references": [
+            "Eph. 6:4; I Thess. 2:7-8,11; I Cor. 4:14-16."
+          ]
+        },
+        {
+          "id": "question-126",
+          "title": "Pergunta 126",
+          "question": "Qual é o alcance geral do quinto mandamento?",
+          "body": "O alcance geral do quinto mandamento é o cumprimento dos deveres que mutuamente temos uns para com os outros em nossas diversas relações de inferiores, superiores ou eguaes.",
+          "references": [
+            "Eph. 5:21; I Pedro 2:17; Rom. 12:10."
+          ]
+        },
+        {
+          "id": "question-127",
+          "title": "Pergunta 127",
+          "question": "Qual é a honra que os inferiores devem aos superiores?",
+          "body": "A honra que os inferiores devem aos seus superiores é toda a devida reverencia em coração, em palavras, e em procedimento; a oração e acções de graças por elles; a imitação das suas virtudes e graças, a prompta obediencia aos seus mandamentos e conselhos legitimos; a devida submissão ás suas correcções; a fidelidade, a defeza, a manutenção, e o apoio devidos ás suas pessoas e auctoridade, conforme os seus diversos graus e a natureza das suas posições; supportando as suas fraquezas e encobrindo-as com amor, para que sejam uma honra -para elles e para o seu governo.",
+          "references": [
+            "Mal. 1:6; Lev. 19:3; Prov. 31:28; I Ped. 3:6; Lev. 19:32; I Reis 2:19; I Tim 2:1-2; Heb. 13:7; Phil. 3:17; Eph. 6:1-2,5-7; I Ped. 2:13-14; Heb. 12:9; I Ped. 2:18-20; Tito. 2:9-10; I Sam. 26:15-16; Math. 22:21; Rom. 13:6-7; I Tim. 5:17-18; Gen 9:23; Psa. 127:3-5; Prov. 31:23."
+          ]
+        },
+        {
+          "id": "question-128",
+          "title": "Pergunta 128",
+          "question": "Quaes são os peccados dos inferiores contra os seus superiores?",
+          "body": "Os peccados dos inferiores contra os seus superiores são: toda a negligencia dos deveres exigidos para com elles; a inveja, o desprezo e a rebellião contra as suas pessoas e posições, em seus conselhos, mandamentos e correcções legitimos; a maldição, a zombaria, e todo o comportamento rebelde e escandaloso, que vem a ser uma vergonha e deshonra para elles e para o seu governo.",
+          "references": [
+            "Math. 15:4-6; Num. 11:28-29; I Sam. 8:7; Isa. 3:5; II Sam. 15:10; Exo. 21:15; I Sam. 10:27 e 2:25; Deut. 21:18-21; Prov. 30:11,17, e 19:26."
+          ]
+        },
+        {
+          "id": "question-129",
+          "title": "Pergunta 129",
+          "question": "Que se exige dos superiores para com os seus inferiores?",
+          "body": "Exige-se dos superiores, conforme o poder que recebem de Deus e a relação em que se acham collocados, que amem aos seus inferiores, que orem por elles e os abençoem; que os instruam, aconselhem e admoestem, approvando, animando e recompensando os que fazem o bem, e reprovando, reprehendendo e castigando os que fazem o mal; protegendo-os e provendo-lhes tudo o que é necessario para a alma e corpo; e que, por um procedimento grave, prudente, santo e exemplar, glorifiquem a Deus, honrem-se a si mesmos, e assim preservem a auctoridade com que Deus os revestiu.",
+          "references": [
+            "Col. 3:19; Tito 2:4; I Sam. 12:23; Job 1:5; I Reis 8:55-56; Deut. 6:6-7; Eph. 6:4; I Ped. 3:7; Rom. 13:3; I Ped. 2:14; Esther 6:3; Rom. 13:4; Prov. 29:15; Isa. 1:17; Psa. 78:4; I Tim. 5:8 e 4:12; I Reis 3:28; Tito 2:15."
+          ]
+        },
+        {
+          "id": "question-130",
+          "title": "Pergunta 130",
+          "question": "Quaes são os peccados dos superiores?",
+          "body": "Os peccados dos superiores são, além da negligencia dos deveres que lhes são exigidos, a ambição desordenada, o buscar desordenadamente a propria gloria, repouso, proveito, ou prazer; o mandar fazer coisas illicitas, ou fóra do poder dos inferiores; aconselhando, animando, ou favorecendo-os n'aquillo que é mau; dissuadindo, desanimando, ou reprovando-os n'aquillo que é bom; corrigindo-os indevidamente; expondo-os descuidosamente ao damno, á tentação e ao perigo; provocando-os á ira; ou de qualquer fórma deshonrando-se a si mesmos, ou diminuindo a sua auctoridade por um comportamento injusto, indiscreto, rigoroso ou negligente.",
+          "references": [
+            "Eze. 34:2-4; Phil. 2:21; João 5:44; Isa. 56:10-11; Act 4:18; Exo. 5:18; Math. 14:8; II Sam. 13:28; Exo.32:5; João 7:46-49 e 9:28; I Ped. 2:19-20; Deut. 25:3; Act. 18:17; II Sam. 23:15-17; Eph. 6:4; Gen. 9:21; I Reis 12:13,14, e 1:6; I Sam. 3:13."
+          ]
+        },
+        {
+          "id": "question-131",
+          "title": "Pergunta 131",
+          "question": "Quaes são os deveres dos eguaes?",
+          "body": "Os deveres dos eguaes são: o considerar a dignidade e o merecimento uns dos outros, tendo cada um aos outros por superiores; e o regozijar-se nos dotes e na exaltação uns dos outros como de si mesmos.",
+          "references": [
+            "I Ped. 2:17; Rom. 12:10,15-16; Phil. 3:3 e 2:4."
+          ]
+        },
+        {
+          "id": "question-132",
+          "title": "Pergunta 132",
+          "question": "Quaes são os peccados dos eguaes?",
+          "body": "Os peccados dos eguaes são, além da negligencia dos deveres exigidos: a depreciação do merecimento, a inveja dos dotes, a tristeza pela prosperidade uns dos outros, e a usurpação de preeminencia uns sobre outros.",
+          "references": [
+            "Rom. 13:8; Prov. 14:21; Isa. 45:5; II Tim. 2:3; Act. 7:9; Gal. 5:26; Num. 12:2; Luc. 15:28-29, e 22:24."
+          ]
+        },
+        {
+          "id": "question-133",
+          "title": "Pergunta 133",
+          "question": "Qual é a razão annexa ao quinto mandamento para lhe dar maior força?",
+          "body": "A razão annexa ao quinto mandamento contida n'estas palavras: «para teres uma dilatada vida sobre a terra qus o Senhor teu Deus te ha de dar,» é uma promessa de longa vida e prosperidade, tanto quanto sirvam para a gloria de Deus e para o bem de todos quantos guardem este mandamento.",
+          "references": [
+            "Exo. 20:12; Eph. 6:2-3."
+          ]
+        },
+        {
+          "id": "question-134",
+          "title": "Pergunta 134",
+          "question": "Qual é o sexto mandamento?",
+          "body": "O sexto mandamento é: «Não matarás».",
+          "references": [
+            "Exo. 20:13."
+          ]
+        },
+        {
+          "id": "question-135",
+          "title": "Pergunta 135",
+          "question": "Quaes são os deveres exigidos no sexto mandamento?",
+          "body": "Os deveres exigidos no sexto mandamento são: todo o cuidado e todos os esforços legitimos para preservar a nossa vida e a de outros, resistindo a todos os pensamentos e propositos, subjugando todas as paixões, e evitando todas as occasiões, tentações e praticas que tendem a tirar injustamente a vida de alguem; por meio de justa defeza d'ella contra a violencia; por paciencia em supportar a mão de Deus; socego de espirito, alegria de coração, e uso sobrio da comida, bebida, remedios, somno, trabalho, e recreios; por pensamentos caridosos, amor, compaixão, mansidão, benignidade, bondade; comportamento e palavras pacificas, brandas e cortezes; a longanimidade, promptidão para ser reconciliados, supportando pacientemente e perdoando as injurias, dando bem por mal; confortando e soccorrendo os afflictos, e protegendo e defendendo os innocentes.",
+          "references": [
+            "Eph. 5:28-29; Math. 10:23; Job 29:13; I Reis 18:4; Gen. 49:6; I Sam. 19:4-5; Eph. 6:26; II Sam. 2:23; Deut. 22:8; Prov. 1:10-11,15; Math. 5:6-7; Gen. 37:21-22; Prov. 24:11-12, Thiago 5:10-11; Psa. 37:8, 11; I Thess. 4:11; I Ped. 3:3-4, Prov. 17:22, e 23:20, e 25:16-17; Ecc. 10:17; I Tim. 5:23; Math. 9:12; Psa. 127:2; Eecl. 5:12, e 3:4; I Sam. 22:19; Rom. 3:10: Prov. 10:12; Luc. 10:33; Col. 3:12; Thiago 2:17; I Ped. 3:8-9; I Cor. 4:12-13; Math. 5:24; Eph. 4:2,32; Rom. 12:17,20-21; I Thess. 5:14; Math. 25:35-36; Prov. 31:8-9."
+          ]
+        },
+        {
+          "id": "question-136",
+          "title": "Pergunta 136",
+          "question": "Quaes são os peccados prohibidos no sexto mandamento?",
+          "body": "Os peccados prohibidos no sexto mandamento são: o tirar a nossa vida ou a de outrem, excepto no caso da justiça publica, guerra legitima, ou defeza necessaria; a negligencia ou retirada dos meios licitos ou necessarios para a preservação da vida; a raiva peccaminosa, o odio, a inveja, o desejo de vingança; todas as paixões excessivas e cuidados demasiados; o uso immoderado de comida, bebida, trabalho e recreios; palavras provocadoras; a oppressão, contenda, espancamentos, ferimentos e tudo o que tende á destruição da vida de alguem.",
+          "references": [
+            "Act. 16:28: Gen. 9:6; Num. 35:31,33; Rom. 13: 4: Deut. 12:1,4; Heb. 11:32-34; Exo. 22:2; Math. 25: 42-43; Thiago 2:15-16; Math. 5:22; I João 3:15: Prov. 10:12; Job 5:2; Rom. 12:19; Thiago 4:1; Eph. 4:31; Math. 6:31,34; Luc. 21:34; Rom. 13:13; Eccl. 4:8, e 11:9; Isa. 5:12: Prov. 15:1; Exo. 1:14; Isa. 3:15; Gal. 5:15; Num 35:16; Exo. 31:29."
+          ]
+        },
+        {
+          "id": "question-137",
+          "title": "Pergunta 137",
+          "question": "Qual é o setimo mandamento?",
+          "body": "O setimo mandamento é: «Não adulterarás».",
+          "references": [
+            "Exo. 20:14."
+          ]
+        },
+        {
+          "id": "question-138",
+          "title": "Pergunta 138",
+          "question": "Quaes são os deveres exigidos no setimo mandamento?",
+          "body": "Os deveres exigidos no setimo mandamento são: a castidade no corpo, entendimento, affectos, palavras, e comportamento, e a preservação d'ella em nós mesmos e nos outros: a vigilancia sobre os olhos e todos os sentidos; a temperança, a conservação da sociedade de pessoas castas, a modestia no vestuario, o casamento d'aquelles que não teem o dom da continencia, o amor conjugal, e a co-habitação; o trabalho diligente em nossas vocações; o evitar todas as occasiões de impureza e resistir ás suas tentações.",
+          "references": [
+            "I Thess. 4:4-5; Eph. 4:29; Col. 4:6; I Ped. 3:2; I Cor. 7:2; Tito 2:4-5; Math. 5:28; Job 31:1; Act. 24:24-25; Prov. 2:20; I Cor. 5:9; I Tim. 2:9; I Cor. 7:2,9; Col. 3:18-19; I Ped. 3;7; I Cor. 7:5; Prov. 31: 27-28 e 5:8."
+          ]
+        },
+        {
+          "id": "question-139",
+          "title": "Pergunta 139",
+          "question": "Quaes são os peccados prohibidos no setimo mandamento?",
+          "body": "Os peccados prohibidos no setimo mandamento, além da negligencia dos deveres exigidos, são: o adulterio, a fornicação, o rapto, o incesto, a sodomia, e todas as concupiscencias desnaturaes; todas as imaginações, pensamentos, propositos, e affectos impuros; todas as communicações corruptas ou torpes, ou o ouvir as mesmas; os olhares lascivos, o comportamento impudente ou leviano; o vestuario immodesto e a prohibição de casamentos licitos, e a permissão de casamentos illicitos; o permittir, tolerar ou ter bordeis, e a frequentação d'elles; os votos embaraçadores de celibato, a demora indevida de casamento; o ter mais que uma mulher ou mais que um marido ao mesmo tempo; o divorcio, ou o abandono injusto; a ociosidade, a glotoneria, a bebedice, a sociedade impura; canticos, livros, gravuras, danças, espectaculos lascivos, e todas as mais provocações á impureza, ou actos de impureza, quer em nós mesmos, quer nos outros.",
+          "references": [
+            "Prov. 5:7, e 4:23,27; Heb. 13:4; Eph 5:5; Deut 22:25; Marc. 6:18; Rom 1:26-27; Lev. 20:15-16; Math. 5:28, e 15:19; Col 3:5; Eph. 5:3-4; Isa. 3: 16; II Ped 2:14; Prov. 7:10,13; I Tim. 4:3; Mar 6:18; II Reis 23:7; Lev. 19:29; Jer. 5:7; Math. 19:10-11; I Tim. 5:14-15; I Cor. 7:36; Math. 19:5,8,9; I Cor. 7: 12:13; Eze. 16:49; Eph. 5:11, e 5:4; Rom. 13:13, 14; I Ped. 5:3; II Ped. 2:17-18."
+          ]
+        },
+        {
+          "id": "question-140",
+          "title": "Pergunta 140",
+          "question": "Qual é o oitavo mandamento?",
+          "body": "O oitavo mandamento é: «Não furtarás».",
+          "references": [
+            "Exo. 20:15."
+          ]
+        },
+        {
+          "id": "question-141",
+          "title": "Pergunta 141",
+          "question": "Quaes são os deveres exigidos no oitavo mandamento?",
+          "body": "Os deveres exigidos no oitavo mandamento são: a verdade, a fidelidade e a justiça nos contractos e no commercio entre os homens, dando a cada um o que lhe é devido; a restituição de bens illicitamente tirados dos seus donos; o dar e emprestar livremente, conforme as nossas forças e as necessidades de outrem; a moderação de nossos juizos, vontades e affectos, em relação ás riquezas d'este mundo; um cuidado e zelo providentes em adquirir, guardar, usar e distribuir aquellas coisas que são necessarias e convenientes para o sustento da nossa natureza, e que condizem com a nossa condição: um meio de vida licito, e a diligencia no mesmo; a frugalidade: o evitar demandas forenses desnecessarias, e fianças, ou outros compromissos similhantes; e um esforço por todos os modos justos e licitos para adquirir, preservar e adeantar a riqueza e o estado exterior, tanto de outros como nosso.",
+          "references": [
+            "Psa. 15:2,4; Miq. 6:8; Zach. 8:16; Rom. 13:7; Lev. 6:4-5; Deut. 15:7-8,10; I Tim. 6:6 9, e 5:8; Prov. 27:23; Ecc. 3:12-13; I Tim. 6:17-18; I Cor. 7: 20; Eph. 4:28; Prov. 10:4; Rom. 12:11; Prov. 12:27 e 21:20; João 6:12; I Cor. 6:1; Prov. 11:15; Lev. 25:35; Phil. 2:4."
+          ]
+        },
+        {
+          "id": "question-142",
+          "title": "Pergunta 142",
+          "question": "Quaes são os peccados prohibidos no oitavo mandamento?",
+          "body": "Os peccados prohibidos no oitavo mandamento, além da negligencia dos deveres exigidos, são: o furto, o roubo, o roubo de homens, e o receber qualquer coisa furtada; o trafico fraudulento, pesos e medidas falsas, o remover marcos de propriedade, a injustiça e a infidelidade em contractos entre os homens ou em administrar os negocios de outros a nós confiados; a oppressão, a extorsão, a usura, as pleitas, as vexatorias demandas forenses, todo o cerco injusto de propriedades e despejo injusto de inquilinos; a accumulação de generos para encarecer o preço, os meios illicitos de vida, e todos os outros modos injustos ou peccaminosos de tirar ou de reter do nosso proximo aquillo que lhe pertence, ou de nos enriquecer a nós mesmos; a cubiça, a estima e o amor desordenados de bens munda-nos, os cuidados e esforços receiosos e demasiados em obtel-os, guardal-os, e usar d'elles; a inveja da prosperidade de outrem; assim como a ociosidade, a prodigalidade, o jogo dissipador, e todos os outros modos pelos quaes indevidamente prejudicamos o nosso estado exterior; e o defraudar a nós mesmos do devido uso e conforto da posição em que Deus nos collocou.",
+          "references": [
+            "I João 3:17; Thiago 2:15-16; Eph. 4:28; Psa. 62:10; I Tim. 1:10; Exo. 21:16; Prov. 29:24; Psa. 1:18; Lev. 19:13; Prov. 11:1, e 20:10; Deut. 19:14; Amós 8:5; Psa. 37:21; Luc. 16:11-12; Eze. 22:29; Lev. 25:17; Math. 23:25; Eze. 22:12; Psa. 15:5; Job 15:34; Prov. 3:30; Isa. 5:8; Miq. 2:2; Prov. 11:26; Act. 19: 19; Thiago 5:4; Prov. 21:6; Luc. 12:15; I João 2:15-16; Math. 6:25, 34; Eccl. 5:12; Psa. 73:3; II Thess. 3:10; Prov. 21:17; e 23:20-21; Eccl. 4:8; I Tim. 4:3-5."
+          ]
+        },
+        {
+          "id": "question-143",
+          "title": "Pergunta 143",
+          "question": "Qual é o nono mandamento?",
+          "body": "O nono mandamento é: «Não dirás falso testemunho contra o teu proximo.»",
+          "references": [
+            "Exo. 20:16."
+          ]
+        },
+        {
+          "id": "question-144",
+          "title": "Pergunta 144",
+          "question": "Quaes são os deveres exigidos no nono mandamento?",
+          "body": "Os deveres exigidos no nono mandamento são: conservar e promover a verdade entre os homens e a boa reputação do proximo, assim como a nossa; manter e defender publicamente a verdade e dizel-a sincera, livre, clara e plenamente do coração, e em questões de julgamento e justiça e em todas as mais coisas, quaesquer que sejam, dizer a verdade e só a verdade; julgar caridosamente os nossos similhantes; amar, desejar e ter regozijo pela sua boa reputação; entristecermo-nos pelas suas fraquezas e encobril-as; mostrar franco reconhecimento dos seus dotes e graças; defender a sua innocencia; receber promptamente boas informações e não dar acolhimento a más informações a seu respeito e rejeitar as que são maldizentes, lisongeadoras e calumniadoras; prezar e cuidar da nossa boa reputação e defendel-a quando fôr necessario; o cumprir as promessas licitas, o estudar e praticar tudo o que é verdadeiro, honesto, amavel e de boa fama.",
+          "references": [
+            "Eph. 4:25; III João 12; Prov. 31:9; Psa. 15:2; II Chron. 19:9: Jer. 9:3, e 42:4; Act. 20:27; II Sam. 14:18; Lev. 19:15; Prov. 14:5; Col. 3:9; II Cor. 1:17 18; Heb. 6:9; I Cor. 13:7; Rom. 1:8; III João 4; II Cor. 12:21; Prov. 17:9; I Ped. 4:8; I Cor. 1:4-5; I Sam. 22:14; I Cor. 13:6 7; Psa. 15:3; Prov. 11:13, e 24:24-25; Psa. 101:5; Prov. 22:1; João 8:49; Psa. 15: 4; Phil. 4:8."
+          ]
+        },
+        {
+          "id": "question-145",
+          "title": "Pergunta 145",
+          "question": "Quaes são os peccados prohibidos no nono mandamento?",
+          "body": "Os peccados prohibidos no nono mandamento são tudo quanto prejudica a verdade e a boa reputação do nosso proximo, assim como a nossa, especialmente em julgamento publico; o testemunho falso, o subornar testemunhas falsas, apparecer e pleitear scientemente a favor de uma causa má; resistir e calcar á força a verdade; dar sentença injusta; chamar o mau bom e o bom mau; recompensar os maus segundo a obra dos justos, e os justos segundo a obra dos maus; a falsificação de firmas, a suppressão da verdade, o silencio indevido em uma causa justa; conservar-nos calados quando a iniquidade reclama, a reprehensão da nossa parte ou uma denuncia; o fallar a verdade inopportunamente, ou com malicia para fim mau, pervertel-a em sentido falso, ou proferil-a duvidosa e equivocamente, para prejuizo da verdade ou da justiça; o fallar inverdades, mentir, calumniar, maldizer, detrahir, tagarellar, cochichar, escarnecer, vilipendiar, censurar temeraria e asperamente ou com parcialidade; a má interpretação das intenções, palavras e actos de outros; a adulação e vangloria; o elogiar ou depreciar demasiadamente a nós mesmos ou a outros, em pensamento ou palavra; a negação dos dons e das graças de Deus; o aggravo de faltas menores; o encobrimento, desculpa, attenuação de peccados quando chamados a uma confissão franca; a descoberta desnecessaria das fraquezas de outrem; o levantar boatos falsos; o receber e acreditar rumores maus; o tapar os ouvidos a uma defeza justa; as más suspeitas; a inveja ou tristeza pelo credito merecido de outros; o esforço ou desejo de os prejudicar; o regozijo na desgraça ou na infamia de alguem; o desprezo escarnecedor; a admiração excessiva de outrem; a quebra de promessas legitimas; a negligencia de aquellas coisas que são de boa fama; o praticar ou não evitar aquellas coisas que trazem uma má fama, ou não impedir em outras taes coisas, até onde podermos.",
+          "references": [
+            "Luc. 3:14; Lev. 19:15; Prov. 19:5; Act. 9:13; Jer. 9:3; Psa. 12:3-4; Prov. 17:15; Isa. 5:20,23; Luc. 16:6-7; Lev. 5:1; Act. 5:3: Lev. 19:17; I Reis 1:6; Isa. 59:4: Prov. 29:11; I Sam. 22:9-10; Psa. 56:5: Math. 26:60-61; Gen 3:5; Isa. 59:13: Col 3:9; Psa. 50:20, e 15:3; Thiago 4:11; Lev. 19:16; Rom. 1:29; Prov. 16:28; Gen. 21:9; Gal. 4:29; I Cor. 6:10; Math 7:1; Thiago 2:13; João 7:24; Rom. 3:8; Psa. 69:10, e 12:2-3; II Tim. 3:2: Luc. 18:9, 11; Gal. 5:26; Exo. 4:10, 14; Act. 12:22; Luc. 9:49-50; II Cor. 10:10: Act. 2:13; Math. 7:3; Gen. 3:12-13; Prov. 28:13, e 25:9; Exo. 23:1; Psa. 41:7-8; Act. 7:57; Job 31:13-14; I Cor. 13:5; Math. 21:15; Dan. 6:3-4; Jer. 48:27; Math. 27:28-29; I Cor. 3:21; Act. 12:22; Rom. 1:31; II Tim. 3:3; I Sam. 2:24; Gen. 34:30; Juizes 11:7; II Ped. 2:2."
+          ]
+        },
+        {
+          "id": "question-146",
+          "title": "Pergunta 146",
+          "question": "Qual é o decimo mandamento?",
+          "body": "O decimo mandamento é: «Não cubiçarás a casa do teu proximo; não desejarás a sua mulher, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem coisa alguma que lhe pertença».",
+          "references": [
+            "Exo. 20:17."
+          ]
+        },
+        {
+          "id": "question-147",
+          "title": "Pergunta 147",
+          "question": "Quaes são os deveres exigidos no decimo mandamento?",
+          "body": "Os deveres exigidos no decimo mandamento são: um pleno contentamento com a nossa condição e uma disposição caridosa da alma para com o nosso proximo, de modo que todos os nossos desejos e affectos relativos a elle tendam para todo o seu bem e promovam o mesmo.",
+          "references": [
+            "Heb. 13:5; I Tim. 6:6; Rom 12:15; Phil. 2:4."
+          ]
+        },
+        {
+          "id": "question-148",
+          "title": "Pergunta 148",
+          "question": "Quaes são os peccados prohibidos no decimo mandamento?",
+          "body": "Os peccados prohibidos no decimo mandamento são: o descontentamento com o nosso estado; a inveja e a tristeza pelo bom do nosso proximo, juntamente com todos os desejos e affectos desordenados para qualquer coisa que lhe pertença.",
+          "references": [
+            "I. Cor. 10:10; Gal. 5:26; Thiago 3:14,16; Psa. 112:9-10; Rom. 7:7; Deut. 5:21; Col. 3:5; Rom. 13:9."
+          ]
+        },
+        {
+          "id": "question-149",
+          "title": "Pergunta 149",
+          "question": "Será alguem capaz de guardar perfeitamente os mandamentos de Deus?",
+          "body": "Nenhum homem, por si mesmo, ou por qualquer graça que receba n'esta vida, é capaz de guardar perfeitamente os mandamentos de Deus; mas diariamente os viola por pensamentos, palavras e obras."
+        },
+        {
+          "id": "question-150",
+          "title": "Pergunta 150",
+          "question": "São todas as transgressões da lei de Deus egualmente odiosas em si mesmas e á vista de Deus?",
+          "body": "Todas as transgressões da lei de Deus não são egualmente odiosas; mas alguns peccados em si mesmos, e em razão de diversas circumstancias aggravantes, são mais odiosos á vista de Deus do que outros.",
+          "references": [
+            "João 19:11: I João 5:16."
+          ]
+        },
+        {
+          "id": "question-151",
+          "title": "Pergunta 151",
+          "question": "Quaes são as circumstancias aggravantes que tornam alguns peccados mais odiosos do que outros?",
+          "body": "Alguns peccados se tornam mais aggravantes:\n\n1.° Em razão dos offensores: se forem pessoas de edade mais madura, de maior experiencia ou graça; se eminentes pela profissão da religião, dons, posição, officio; se forem guias para outros e pessoas cujo exemplo será provavelmente seguido por outros.\n\n2.º Em razão das pessoas offendidas, se as offensas foram directamente contra Deus, seus attributos e culto; contra Christo e sua graça; contra o Espirito Santo, seu testemunho e operações; contra superiores, pessoas eminentes e aquelles a quem estamos especialmente relacionados e a quem devemos favores; contra os crentes, especialmente contra os irmãos fracos; contra as suas almas ou as de quaesquer outros, e contra o bem geral de todos ou de muitos.\n\n3.° Pela natureza e qualidade da offensa: se fôr contra a palavra expressa da lei; se violar muitos mandamentos; se contiver em si muitos peccados; se fôr concebida, não só no coração, mas manifestar-se em palavras e acções, escandalizar a outros e não admittir reparo algum; se contra os meios da graça, misericordia e castigos de Deus; se contra a luz da natureza, a convicção da consciencia, admoestação publica ou particular, censuras da egreja, punições civis; se contra as nossas orações, propositos, promessas, votos, pactos, obrigações a Deus ou aos homens; se fôrem feitas deliberada e perversamente com presumpção, impudentemente, com jactancia, maliciosamente, frequente e obstinadamente, com gosto, continuação, e recahidas depois de arrependimento.\n\n4.º Pelas circumstancias de tempo e de logar: se fôr no dia do Senhor ou em outros tempos de culto divino, immediatamente antes, depois d'estes ou de outros auxilios para prevenção ou remedio contra taes quedas; se em publico ou em presença de outros que são capazes de ser provocados ou contaminados por essas transgressões.",
+          "references": [
+            "1.º Jer. 2:8; Luc. 12:47-48; I Reis 11:4,9; Eccl. 4:13; Gal. 2:11-12; II Sam. 12:14; Luc. 20:46-47; Thiago 4:17; II Chron. 26:16,20; João 3:10; II Sam. 12:7-9; Rom. 2:21-24; I Reis 15:30; Gal. 2:13; II Ped. 2:2.",
+            "2.º Mal. 1:8; Psa. 2:12; Math. 21:38-39; I Sam 2:25; Act. 5:4; Rom. 2:4; Mal. 1:14; I Cor 10:21-22, João 3:18,36; Math. 12:31-32; Heb. 10:29; Eph. 4:30; Act. 8:18; Num. 12:8; Prov. 30:17; Psa. 41:9; Zach. 2:8; Math. 18:6; I Cor 8:11-12; Eze. 13:18; Psa. 94: 21; Math. 23:15; Josué 22:20; I Thess. 2:15-16.",
+            "3.º Prov. 6:3; Eze. 20:13; Col. 3:5; I Tim 6:10; Miq. 2:1-2; Math. 18:7; Rom. 2:23-24: Prov. 6:32-35; Math. 11:21-22; João 15:22; Deut 32:6; Isa. 1:2-3: Jer. 5:3: Rom. 1:26 27, 32; Prov. 29:1; Math. 18: 17; Tito 3:10; I Reis 2:41; Psa. 78;34, 36-37; Eccl. 5:5; Lev. 26:25; Prov. 20:25, e 2:17; Ps. 36:4; Jer. 6:15-16: Num. 15:30: Psa. 52:1; Eze. 35:5-6; Num. 14:22: Zach. 7:11-12; Prov. 2:14; Gen. 6:5; Isa. 57: 17; II Ped. 2:20-21.",
+            "4.º Isa. 22:12-14; Jer. 7:10-11; Eze. 23:33-39; Isa. 58:3-4; I Cor. 11:20-21; João 13:27; Esd. 9:13-14; Juizes 8:27."
+          ]
+        },
+        {
+          "id": "question-152",
+          "title": "Pergunta 152",
+          "question": "Que merece da parte de Deus cada peccado?",
+          "body": "Todo o peccado, até o menor, sendo contra a soberania, bondade, e santidade de Deus e contra a sua justa lei, merece a sua ira e maldição, n'esta vida e na vindoura, e não pode ser expiado, senão pelo sangue de Christo.",
+          "references": [
+            "Thiago 2:10-11; Exo. 20:1-2; Deut. 32:6; Hab. 1:13; I Ped. 1:15-16; I João 3:4; Rom. 7:12; Gal. 3:10: Deut. 28:15; Lam. 3:39; Math. 25:41; Rom. 6:21, 23; Heb. 9:22; I João 1:7."
+          ]
+        },
+        {
+          "id": "question-153",
+          "title": "Pergunta 153",
+          "question": "Que exige Deus de nós para que possamos escapar á sua ira e maldição, em que incorremos pela transgressão da lei?",
+          "body": "Para escaparmos á ira e maldição de Deus, em que incorremos pela transgressão da lei, Elle exige de nós o arrependimento para com Deus, a fé em nosso Senhor Jesus Christo, e o uso diligente de todos os meios exteriores pelos quaes Christo nos communica os beneficios da sua mediação.",
+          "references": [
+            "Act. 20:21; Mar. 1:15; Act. 16:30-31; João 3: 18; Prov. 8:33-35; Luc 13:24."
+          ]
+        },
+        {
+          "id": "question-154",
+          "title": "Pergunta 154",
+          "question": "Quaes são os meios exteriores pelos quaes Christo nos communica os beneficios da sua mediação?",
+          "body": "Os meios exteriores e ordinarios, pelos quaes Christo communica á sua egreja os beneficios da sua mediação, são todas as suas ordenanças, especialmente a Palavra, os sacramentos, e a oração; todas as quaes se tornam efficazes aos eleitos para a salvação.",
+          "references": [
+            "Math. 28:19-20; Act. 2:42, 46."
+          ]
+        },
+        {
+          "id": "question-155",
+          "title": "Pergunta 155",
+          "question": "Como se torna a Palavra efficaz para a salvação?",
+          "body": "O Espirito de Deus torna a leitura, e especialmente a prégação, da Palavra um meio efficaz para illuminar, convencer e humilhar os peccadores, para lhes tirar toda a confiança em si mesmos e os attrahir a Christo; para os conformar á sua imagem e os sujeitar á sua vontade; para os fortalecer contra as tentações e corrupções; para os edificar na graça e estabelecer os seus corações em santidade e conforto mediante a fé para a salvação.",
+          "references": [
+            "Psa. 19:8; Act. 26:18; Jer. 23:28-29; Heb. 4: 12; I Cor. 14:24-25; Act. 2:37, 41; II Cor. 3:18, e 10:4-5; Psa. 19:11; Eph. 6:16 17, e 4:11-12; Act. 20:32; II Tim. 3:15-16; Rom. 16:25; I Thess. 3:2, 13."
+          ]
+        },
+        {
+          "id": "question-156",
+          "title": "Pergunta 156",
+          "question": "Deve a Palavra de Deus ser lida por todos?",
+          "body": "Embora não seja permittido a todos ler a Palavra publicamente á congregação, comtudo os homens de todas as condições teem obrigação de lel-a em particular por si mesmos e com as suas familias; e para este fim as Santas Escripturas devem ser traduzidas das linguas originaes para as linguas vulgares.",
+          "references": [
+            "Deut. 31:9, 11, e 17:18-19; Isa. 36:16; João 5:39; Apoc. 1:3; Deut. 6:6-7; Psa. 78:5-6; I Cor. 14: 18-19."
+          ]
+        },
+        {
+          "id": "question-157",
+          "title": "Pergunta 157",
+          "question": "Como deve ser lida a Palavra de Deus?",
+          "body": "As Santas Escripturas devem ser lidas com uma alta e reverente estimação; com a firme persuasão de serem ellas a propria Palavra de Deus e de que sómente Elle pode habilitar-nos a entendel-as; com desejo de conhecer, crer e obedecer á vontade de Deus n'ellas revelada; com diligencia e attenção ao seu conteúdo e proposito; com meditação, applicação, abnegação propria, e oração.",
+          "references": [
+            "Neh. 8:5; Isa. 66:2; Psa. 19:10; II Ped 1:19-21; I Thess. 2:13; Psa. 119:18; Luc. 24:45; Thiago 1:21-22; I Ped. 2:2; Act 17:11, e 8:30,34; Math. 13:23: Psa. 1:2 e 119:97; II Chron. 34:21; Rom. 6:23-24, e 15:4; Prov. 3:5; Job 23:12; 4:32, 34; Neh. 8:6, 8; Psa. 119:18."
+          ]
+        },
+        {
+          "id": "question-158",
+          "title": "Pergunta 158",
+          "question": "A quem é permittido prégar a Palavra de Deus?",
+          "body": "A Palavra de Deus deve ser prégada sómente por aquelles que teem dons sufficientes e são devidamente approvados e chamados para o ministerio.",
+          "references": [
+            "I Tim. 3:2, 6; II Tim. 2:2; Mal. 2:7; Rom. 10: 15; I Cor. 12:28-29; I Tim. 4:14."
+          ]
+        },
+        {
+          "id": "question-159",
+          "title": "Pergunta 159",
+          "question": "Como deve ser prégada a Palavra de Deus por aquelles que para isto são chamados?",
+          "body": "Aquelles que são chamados a trabalhar no ministerio da Palavra devem prégar a sã doutrina, diligentemente, em tempo e fóra de tempo; claramente, não em palavras persuasivas de humana sabedoria, mas em demonstração do Espirito e de poder; fielmente, tornando conhecido todo o conselho de Deus; sabiamente accommodando-se ás necessidades e ás capacidades dos ouvintes; zelosamente, com amor fervoroso para com Deus e para com as almas do seu povo; sinceramente, tendo por alvo a gloria de Deus, e procurando converter, edificar e salvar as almas.",
+          "references": [
+            "Tito 2:1,7-8; Act. 18:25; II Tim. 4:2; I Cor. 14:9, e 2:4; Jer. 23:28; I Cor. 4:1-2; Act. 20:27; Col. 1:28; II Tim. 2:15; Luc. 12:42; I Cor. 3:2; Act. 18:25; II Tim. 4:5; II Cor. 5:13-14; Col. 4:12; II Cor. 12:15, e 4:2; João 7:18; I Thess. 2:4; I Cor. 9:19-22; II Cor. 12:19; Eph. 4:12; I Tim. 4:16; II Tim. 2:10."
+          ]
+        },
+        {
+          "id": "question-160",
+          "title": "Pergunta 160",
+          "question": "Que se exige dos que ouvem a Palavra prégada?",
+          "body": "Exige-se dos que ouvem a Palavra prégada que attendam a ella com diligencia, preparação e oração; que comparem com as Escripturas aquillo que ouvem; que recebam a verdade com fé, amor, mansidão e promptidão de espirito, como a Palavra de Deus; que meditem n'ella e conversem a seu respeito uns com os outros; que a escondam nos seus corações, e produzam os fructos devidos no seu procedimento.",
+          "references": [
+            "Psa. 84:1-2,4; Luc. 8:18; I Ped. 2:1-2; Psa. 119:18; Eph. 6:17-18; Act. 17:11; Rom 1:16,17; II Thess. 2:10; Thiago 1:21; Psa. 25:9; Act. 17:11; I Thess. 2:13; Heb. 2:1; Deut 6:6-7; Psa. 119:11; Luc. 8:15; Thiago 1:25."
+          ]
+        },
+        {
+          "id": "question-161",
+          "title": "Pergunta 161",
+          "question": "Como se tornam os sacramentos meios efficazes para a salvação?",
+          "body": "Os sacramentos tornam-se meios efficazes para a salvação, não porque tenham poder algum em si, nem por virtude alguma derivada da piedade ou da intenção de quem os administra, mas unicamente pela operação do Espirito Santo e pela benção de Christo que os instituiu.",
+          "references": [
+            "I Ped. 3:21; Act. 8:13,23; I Cor. 3:7, e 13:13."
+          ]
+        },
+        {
+          "id": "question-162",
+          "title": "Pergunta 162",
+          "question": "Que é um sacramento?",
+          "body": "O sacramento é uma santa ordenança instituida por Christo na sua Egreja, para significar, sellar e conferir áquelles que estão no pacto da graça os beneficios da mediação de Christo; para os fortalecer e lhes augmentar a fé e todas as mais graças, e os obrigar á obediencia; para testemunhar e nutrir o seu amor e communhão uns com os outros, e para distinguir entre elles e os que estão de fóra.",
+          "references": [
+            "Math. 28;19, e 26:26-27; Rom. 4:11; I Cor. 11:24-25; Exo. 12:48; Math. 15:24, 27: Rom. 15:8-9, e 9:8; Act. 2:38; I Cor. 10:16; Act. 22:16; João 6:56-57; Gal, 2:27; Deut. 10:16, e 30:6; Rom. 6:3-4; I Cor, 5:6-8, e 20:13, e 10:17; Lev. 20:26; Josué 5:9; Isa. 52:1, 11; I Cor. 10:21."
+          ]
+        },
+        {
+          "id": "question-163",
+          "title": "Pergunta 163",
+          "question": "Que partes tem um sacramento?",
+          "body": "As partes de um sacramento são duas: uma, o signal exterior e sensivel usado segundo a propria instituição de Christo; a outra, uma graça interior e espiritual representada pelo signal.",
+          "references": [
+            "Math. 3:11."
+          ]
+        },
+        {
+          "id": "question-164",
+          "title": "Pergunta 164",
+          "question": "Quantos sacramentos instituiu Christo sob o Novo Testamento?",
+          "body": "Sob o Novo Testamento Christo instituiu na sua Egreja sómente dois sacramentos: o Baptismo e a Ceia do Senhor.",
+          "references": [
+            "Math. 28:19; I Cor. 11:23."
+          ]
+        },
+        {
+          "id": "question-165",
+          "title": "Pergunta 165",
+          "question": "Que é o Baptismo?",
+          "body": "O Baptismo é o sacramento do Novo Testamento, no qual Christo ordenou a lavagem com agua em nome do Pae, do Filho e do Espirito Santo, para ser um signal e sello de nos unir a si mesmo, da remissão de peccados pelo seu sangue e da regeneração pelo seu Espirito: da adopção e resurreição para a vida eterna; e por elle os baptizandos são solemnemente admittidos á Egreja visivel e entram em um pacto publico, professando pertencer inteira e unicamente ao Senhor.",
+          "references": [
+            "Gal. 3:27; Act. 22:26; Mar. 1:4; Apoc. 1:5; João 3:5; Tito 2:5; Gal. 3:26-28; Col.2:11-12; Act. 2:41."
+          ]
+        },
+        {
+          "id": "question-166",
+          "title": "Pergunta 166",
+          "question": "A quem deve ser administrado o Baptismo?",
+          "body": "O Baptismo não deve ser administrado aos que estão fóra da Egreja visivel e assim estranhos aos pactos da promessa, emquanto não professarem a sua fé em Christo e obediencia a Elle, porém as creanças cujos paes, ou um só d'elles, professarem fé em Christo e obediencia a Elle, estão, quanto a isto, dentro do pacto e devem ser baptizados.",
+          "references": [
+            "Act. 18:8; e 2:38-39; Luc. 18:16; I Cor. 7:14"
+          ]
+        },
+        {
+          "id": "question-167",
+          "title": "Pergunta 167",
+          "question": "Como devemos tirar proveito do nosso Baptismo?",
+          "body": "O dever necessario mas muito negligenciado, de tirar proveito do nosso Baptismo, deve ser cumprido por nós durante a nossa vida, especialmente no tempo da tentação e quando assistimos á administração d'esse sacramento a outros, por meio de séria e grata consideração da sua natureza e dos fins para que Christo o instituiu, dos privilegios e beneficios conferidos e selladas por elle e do voto solemne que n'elle fizemos; por meio de humilhação devida á nossa corrupção peccaminosa, ás nossas faltas, e ao andarmos contrarios á graça do Baptismo e aos nossos votos; por crescermos até á certeza do perdão de peccados e de todas as mais bençãos a nós selladas por esse sacramento; por fortalecer-nos pela morte e resurreição de Christo, em cujo nome fomos baptizados, para mortificação do peccado e a vivificação da graça e por esforçarmo-nos a viver pela fé, a ter a nossa conversação em santidade e rectidão, como convem áquelles que deram os seus nomes a Christo, e a andar em amor fraternal, como baptizados pelo mesmo Espirito em um só corpo.",
+          "references": [
+            "Eph. 4:30; Col. 2:6; Rom. 6:1-4; I Cor. 1:11, 13; Gal. 3:1-3 Rom 5:1-2, e 4:11-12; I Ped. 3:21; Col. 3:1, 3, 5; Heb. 10:38-39; Rom. 4:22; Act. 2:28; I Cor. 12:13, 25-27."
+          ]
+        },
+        {
+          "id": "question-168",
+          "title": "Pergunta 168",
+          "question": "Que é a Ceia do Senhor?",
+          "body": "A Ceia do Senhor é o sacramento do Novo Testamento, no qual, dando-se e recebendo-se pão e vinho, conforme a instituição de Christo, é annunciada a sua morte; e os que dignamente participam d'elle alimentam-se do corpo e do sangue de Christo para sua nutrição espiritual e crescimento na graça; teem a sua união e communhão com Elle confirmadas; testemunham e renovam a sua gratidão e consagração a Deus e o seu mutuo amor uns com os outros, como membros do mesmo corpo mystico.",
+          "references": [
+            "Luc. 22:20; Math. 26:26-27; João 6:55-56; I Cor. 10:16, e 11:25, o 10:17, 21."
+          ]
+        },
+        {
+          "id": "question-169",
+          "title": "Pergunta 169",
+          "question": "Como ordenou Christo que o pão e o vinho fossem dados e recebidos no sacramento da Ceia do Senhor?",
+          "body": "Christo ordenou que os ministros da Palavra, na administração d'este sacramento, separassem o pão e o vinho do uso commum pela palavra da instituição, acções de graças e oração; que tomassem e partissem o pão e dessem, tanto este como o vinho, aos commungantes, os quaes, pela mesma instituição, devem tomar e comer o pão e beber o vinho, em grata recordação de que o corpo de Christo foi partido e dado e o seu sangue derramado por elles.",
+          "references": [
+            "Mar. 14:22-24."
+          ]
+        },
+        {
+          "id": "question-170",
+          "title": "Pergunta 170",
+          "question": "Como se alimentam do corpo e do sangue de Christo os que dignamente participam da Ceia do Senhor?",
+          "body": "Desde que o corpo e o sangue de Christo não estão, nem corporal nem carnalmente, presentes no pão, com o pão, ou debaixo do pão e vinho na Ceia do Senhor, mas sim espiritualmente á fé do commungante, não menos verdadeira e realmente do que estão os mesmos elementos aos seus sentidos, assim os que dignamente participam do sacramento da Ceia do Senhor n'elle se alimentam do corpo e do sangue de Christo, não de uma maneira corporal e carnal, mas espiritual; comtudo, verdadeira e realmente, visto que pela fé recebem e applicam a si Christo crucificado e todos os beneficios da sua morte.",
+          "references": [
+            "Act. 3:21; Math. 26:26,28; João 6:51-53; I Cor. 10:16."
+          ]
+        },
+        {
+          "id": "question-171",
+          "title": "Pergunta 171",
+          "question": "Como devem os que recebem o sacramento da Ceia do Senhor preparar se para o receber?",
+          "body": "Os que recebem este sacramento devem preparar-se para o receber, examinando-se a si mesmos, se estão em Christo, a respeito dos seus peccados e necessidades, da verdade e medida do seu conhecimento, fé, arrependimento, amor para com Deus e para com os irmãos, da caridade para com todos os homens, perdoando aos que lhes teem feito mal, dos seus desejos de ter Christo e da sua nova obediencia; renovando o exercicio d'estas graças pela meditação seria e pela oração fervorosa.",
+          "references": [
+            "I Cor. 11:18,20,28-29,31; Phil. 3:8-9; Psa. 139: 23-24; II Cor. 13:5; Zach. 12:10; I Cor. 10:17; Math. 5:23-24; João 7:37; Isa. 55:1; I Cor. 5:8; Rom 6:17-18; Luc. 19:8; Heb. 10:21-22,24; Psa 29:6; I Cor. 11:24; Math. 26:26."
+          ]
+        },
+        {
+          "id": "question-172",
+          "title": "Pergunta 172",
+          "question": "Uma pessoa que duvída de que esteja em Christo, ou de que esteja convenientemente preparada, deverá vir á Ceia do Senhor?",
+          "body": "Uma pessoa que duvida de que esteja em Christo, ou de que esteja convenientemente preparada para participar da Ceia do Senhor, pode ter um verdadeiro interesse em Christo, embora não tenha ainda a certeza d'isto, mas aos olhos de Deus o tem, se está devidamente tocada pelo receio da falta d'esse interesse e sem fingimento deseja ser achada em Christo e apartar-se da iniquidade. N'este caso, desde que as promessas são feitas, e este sacramento é ordenado para o allivio até dos crentes fracos e que estão em duvida, deve lamentar a sua incredulidade e esforçar-se para ter as suas duvidas dissipadas; e, assim fazendo, pode e deve vir á Ceia do Senhor para ficar mais fortalecida.",
+          "references": [
+            "I João 5:13; Isa. 54:7-10; Mar. 5:3-4; Psa. 31:22; I João 5:15; Psa. 42:11; II Tim. 2:19; Rom. 7:24-25; Math. 26:28, e 11:28; Mar. 9:24; Act. 16:30; I Cor. 11:28."
+          ]
+        },
+        {
+          "id": "question-173",
+          "title": "Pergunta 173",
+          "question": "Pode alguem que professa a fé e deseja participar da Ceia do Senhor ser excluido d'ella?",
+          "body": "Os que forem achados ignorantes ou commetterem escandalos, não obstante a sua profissão de fé e o desejo de participar da Ceia do Senhor, podem e devem ser excluidos d'esse sacramento, pelo poder que Christo deixou á sua Egreja, até que recebam instrucção ou tenham melhor procedimento.",
+          "references": [
+            "I Cor. 11:29, e 5:11; Math. 7:6; Judas 23; Gal. 6:1."
+          ]
+        },
+        {
+          "id": "question-174",
+          "title": "Pergunta 174",
+          "question": "Que se exige dos que recebem o sacramento da Ceia, na occasião de celebral-o?",
+          "body": "Exige-se dos que recebem o sacramento da Ceia que durante a sua celebração esperem em Deus n'essa ordenança, com toda a santa reverencia e attenção; que diligentemente observem os elementos e os actos sacramentaes; que attentamente discirnam o corpo do Senhor e, cheios de amor, meditem na sua morte e soffrimentos, e assim se despertem a um exercicio das suas graças, julgando-se a si mesmos e entristecendo-se pelo peccado; tendo fome e sêde ardentes de Christo, alimentando se n'Elle pela fé, recebendo da sua plenitude, confiando nos seus meritos, regozijando-se no seu amor, sendo gratos pela sua graça e renovando o pacto que fizeram com Deus, e o amor que votaram a todos os crentes.",
+          "references": [
+            "Heb. 12:28; Lev. 10:3; Exo. 24:8; Math. 26:28; I Cor. 11:26,29; Eph. 3:17-19; I Cor. 11:31; Zach. 12: 10; Apoc. 22:17: Gal. 2:20; João 6:35, e 1:16; Col. 1:19; I Ped. 1:8; Phil. 3:9; Psa. 22:26; Jer. 1:5; I Cor. 10:17; Act. 2:42."
+          ]
+        },
+        {
+          "id": "question-175",
+          "title": "Pergunta 175",
+          "question": "Qual o dever dos crentes depois de receberem o sacramento da Ceia do Senhor?",
+          "body": "O dever dos crentes depois de receberem este sacramento é de seriamente considerar como se portaram n'elle, e com que proveito; se foram vivificados e confortados, devem bemdizer a Deus por isto, pedir a continuação do mesmo, vigiar contra reincidencias no peccado, cumprir os seus votos e animar-se a assistir frequentemente a esta ordenança; se não acharem, porém, nenhum beneficio, deverão reflectir novamente e com mais cuidado na sua preparação para esta ordenança e no comportamento que tiveram na occasião, podendo, em uma e outra coisa, apoiar-se em Deus e em suas consciencias, esperando com o tempo o fructo da sua participação; se perceberem, porém, que n'essas coisas foram remissos, deverão humilhar-se e para o tuturo assistir a esta ordenança com mais cuidado e diligencia.",
+          "references": [
+            "Psa. 73:28; I Cor. 11:17,25-26,30-31; Act. 2: 42,46, 47; Rom. 15:13; Psa. 36:10; I Cor. 10:12; Rom. 11:20; Psa. 50:14, e 27:4; Act. 2:42; Psa. 77:6, e 139: 23-24, e 123:1-2; Isa. 8:17; Ose. 14:2; e 6:1-2; I Cor. 7:11."
+          ]
+        },
+        {
+          "id": "question-176",
+          "title": "Pergunta 176",
+          "question": "Em que concordam os sacramentos do Baptismo e da Ceia do Senhor?",
+          "body": "Os sacramentos do Baptismo e da Ceia do Senhor concordam em ser Deus auctor de ambos; em ser Christo e os seus beneficios a parte espiritual de ambos; em ambos serem sellos do mesmo pacto; em não deverem ser administrados senão pelos ministros do evangelho, e em deverem ser continuados na Egreja de Christo até á sua segunda vinda.",
+          "references": [
+            "Math. 28:19; I Cor. 11:23; Rom. 6:3-4; I Cor 10:16; Col. 2:11-12; Math. 26:27-28; I Cor. 4:1; Math. 28:20; I Cor. 11:26"
+          ]
+        },
+        {
+          "id": "question-177",
+          "title": "Pergunta 177",
+          "question": "Em que differem os sacramentos do Baptismo e da Ceia do Senhor?",
+          "body": "Os sacramentos do Baptismo e da Ceia do Senhor differem em dever o Baptismo ser administrado uma vez só, com agua, para ser um signal e sello da nossa regeneração e união com Christo, e administrado tambem ás creanças; ao passo que a Ceia do Senhor deve ser celebrada frequentemente, com os elementos de pão e vinho, para representar e dar Christo, como o alimento espiritual, á alma; e para confirmar a nossa continuação e crescimento n'elle; e isto sómente áquelles que teem a edade e aptidão para se examinar a si mesmos.",
+          "references": [
+            "Math. 3:11; Gal. 3:27; Tito 3:5; Act. 2:38-39: I Cor. 7:14, e 11:26; João 5:51; I Cor. 10:16, e 11:28."
+          ]
+        },
+        {
+          "id": "question-178",
+          "title": "Pergunta 178",
+          "question": "Que é a oração?",
+          "body": "A oração é o offerecimento dos nossos desejos a Deus, em nome de Christo e com o auxilio do seu Espirito, com a confissão dos nossos peccados e um grato reconhecimento das suas misericordias.",
+          "references": [
+            "Psa. 62:8, e 10:17; Rom. 10:1; João 16:23-24; Rom. 8:26; Dan. 9:4; Psa. 32:5-6; Phil. 4:6."
+          ]
+        },
+        {
+          "id": "question-179",
+          "title": "Pergunta 179",
+          "question": "Devemos orar sómente a Deus?",
+          "body": "Sendo Deus o unico que pode esquadrinhar o coração, ouvir os pedidos, perdoar os peccados, e cumprir os desejos de todos, é o unico em quem se deve crer e a quem se deve prestar culto religioso, a oração, que é uma parte especial do culto, deve ser offerecida por todos a Elle só e a nenhum outro.",
+          "references": [
+            "I Reis 8:39; Act. 1:24; Rom. 8:27; Psa. 45:2: Miq. 7:18; Psa. 145:16,19; II Sam 22:32; Math. 4:10; I Cor. 1:2; Isa. 13:8; Psa. 50:15; Rom. 10:12-13; Jer. 3:23, e 14:22."
+          ]
+        },
+        {
+          "id": "question-180",
+          "title": "Pergunta 180",
+          "question": "Que é orar em nome de Christo?",
+          "body": "Orar em nome de Christo é, em obediencia ao seu mandamento e com confiança nas suas promessas, pedir a misericordia por amor d'Elle; não pela mera menção do seu nome, porém derivando o nosso animo para orar e a nossa coragem, força, e esperança de sermos acceites, em oração, de Christo e da sua mediação.",
+          "references": [
+            "João 14:13-14; Dan. 9:17; Math. 7:21; Heb. 4:14-16."
+          ]
+        },
+        {
+          "id": "question-181",
+          "title": "Pergunta 181",
+          "question": "Porque devemos orar em nome de Christo?",
+          "body": "O homem, em razão do seu peccado, ficou tão afastado de Deus que a Elle não se pode chegar sem ter um mediador; e, não havendo ninguem, no céu ou na terra, constituido e preparado para esta gloriosa obra senão Christo só, o nome d'Elle é o unico em que nós devemos orar.",
+          "references": [
+            "Isa. 59:2; Eph. 3:12; Heb 7:25 27; I Tim. 2:5; João 6:27; Col. 3:17; Heb. 13:15."
+          ]
+        },
+        {
+          "id": "question-182",
+          "title": "Pergunta 182",
+          "question": "Como nos ajuda o Espirito a orar?",
+          "body": "Não sabendo nós o que havemos de pedir, como convem, o Espirito ajuda a nossa fraqueza, habilitando nos a saber por que pessoas, por que coisas e de que modo se deve orar; e operando em nossos corações, e despertando (embora não em todas as pessoas, nem em todos os tempos, na mesma medida) aquellas apprehensões, affectos e graças que são necessarios para o bom cumprimento d'esse dever.",
+          "references": [
+            "Rom. 8:26; Psa. 80:18."
+          ]
+        },
+        {
+          "id": "question-183",
+          "title": "Pergunta 183",
+          "question": "Por que pessoas devemos orar?",
+          "body": "Devemos orar por toda a Egreja de Christo na terra, pelos magistrados e outras auctoridades, por nós mesmos, pelos nossos irmãos, e até pelos nossos inimigos e pelos homens de todas as classes, pelos vivos e pelos que ainda hão de nascer; porém não devemos orar pelos mortos, nem por aquelles que se sabe terem commettido o peccado para a morte.",
+          "references": [
+            "Eph. 6:18; Psa. 28:9; I Tim. 2:1-2; II Thess. 3:1; Col. 4:3, Gen. 32:11; Thiago 5:16: II Thess. 1:11; Math. 5:44; I Tim. 2:1; João 17:20; II Sam. 12:22-23; Luc. 16:25-26; Heb. 9:27-28; I João 5:16."
+          ]
+        },
+        {
+          "id": "question-184",
+          "title": "Pergunta 184",
+          "question": "Que devemos pedir?",
+          "body": "Devemos pedir tudo o que tende para a gloria de Deus, o bem-estar da Egreja, o nosso bem ou o dos outros; nada, porém, que seja illicito.",
+          "references": [
+            "Math. 6:9: Psa. 51:18, e 122:6; Math. 7:11; Psa. 125:4; I João 5:14: Thiago 4:3."
+          ]
+        },
+        {
+          "id": "question-185",
+          "title": "Pergunta 185",
+          "question": "Como devemos orar?",
+          "body": "Devemos orar com solemne apprehensão da magestade de Deus e profunda convicção da nossa propria indignidade, necessidades e peccados; com corações penitentes, gratos e francos; com entendimento, fé, sinceridade, fervor, amor e perseverança, esperando n'Elle, com submissão humilde á sua vontade.",
+          "references": [
+            "Psa. 33:8, e 95:6; Gen. 18:27; Psa. 144:3, e 86:1; Luc. 15:17-19; Psa. 130:3; Luc. 18:13; Psa. 51: 17; Phil. 4:6; I Thess. 5:18; Psa. 119:32; Isa. 60:5; II Cor. 6:11.13; I Cor. 14:15: Heb. 10:22; Psa. 17:1: João 4:24; Thiago 5:16; I Tim. 2:8; Math. 5:23-24; Rom. 15:30; Eph. 6:18; Miq. 7:7; Math. 26:39."
+          ]
+        },
+        {
+          "id": "question-186",
+          "title": "Pergunta 186",
+          "question": "Qual a regra que Deus nos deu para nos dirigir em oração?",
+          "body": "Toda a palavra de Deus é util para nos dirigir em oração; mas a regra especial é aquella fórma de oração que nosso Salvador Jesus Christo ensinou aos seus discipulos, geralmente chamada «Oração Dominical».",
+          "references": [
+            "Psa. 119:169-170; II Tim. 3:16-17; I João 5:14."
+          ]
+        },
+        {
+          "id": "question-187",
+          "title": "Pergunta 187",
+          "question": "Como deve ser usada a Oração Dominical?",
+          "body": "A Oração Dominical não é sómente para direcção, como um modelo, segundo o qual devemos orar; mas tambem pode ser usada como uma oração, comtanto que se ore com entendimento, fé, reverencia e outras graças necessarias para o bom cumprimento do dever da oração.",
+          "references": [
+            "Math. 6:9; Luc. 11:2."
+          ]
+        },
+        {
+          "id": "question-188",
+          "title": "Pergunta 188",
+          "question": "De quantas partes consiste a Oração Dominical?",
+          "body": "A Oração Dominical consiste de tres partes: o prefacio, as petições e a conclusão."
+        },
+        {
+          "id": "question-189",
+          "title": "Pergunta 189",
+          "question": "Que nos ensina o prefacio da Oração Dominical?",
+          "body": "O prefacio da Oração Dominical, que é: «Nosso Pae que estás nos Céus,» ensina-nos, quando orarmos, a nos approximarmos de Deus com confiança na sua bondade paternal e no nosso interesse n'Elle; com reverencia e todas as outras disposições de filhos, affectos celestes e a devida apprehensão do seu soberano poder, magestade e graciosa condescendencia; assim como o orar com outros e por elles.",
+          "references": [
+            "Luc. 11:13; Rom 8:15; Psa. 95:6-7; Isa. 64:9; Psa. 123:1; Lam. 3:41: Psa. 104:1; Isa. 63:15; Psa. 113:4-6; Act. 12:5."
+          ]
+        },
+        {
+          "id": "question-190",
+          "title": "Pergunta 190",
+          "question": "Que pedimos na primeira petição?",
+          "body": "Na primeira petição, que é: «Santificado seja o Teu nome,» reconhecendo a inteira incapacidade e indisposição que ha em nós e em todos os homens de honrar a Deus como é devido, pedimos que Elle, pela sua graça, nos habilite e nos incline, a nós e a todos, a conhecer, confessar e altamente estimal-o, aos seus titulos, attributos, ordenanças, palavras, obras e tudo aquillo por que Elle se dá a conhecer, e a glorifical-o em pensamentos, palavras e obras; que impida e remova o atheismo, a ignorancia, a idolatria, a profanação e tudo quanto o deshonra; qne pela sua providencia poderosa dirija e disponha tudo para a sua propria gloria.",
+          "references": [
+            "II Cor. 3:5; Psa. 51:15; e 77:2-3, e 83:18; e 145: 6-8, e 146:10,15; II Thess. 3:1; Psa. 107:32; II Cor. 2:14; Psa. 19:4; Phil. 1:11; Psa. 79:10, e 67:1-4; Eph. 1:17-18; Psa. 97:7, e 74:18,22; Jer. 14:21; II Reis 19:16; Isa. 64:1-2."
+          ]
+        },
+        {
+          "id": "question-191",
+          "title": "Pergunta 191",
+          "question": "Que pedimos na segunda petição?",
+          "body": "Na segunda petição, que é: «Venha o teu reino,» reconhecendo que nós e todos os homens estamos por natureza sob o dominio do peccado e Satanaz, pedimos que esse reino seja destruido, o evangelho seja propagado por todo o mundo, os judeus chamados, a plenitude dos gentios seja trazida á Egreja; que esta seja provida de todos os officiaes e ordenanças do evangelho, purificada da corrupção, approvada e mantida pelo magistrado civil; que as ordenanças de Christo sejam administradas puramente, feitas efficazes para a conversão d'aquelles que estão ainda nos seus peccados, e para a confirmação, conforto e edificação dos que estão já convertidos; que Christo reine nos nossos corações aqui, e apresse o tempo da sua segunda vinda e de reinarmos nós com Elle para sempre; que lhe apraza exercer o reino do seu poder em todo o mundo, do modo que melhor contribua para estes fins.",
+          "references": [
+            "Eph. 2:2-3; Psa. 68:1; Apoc. 12:9; II Thess. 3:1; Rom. 10:1, e 11:25; Psa. 67:1-2, Math. 9:38: Eph. 5:26-27; Mal. 1:11; I Tim. 2:1-2; Isa. 49:23; II Cor. 4:2; Act. 26:18; II Thess. 2:16-17; Eph 3:14,17; Apoc. 22:20; II Tim. 2:12; Psa. 45:3-4; Isa. 64:1-2."
+          ]
+        },
+        {
+          "id": "question-192",
+          "title": "Pergunta 192",
+          "question": "Que pedimos na terceira petição?",
+          "body": "Na terceira petição, que é: «Seja feita a Tua vontade, assim na terra como no céu,» reconhecendo que por natureza nós e todos os homens somos, não só inteiramente incapazes de, e indispostos a, conhecer e fazer a vontade de Deus, mas propensos a rebellar-nos contra a sua palavra, a desanimar-nos, a murmurar contra a sua providencia, e inteiramente inclinados a fazer a vontade da carne e do diabo, pedimos que Deus, pelo seu Espirito, tire de nós e dos outros toda a cegueira, fraqueza, indisposição, e perversidade do coração, e pela sua graça nos faça capazes e promptos para conhecer, fazer e submetter-nos á sua vontade em tudo, com humildade, alegria, fidelidade, diligencia, zelo, sinceridade e constancia, como os anjos no céu.",
+          "references": [
+            "I Cor. 2:14; Rom. 8:7; Math. 20:11-12: Psa. 73:3; Eph. 2:2-3, e 1:17-18, e 3:16; Math. 26:40-41: Rom. 7:24-25: Eze. 11:19; Jer. 31:18; Psa. 119:35; I Sam. 3:18; Act. 21:14; Psa. 123:2; Miq. 6:8; Psa. 100:2; Isa. 38:3; Eph. 6:6; Psa. 119:4; Rom. 12:11; II Cor. 1:12; Psa. 119:112; Rom. 2:7; Psa. 103:20-22; Dan. 7:10."
+          ]
+        },
+        {
+          "id": "question-193",
+          "title": "Pergunta 193",
+          "question": "Que pedimos na quarta petição?",
+          "body": "Na quarta petição, que é: «O nosso pão de cada dia nos dá hoje,» reconhecendo que em Adão, e pelo nosso peccado, perdemos o nosso direito a todas as bençãos d'esta vida e que merecemos ser totalmente privados d'ellas, sendo ellas tornadas maldição para nós no seu uso; que nem ellas podem de si mesmas nos sustentar, nem nós podemos merecel-as nem pela nossa diligencia conseguil-as, mas que somos propensos a desejar, obter, e usar d'ellas illicitamente; pedimos, por nós mesmos e por outros, que tanto elles como nós, dependendo da providencia de Deus, de dia em dia, no uso de meios licitos possamos, do seu livre dom e conforme parecer bem á sua sabedoria paternal, gozar de uma porção sufficiente d'esses favores e tel-os continuados e abençoados para nós em nosso santo e confortavel uso e contentamento; e que sejamos guardados de tudo quanto é contrario ao nosso sustento e conforto temporaes.",
+          "references": [
+            "Gen. 3:17; Lam. 3:22, Deut. 8:3; Gen. 32:10; Deut. 8:18; Prov. 10:22; Luc. 12:15, Ose. 12:7: Thiago 4:3; Gen. 28:20 21; Eph. 4:28; Psa. 90:17; I Tim. 4: 4-5, e 6:6-8; Prov. 30:8-9."
+          ]
+        },
+        {
+          "id": "question-194",
+          "title": "Pergunta 194",
+          "question": "Que pedimos na quinta petição?",
+          "body": "Na quinta petição, que é: «Perdoa-nos as nossas dividas, assim como nós tambem perdoamos aos nossos devedores,» confessando que nós e todos os outros somos culpados do peccado original e actual, e por isso devedores á justiça de Deus; que nem nós nem outra creatura alguma pode fazer a minima satisfação por essa divida: pedimos, por nós mesmos e por outros, que Deus, da sua livre graça e pela obediencia e satisfação adquiridas e applicadas pela fé, nos absolva da culpa e da punição do peccado, que nos acceite no seu Amado, continue o seu favor e graça em nós, perdôe as nossas faltas diarias e nos encha de paz e gozo, dando-nos diariamente mais e mais certeza de perdão, o que temos mais coragem de pedir e somos mais animados a esperar quando temos este testemunho em nós, que do coração já perdoámos aos outros as suas offensas.",
+          "references": [
+            "Math. 18:24-25; Rom. 5:19; Psa. 130:3; Rom. 5:19, e 3:24-25; Act. 13:39; Eph. 1:6; II Ped. 1:2; Ose. 14:2; Psa. 143:2; Rom. 15:13; Luc. 11:4; Math. 18:35."
+          ]
+        },
+        {
+          "id": "question-195",
+          "title": "Pergunta 195",
+          "question": "Que pedimos na sexta petição?",
+          "body": "Na sexta petição, que é: «Não nos deixes cair em tentação, mas livra-nos do mal,» reconhecendo que o mui sabio, justo e gracioso Deus, por diversos fins santos e justos, pode dispôr as coisas de maneira que sejamos assaltados, frustrados e feitos por algum tempo captivos pelas tentações; que Satanaz, o mundo e a carne estão promptos e poderosos para nos desviar e enlaçar; que nós, depois do perdão dos nossos peccados, devido á nossa corrupção, fraqueza e falta de vigilancia, estamos, não sómente sujeitos a ser tentados e dispostos a nos expôr ás tentações, mas tambem de nós mesmos incapazes e indispostos para lhes resistir, sair ou tirar proveito d'ellas; e que somos dignos de ser deixados sob o seu poder; pedimos que Deus de tal fórma reja o mundo e tudo o que n'elle ha, subjugue a carne, restrinja a Satanaz, disponha tudo, conceda e abençõe todos os meios da graça e nos desperte á vigilancia no seu uso, que nós e todo o seu povo sejamos guardados, pela sua providencia, de sermos tentados ao peccado; ou que, quando tentados, sejamos poderosamente sustentados, pelo seu Espirito, e habilitados a ficar firmes na hora da tentação; ou, quando cairmos, sejamos levantados novamente, recuperados da queda, e que tiremos d'ella uso e proveito santos: que a nossa santificação e salvação sejam aperfeiçoadas, Satanaz calcado aos nossos pés, e nós inteiramente libertados do peccado, da tentação e de todo o mal para sempre.",
+          "references": [
+            "II Chron. 32:31; Job 2:6; I Ped. 5:8; I Chron. 21:1; Luc. 21:34; Mar. 4:19; Thiago 1:14; Gal 5:17; Rom. 7:18; Math. 26:41; Eccl. 11:12; I Tim. 5:9; Eph. 6:11-12; Psa. 81:11-12; João 17:15; Psa. 51:10, e 119: 133; Luc. 22:31; II Cor. 12:8; Rom. 8:28; Heb. 13: 20-21; Math. 26:41: Psa. 19:13; I Cor. 10:13; Psa. 51: 12, I Ped. 5:10, e 1:6-7; I Thess. 3:13; Rom. 16:20; I Thess. 5:23."
+          ]
+        },
+        {
+          "id": "question-196",
+          "title": "Pergunta 196",
+          "question": "Que nos ensina a conclusão da Oração Dominical?",
+          "body": "A conclusão da Oração Dominical, que é: «Porque teu é o reino e o poder e a gloria para sempre. Amen», ensina-nos a reforçar as nossas petições com argumentos que devem ser derivados, não de qualquer merito que haja em nós ou em qualquer outra creatura, mas de Deus; e a ajuntar louvores ás nossas orações, attribuindo a Deus, só, a soberania eterna, omnipotencia e gloriosa excellencia; em virtude do que, assim como Elle pode e quer nos soccorrer, assim nós pela fé estamos animados a instar com Elle que attenda aos nossos pedidos e a confiar tranquillamente que assim o fará. E para testemunhar os nossos desejos e certeza de sermos ouvidos, dizemos Amen.",
+          "references": [
+            "Job. 23:3 4; Jer. 14:20-21; Dan. 9:4,7-9, 16, 19; Phil. 4:6; I Chron. 29:10-13; Eph. 3:20-21; Luc. 11:13: Eph. 3:12; Heb. 10:19-22; I João 5:14; Rom. 8:32; I Cor. 14:16; Apoc. 22:20-21."
+          ]
+        }
+      ]
+    }
+  ]
+}

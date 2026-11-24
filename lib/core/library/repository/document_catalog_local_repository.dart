@@ -30,6 +30,14 @@ class DocumentCatalogLocalRepositoryImpl
       isAvailable: true,
     ),
     ReadingDocument(
+      id: 'westminster-larger-catechism',
+      title: 'Catecismo mayor de Westminster',
+      type: DocumentType.catechism,
+      collectionId: 'westminster-standards',
+      totalUnits: 196,
+      isAvailable: true,
+    ),
+    ReadingDocument(
       id: 'canons-of-dort',
       title: 'Cánones de Dort',
       type: DocumentType.confession,
@@ -47,6 +55,12 @@ class DocumentCatalogLocalRepositoryImpl
       id: 'scots-confession',
       title: 'Confesión Escocesa de 1560',
       type: DocumentType.confession,
+      isAvailable: true,
+    ),
+    ReadingDocument(
+      id: 'nicene-creed',
+      title: 'Credo Niceno',
+      type: DocumentType.creed,
       isAvailable: true,
     ),
     ReadingDocument(

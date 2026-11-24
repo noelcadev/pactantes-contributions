@@ -117,7 +117,7 @@ void main() {
     );
     home.dispose();
     final Database handle = await factory.openDatabase(
-      '${directory.path}/reformed_documents_v8.db',
+      '${directory.path}/reformed_documents_v11.db',
       options: OpenDatabaseOptions(readOnly: true),
     );
     await handle.close();

@@ -1,0 +1,2902 @@
+{
+  "groups": [
+    {
+      "id": "introduction",
+      "title": null,
+      "units": [
+        {
+          "id": "question-1",
+          "title": "Pregunta 1",
+          "question": "¿Cuál es el fin principal y más noble del hombre?",
+          "body": "El fin principal y más noble del hombre es el de glorificar a Dios a) y gozar de él para siempre. b)",
+          "references": [
+            "a) Rom. 11:36, I Cor. 10:31;",
+            "b) Sal. 73:24‐26; Juan 17:22, 24."
+          ]
+        },
+        {
+          "id": "question-2",
+          "title": "Pregunta 2",
+          "question": "¿Cómo sabemos que hay Dios?",
+          "body": "La mera luz de la naturaleza en el hombre y las obras de Dios manifiestan plenamente que él existe, c) pero su palabra y espíritu son los únicos que suficiente y eficazmente lo revelan a los hombres para la salvación de ellos. d)",
+          "references": [
+            "c) Rom. 1:19, 20. Véase Sal. 19:1‐3;",
+            "d) II Tim. 3:15‐17, I Cor. 2:10."
+          ]
+        },
+        {
+          "id": "question-3",
+          "title": "Pregunta 3",
+          "question": "¿Qué es la palabra de Dios?",
+          "body": "Las Santas Escrituras del Antiguo y Nuevo Testamento son la palabra de Dios, e) la única regla de fe y obediencia. f)",
+          "references": [
+            "e) II Tim. 3:16; II Ped. 1:19‐21;",
+            "f) Is. 8:20, Luc. 16:29, 31; Gal. 1:8, 9. Véase II Tim. 3: 15‐17."
+          ]
+        },
+        {
+          "id": "question-4",
+          "title": "Pregunta 4",
+          "question": "¿Cómo sabemos que las Escrituras son la palabra de Dios?",
+          "body": "Las Escrituras manifiestan en si mismas que son la palabra de Dios por su majestad g) y pureza, h) por el consentimiento de todas sus partes, i) y por el fin que se proponen en el todo, cual es dar toda gloria a Dios; j) por su luz y poder para convencer a los pecadores, para consolar y edificar a los creyentes para la salvación; l) pero el Espíritu de Dios dando testimonio con las Escrituras y por medio de ellas al corazón del hombre, es el único que puede persuadir plenamente de que son la verdadera palabra de Dios. ll)",
+          "references": [
+            "g) Is. 66:1. Véase Amos 9: 2, 3, 4; Sal. 76.",
+            "h) Sal. 12:6; 119:140;",
+            "i) Hch. 10:43; 26:22.",
+            "j) Rom. 3: 19, 27;",
+            "l) Hch. 18:28; Sant. 1:18; Sal. 19:7‐9;",
+            "ll) Juan 16:13,14; I Juan 2:20, 27."
+          ]
+        },
+        {
+          "id": "question-5",
+          "title": "Pregunta 5",
+          "question": "¿Qué es lo que principalmente enseñan las Escrituras?",
+          "body": "Lo que principalmente enseñan las Escrituras es lo que el hombre ha de creer respecto a Dios y los deberes que Dios impone al hombre. m)",
+          "references": [
+            "m) Juan 20:31; II Tim. 1:13; Sal. 119:105."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-to-believe",
+      "title": "Lo que el hombre debe creer respecto a Dios",
+      "units": [
+        {
+          "id": "question-6",
+          "title": "Pregunta 6",
+          "question": "¿Qué nos enseñan las Escrituras respecto a Dios?",
+          "body": "Las Escrituras nos enseñan lo que Dios es, n) las personas que hay en la divinidad, ñ) sus decretos o) y la ejecución de estos. p)",
+          "references": [
+            "n) Juan.4:24; Ex. 3:14 y 34:6, 7;",
+            "ñ) I Juan 5:7.",
+            "o) Hch. 15: 14, 15. 18;",
+            "p) Hch. 4:27, 28."
+          ]
+        },
+        {
+          "id": "question-7",
+          "title": "Pregunta 7",
+          "question": "¿Qué es Dios?",
+          "body": "Dios es un espíritu, q) en sí y por sí mismo infinito en su ser, r) gloria, s) bienaventuranza t) y perfección, u) suficiente para todo, v) eterno, x) inmutable, y) incomprensible, z) omnipresente, a) todopoderoso, b) omnisciente, c) sabio, d) y santo, e) y justísimo, f) misericordioso y lleno de gracia, paciente y abundante en bondad y verdad. g)",
+          "references": [
+            "q) Juan 4:24;",
+            "r) Ex. 3:14; Job. 11:7,8,9;",
+            "s) Hch. 7:2;",
+            "t) I Tim. 6:15;",
+            "u) Mat. 5:48;",
+            "v) Gen. 17:1;",
+            "x) Sal. 90:2;",
+            "y) Mal. 3:6; Comp. con Sant. 1:17;",
+            "z) I Rey. 8:27;",
+            "a) Sal. 139:1,2,7;",
+            "b) Rev. 4:8;",
+            "c) Heb. 4:13;",
+            "d) Rom. 16:27;",
+            "e) Is. 6:3;",
+            "f) Deut. 32:4;",
+            "g) Ex. 34:6."
+          ]
+        },
+        {
+          "id": "question-8",
+          "title": "Pregunta 8",
+          "question": "¿Hay más de un Dios?",
+          "body": "No hay sino uno solo, el Dios vivo y verdadero. h)",
+          "references": [
+            "h) Deut. 6:4; I Cor. 8: 4."
+          ]
+        },
+        {
+          "id": "question-9",
+          "title": "Pregunta 9",
+          "question": "¿Cuántas personas hay en la divinidad?",
+          "body": "Hay tres personas en la divinidad, el Padre, el Hijo y e1 Espíritu Santo; estas tres son un eterno y verdadero Dios, las mismas en sustancia, iguales en poder y en gloria, aun cuando se distinguen por atributos personales. i)",
+          "references": [
+            "i) I Juan 5:7; Mat. 3:16, 17; 28:19; II Cor. 13:14; Juan 10:30."
+          ]
+        },
+        {
+          "id": "question-10",
+          "title": "Pregunta 10",
+          "question": "¿Cuáles son los atributos personales de las tres personas de la Divinidad?",
+          "body": "Es propio del Padre haber engendrado al Hijo, j) y del Hijo ser engendrado del Padre, l) y al Espíritu Santo proceder del Padre y del Hijo ab eterno. ll)",
+          "references": [
+            "j) Heb. 1:5, 6; Juan 1:14;",
+            "l) Juan 1:14;",
+            "ll) Juan 15:26; Gal. 4:6."
+          ]
+        },
+        {
+          "id": "question-11",
+          "title": "Pregunta 11",
+          "question": "¿Cómo sabemos que el Hijo y el Espíritu Santo son Dios, iguales con el Padre?",
+          "body": "Las Escrituras manifiestan que el Hijo y el Espíritu Santo son Dios, iguales con el Padre, atribuyéndoles nombres, m) atributos, n) obras, ñ) y culto o) que solo son propios en Dios.",
+          "references": [
+            "m) Jer. 23:6; I Juan 5:20; Sal. 45:6.",
+            "n) Juan 1:1; Is. 9:6; Juan 2:24, 25; I Cor. 2:10, 11; Heb 9:14;",
+            "ñ) Col. 1:16; Gen. 1:2; Job 26:13; Sal. 104:30; Juan 1:3,",
+            "o) Mat. 28:19; II Cor. 13:14."
+          ]
+        },
+        {
+          "id": "question-12",
+          "title": "Pregunta 12",
+          "question": "¿Cuáles son los decretos de Dios?",
+          "body": "Los decretos de Dios son los actos santos, sabios y libres del consejo de su propia voluntad, p) por los que desde la eternidad y para su propia gloria ha preordenado, inmutablemente todo lo que sucede en el tiempo, q) especialmente en lo que toca a los ángeles y a los hombres.",
+          "references": [
+            "p) Efes. 1:11; Rom. 9:15, 18; 11:33;",
+            "q) Efes. 1:4, 11; Rom 9:22, 23; Sal. 33:11."
+          ]
+        },
+        {
+          "id": "question-13",
+          "title": "Pregunta 13",
+          "question": "¿Qué es lo que Dios ha decretado especialmente con respecto a los ángeles y a los hombres?",
+          "body": "Dios, por un decreto eterno e inmutable, por su puro amor, para alabanza de su gracia gloriosa que se manifiesta en debido tiempo, ha elegido algunos ángeles para la gloria; r) y en Cristo ha escogido a algunos hombres para la vida eterna y al mismo tiempo, los medios para ellos; s) así también, conforme a su poder soberano y al consejo inescrutable de su propia voluntad (por lo que él concede o retira su favor según le place), ha pasado por alto, y ha preordinado el resto para deshonra e ira, aplicada a ellos por sus pecados, para alabanza de la gloria de su justicia. t)",
+          "references": [
+            "r) I Tim. 5:21.",
+            "s) Efes. 1:4‐6; II Tes. 2: 13, 14; I Ped. 1:2.",
+            "t) Rom. 9: 17, 18, 21, 22; Mat.11:25, 26; II Tim. 2:20."
+          ]
+        },
+        {
+          "id": "question-14",
+          "title": "Pregunta 14",
+          "question": "¿Cómo ejecuta Dios sus decretos?",
+          "body": "Dios ejecuta sus decretos en las obras de creación y de providencia; conforme a su presencia infalible y al libre e inmutable consejo de su propia voluntad. u)",
+          "references": [
+            "u) Efes. 1:11."
+          ]
+        },
+        {
+          "id": "question-15",
+          "title": "Pregunta 15",
+          "question": "¿Cuál es la obra de creación?",
+          "body": "La obra de creación es aquella por la cual Dios en el principio, por el poder de su palabra, hizo de la nada el mundo y todas las cosas que hay en éste, haciéndolas por si mismo, en el espacio de seis días y todas muy buenas. v)",
+          "references": [
+            "v) Gen. cap. 1; Heb. 11:3; Prov. 16:4; Rev. 4:11."
+          ]
+        },
+        {
+          "id": "question-16",
+          "title": "Pregunta 16",
+          "question": "¿Cómo creó Dios a los ángeles?",
+          "body": "Dios creó todos los ángeles, x) espíritus, y) inmortales, z) santos, a) con un conocimiento sobresaliente, b) fuertes en poder, c) para ejecutar sus mandamientos y para alabanza de su nombre, d) pero expuestos a cambiar. e)",
+          "references": [
+            "x) Col. 1:16;",
+            "y) Sal 104:4,",
+            "z) Mat. 22:30;",
+            "a) Mat. 25:31.",
+            "b) II Sam. 14:17; Mat. 24:36.",
+            "c) II Tes. 1:7.",
+            "d) Sal. 103:20, 21.",
+            "e) II Ped. 2:4."
+          ]
+        },
+        {
+          "id": "question-17",
+          "title": "Pregunta 17",
+          "question": "¿Cómo creó Dios al hombre?",
+          "body": "Después que Dios hizo a todas las criaturas creó al hombre, varón y hembra, f) formando el cuerpo del hombre del polvo de la tierra, g) y a la mujer una costilla del hombre; h) los dotó de almas vivientes, racionales e inmortales, i) haciéndolos conforme a su propia imagen, j) en ciencia, l) justicia y santidad, ll) teniendo la ley de Dios escrita en su corazón, m) con poder para cumplirla, n) con dominio sobre las criaturas, ñ) aunque expuestos a caer. o)",
+          "references": [
+            "f) Gen. 1:27;",
+            "g) Gen. 2:7;",
+            "h) Gen. 2:22,",
+            "i) Gen.2:7; Comp. con Job 35:11; Ecles. 12:9; Mat. 10:28; Luc.23:43;",
+            "j) Gen. 1:27;",
+            "l) Col. 3:10;",
+            "ll) Efes. 4:24;",
+            "m) Rom. 2:14, 15;",
+            "n) Ecles. 7:29;",
+            "ñ) Gen. 1:28;",
+            "o) Gen. 3:6; Ecles. 7:29."
+          ]
+        },
+        {
+          "id": "question-18",
+          "title": "Pregunta 18",
+          "question": "¿Cuáles son las obras de providencia de Dios?",
+          "body": "Las obras de providencia de Dios son su santa, p) sabia q) y poderosa preservación, r) y gobierno de todas sus criaturas, s) a las cuales ordena así como a todas las acciones de ellas, t) para su propia gloria. u)",
+          "references": [
+            "p) Sal. 145:17;",
+            "q) Sal. 104:24; Is. 28:29;",
+            "r) Heb. 1:3;",
+            "s) Sal. 103:19;",
+            "t) Mat. 10:29, 30; Gen. 45:7.",
+            "u) Rom. 11:36; Is. 63:14."
+          ]
+        },
+        {
+          "id": "question-19",
+          "title": "Pregunta 19",
+          "question": "¿Cuál es la providencia de Dios para con los ángeles?",
+          "body": "Dios por su providencia permitió que algunos de los ángeles voluntaria e irremediablemente, cayeran en pecado y condenación, v) limitándolos y arreglándolos a ellos y a todos sus pecados para su propia gloria, x) estableciendo a los demás en la santidad y en la felicidad, y) y empleándolos a todos z) según le place en la administración de su poder, misericordia y justicia. a)",
+          "references": [
+            "v) Judas 6; II Ped. 2:4; Heb. 2:16; Juan 8:44;",
+            "x) Job 1:12; Luc. 10:17; Mat. 8:31;",
+            "y) I Tim. 5:21; Mar. 8:38; Heb. 12.",
+            "z) Sal. 104:4;",
+            "a) Heb. 1:14; II Rey. 19:35."
+          ]
+        },
+        {
+          "id": "question-20",
+          "title": "Pregunta 20",
+          "question": "¿Cuál fue la providencia de Dios para con el hombre en el estado en que éste fue creado?",
+          "body": "La providencia de Dios para con el hombre en el estado en que éste fue creado consiste en haberle colocado en e1 paraíso para que lo cu1tivara y concediéndole libertad para comer del fruto de la tierra, b) poniendo las criaturas bajo su dominio, c) e instituyendo el matrimonio para su ayuda, d) proporcionándole la comunión con é1, e) instituyendo el descanso, f) entrando en un pacto de vida con el hombre bajo condición de obediencia personal, perfecta y perpetua, g) del cual el árbol de la vida era una prenda, h) prohibiéndole comer del árbol de la ciencia del bien y del mal, bajo pena de muerte. i)",
+          "references": [
+            "b) Gen 2:8, 15, 16;",
+            "c) Gen. 1:28;",
+            "d) Gen. 2:18;",
+            "e) Gen. 1:27, 28;",
+            "f) Gen. 2:3;",
+            "g) Rom. 5:14; I Cor. 15:22, 47; Ose. 6:7; Gal. 3:2; Rom. 10:5; Gal. 3:10;",
+            "h) Gen 2:9;",
+            "i) Gen. 2:17."
+          ]
+        },
+        {
+          "id": "question-21",
+          "title": "Pregunta 21",
+          "question": "¿Permaneció el hombre en aquel primer estado en que Dios le creó?",
+          "body": "Nuestros primeros padres dejados a su libre albedrío, por la tentación de Satanás, transgredieron el mandamiento de Dios comiendo del fruto prohibido, cayendo así del estado de inocencia en que fueron creados. j)",
+          "references": [
+            "j) Gen. 3:6‐8; 13; II Cor. 11:3; Ecles. 7:20."
+          ]
+        },
+        {
+          "id": "question-22",
+          "title": "Pregunta 22",
+          "question": "¿Cayó todo el género humano en la primera transgresión?",
+          "body": "Habiéndose hecho el pacto con Adán como con una persona pública, no para él solo sino también para su posteridad, todo e1 genero humano, descendiendo de él según la generación ordinaria, l) pecó en él y cayó con él en la primera transgresión. ll)",
+          "references": [
+            "l) Hch. 17:26,",
+            "ll) Gen 2:17. Comp. con Rom. 5:12‐20 y con I Cor. 15:21, 22."
+          ]
+        },
+        {
+          "id": "question-23",
+          "title": "Pregunta 23",
+          "question": "¿A qué estado redujo la caída al hombre?",
+          "body": "La caída redujo al hombre a un estado de pecado y de miseria. m)",
+          "references": [
+            "m) Rom. 5:12; Gal. 3:10."
+          ]
+        },
+        {
+          "id": "question-24",
+          "title": "Pregunta 24",
+          "question": "¿Qué es el pecado?",
+          "body": "El pecado es la falta de conformidad con la ley de Dios o la transgresión de la misma, la cual ha sido dada como regla a la criatura racional. n)",
+          "references": [
+            "n) Rom. 3:23; I Juan 3:4; Gal. 3:10‐12."
+          ]
+        },
+        {
+          "id": "question-25",
+          "title": "Pregunta 25",
+          "question": "¿En qué consiste, lo pecaminoso del estado en que cayó el hombre?",
+          "body": "Lo pecaminoso del estado en que cayó el hombre consiste en la culpabilidad del primer pecado de Adán, ñ) la falta de la justicia original en que aquel fue creado, la corrupción de toda su naturaleza por lo cual está enteramente indispuesto, incapacitado y en oposición a todo lo que es bueno espiritualmente, e inclinado de un modo completo a lo malo, en cuyo estado permanece hasta el día de hoy, o) y al cual se le llama, comúnmente pecado original, del que proceden todas nuestras transgresiones actuales. p)",
+          "references": [
+            "ñ) Rom. 5:12, 19; I Cor. 15:22;",
+            "o) Rom. 3:10, 20; 5:6; Efe. 2:1, 2, 3; Rom 8:7, 8; Gen. 6:5.",
+            "p) Sant. 1:14, 15; Mat. 15:19."
+          ]
+        },
+        {
+          "id": "question-26",
+          "title": "Pregunta 26",
+          "question": "¿Cómo se ha trasmitido el primer pecado de nuestros primeros padre a su posteridad?",
+          "body": "El pecado original se ha trasmitido de nuestros primeros padres a su posteridad por la generación natural, pues todos los que proceden de ellos así de esta manera, son concebidos y nacidos en pecado. q)",
+          "references": [
+            "q) Sal. 51; Job 14:4; 15:14; Juan 3:6."
+          ]
+        },
+        {
+          "id": "question-27",
+          "title": "Pregunta 27",
+          "question": "¿En qué consiste la miseria del estado en que cayó el hombre?",
+          "body": "La caída hizo que el género humano perdiera la comunión con Dios, r) y quedara bajo el desagrado de éste; así es que nosotros somos por naturaleza hijos de ira, s) esc1avs de Satanás t) y justamente expuestos a todo castigo tanto en este mundo como en el venidero. u)",
+          "references": [
+            "r) Gen. 3:8, 24.",
+            "s) Efes. 2:2, 3.",
+            "t) II Tim. 2:16; Luc. 11:21, 22; Heb. 2:14.",
+            "u) Rom. 5:14; 6:23."
+          ]
+        },
+        {
+          "id": "question-28",
+          "title": "Pregunta 28",
+          "question": "¿Cuáles son los castigos del pecado en este mundo?",
+          "body": "Los castigos del pecado en este mundo son en parte en lo íntimo, como la ceguedad del entendimiento, v) un sentimiento perverso, x) fuerza de engaño, y) dureza de corazón, z) horror a la conciencia, a) y afecciones viles: b) en lo externo, cosas tales como la maldición de Dios a las criaturas por causa nuestra c) y todos los males que vienen sobre nuestro cuerpo, nombre, estado, relaciones y empleos, d) juntamente con la muerte misma. e)",
+          "references": [
+            "v) Efes. 4:18.",
+            "x) Rom. 1:28.",
+            "y) II Tes. 2: 11.",
+            "z) Rom. 2:5.",
+            "a) Is. 33: 14; Gen 4:13, 14; Mat. 27:4; Heb. 10:27;",
+            "b) Rom. 1:26.",
+            "c) Gen. 3:17.",
+            "d) Deut. 28:15‐68. “Y será, si no oyeres a Jehová tu Dios –que vendrán sobre ti todas las maldiciones‐‐. Maldito serás tú en la ciudad\" etc.",
+            "e) Rom. 6:21, 23."
+          ]
+        },
+        {
+          "id": "question-29",
+          "title": "Pregunta 29",
+          "question": "¿Cuál será el castigo del pecado en el mundo venidero?",
+          "body": "El castigo del pecado en el mundo venidero será la separación eternal de la saludable presencia de Dios, y los tormentos más graves tanto en el alma como en el cuerpo en el fuego de infierno por siempre y sin intermisión. f)",
+          "references": [
+            "f) I Tes. 1:9; Mar. 9:43, 44. Luc. 16:24, 26; Mat. 25:41, 46; Rev. 14:11; Juan 3:36."
+          ]
+        },
+        {
+          "id": "question-30",
+          "title": "Pregunta 30",
+          "question": "¿Dejó Dios a todo el género humano perecer en su estado de pecado y de miseria?",
+          "body": "Dios no dejó perecer a todos los hombres en su estad de pecado y de miseria, g) en que habían caído por el quebrantamiento del primer pacto llamado comúnmente pacto de obras, h) sino que por su puro amor y misericordia libertó a sus elegidos, sacándolos de tal estado e introduciéndolos en uno de salvación por un segundo pacto generalmente llamado pacto de gracia, i)",
+          "references": [
+            "g) I Tes. 5:9.",
+            "h) Gal. 3:10.",
+            "i) Tit. 3:4‐5; 1:2; Gal. 3:21; Rom. 3:20‐22."
+          ]
+        },
+        {
+          "id": "question-31",
+          "title": "Pregunta 31",
+          "question": "¿Con quién fue hecho el pacto de gracia?",
+          "body": "El pacto de gracia fue hecho con Cristo como segundo Adán, y en él, con todos los elegidos como su simiente. j)",
+          "references": [
+            "j) Gal. 3:16: Is. 59:21; Zac. 6:13; Luc. 22:29; II Sam. 23:5: Rom. 5:15‐21."
+          ]
+        },
+        {
+          "id": "question-32",
+          "title": "Pregunta 32",
+          "question": "¿Cómo se manifiesta la gracia de Dios en el segundo pacto?",
+          "body": "La gracia de Dios se manifiesta en el segundo pacto, en que Dios libremente ha provisto y ofrecido a los pecadores un mediador, l) así como la vida y la salvación por éste, ll) requiriendo la fe como condición para que ellos tengan parte en él, m) prometiendo y dando su Espíritu Santo a todos sus elegidos, n) obrando en ellos tanto la fe, ñ) como todas las otras gracias salvadoras, o) capacitándolos para toda obediencia santa, p) como la evidencia de la verdad de su fe, q) y de su gratitud a Dios, r) y como el camino que él les ha señalado para la salvación. s)",
+          "references": [
+            "l) Gen. 3:15; Is. 42:6; Juan 6:27; I Tim. 2:5.",
+            "ll) I Juan. 5:11, 12.",
+            "m) Juan 1:12; 3:16, 36.",
+            "n) Prov. 1:23: Is. 59:21; Zac. 12:10.",
+            "ñ) II Cor. 4:13.",
+            "o) Gal. 5:22, 23.",
+            "p) Eze. 36:27.",
+            "q) Sant. 2:18, 22.",
+            "r) II Cor. 5:14, 15. \"Porque el amor de Cristo nos constriñe\" etc.",
+            "s) Efes. 2:10; Tit. 2:14; 3:8."
+          ]
+        },
+        {
+          "id": "question-33",
+          "title": "Pregunta 33",
+          "question": "¿El pacto de gracia ha sido administrado siempre de la misma manera?",
+          "body": "El pacto de gracia no ha sido administrado siempre de la misma manera, sino que la administración de él bajo el Antiguo Testamento fue diferente de aquella bajo la cual se administra en el Nuevo. t)",
+          "references": [
+            "t) II Cor. 3:6; Heb. 1:1,2; 8:7, 8."
+          ]
+        },
+        {
+          "id": "question-34",
+          "title": "Pregunta 34",
+          "question": "¿Cómo fue administrado el pacto de gracia bajo el Antiguo Testamento?",
+          "body": "EI pacto de gracia fue administrado bajo el Antiguo Testamento por promesas, u) profecías, v) sacrificios, x) la circuncisión, y) la pascua, z) y otros tipos y ordenanzas; todas las cuales señalaban al Cristo que había de venir, y al mismo tiempo eran suficientes para edificar a los elegidos en la fe de un Mesías prometido, a) por quien tenían remisión de pecados y salvación eterna. b)",
+          "references": [
+            "u) Rom. 15:8; Hch. 3:20;",
+            "v) Hch. 3:20, 24;",
+            "x) Heb. 10:1;",
+            "y) Rom. 4:11;",
+            "z) I Cor. 5:7; Ex. 12:14, 17, 24.",
+            "a) Heb. 11:13; caps. 8, 9, y 10.",
+            "b) Gal. 3:7‐9, 14."
+          ]
+        },
+        {
+          "id": "question-35",
+          "title": "Pregunta 35",
+          "question": "¿Cómo es administrado el pacto de gracia bajo el Nuevo Testamento?",
+          "body": "Bajo el Nuevo Testamento, cuando Cristo la sustancia fue exhibido, el pacto de gracia fue y será administrado por la predicación de la palabra, c) por la administración de los sacramentos del bautismo, d) y de la Cena del Señor, e) en los que la gracia y la salvación se manifiestan con más plenitud, evidencia y eficacia a todas las naciones. f)",
+          "references": [
+            "c) Mar. 16:15.",
+            "d) Mat. 28:19,20.",
+            "e) I Cor. 11:23‐26.",
+            "f) II Cor. 3:6."
+          ]
+        },
+        {
+          "id": "question-36",
+          "title": "Pregunta 36",
+          "question": "¿Quién es el Mediador del pacto de gracia?",
+          "body": "El único Mediador del pacto de gracia es el Señor Jesucristo, g) quien siendo el Hijo eterno de Dios, de la misma sustancia que el Padre e igual a El, h) en la plenitud del tiempo se hizo hombre, i) y así fue y continúa siendo, Dios y hombre en dos naturalezas completas y distintas en una sola persona para siempre; j)",
+          "references": [
+            "g) I Tim. 2:5.",
+            "h) Juan 1:1; 10:30; Fil. 2:6.",
+            "i) Gal: 4:4.",
+            "j) Luc. 1:35; Rom. 9:5; Col. 2:9."
+          ]
+        },
+        {
+          "id": "question-37",
+          "title": "Pregunta 37",
+          "question": "¿Cómo se hizo Cristo hombre siendo como era el Hijo de Dios?",
+          "body": "Cristo el Hijo de Dios se hizo hombre tomando para sí un cuerpo verdadero y una alma racional, l) siendo concebido por e1 poder de1 Espíritu Santo en el vientre de 1a virgen María, de la sustancia de ella, de 1a que nació, ll) mas sin pecado. m)",
+          "references": [
+            "l) Juan 1:14; Mat. 25:38.",
+            "ll) Luc. 1:31,35,42; Gal. 4:4.",
+            "m) Heb. 4:15; 7:26."
+          ]
+        },
+        {
+          "id": "question-38",
+          "title": "Pregunta 38",
+          "question": "¿Por qué el Mediador debía de ser Dios?",
+          "body": "Hubo necesidad de que e1 Mediador fuese Dios para que pudiera sostener y guardar la naturaleza humana de sucumbir bajo la ira infinita de Dios y bajo el poder de la muerte n) para darles dignidad y eficacia a sus sufrimientos, obediencia e intercesión, ñ) y satisfacer así la justicia de Dios, o) alcanzar su favor, p) comprar un pueblo especial, q) darles su Espíritu a sus elegidos, r) vencer a todos los enemigos de éstos y traer a su pueblo a la salvación eterna. t)",
+          "references": [
+            "n) Hch. 2:24; Rom. 1:4.",
+            "ñ) Hch. 20:28; Heb. 7:25‐28; 9:14.",
+            "o) Rom. 3:24‐26.",
+            "p) Efes. 1:6.",
+            "q) Tit. 2:14.",
+            "r) Juan 15:26; 16:7; 14:26.",
+            "t) Heb. 5:9; 9:11‐15."
+          ]
+        },
+        {
+          "id": "question-39",
+          "title": "Pregunta 39",
+          "question": "¿Por qué debía ser hombre el Mediador?",
+          "body": "Era necesario que e1 Mediador fuese hombre para que fuera enaltecida nuestra naturaleza, u) para que pudiera prestar obediencia a la ley, v) sufrir e interceder por nosotros en nuestra naturaleza, x) y sentir con nosotros nuestras flaquezas, y) para que pudiéramos recibir la adopción de hijos, z) y tuviéramos animo y libre acceso a1 trono de 1a gracia. a)",
+          "references": [
+            "u) Heb. 2: 16.",
+            "v) Gal. 4:4; Rom. 5:19.",
+            "x) Heb. 2:14; 7:24.",
+            "y) Heb. 4:15;",
+            "z) Gal. 4:5.",
+            "a) Heb. 4:16."
+          ]
+        },
+        {
+          "id": "question-40",
+          "title": "Pregunta 40",
+          "question": "¿Por qué el Mediador debía de ser Dios y hombre en una sola persona?",
+          "body": "Era necesario que el Mediador que iba a reconciliar a Dios y al hombre fuese Dios y hombre y esto en una sola persona, para que las obras propias de cada naturaleza las aceptara Dios por nosotros, b) y fuera la base de nuestra confianza como las obras de toda la persona. c)",
+          "references": [
+            "b) Mat. 1:23; 3:17.",
+            "c) I Ped. 2:6."
+          ]
+        },
+        {
+          "id": "question-41",
+          "title": "Pregunta 41",
+          "question": "¿Por qué nuestro Mediador fue llamado Jesús?",
+          "body": "Nuestro Mediador fue llamado Jesús porque él salvaría a su pueblo de todos sus pecados. d)",
+          "references": [
+            "d) Mat. 1:21."
+          ]
+        },
+        {
+          "id": "question-42",
+          "title": "Pregunta 42",
+          "question": "¿Por qué nuestro Mediador fue llamado Cristo?",
+          "body": "Nuestro Mediador fue llamada Cristo porque fue ungido sobre medida con el Espíritu Santo, e) y así fue apartado y plenamente revestido con toda autoridad y capacidad, f) para que desempeñara los oficios de profeta, g) sacerdote, h) y rey de su iglesia, tanto en el estado de humillación como en el de exaltación i)",
+          "references": [
+            "e) Juan 3:34; Sal. 45:1.",
+            "f) Juan 6:27; Mat. 28:19, 20.",
+            "g) Hch. 3:22; Luc. 4:18, 21.",
+            "h) Heb. 5:5, 6; 4:14, 15.",
+            "i) Is. 9:6,7; Sal. 2:6."
+          ]
+        },
+        {
+          "id": "question-43",
+          "title": "Pregunta 43",
+          "question": "¿Cómo desempeña Cristo el oficio de profeta?",
+          "body": "Cristo desempeña el oficio de profeta revelando a su iglesia en todas las épocas, j) por su palabra y Espíritu, l) y por revelaciones hechas de diversas maneras, ll) toda la voluntad de Dios, m) sobre todas las cosas concernientes a la edificación y salvación de su pueblo. n)",
+          "references": [
+            "j) Juan 1:18.",
+            "l) I Ped. 1:10, 12.",
+            "ll) Heb. 1:1,2.",
+            "m) Juan 15:15.",
+            "n) Efe.4:11‐13; Juan 20:31."
+          ]
+        },
+        {
+          "id": "question-44",
+          "title": "Pregunta 44",
+          "question": "¿Cómo desempeña Cristo el oficio de sacerdote?",
+          "body": "Cristo desempeña el oficio de sacerdote en haberse ofrecido a sí mismo una sola vez en sacrificio sin mancha a Dios, ñ) para hacer la reconciliación par los pecados de su pueblo, o) y en interceder continuamente por éste. p)",
+          "references": [
+            "ñ) Heb. 9:14,28.",
+            "o) Heb. 2:17.",
+            "p) Heb. 7:15."
+          ]
+        },
+        {
+          "id": "question-45",
+          "title": "Pregunta 45",
+          "question": "¿Cómo desempeña Cristo el oficio de rey?",
+          "body": "Cristo desempeña el oficio de rey entresacando del mundo un pueblo para sí mismo, q) en darle funcionarios, r) leyes, s) censuras, por las cuales cosas él gobierna de una manera visible; t) en conceder su gracia salvadora a sus elegidos, u) recompensando su obediencia, v) y castigándoles por sus pecados para su corrección, x) preservándoles y sosteniéndoles en todas las tentaciones y sufrimientos, y) restringiendo y venciendo a todos sus enemigos, z) y ordenando poderosamente todas las cosas para su propia gloria, a) y para el bien de ellos, b) y asimismo en tomar venganza en los que no conocen a Dios ni obedecen al evangelio. c)",
+          "references": [
+            "q) Is. 55:5; Gen. 49:10.",
+            "r) I Cor. 12:28; Efe. 4:11, 12.",
+            "s) Is. 33:22.",
+            "t) Mat. 18:17, 18; I Cor. 5:4, 5; I Tim. 5:20; Tit. 3:10.",
+            "u) Hch. 5:31; Sal. 68:18.",
+            "v) Rev. 22:12; Mat. 25:34‐36; Rom. 2:7",
+            "x) Rev. 3:19; Heb. 12:6, 7.",
+            "y) Is. 63:9.",
+            "z) I Cor. 15:25; Sal. 110;",
+            "a) Rom. 14:11; Fil. 2:11.",
+            "b) Rom. 8:28.",
+            "c) II Tes. 1:8; Sal. 2:9"
+          ]
+        },
+        {
+          "id": "question-46",
+          "title": "Pregunta 46",
+          "question": "¿Cuál fue el estado de humillación de Cristo?",
+          "body": "El estado de humillación de Cristo fue aquella baja condición en la cual por amor a nosotros se despojó de su gloria y tomó la forma de siervo en su concepción, nacimiento, vida y muerte, y después de ésta hasta la resurrección. d)",
+          "references": [
+            "d) Fil. 2:6‐8; II Cor. 8:9; Luc. 1:31; Hch. 2:24."
+          ]
+        },
+        {
+          "id": "question-47",
+          "title": "Pregunta 47",
+          "question": "¿Cómo se humilló Cristo en su concepción?",
+          "body": "Cristo se humilló en su concepción y nacimiento en que siendo desde la eternidad el Hijo de Dios en el seno del Padre, le plugo en el cumplimiento del tiempo hacerse el hijo del hombre, hecho de una mujer de condición humilde, y nacer de ella, con otras diversas circunstancias que hace extraordinaria su humillación. e)",
+          "references": [
+            "e) Juan 1: 14, 18; Luc. 2:7."
+          ]
+        },
+        {
+          "id": "question-48",
+          "title": "Pregunta 48",
+          "question": "¿Cómo se humilló Cristo en esta vida?",
+          "body": "Cristo se humilló en esta vida por sujetarse a la ley, f) la que cumplió perfectamente, g) y por 1uchar con las cosas indignas del mundo, h) las tentaciones de Satanás, i) las debilidades de su carne, tanto las comunes a la naturaleza del hombre como las que acompañan especialmente a los de condición humilde. j)",
+          "references": [
+            "f) Gal. 4:4.",
+            "g) Mat. 5:17; Rom. 5:19.",
+            "h) Sal. 22:6; Is. 53:2,3; Heb. 12:2,3.",
+            "i) Mat. 4: 1‐12; Luc. 4:1‐14.",
+            "j) Heb. 2:17,18; 4:15. Is. 52:14."
+          ]
+        },
+        {
+          "id": "question-49",
+          "title": "Pregunta 49",
+          "question": "¿Cómo se humilló Cristo en su muerte?",
+          "body": "Cristo fue humillado en su muerte al haber sido entregado por Judas, l) abandonado por sus discípulos, ll) despreciado y desechado por el mundo, m) condenado por Pilato y atormentado por sus perseguidores; n) en haber luchado también con los terrores de la muerte y con los poderes de las tinieblas, y sentido y llevado el peso de la ira de Dios, ñ) en haber puesto su vida como ofrenda por e1 pecado, o) y en sufrir la muerte penosa, ignominiosa y maldita de la cruz. p)",
+          "references": [
+            "l) Mat. 27:4.",
+            "ll) Mat. 26:56.",
+            "m) Is. 53:3.",
+            "n) Mat. 27:26; Juan 19:34; Luc. 22:63, 64.",
+            "ñ) Mat. 27:46; Rom. 8:32.",
+            "o) Is. 53:10.",
+            "p) Fil. 2:8; Heb. 12:2; Gal. 3:13."
+          ]
+        },
+        {
+          "id": "question-50",
+          "title": "Pregunta 50",
+          "question": "¿Cómo se humilló Cristo después de la muerte?",
+          "body": "La humillación de Cristo después de la muerte consistió en ser sepultado, q) en continuar en el estado de la muerte y bajo el poder de ésta hasta e1 tercer día, r) lo que ha sido expresado otras veces en estas palabras: Descendió al infierno.",
+          "references": [
+            "q) I Cor. 15:3,4.",
+            "r) Mat. 12:40; Sal. 16:10, comp. con Hch. 2:24,25; Rom. 6:9."
+          ]
+        },
+        {
+          "id": "question-51",
+          "title": "Pregunta 51",
+          "question": "¿Cuál es el estado de exa1tación de Cristo?",
+          "body": "El estado de exaltación de Cristo comprende su resurrección, s) ascensión, t) el estar sentado a la diestra del Padre, u) y e1 venir otra vez a juzgar el mundo. v)",
+          "references": [
+            "s) I Cor. 15:4.",
+            "t) Mar. 16:19.",
+            "u) Efe. 1:20.",
+            "v) Hch. 1:11; 17:31."
+          ]
+        },
+        {
+          "id": "question-52",
+          "title": "Pregunta 52",
+          "question": "¿Cómo fue exaltado Cristo en su resurrección?",
+          "body": "Cristo fue exaltado en su resurrección porque no habiendo visto corrupción en su muerte (en la que no pudo ser retenido), x) y teniendo el mismo cuerpo en que sufrió con las propiedades y) corresponda al cuerpo de esta vida) unido realmente a su alma, z) él se levantó por su propio poder al tercer día de entre los muertos, a) por lo cual él se declaró a sí mismo Hijo de Dios, b) satisfizo la justicia divina, c) para ser así el Señor de vivos y muertos. e) Todo esto lo hizo como persona pública, f) como la cabeza de su iglesia, g) para justificarla, h) vivificarla en la gracia, i) sostenerla contra los enemigos, j) y asegurar a los suyos la resurrección de entre los muertos en el último día. l)",
+          "references": [
+            "x) Hch. 2:24; Sal. 16:10.",
+            "y) Luc. 24:39.",
+            "z) Rev. 1:18.",
+            "a) Juan 10:18.",
+            "b) Rom. 1:4.",
+            "c) Rom. 8:34.",
+            "d) Heb. 2:14.",
+            "e) Rom. 14:9.",
+            "f) I Cor. 15:21, 22.",
+            "g) Efe. 1:22,23.",
+            "h) Rom. 4:25.",
+            "i) Efe. 2:5,6; Col. 2:12.",
+            "j) I Cor 15:25, 26;",
+            "l) I Cor. 15:20."
+          ],
+          "unanchored_references": [
+            "d"
+          ]
+        },
+        {
+          "id": "question-53",
+          "title": "Pregunta 53",
+          "question": "¿Cómo fue exaltado Cristo en su ascensión?",
+          "body": "Cristo fue exaltado en su ascensión en que habiendo aparecido y conversado frecuentemente con sus discípulos después de su resurrección, hablándoles de las cosas pertenecientes al reino de Dios, ll) y dándoles la comisión de predicar el evangelio en todas las naciones; m) cuarenta días después de su resurrección, él, en nuestra naturaleza y como cabeza nuestra, n) triunfante de sus enemigos, ñ) subió visiblemente a los altos cielos para recibir dones para los hombres, o) y levar nuestros afectos hacia arriba. p) y preparar un lugar para nosotros, q) donde el está y continuará hasta su segunda venida, r)",
+          "references": [
+            "ll) Hch. 1:2,3.",
+            "m) Mat. 28: 19,20: Mar. 16: 15.",
+            "n) Heb. 6:20. véase ll)",
+            "ñ) Efe. 4:8.",
+            "o) Hch. 1:9; Sal. 68:18.",
+            "p) Col. 3:1,2.",
+            "q) Juan 14:2.",
+            "r) Hch. 3:21."
+          ]
+        },
+        {
+          "id": "question-54",
+          "title": "Pregunta 54",
+          "question": "¿Cómo ha sido Cristo exaltado en sentarse a la diestra de Dios?",
+          "body": "Cristo ha sido exaltado en sentarse a la diestra de Dios en que como Dios hombre fue elevado al más alto favor con Dios el Padre, s) con toda la plenitud de gozo, t) gloria, u) y poder sobre todas las cosas en el cielo y en la tierra: v) en reunir y defender a su iglesia y subyugar a sus enemigos, en enriquecer a su pueblo y a sus ministros con gracias y dones. x) y en interceder por ellos. y)",
+          "references": [
+            "s) Fil. 2:9.",
+            "t) Hch. 2:28; Sal. 16:11.",
+            "u) Juan 17:5.",
+            "v) Efe. 1:22; I Ped. 3:22;",
+            "x) Efe. 4:11, 12; Sal. 110;",
+            "y) Rom. 8:34."
+          ]
+        },
+        {
+          "id": "question-55",
+          "title": "Pregunta 55",
+          "question": "¿Cómo intercede Cristo?",
+          "body": "Cristo intercede apareciendo en nuestra naturaleza continuamente delante del Padre en el cielo, z) por el merito de su obediencia y sacrificio en la tierra, a) por declarar su voluntad de haberlo aplicado a todos los creyentes, b) por responder a las acusaciones hechas contra estos, c). en procurarles la quietud de conciencia a pesar de las caídas diarias, d) así como el acceso con toda confianza al trono de la gracia, e) y la aceptación de sus personas f) y servicios. g)",
+          "references": [
+            "z) Heb. 9:24.",
+            "a) Heb. 1:3.",
+            "b) Juan 17:9, 20, 24.",
+            "c) Rom. 8:33, 34.",
+            "d) I Juan 2:1, 2: Rom. 5:1.",
+            "e) Heb. 4:15,16.",
+            "f) Efe. 1:6.",
+            "g) I Ped. 2:5: Rev. 3:4."
+          ]
+        },
+        {
+          "id": "question-56",
+          "title": "Pregunta 56",
+          "question": "¿Cómo será exaltado Cristo cuando venga otra vez a juzgar al mundo?",
+          "body": "Cristo será exaltado cuando venga otra vez a juzgar al mundo en que él, que fue juzgado injustamente y condenado por hombres malvados, h) vendrá otra vez en el último día can gran poder, i) y en la plena manifestación de su gloria propia y en la de su Padre, con todos sus santos ángeles, j) con aclamación, con la voz del arcángel y con la trompeta de Dios, l) a juzgar al mundo. ll)",
+          "references": [
+            "h) Hch. 3:14, 15.",
+            "i) Mat. 24:30.",
+            "j) Luc. 9:26; Mat. 25:31.",
+            "l) I Tes. 4: 16.",
+            "ll) Hch. J 7:31."
+          ]
+        },
+        {
+          "id": "question-57",
+          "title": "Pregunta 57",
+          "question": "¿Qué beneficios ha logrado Cristo por su mediación?",
+          "body": "Cristo ha logrado por su mediación, la redención, m) y todos los beneficios del pacto de gracia. n)",
+          "references": [
+            "m) Heb. 9:12.",
+            "n) II Cor. 1:20."
+          ]
+        },
+        {
+          "id": "question-58",
+          "title": "Pregunta 58",
+          "question": "¿Cómo somas hechas partícipes de la redención que Cristo ha comprado?",
+          "body": "Somos hechos partícipes de los beneficios comprados por Cristo, por la aplicación de ella a nosotros. ñ) lo cual es la obra especial de Dios Espíritu Santo. o)",
+          "references": [
+            "ñ) Juan 1:12.",
+            "o) Tit. 3:5, 6; Juan 16:7, 8."
+          ]
+        },
+        {
+          "id": "question-59",
+          "title": "Pregunta 59",
+          "question": "¿Quiénes son hechos partícipes de la redención lograda por Cristo?",
+          "body": "La redención es aplicada con toda certeza, y comunicada eficazmente a todos aquellos para quienes Cristo la compró, p) quienes en tiempo oportuno, son capacitados por el Espíritu Santo para creer en Cristo conforme al evangelio. q)",
+          "references": [
+            "p) Juan 6:37, 39; 10:15, 16; Efe. 1:13, 14.",
+            "q) Efe. 2:8; Juan 3: 16."
+          ]
+        },
+        {
+          "id": "question-60",
+          "title": "Pregunta 60",
+          "question": "¿Pueden los que nunca han oído el evangelio y que por lo tanto no conocen a Cristo ni creen en él ser salvas según su modo de vivir conforme a la luz de la naturaleza?",
+          "body": "Aquellos que nunca han oído el evangelio, r) que no conocen a Cristo, s) ni creen en él, no pueden ser salvos, t) aunque sean diligentes para ajustar su vida a la luz natural, u) y a las leyes de la religión que profesen. v) ni hay salvación en ningún otro sino solamente en Cristo, x) quien es el único salvador de su cuerpo, es a saber la iglesia. y)",
+          "references": [
+            "r) Rom. 10: 14.",
+            "s) II Tes. 1:8, 9.",
+            "t) Juan 8: 24; Mar. 16:16.",
+            "u) I Cor. 1:20‐25.",
+            "v) Juan 4:22; Fil. 3:4‐10.",
+            "x) Hch. 4:12.",
+            "y) Ef. 5:23."
+          ]
+        },
+        {
+          "id": "question-61",
+          "title": "Pregunta 61",
+          "question": "¿Serán salvos todos las que oyen el evangelio y viven en relación con la iglesia?",
+          "body": "No todos los que oyen el evangelio y viven en relación con la iglesia visible serán salvos, sino solamente aquellas que son miembros verdaderos de la iglesia invisible. z)",
+          "references": [
+            "z) Rom. 9:6; Mat. 7:21; 22:14; Juan 12:38‐40."
+          ]
+        },
+        {
+          "id": "question-62",
+          "title": "Pregunta 62",
+          "question": "¿Qué es la iglesia visible?",
+          "body": "La iglesia visible es una sociedad formada par todos aquellos que en todos los tiempos y lugares del mundo han profesado o profesan la religión verdadera, a) juntamente con sus hijos. b)",
+          "references": [
+            "a) I Cor. 1:2; 12:13. Rom. 15:8‐13; Mat. 28: 19,20.",
+            "b) Hch. 2:39; I Cor. 7:14; Rom. 11:16; Gen. 17:7."
+          ]
+        },
+        {
+          "id": "question-63",
+          "title": "Pregunta 63",
+          "question": "¿Cuáles son los privilegios especiales de la Iglesia visible?",
+          "body": "La iglesia visible tiene e1 privilegio de estar bajo el gobierno y cuidado especial de Dios, c) de ser protegida y preservada en todos los tiempos, no obstante la oposición de todos sus enemigos d) de disfrutar de la comunión de los santos, los medios ordinarios de salvación, e) y las ofertas de gracia hechas par Cristo a todos los miembros de su iglesia por el ministerio del evangelio, testificando que todos los que creen en él serán salvos, f) y excluyendo a todos los que no vienen a él. g)",
+          "references": [
+            "c) Is. 4:5, 6; I Tim. 4:10.",
+            "d) Mat. 16:18; Is. 31:4, 5; Zac. 12:2‐4, 8, 9; Ex. 3:2, 3; Sal. 115.",
+            "e) Hch. 2:42.",
+            "f) Sal. 147:19, 20; Rom. 9:4; Mar. 16:15, 16; Hch. 16:31; Is. 45:22; Rev. 22:17.",
+            "g) Juan 6:37."
+          ]
+        },
+        {
+          "id": "question-64",
+          "title": "Pregunta 64",
+          "question": "¿Qué es la iglesia invisible?",
+          "body": "La iglesia invisible es todo el numero de los elegidos que han sido, son y serán reunidos en uno bajo Cristo la cabeza. h)",
+          "references": [
+            "h) Efe. 1: 10, 22, 23; Juan 10:16; 11:52."
+          ]
+        },
+        {
+          "id": "question-65",
+          "title": "Pregunta 65",
+          "question": "¿Cuáles son los beneficios especiales de que gozan por Cristo los miembros de la iglesia invisible?",
+          "body": "Los miembros de la iglesia invisible gozan por Cristo de unión y comunión con él en gracia y gloria. i)",
+          "references": [
+            "i) Juan 17:21, 24; Efe. 2:5, 6; I Juan 1:3."
+          ]
+        },
+        {
+          "id": "question-66",
+          "title": "Pregunta 66",
+          "question": "¿Cuál es la unión que los elegidos tienen con Cristo?",
+          "body": "La unión que los elegidos tienen con Cristo es la obra de la gracia de Dios, j) por la que ellos espiritual y místicamente, pero real y de una manera inseparable son unidos a Cristo como su cabeza y esposo, l) lo cual es hecho por su llamamiento eficaz ll).",
+          "references": [
+            "j) Efe. 2:6‐8,",
+            "l) I Cor. 6:17; Juan 10:28; Efe. 5:23, 30.",
+            "ll) I Cor. 1:9; I Ped. 5:10."
+          ]
+        },
+        {
+          "id": "question-67",
+          "title": "Pregunta 67",
+          "question": "¿Qué es llamamiento eficaz?",
+          "body": "Llamamiento eficaz es la obra de la gracia y del poder omnipotente de Dios, m) por la que (de su libre y especial amor a sus elegidos y sin que haya en ellos para que lo mueva a ello), n) en el tiempo aceptado los invita y trae a Jesucristo por su palabra y Espíritu, ñ) iluminando salvadoramente sus mentes, o) renovando y determinando de un modo poderoso sus voluntades, p). de tal manera, que ellos (aun cuando están muertos en pecado) por esta obra son hechos voluntarios y capaces para responder libremente a su llamamiento, y aceptar y abrazar la gracia ofrecida y trasmitida en él. q)",
+          "references": [
+            "m) Efe. 1:18‐20; II Tim. 1:8, 9.",
+            "n) Tit. 3:4, 5; Efe. 2:1‐10.",
+            "ñ) II Cor. 5:20; 6:2; Juan 6:44; II Tes. 2:13,14.",
+            "o) Hch. 26:18.",
+            "p) Eze. 11:19; 36:26, 27.",
+            "q) Juan 6:45; Fil. 2:13; Deut 30:6; Efe. 2:5."
+          ]
+        },
+        {
+          "id": "question-68",
+          "title": "Pregunta 68",
+          "question": "¿Sólo los elegidos son eficazmente llamados?",
+          "body": "Todos los elegidos y solamente ellos son eficazmente llamados, r) aun cuando otros son llamados externamente por el ministerio de la palabra, s) y gozan de las operaciones comunes del Espíritu, t) sin embargo, por su negligencia y desprecio voluntario de la gracia ofrecida a ellos son dejados justamente en su incredulidad y nunca vienen en verdad a Jesucristo. u)",
+          "references": [
+            "r) Hch. 13:48.",
+            "s) Mat. 22: 14.",
+            "t) Mat. 13:20, 21; Heb. 6:4‐6.",
+            "u) Sal. 81:11, 12; 95:9‐11; Juan 6: 64,65; 12:38‐40; Prov. 1:24‐32.,"
+          ]
+        },
+        {
+          "id": "question-69",
+          "title": "Pregunta 69",
+          "question": "¿Cuál es la comunión en gracia que 1os miembros de la iglesia invisible tienen con Cristo?",
+          "body": "La comunión en gracia que los miembros de la iglesia invisible tienen con Cristo, es la participación de la virtud de su mediación en la justificación, v) adopción, x) santificación y cualquiera otra cosa que en esta vida manifieste esta unión, y)",
+          "references": [
+            "v) Rom. 8:30.",
+            "x) Efe. 1:5.",
+            "y) I Cor. 1 :30."
+          ]
+        },
+        {
+          "id": "question-70",
+          "title": "Pregunta 70",
+          "question": "¿Qué es la justificación?",
+          "body": "La justificación es un acto de la libre gracia de Dios para con los pecadores, z) por el cual él perdona todos sus pecados, acepta y estima sus personas como justas a su vista, a) y esto no por alguna cosa hecha en ellos o por ellos, b) sino solamente por la obediencia perfecta y satisfacción plena que dio Cristo. que Dios les imputa, c) y que reciben por la fe únicamente. d)",
+          "references": [
+            "z) Rom. 3:22, 24, 25; 4:5.",
+            "a) II Cor. 5:19, 21; Rom. 3:22, 24, 25.",
+            "b) Efe. 1:6, 7; Rom. 3:28.",
+            "c) Rom. 3:24, 25; 4:6‐8; 5: 17‐19.",
+            "d) Rom. 3:25, 26; 5:1; Hch. 10:43; Gal. 2:6; Fil. 3:9."
+          ]
+        },
+        {
+          "id": "question-71",
+          "title": "Pregunta 71",
+          "question": "¿Cómo es la justificación un acto de la libre gracia de Dios?",
+          "body": "Aunque Cristo, por su obediencia y muerte satisfizo propia, real y plenamente a la justicia de Dios en representación de los que son justificados, e) sin embargo. puesto que aceptó la satisfacción dada por un fiador, que podía haber demandado por ellos, y habiendo provisto a este mismo fiador, a su único Hijo, f) imputando la justicia de este a ellos g) sin exigir para su justificación mas que la fe, h) la cual también es un don, i) esta justificación por lo tanto es para ellos concedida por la libre gracia. j)",
+          "references": [
+            "e) Mat. 20:28; I Tim. 2:6; I Ped. 1:18, 19; Rom. 5:8‐10.",
+            "f) Dan. 9:24, 26; Is. 53:6, 10, 11, 12; Heb. 7:22; Rom. 8:32:",
+            "g) II Cor. 5:21; Rom. 4:11; I Cor. 1:30.",
+            "h) Rom. 3:24, 25; Hch. 16:31",
+            "i) Efe. 2:8.",
+            "j) Efe. 1:7."
+          ]
+        },
+        {
+          "id": "question-72",
+          "title": "Pregunta 72",
+          "question": "¿Cómo es la fe que justifica?",
+          "body": "La fe que justifica es una gracia salvadora, l) operada en el corazón del pecador por el Espíritu ll) y palabra de Dios, m) por la que aquél siendo convencido de su pecado y miseria, de la incapacidad en sí y en otras criaturas para libertarse de su estado de perdición, n) no solamente acepta la verdad de la promesa del evangelio, ñ) sino también recibe a Cristo y descansa en él y en su justicia ofrecida a él para perdón de pecado, o) y para la aceptación y estimación de su persona como justa delante de Dios para salvación. p)",
+          "references": [
+            "l) Heb. 10:39.",
+            "ll) II Cor. 4:13; Efe. 1:17‐19.",
+            "m) Rom. 1:16; 10:17.",
+            "n) Juan 16:8,9; Hch. 2:37; 4:12; 16:30; Rom. 7:9;",
+            "ñ) Efe. 1:13.",
+            "o) Act. 10: 43; 16:31; Juan 1:12.",
+            "p) Fil. 3:9; Hch. 15:11."
+          ]
+        },
+        {
+          "id": "question-73",
+          "title": "Pregunta 73",
+          "question": "¿Cómo justifica la fe a un pecador delante de Dios?",
+          "body": "La fe justifica a un pecador delante de Dios no por causa de las otras gracias que la acompañan o por las buenas obras que son el fruto de ella, q) ni como si la gracia de la fe algún acto de ella fuese imputado para justificación, r) sino solamente como un instrumento por e1 cual el pecador recibe a Cristo y se aprovecha de éste y de su justicia. s)",
+          "references": [
+            "q) Gal. 3: 11; Rom. 3: 28.",
+            "r) Rom. 4:5. comp. con Rom. 10:10.",
+            "s) Juan 1:12; Fil. 3:3."
+          ]
+        },
+        {
+          "id": "question-74",
+          "title": "Pregunta 74",
+          "question": "¿Qué es la adopción?",
+          "body": "La adopción es un acto de la libre gracia de Dios, t) en su Hijo Jesucristo y solamente por él, u) por la cual todos aquellos que son justificados son recibidos en el numero de los hijos, v) tienen su nombre escrito en ellos, x) les es dado el Espíritu de su Hijo, y) están bajo su cuidado y dispensación paternal, z) son admitidos a todos los privilegios y libertades de los hijos de Dios, hechos herederos de todas las promesas y coherederos de Cristo en gloria. a)",
+          "references": [
+            "t) I Juan 3:1:",
+            "u) Efe. 1:5; Gal. 4:4, 5.",
+            "v) Juan 1:12.",
+            "x) Rev. 3:12; II Cor. 6:18.",
+            "y) Gal. 4:6.",
+            "z) Sal. 103:13; Prov. 14:26; Mat. 6:32.",
+            "a) Rom. 8:17; Heb. 6:12."
+          ]
+        },
+        {
+          "id": "question-75",
+          "title": "Pregunta 75",
+          "question": "¿Qué es la santificación?",
+          "body": "La santificación es una obra de la libre gracia de Dios por la cual aquellos que Dios ha escogido antes de la fundación del mundo para que fuesen santos son en el tiempo por la poderosa operación del Espíritu Santo, b) quien les aplica la muerte y resurrección de Cristo, c) renovadas en todo el hombre conforme a la imagen de Dios, d) teniendo sembrada en su corazón la simiente del arrepentimiento para vida y de todas las otras gracias salvadoras, e) excitadas, aumentadas, y fortalecidas, f) de tal manera que ellos mueren cada día más y más para el pecado y se levantan a novedad de vida. g)",
+          "references": [
+            "b) Efe. 1:4: I Cor. 6:11: II Tes. 2:13.",
+            "c) Rom. 6:4‐6: Fil. 3:10.",
+            "d) Efe. 4:23‐24.",
+            "e) Hch. 11:18: I Juan 3:9.",
+            "f) Judas 20; Efe. 3:16‐18; Col. 1:10, 11.",
+            "g) Rom. 6:4, 6, 14."
+          ]
+        },
+        {
+          "id": "question-76",
+          "title": "Pregunta 76",
+          "question": "¿Qué es el arrepentimiento para vida?",
+          "body": "El arrepentimiento para vida es una gracia salvadora. h) operada en el corazón del pecador por e1 Espíritu i) y la palabra de Dios, j) por la cual nace en él un modo de ver, y un sentimiento no sólo de lo peligroso, l) sino también de lo inmundo y odioso de sus pecados, ll) y sobre la aprehensión de la misericordia de Dios en Cristo para aquellos que se afligen, m) tienen tristeza por sus pecados, n) los odian ñ) y se tornan de todos ellos a Dios, o) proponiéndose y esforzándose constantemente en andar con el Señor en todos los caminos de una nueva obediencia. p)",
+          "references": [
+            "h) II Tim. 2:25,",
+            "i) Zac. 12:10:",
+            "j) Hch. 2:37; 11:18, 20, 21; Sal. 19:7‐14.",
+            "l) Eze. 18:30, 32; Luc. 15:17, 18; Os. 2:6, 7.",
+            "ll) Eze. 16:61, 63; 36: 31; Is. 30:22.",
+            "m) Sal. 130:3‐7; Joel 2:12, 13; Zac. 12: 10.",
+            "n) Jer. 31: 18, 19.",
+            "ñ) II Cor. 7: 11.",
+            "o) Hch. 26: 18; Eze. 14:6: I Rey. 8:47, 48; I Sam. 7:3.",
+            "p) Sal. 119: 59, 128. Luc. 1:6."
+          ]
+        },
+        {
+          "id": "question-77",
+          "title": "Pregunta 77",
+          "question": "¿En qué se diferencian la justificación y la santificación?",
+          "body": "Aun cuando la santificación va inseparablemente unida a la justificación, q) sin embargo, se diferencia en que en la justificación Dios imputa la justicia de Cristo, r) y en la santificación el Espíritu infunde gracia y capacidad para el ejercicio de ella. s) En la primera el pecador es perdonado, t) en la otra es subyugado: u) la una hace igualmente libres de la ira vengadora de Dios a todos los creyentes y que estos nunca caigan, durante esta vida, enteramente en condenación: v) la otra ni es igual en todos, x) ni es perfecta en esta vida, y) sino que va creciendo en perfección. z)",
+          "references": [
+            "q) I Cor. 1:30; 6:11;",
+            "r) Rom. 3:24; 4:6, 8; II Cor. 5:21;",
+            "s) Eze. 36:27;",
+            "t) Rom. 3:24, 25;",
+            "u) Rom. 6:6, 14.",
+            "v) Rom. 8:1, 33, 34.",
+            "x) Heb. 5: 12‐14: I Juan 2:12‐14.",
+            "y) I Juan 1:8, 10.",
+            "z) II Cor. 7:1: Fil. 3:12‐14."
+          ]
+        },
+        {
+          "id": "question-78",
+          "title": "Pregunta 78",
+          "question": "¿De qué proviene lo imperfecto de la santificación en los creyentes?",
+          "body": "Lo imperfecto de la santificación en los creyentes proviene de los restos de pecado que aún quedan en cada parte de ellos, y de la lucha de la carne contra el Espíritu, por lo que ellos son perturbados frecuentemente por las tentaciones y caen en muchos pecados, a) son estorbados en sus servicios espirituales, b) y sus mejores obras son imperfectas o inmundas a la vista de Dios. c)",
+          "references": [
+            "a) Rom. 7:18, 23.",
+            "b) Gal. 5:17; Heb. 12:1.",
+            "c) Is. 64:6; Ex. 28:38."
+          ]
+        },
+        {
+          "id": "question-79",
+          "title": "Pregunta 79",
+          "question": "¿No pueden los creyentes, por razón de sus imperfecciones, por las muchas tentaciones por las que son tomados, caer del estado de gracia?",
+          "body": "Los verdaderos creyentes, por razón del amor inmutable de Dios, d) del decreto de éste y de su pacto de dar a ellos perseverancia, e) de su unión inseparable con Cristo, f) de la intercesión continua de éste por ellos, g) y del Espíritu y simiente de Dios que mora en los mismos: h) no pueden caer ni total ni finalmente del estado de gracia, i) sino que serán guardados por el poder de Dios por medio de la fe para salvación. j)",
+          "references": [
+            "d) Jer. 31:3.",
+            "e) Heb. 12:20, 21; II Sam. 23:5; Is. 54:5.",
+            "f) I Cor. 1:8.",
+            "g) Heb. 7:25; Luc. 22:32.",
+            "h) I Juan 2:27; 3:9.",
+            "i) Jer. 32:40; Juan 10:28.",
+            "j) I Ped. 1:5; Fil. 1:6."
+          ]
+        },
+        {
+          "id": "question-80",
+          "title": "Pregunta 80",
+          "question": "¿Pueden los creyentes estar seguros infaliblemente de que están en estado de gracia y que perseveraran en el para salvación?",
+          "body": "Todos los que son verdaderos creyentes en Cristo y se esfuerzan en andar con buena conciencia delante de él, l) pueden, sin una reve1ación extraordinaria, por la fe que descansa en la verdad de las promesas de Dios y por la capacidad que les da el Espíritu para discernir en ellos aquellas gracias a las cuales son hechas las promesas de vida, ll) y dándoles testimonio con sus espíritus de que son los hijos de Dios, m) pueden estar seguros de que están en el estado de gracia y que perseverarán en él para salvación. n)",
+          "references": [
+            "l) Juan 2:3; Hch. 24:16;",
+            "ll) 1 Cor. 2:12; 1 Juan 4:13, 16; 1 Juan 3:14; 18, 19, 21, 24;",
+            "m) Rom. 8:16.",
+            "n) 1 Juan 5:13."
+          ]
+        },
+        {
+          "id": "question-81",
+          "title": "Pregunta 81",
+          "question": "¿Todos los verdaderos creyentes en todos los tiempos están seguros de que viven en un estado de gracia y de que serán salvos?",
+          "body": "No siendo la seguridad de la gracia y de la salvación de la esencia de la fe, ñ) los verdaderos creyentes pueden esperar mucho tiempo antes de obtenerla, o) y después de gozarla puede debilitarse y sufrir intermitencias, por razón de las muchas perturbaciones, pecados, tentaciones y deserciones, p) sin embargo, ellos nunca son dejados sin ningún sostén y presencia del Espíritu de Dios que los guarde de caer en la desesperación profunda. q)",
+          "references": [
+            "ñ) Efes. 1:13;",
+            "o) Isa. 50:10; Sal. 88;",
+            "p) Sal. 77:1‐12.",
+            "q) Job 13:15; Sal. 73:13‐15, 23; 1 Juan 3:9; Isa. 54:7‐11."
+          ]
+        },
+        {
+          "id": "question-82",
+          "title": "Pregunta 82",
+          "question": "¿Cuál es la comunión en gloria que los miembros de la iglesia invisible tienen con Cristo? .",
+          "body": "La comunión en gloria que los miembros de la iglesia invisible tienen con Cristo, es en esta vida, r) inmediatamente después de la muerte, s) y al fin llega a la perfección en la resurrección y en el día del juicio. t)",
+          "references": [
+            "r) 2 Cor. 3:18.",
+            "s) Luc. 23:43;",
+            "t) I Tes. 4:17."
+          ]
+        },
+        {
+          "id": "question-83",
+          "title": "Pregunta 83",
+          "question": "¿Cuál es la comunión en gloria con Cristo, que los miembros de la iglesia invisible gozan en esta vida?",
+          "body": "A los miembros de la iglesia invisible se les comunican en esta vida los primeros frutos de la g1oria con Cristo, como que ellos son miembros de él, su cabeza, y así con él tienen parte en aquella gloria que él posee en toda su p1enitud u) y como una primicia de ella ellos gozan e1 sentimiento del amor de Dios, v) paz de conciencia, gozo en el Espíritu Santo y esperanza de la gloria. x) Así como por la otra parte, el sentimiento de la ira vengadora de Dios, de conciencia, y una expectación temerosa de juicio, son para los malvados el principio de los tormentos que ellos sufrirán después de la muerte. y)",
+          "references": [
+            "u) Efes. 2:5, 6;",
+            "v) Rom. 5:5; 2 Cor. 1:22;",
+            "x) Rom. 5:1, 2; Rom. 14:17;",
+            "y) Gen. 4:13; Mat. 27:4; Heb. 10:27; Marc. 9:44; Rom. 2:9."
+          ]
+        },
+        {
+          "id": "question-84",
+          "title": "Pregunta 84",
+          "question": "¿Morirán todos los hombres?",
+          "body": "Habiendo sido el hombre amenazado con la muerte como pago del pecado, z) esta establecido que todos los hombres mueran una vez, a) por cuanto todos han pecado. b)",
+          "references": [
+            "z) Rom. 6:23;",
+            "a) Heb. 9:27;",
+            "b) Rom. 5: 12."
+          ]
+        },
+        {
+          "id": "question-85",
+          "title": "Pregunta 85",
+          "question": "Siendo la muerte la paga del pecado, ¿cómo es que los justos no son librados de ella, puesto que sus pecados son perdonados en Cristo?",
+          "body": "Los justos serán librados de la muerte misma en el día final, y aun en la muerte son librados del aguijón y tormento de ella, c) así que, cuando ellos mueren, sin embargo, esto dimana del amor de Dios, d) que así los hace perfectamente libres del pecado y de la miseria, e) y aptos para la comunión más íntima con Cristo en gloria, a la cual ellos entonces entran. f)",
+          "references": [
+            "c) 1 Cor. 15:26, 55‐57; Feb. 2:15;",
+            "d) Isa. 57:1, 2;",
+            "e) Rev. 14:13; Efes. 5:27;",
+            "f) Luc. 23:43; Fil. 1:23."
+          ]
+        },
+        {
+          "id": "question-86",
+          "title": "Pregunta 86",
+          "question": "¿Cuál es la comunión en gloria con Cristo, que los miembros de la iglesia invisible gozan inmediatamente después de la muerte?",
+          "body": "La comunión en gloria con Cristo de que los miembros de la iglesia invisible gozan inmediatamente después de la muerte, consiste en que sus almas son hechas perfectas en santidad g) y recibidas en los más altos cielos h) donde los miran el rostro de Dios en luz y gloria i) esperando la redención completa de sus cuerpos j) que aun continúan unidos a Cristo l) y reposan en sus tumbas como en sus lechos, ll) hasta el último día en que serán unidos a sus almas m). Por el contrario, las almas de los malvados, después que éstos mueren, son arrojados al infierno en donde permanecen en tormentos y densas tinieblas, y sus cuerpos quedan guardados en sus tumbas como en prisiones hasta la resurrección y juicio del gran día n)",
+          "references": [
+            "g) Heb. 12:23; 1 Juan 3:2; Efes. 5:27;",
+            "h) 2 Cor. 5:11,6, 8;",
+            "i) 1 Juan 3:2; 1 Cor. 13:12; Rev. 22:4, 5; Mat. 5:8;",
+            "j) Rom. 8:23; Sal. 16:9;",
+            "l) 1 Tes. 4:14;",
+            "ll) Isa. 57:2;",
+            "m) Job. 19:26, 27;",
+            "n) Luc.16:23, 24; Hch. 1:25; Jud. 6."
+          ]
+        },
+        {
+          "id": "question-87",
+          "title": "Pregunta 87",
+          "question": "¿Qué creemos nosotros respecto de la resurrección?",
+          "body": "Nosotros creemos que en el último día habrá una resurrección general de los muertos, así justos como injustos. ñ) y los que sean hallados vivos serán transformados en un momento, y los mismos cuerpos de los muertos que han estado en la tumba serán unidos a sus almas para siempre y se levantarán por el poder de Cristo. o) Los cuerpos de los justos, por el Espíritu de Cristo, y por la virtud de la resurrección de este último como su cabeza, se levantarán en poder, espirituales, incorruptibles y hechos semejantes a su cuerpo glorioso. p) Los cuerpos de los malvados serán levantados en deshonra por él como por un juez ofendido. q)",
+          "references": [
+            "ñ) Hch. 24: 15;",
+            "o) 1 Cor. 15:51‐53; 1 Tes. 4:15‐17; Juan 5:28, 29;",
+            "p) 1 Cor. 15:21‐23, 42‐44; Fil. 3:21; Dan. 12:2;",
+            "q) Juan 5:28,29; Dan. 12:2; Mat. 25: 33."
+          ]
+        },
+        {
+          "id": "question-88",
+          "title": "Pregunta 88",
+          "question": "¿Qué seguirá inmediatamente después de la resurrección?",
+          "body": "Inmediatamente después de la resurrección seguirá el juicio universal y final de los ángeles y de los hombres r) cuyo día y hora ningún hombre sabe, para que todos velen y oren, y estén siempre prontos para la venida del Señor. s)",
+          "references": [
+            "r) 2 Ped. 2:4; 2 Cor.5:10; Rev. 20:12;",
+            "s) Mat. 24:36, 42:44; Luc. 21:35, 36."
+          ]
+        },
+        {
+          "id": "question-89",
+          "title": "Pregunta 89",
+          "question": "¿Qué será hecho a los malvados el día del juicio?",
+          "body": "En e1 día del juicio los malvados, serán puestos a la izquierda de Cristo t) y fundada en 1a más clara evidencia y con la plena convicción de sus propias conciencias, u) recibirán la temible pero justa sentencia de condenación pronunciada contra ellos, v) y entonces serán echados fuera de la presencia benéfica de Dios, y de la compañía gloriosa de Cristo, de los justos y de todos los santos ángeles e irán al infierno donde serán castigados con tormentos indecibles tanto en el cuerpo como en el alma, con el diablo y sus ángeles para siempre. x)",
+          "references": [
+            "t) Mat. 25:33;",
+            "u) Rom. 2:15, 16;",
+            "v) Mat. 25:41, 42;",
+            "x) Mat. 25:46; 2 Tes. 1:8, 9; Luc. 16:26; Juan 3:36; Marc.9:43, 44; 14:21."
+          ]
+        },
+        {
+          "id": "question-90",
+          "title": "Pregunta 90",
+          "question": "¿Qué se hará a los justos el día del juicio?",
+          "body": "En el día del juicio, siendo llevados, a Cristo en las nubes, y) serán puestos a su derecha y allí reconocidos y absueltos públicamente, z) y se unirán con Cristo para juzgar a los a ángeles y hombres reprobados, a) serán recibidos en el cielo, b) donde ellos estarán enteramente para siempre libres de todo pecado y miseria, c) llenos de goces inconcebibles, d) hechos perfectamente santos y felices tanto en el cuerpo como en el alma, en compañía de santos y ángeles innumerables, e) pero especialmente gozarán de la fruición y visión inmediata de Dios el Padre, de nuestro Señor Jesucristo y del Espíritu Santo, por toda la eternidad. f) Esta será la comunión plena y perfecta que los miembros de la iglesia invisible gozarán con Cristo en gloria en el día de la resurrección y el juicio.",
+          "references": [
+            "y) 1 Tes. 4:17;",
+            "z) Mat. 25:33; Mat. 10:32;",
+            "a) 1 Cor. 6:2, 3;",
+            "b) Mat. 25:34, 46;",
+            "c) Efes. 5:27; Rev. 7:17; Rev. 14:13; 21:4",
+            "d) Sal. 16:11; 1 Cor. 2:9;",
+            "e) Heb. 12:22, 23;",
+            "f) I Juan 3:2; I Cor. 13:12; 1 Tes. 4:17, 18; Rev. 22:3, 4, 5."
+          ],
+          "notes": [
+            "Habiendo ya visto lo que 1as Escrituras especia1mente nos enseñan acerca de lo que debemos creer respecto a Dios, pasaremos a considerar lo que ellas enseñan como deber del hombre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-god-requires",
+      "title": "El deber del hombre",
+      "units": [
+        {
+          "id": "question-91",
+          "title": "Pregunta 91",
+          "question": "¿Cuá1 es el deber que Dios exige a1 hombre?",
+          "body": "El deber que Dios exige al hombre es la obediencia a su voluntad revelada. g)",
+          "references": [
+            "g) Deut. 29:29; Miq. 6:8; 1 Sam. 15:22."
+          ]
+        },
+        {
+          "id": "question-92",
+          "title": "Pregunta 92",
+          "question": "¿Cuál fue la primera regla que Dios reveló al hombre como guía de obediencia?",
+          "body": "La regla de obediencia revela a Adán en su estado de inocencia, y a todo el género humano en Adán, exceptuando un mandamiento especial de no comer del fruto del árbol de la ciencia del bien y del mal, fue la ley moral h).",
+          "references": [
+            "h) Rom. 10:5; Rom 2:14; Gen. 2:17."
+          ]
+        },
+        {
+          "id": "question-93",
+          "title": "Pregunta 93",
+          "question": "¿Qué es la ley moral?",
+          "body": "La ley moral es la declaración de la voluntad de Dios hecha a la humanidad, guiando y obligando a cada uno a conformarse a ella y obedecerla de un modo personal, perfecto y perpetuo, en el conjunto y disposición de todo el hombre, alma y cuerpo, i) y en el cumplimiento de todos aquellos deberes de santidad y justicia debidos a Dios y al hombre; j) prometiendo la vida por su cumplimiento y amenazando con la muerte el quebrantamiento de ella. l)",
+          "references": [
+            "i) Deut. 5:1, 31, 33; Luc. 10:26, 27; I Tes.5:23;",
+            "j) Luc. 1:75; Hch. 24:16;",
+            "l) Rom. 10:5; Gal. 3:10, 12."
+          ]
+        },
+        {
+          "id": "question-94",
+          "title": "Pregunta 94",
+          "question": "¿Es de alguna utilidad la ley moral después de la caída?",
+          "body": "Aunque ningún hombre después de la caída puede alcanzar justicia y vida por la ley moral, ll) sin embargo, hay grande utilidad en ella, tanto para todos los hombres en común, como en lo particular, ora sea para los regenerados ora para los que no están. m)",
+          "references": [
+            "ll) Rom 8:3; Gal. 2:16;",
+            "m) 1 Tim. 1: 1, 8."
+          ]
+        },
+        {
+          "id": "question-95",
+          "title": "Pregunta 95",
+          "question": "¿Cuál es la utilidad de la ley moral para todos los hombres?",
+          "body": "La ley moral es de utilidad a todos los hombres por cuanto que los informa de la naturaleza y voluntad santa de Dios, n) y de sus deberes obligatorios de andar de conformidad con ella, ñ) para convencerlos de su incapacidad y para guardarlos de la corrupción pecaminosa de la naturaleza, corazón y vida de ellos, o) humillándolos al hacerlos sentir su pecado y miseria, p) y en seguida les ayuda a tener una idea clara de la necesidad que tienen de Cristo, q) y la perfección de obediencia. r)",
+          "references": [
+            "n) Lev. 11:44, 45; Lev. 20:7, 8; Rom. 7:12;",
+            "ñ) Sant. 2:10, 11; Miq. 6:8;",
+            "o) Sal. 19:11, 12; Rom. 3:20; Rom. 7: 7;",
+            "p) Romanos 3:9, 23; Rom 7:9, 13;",
+            "q) Gal. 3:21, 22;",
+            "r) Rom. 10:4."
+          ]
+        },
+        {
+          "id": "question-96",
+          "title": "Pregunta 96",
+          "question": "¿Cuál es la utilidad particular de la ley para los hombres no regenerados?",
+          "body": "La Ley moral es de utilidad a los hombres no regenerados para despertar su conciencia a fin de que huyan de la ira que vendrá, s) para conducirlos entonces a Cristo, t) o si ellos continúan en el estado y camino de mal, hacerlos inexcusables, u) y bajo la maldición de ella. v)",
+          "references": [
+            "s) I Tim. 1:9, 10; Rom. 8:9;",
+            "t) Gal. 3:24;",
+            "u) Rom. 1:20; Compárese con Rom. 2:15;",
+            "v) Gal. 3:10."
+          ]
+        },
+        {
+          "id": "question-97",
+          "title": "Pregunta 97",
+          "question": "¿Cuál es la utilidad especial de la ley moral para los regenerados?",
+          "body": "Aun cuando los que son regenerados y creyentes en Cristo son libertados de la ley moral como de un pacto de obras, x) de tal manera que por ella no son justificados, y) ni condenados; z) sin embargo, además de la utilidad general de ella, común para todos los hombres, es de utilidad especial para mostrarles cuán obligados están a Cristo por el cumplimiento de ella, por haber sufrido su maldición en lugar de ellos y por su bien, a) y así estimularlos a ser más agradecidos, b) y a expresar su gratitud por el cuidado más grande de ajustar su vida a ella como a su regla y obediencia. c)",
+          "references": [
+            "x) Rom. 7:4, 6; 6:14;",
+            "y) Rom. 3:20;",
+            "z) Rom. 8:1, 34;",
+            "a) Gal. 3:13, 14; Rom. 8:3, 4; 2 Cor. 5:21;",
+            "b) Col. 1: 12, 13, 14; Luc. 1:68, 69, 74, 75;",
+            "c) Rom. 7:22; Tit. 2:11‐14; Rom. 12:2."
+          ]
+        },
+        {
+          "id": "question-98",
+          "title": "Pregunta 98",
+          "question": "¿En qué se halla comprendida sumariamente la ley moral?",
+          "body": "La ley moral se halla comprendida sumariamente en los diez mandamientos, que fueron pronunciados por la voz de Dios sobre el monte Sinai, y escritos por él mismo en dos tab1as de piedra. d) y están consignados en e1 capítulo veinte del Éxodo. Los primeros cuatro mandamientos contienen nuestros deberes para con Dios, y los otros seis, nuestros deberes para con los hombres. e)",
+          "references": [
+            "d) Deut. 10:4; Ex. 34:1‐4;",
+            "e) Mat. 22:37‐40."
+          ]
+        },
+        {
+          "id": "question-99",
+          "title": "Pregunta 99",
+          "question": "¿Qué reglas pueden observarse para perfecta inteligencia de los diez mandamientos?",
+          "body": "Para 1a inteligencia recta de los diez mandamientos pueden observarse las reglas siguientes:\n\n1ª Que la ley es perfecta y obliga a cada uno a proceder en todas las cosas de conformidad con la justicia de ella, y a una obediencia completa por siempre; e) así es que requiere el cumplimiento más exacto de cada deber y prohíbe aun el más pequeño pecado f)\n\n2ª Que es espiritual y así alcanza al pensamiento, a la voluntad, afectos y a todas las otras facultades del alma, tanto como a las palabras, obras y maneras. g)\n\n3ª Que la misma cosa es exigida o prohibida de diversas maneras en varios mandamientos. h)\n\n4ª Que cuando un deber es mandado, e1 pecado contrario es prohibido, i) y cuando un pecado es prohibido el deber contrario es mandado. j) Del mismo modo, cuando una promesa está anexa, la amenaza contraria esta incluida l) y cuando una amenaza está anexa, la contraria está incluida. ll)\n\n5ª Que lo que Dios prohíbe, nunca debe hacerse, m) y lo que él manda, es siempre un deber para nosotros, n) y sin embargo, todo deber particular no debe hacerse en todos los tiempos. ñ)\n\n6ª Que bajo un pecado o deber, todos los del mismo genero son prohibidos o mandados, juntamente con todas las causas, medios, ocasiones y apariencias de ellas, provocaciones para las mismas. o)\n\n7ª Que en lo que es mandado o prohibido a nosotros, estamos obligados, conforme a nuestra posición, a procurar que sea hecho o evitado por otros según los deberes del lugar que ocupan. p)\n\n8ª Que en lo que es mandado a otros, estamos obligados, según nuestra posición y oportunidades, a ayudarlos; q) y a tener cuidado de no participar con ellos en lo que les está prohibido. r)",
+          "references": [
+            "e) Mat. 22: 37‐40;",
+            "f) Sal. 19:7; Sant. 2:10; Mat. 5:20‐48.",
+            "g) Rom. 7:14; Deut. 6:6; Mat. 22:37‐39; 12:36;",
+            "h) Col. 3:5; 1 Tim. 6:10; Exo. 20:3‐5; Amos 8:5;",
+            "i) Isa. 58: 13; Mat. 15:4‐6; Deut. 6:13. Comp. con Mat. 4:9, 10;",
+            "j) Efes. 4:23;",
+            "l) Éx. 20:12; Comp. con Prov. 30:17;",
+            "ll) Jer. 18:7, 8. Ex.. 20:7. Comp. con Sal. 15: 1, 4, 5 y Sal. 24:4, 5",
+            "m) Rom. 3:8; Heb. 11:25.",
+            "n) Deut. 4:9;",
+            "ñ) Mat. 12:7; Marc. 14:7;",
+            "o) 1 Tes. 5:22; Gal. 5:26; Heb. 10:24; Col. 3:21;",
+            "p) Ex. 20:10; Gen. 18:18; Deut. 6:6, 7; Jos. 24:15.",
+            "q) 2 Cor. 1:24.",
+            "r) 1 Tim. 5:23; Efe. 5:2."
+          ]
+        },
+        {
+          "id": "question-100",
+          "title": "Pregunta 100",
+          "question": "¿Qué cosas especiales debemos considerar en los diez mandamientos?",
+          "body": "En los diez mandamientos debemos considerar el prefacio, la sustancia de los mandamientos mismos y las varias razones anexas a algunos de ellos para darles más fuerza.",
+          "references": []
+        },
+        {
+          "id": "question-101",
+          "title": "Pregunta 101",
+          "question": "¿Cuál es el prefacio de los diez mandamientos?",
+          "body": "El prefacio de los diez mandamientos está contenido en estas palabras: Yo soy Jehová tu Dios, que te saqué de la tierra de Egipto, de casa de siervos. s) En estas palabras Dios manifiesta su soberanía como siendo Jehová, el eterno, inmutable y todopoderoso, t) teniendo su ser en sí y por sí mismo u) y dando existencia a todas sus palabras, v) y obras, x) que él es el Dios del pacto, como con Israel en lo antiguo, así con todo su pueblo, y) que como libertó a Israel de la esclavitud de Egipto, así nos libertará de nuestra servidumbre espiritual, z) y que por lo tanto estamos obligados a tenerle como a nuestro único Dios y a guardar todos sus mandamientos. a)",
+          "references": [
+            "s) Ex. 20:2;",
+            "t) Isa. 44:6;",
+            "u) Ex. 3:14;",
+            "v) Ex. 6:3.",
+            "x) Hech. 17:24, 28.",
+            "y) Gen. 17:7; Comp. con Rom. 3:29;",
+            "z) Luc. 1:74, 75;",
+            "a) 1 Pedro 1:15‐18; Lev. 18:30 y 19:37. Véase letra z."
+          ]
+        },
+        {
+          "id": "question-102",
+          "title": "Pregunta 102",
+          "question": "¿Cuál es el resumen de los cuatro mandamientos que contienen nuestros deberes para con Dios?",
+          "body": "El resumen de los cuatro mandamientos que contienen nuestros deberes para con Dios es amar al Señor nuestro Dios con todo nuestro corazón, con toda nuestra alma, con todas nuestras fuerzas y con todo nuestro entendimiento. b)",
+          "references": [
+            "b) Luc. 10:27."
+          ]
+        },
+        {
+          "id": "question-103",
+          "title": "Pregunta 103",
+          "question": "¿Cuál es el primer mandamiento?",
+          "body": "El primer mandamiento es: \"No tendrás dioses ajenos delante de mí. c)",
+          "references": [
+            "c) Ex. 20:3."
+          ]
+        },
+        {
+          "id": "question-104",
+          "title": "Pregunta 104",
+          "question": "¿Cuáles son los deberes exigidos en el primer mandamiento?",
+          "body": "Los deberes exigidos en el primer mandamiento son el que conozcamos y confesemos que Dios es el único Dios verdadero, y que es el nuestro d) y que conforme a esto le adoremos y g1orifíquemos, e) pensando f) y meditando en él, g) recordándole, h) teniéndole en la más alta estimación, i) honrándole j) adorándole, l) eligiéndole, ll) y amándole, m) deseándole, n) temiéndole ñ) creyendo, o) confiando, p) esperando q) deleitándose, r) y regocijándose en él; s) siendo celosos por él, t) invocándole, dando toda alabanza y acción de gracias a él, u) prestándole toda obediencia y sumisión con todo nuestro ser, v) siendo cuidadosos en todas las cosas que a él le agradan, x) y entristeciéndonos cuando hacemos algo con lo que le ofendemos, y) andando en la humildad con él. z)",
+          "references": [
+            "d) 1 Cron. 28:9; Deut. 26:17; Isa. 43:10;",
+            "e) Sal. 95:6, 7; Mat. 4:10; Sal. 29:2;",
+            "f) Mal. 3:16;",
+            "g) Sal. 63: 6;",
+            "h) Ecle. 12:1;",
+            "i) Sal. 71:19;",
+            "j) Mal. 1:6;",
+            "l) Isa. 45:23; Sal. 96;",
+            "ll) Jos. 24:22; Ver. 15;",
+            "m) Deut. 6:5;",
+            "n) Sal. 73:25;",
+            "ñ) Isa. 8:13;",
+            "o) Ex. 14:31; Rom. 10:11; Hch. 10:43;",
+            "p) Isa. 26:4; Sal. 40:4;",
+            "q) Sal. 130:7;",
+            "r) Sal. 37:4;",
+            "s) Sal. 32:11;",
+            "t) Rom. 12:11; Rev. 3:19; Num. 25:11;",
+            "u) Fil. 4:6;",
+            "v) Jer. 7:23; Sant. 4:7; Rom. 12:1;",
+            "x) 1 Juan 3:22;",
+            "y) Neh. 13:8; Sal. 73:21; Sal. 119:136; Jer. 31:18, 19;",
+            "z) Miq. 6:8."
+          ]
+        },
+        {
+          "id": "question-105",
+          "title": "Pregunta 105",
+          "question": "¿Cuáles pecados prohíbe el primer mandamiento?",
+          "body": "Los pecados prohibidos en el primer mandamiento son el ateísmo, esto es, negar a Dios o no tener ninguno; a) la idolatría, o el tener o adorar muchos dioses, o algún otro como el verdadero Dios o en lugar de él, b) el no tenerlo ni confesarlo como Dios y como el nuestro, c) la omisión o negligencia en alguna cosa debida a él, requerida en este mandamiento, d) la ignorancia, e) olvido, f) falsas aprehensiones, g) opiniones erróneas, h) pensamientos indignos y malvados con respecto a él, i) investigaciones curiosas y atrevidas tocante a sus secretos, j) toda impiedad, l) odio a Dios, ll) amor a sí mismo, m) egoísmo, n) y todos los demás estados desordenados e inmoderados de nuestra mente, voluntad o afectos sobre otras cosas que nos aparten de él en todo o en parte; ñ) credulidad vana, o) incredulidad, p) herejía, q) error, r) desconfianza, s) desesperación, t) incorregibilidad, u) e insensibilidad bajo sus juicios, v) dureza de corazón, x) orgullo, y) presunción, z) seguridad carna1, a) tentar a Dios, b) usar medios ilícitos, c) y confiar en los lícitos; d) goces y delicias carnales, e) un celo corrompido, ciego e indiscreto, f) tibieza, g) y frialdad en las cosas de Dios, h) alejarnos y apostatar de Dios, i) orar o dar algún culto religioso a los santos ángeles a alguna otra criatura, j) todo pacto o consulta con el diablo l) y seguir sus sugestiones, ll) hacer a los hombres señores de nuestra fe y conciencia, m) menospreció y desdén de Dios y de sus mandamientos, n) resistiendo o entristeciendo a su Espíritu, ñ) descontento o impaciencia por sus disposiciones, acusándole de locura por los males que nos manda, o) atribuir la alabanza de algo bueno que seamos, tengamos, o hagamos, a la fortuna, p) a los ídolos, q) a nosotros mismos, r) o a alguna otra criatura. s)",
+          "references": [
+            "a) Sal. 14:1; Efes. 2:12;",
+            "b) Jer. 2:27, 28; comp. con 1 Tes. 1:9;",
+            "c) Sal. 81:11;",
+            "d) Isa. 43:22, 23; Ver. 24;",
+            "e) Jer. 4:22; Os. 4:1‐6;",
+            "f) Jer. 2:32; Sal. 50:22;",
+            "g) Hch. 17:23, 29;",
+            "h) Isa. 40:18;",
+            "i) Sal. 50:21;",
+            "j) Deut. 29:29.",
+            "l) Tit. 1:16; Heb. 12:16;",
+            "ll) Rom. 1 :30;",
+            "m) 2 Tim. 3:2;",
+            "n) Fil. 2:21;",
+            "ñ) 1 Juan 2: 15; 1 Sam. 2:29; Col. 3:2, 5;",
+            "o) 1 Juan 4:1;",
+            "p) Heb. 3:12;",
+            "q) Gal. 5:20; Tit. 3:10;",
+            "r) Hch. 26:9;",
+            "s) Sal. 78:22;",
+            "t) Gen. 4:13;",
+            "u) Jer. 5:3;",
+            "v) Isa. 42:25;",
+            "x) Rom. 2:5;",
+            "y) Jer. 13:15;",
+            "z) Sal. 19:13;",
+            "a) Sof. 1:12;",
+            "b) Mat. 4:7;",
+            "c) Rom. 3:8;",
+            "d) Jer. 17:5;",
+            "e) 2 Tim. 3:4;",
+            "f) Gal. 4:17; Rom. 10:2; Juan 16:2; Luc. 9:54, 55;",
+            "g) Rev. 3:16;",
+            "h) Rev. 3: 1;",
+            "i) Ezeq. 14:5; Isa. 1:4, 5;",
+            "j) Os. 4:12; Rev. 19:10; Col. 2:18; Rom. 1:25;",
+            "l) Lev. 20:6; 1 Sam. 28:7, 11. Comp. con 1 Crón. 10:13, 14.",
+            "ll) Hch. 5:3;",
+            "m) 2 Cor. 1:24; Mat. 23:9;",
+            "n) Deut. 32:15; Prov. 13:13; 2 Sam. 12:9;",
+            "ñ) Act. 7:51; Efes. 4:30;",
+            "o) Salmo 73:2, 3, 13, 14, 15, 22;",
+            "p) 1 Sam. 6:9;",
+            "q) Dan. 5:23;",
+            "r) Deut. 8:17; Dan. 4:30;",
+            "s) Hab. 1: 16."
+          ]
+        },
+        {
+          "id": "question-106",
+          "title": "Pregunta 106",
+          "question": "¿Qué cosa especial se nos enseña en estas palabras: delante de mí, contenidas en el primer mandamiento?",
+          "body": "En estas palabras, delante de mí, o ante mi rostro, contenidas en el primer mandamiento, se nos enseña que Dios que ve todas las cosas, toma noticia especial de ellas y se desagrada mucho del pecado de tener otro dios; así que esta razón puede ser un argumento para disuadir al hombre de cometerlo, y también un agravante como una de las provocaciones más imprudentes; t) y al mismo tiempo para persuadirnos a obrar todo lo que hacemos en su servicio como a su vista. u)",
+          "references": [
+            "t) Sal. 44:20, 21; Ezeq. 8:5;",
+            "u) 1 Crón. 28:9."
+          ]
+        },
+        {
+          "id": "question-107",
+          "title": "Pregunta 107",
+          "question": "¿Cuál es el segundo mandamiento?",
+          "body": "El segundo mandamiento es: No te harás imagen, ni ninguna semejanza de cosa que esté arriba en el cielo, ni abajo en la tierra, ni en las aguas debajo de la tierra: no te inclinarás a ellas, ni las honrarás; porque yo soy Jehová tu Dios, fuerte, celoso, que visita la maldad de los padres sobre los hijos, sobre los terceros y sobre los cuartos, a los que me aborrecen, y que haga misericordia a millares a los que me aman, y guardan mis mandamientos. v)",
+          "references": [
+            "v) Ex. 20:4, 5, 6."
+          ]
+        },
+        {
+          "id": "question-108",
+          "title": "Pregunta 108",
+          "question": "¿Cuáles son los deberes requeridos en el segundo mandamiento?",
+          "body": "Les deberes requeridos en el segundo mandamiento son recibir, observar y guardar puros y completos todo el culto religioso y las ordenanzas, tales como Dios les instituyó en su palabra; x) y con especialidad la oración y las acciones de gracias en el nombre de Cristo, y) e1 oír, leer y predicar la palabra, z) la administración y recepción de los sacramentos, a) el gobierno y disciplina de la iglesia, b) el ministerio y el sostenimiento del mismo, c) los ayunos religiosos; d) jurar por el nombre de Dios; e) y hacer votos a él, f) así como también el desaprobar, detestar y oponerse a todo culto falso, g) y conforme al estado y llamamiento de cada uno, destruirlo así como a todos los objetos de la idolatría. h)",
+          "references": [
+            "x) Deut. 32:46; Mat. 28:20; I Tim. 6:13, 14; Hch. 2:42;",
+            "y) Fil. 4:6; Efes. 5:20;",
+            "z) Deut. 17:18, 19; Hch. 15:21; 2 Tim. 4:2; Sant. 1:21, 22; Hch. 10:33;",
+            "a) Mat. 28:19; I Cor. 11:23‐30;",
+            "b) Mat. 16:19; Juan 20:23; Mat. 18:15‐17; 1 Cor. 5; 12:28;",
+            "c) Efes. 4:11, 12; 1 Tim. 5:17, 18; 1 Cor. 9:1‐15",
+            "d) Joel 2:12, 13; 1 Cor. 7:5;",
+            "e) Deut. 6:13;",
+            "f) Sal. 76:11; Isa. 19:21; Sal. 116:14, 18.",
+            "g) Hch. 17:16, 17; Sal. 16:4;",
+            "h) Deut. 7:5; Isa. 30:22."
+          ]
+        },
+        {
+          "id": "question-109",
+          "title": "Pregunta 109",
+          "question": "¿Cuáles son los pecados prohibidos en el segundo mandamiento?",
+          "body": "Las pecados prohibidos en el segundo mandamiento son, todo lo que sea inventar, i) aconsejar, j) mandar, l) usar, ll) y aprobar algún culto religioso por sabio que sea, pero que no haya sido instituido por Dios, m) el hacer alguna representación de Dios, ya sea de todos a de alguna de las Tres Personas, sea interiormente en nuestra inteligencia, a en lo exterior por alguna clase de imagen a semejanza de alguna criatura cualquiera, n) toda adoración de ella, ñ) de Dios en ella o por ella, o) el hacer representaciones de deidades falsas, p) y toda adoración de ellas o hacer algún servicio perteneciente a ellas. q) Todas las supersticiones engañosas, r) el corromper el culto de Dios, s) ya sea añadiéndole o quitándole, t) sean inventadas y tomadas por nosotros mismos, u) o recibidas por tradición de otros, v) aun cuando vengan con el título de antigüedad, x) costumbre, y) devoción, z) buena intención o cualquier otro pretexto, a) la simonía, b) el sacrificio; c) toda negligencia, d) desprecio, e) impedimento, f) y oposición al culto y ordenanzas que Dios ha establecida. g)",
+          "references": [
+            "i) Núm. 15:39;",
+            "j) Deut. 13:6‐8;",
+            "l) Os. 5:2; Miq. 6:16;",
+            "ll) 1 Rey. 11:33; 1 Rey. 12:33;",
+            "m) Deut. 12:30‐32;",
+            "n) Deut. 4:15‐19; Hch. 17:29; Rom.1:21, 22, 23, 25;",
+            "ñ) Gal. 4:8; Dan. 3:18;",
+            "o) Ex.32:5;",
+            "p) Ex. 32:8;",
+            "q) 1 Rey. 18:26, 28; Isa. 65: 11;",
+            "r) Hch. 17:22; Col. 2:21‐23;",
+            "s) Mal. 1:7, 8, 14;",
+            "t) Deut. 4:2;",
+            "u) Sal. 106:39;",
+            "v) Mat. 15:9;",
+            "x) 1 Pedro 1:18:",
+            "y) Jer. 44:17;",
+            "z) Isa. 65:3, 4, 5; Gal.1:13,14;",
+            "a) 1 Sam. 13:11, 12; 1 Sam. 15:21;",
+            "b) Hch. 8:18, 19, 22;",
+            "c) Rom. 2:22; Mal. 3:8;",
+            "d) Ex. 4:24, 25, 26;",
+            "e) Mat. 22:5; Mal. 1:7, 13;",
+            "f) Mat. 23: 13;",
+            "g) Hch. 13:45; 1 Tes. 2:15, 16."
+          ]
+        },
+        {
+          "id": "question-110",
+          "title": "Pregunta 110",
+          "question": "¿Cuáles son las razones anexas al segundo mandamiento, para darle mayor fuerza?",
+          "body": "Las razones anexas al segunda mandamiento y que le dan mayor fuerza, están contenidas en estas palabras: \"Porque yo soy Jehová tu Dios, fuerte, celoso, que visita la maldad de los padres sobre los hijos, sobre los terceros y sobre los cuartos, a los que me aborrecen, y que haga misericordia a millares a los que me aman, y guardan mis mandamientos, h) y son por lo tanto la soberanía y propiedad que Dios tiene sobre nosotros, i) e1 celo ardiente que tiene por su propia culto j) su indignación vengativa contra todo culto falso, por ser éste un libertinaje espiritual l) reputando a él a los quebrantadores de este mandamiento como personas que le odian y amenazándolos con castigarles tanto a ellos como a sus generaciones; ll) y estimando a los que lo guardan fielmente como a personas que le aman y cumplen sus mandamientos, a las que promete misericordia tanto para ellos como para sus generaciones. m)",
+          "references": [
+            "h) Ex. 20:5, 6;",
+            "i) Sal. 45:11; Rev. 15:3, 4;",
+            "j) Ex. 34:13, 14;",
+            "l) I Cor. 10:20‐22; Deut. 32:16‐19; Ezeq. 16:26, 27;",
+            "ll) Os. 2:2‐4;",
+            "m) Deut. 5:29."
+          ]
+        },
+        {
+          "id": "question-111",
+          "title": "Pregunta 111",
+          "question": "¿Cuál es el tercer mandamiento?",
+          "body": "El tercer mandamiento es: No tomarás el nombre de Jehová tu Dios en vano; porque no dará por inocente Jehová al que tomare su nombre en vano. n)",
+          "references": [
+            "n) Ex. 20:7."
+          ]
+        },
+        {
+          "id": "question-112",
+          "title": "Pregunta 112",
+          "question": "¿Qué exige el tercer mandamiento?",
+          "body": "El tercer mandamiento exige que el nombre de Dios, sus títulos, atributos ñ) ordenanzas, o) la palabra, p) los sacramentos, q) la oración, r) juramentos, s) votos, t) suertes, u) sus obras, v) y cualquiera otra cosa por lo cual él se da a conocer, sea santa y reverentemente usadas en pensamiento, x) meditación y) en palabra, z) y por escrito: a) por una profesión santa, b) una conversación intachable, c) para la gloria de Dios, d) y para el bien nuestro, e) y de otros. f)",
+          "references": [
+            "ñ) Mat. 6:9; Deut. 28:58; Sal. 68:4; Sal. 29 :2; Rev. 15:3, 4; Sal. 65:1‐11.",
+            "o) Ecl. 5; Mal 1:14;",
+            "p) Salmo 138:2;",
+            "q) 1 Cor. 11:24‐29;",
+            "r) 1 Tim. 2:8;",
+            "s) Jer. 4:2;",
+            "t) Ecle. 5:2, 4;",
+            "u) Hch. 1:24, 26;",
+            "v) Job 36:24;",
+            "x) Mal. 3:16;",
+            "y) Sal. 8;",
+            "z) Salmo 105:2, 5; Col. 3:17;",
+            "a) Sal. 102:18;",
+            "b) l Ped. 3:15; Miq. 4:5;",
+            "c) Fil. 1:27;",
+            "d) 1 Cor. 10:31;",
+            "e) Jer. 32: 39;",
+            "f) 1 Ped. 2: 12."
+          ]
+        },
+        {
+          "id": "question-113",
+          "title": "Pregunta 113",
+          "question": "¿Cuáles pecados prohíbe el tercer mandamiento?",
+          "body": "Los pecados prohibidos en el tercer mandamiento son, el no usar el nombre de Dios de la manera que es requerida, g) y el abuso del mismo por una ignorante, h) vana, i) irreverente, profana, j) supersticioso, l) o malvada costumbre, mencionando o usando de cualquier otro modo sus títulos, atributos, ll) ordenanzas, m) u obras; n) por la blasfemia, ñ) perjurio, o) toda maldición pecaminosa, p) juramentos, q) votos, r) suertes; s) la violación de nuestros juramentos y votos, si son lícitos, t) o el cumplimiento de ellos si corresponden cosas ilícitas, u) murmuración o queja contra los decretos de Dios, v) curiosas inquisiciones sobre ellos, x) o la aplicación falsa de los mismos, y) así como los actos providenciales de Dios; z) la mala interpretación, a) aplicación, b) algún otro modo de pervertir la palabra o alguna parte de ella, c) por chanzas profanas, d) cuestiones curiosas o inútiles, charlas vanas, o el sostener falsas doctrinas, e) en abusar el nombre de Dios, de las criaturas o de alguna cosa que está bajo de él; encantos, f) prácticas y concupiscencias pecaminosas; g) difamación, h) desprecio, i) injuria, j) o la oposición grave a la verdad, gracia y caminos de Dios; l) hacer profesión de religión con hipocresía o por fines pecaminosos; ll) avergonzarse de ella, m) o la vergüenza de ella por considerarla molesta, n) sin ninguna sabiduría, ñ) infructuosa, o) o el andar en ella de un modo ofensivo, p) o el abandonarla q).",
+          "references": [
+            "g) Mal. 2:2;",
+            "h) Hch. 17:23;",
+            "i) Prov. 30:9.",
+            "j) Mal. 1:6, 7, 12; Mal. 3:14;",
+            "l) Jer. 7:4, 9, 10, 14; 7:4, 9, 10, 14, 31; Col. 2:20‐22;",
+            "ll) Ex. 5:2; Sal. 139:20;",
+            "m) Sal. 50:16, 17;",
+            "n) Isa. 5:12;",
+            "ñ) 2 Rey. 19:22; Lev. 24:11;",
+            "o) Zac. 5:4;",
+            "p) Rom. 12:14; 1 Sam. 17:43; 2 Sam. 16:5;",
+            "q) Jer. 5:7; Jer. 23: 10;",
+            "r) Deut. 23: 10; Hch. 23:12, 14;",
+            "s) Est. 3:7 y 9:24;",
+            "t) Sal. 24:4; Eze. 17:16, 18, 19;",
+            "u) Mar. 6:26; 1 Sam. 25:22, 32‐34;",
+            "v) Rom. 9:14. 19, 20;",
+            "x) Deut. 29:29. Las cosas secretas pertenecen a nuestro Dios.",
+            "y) Rom. 3:5, 7, 8;",
+            "z) Ecle. 8:11; Sal. 73:12, 13;",
+            "a) Mat. 5:21 al fin;",
+            "b) Eze. 13:22;",
+            "c) 2 Ped. 3:16; Mat. 22:24‐31;",
+            "d) Jer. 23:34, 36, 38;",
+            "e) 1 Tim. 6: 4, 5, 20; 2 Tim. 2:14: Tit. 3:9;",
+            "f) Deut. 18:10‐14; Hch. 19:13;",
+            "g) 2 Tim. 4:3, 4; Judas 4; Rom. 13:13, 14; 1 Rey. 21:9, 10;",
+            "h) Hch. 13:45; 1 Juan 3:12;",
+            "i) 2 Ped. 3:3; Sal. 1:1;",
+            "j) 1 Ped. 4:4;",
+            "l) Hch. 13:45, 46, 50; Hch. 4: 18; Hch. 19:9; 1 Tes. 2:16; Heb. 10:29;",
+            "ll) 2 Tim. 3:5; Mat. 23: 14; Mat. 6: 1‐3, 5, 16;",
+            "m) Mar. 8:38;",
+            "n) Sal. 73: 14, 15;",
+            "ñ) Efe. 5:15‐17; 1 Cor. 6:5, 6;",
+            "o) Isa. 5:4; 2 Ped. 1:8, 9;",
+            "p) Rom. 2:23, 24;",
+            "q) Gál. 3:1, 3; Heb. 6:6."
+          ]
+        },
+        {
+          "id": "question-114",
+          "title": "Pregunta 114",
+          "question": "¿Cuáles son las razones anexas al tercer mandamiento?",
+          "body": "Las razones anexas al tercer mandamiento están contenidas en estas palabras: \"Jehová tu Dios” y \"porque no dará por inocente Jehová al que tomare su nombre en vano,\" r) y son las que siguen: porque él es el Señor y nuestro Dios, y entonces su nombre no debe ser profanado ni debemos abuso de él de ninguna manera, s) y especialmente porque él no absolverá ni perdonará a los transgresores de este mandamiento, y que él no permitirá que ellos escapen de su justo juicio, t) aun cuando muchos de ellos escapen de las censuras y castigos de los hombres u).",
+          "references": [
+            "r) Ex. 20:7;",
+            "s) Lev. 19: 12;",
+            "t) Deut. 28:58, 59; Zac. 5:2‐4; Eze. 36:21‐23;",
+            "u) 1 Sam. 2: 12, 17, 22."
+          ]
+        },
+        {
+          "id": "question-115",
+          "title": "Pregunta 115",
+          "question": "¿Cuál es el cuarto mandamiento?",
+          "body": "El cuarto mandamiento es: “Acordarte has del día de reposo para santificado. Seis días trabajarás, y harás toda tu obra; mas el séptimo día será reposo para J Jehová tu Dios: no hagas en él obra alguna; tú, ni tu hijo, ni tu hija; ni tu siervo, ni tu criada; ni tu bestia, ni tu extranjero que está dentro de tus puertas: porque en seis días hizo Jehová los cielos y la tierra, la mar y todas las cosas que en ellos hay, y reposó en el séptimo día: por tanto, Jehová bendijo el día de reposo y lo santificó.\" v)",
+          "references": [
+            "v) Ex. 20: 8‐11."
+          ]
+        },
+        {
+          "id": "question-116",
+          "title": "Pregunta 116",
+          "question": "¿Qué exige el cuarto mandamiento?",
+          "body": "El cuarto mandamiento exige a todos los hombres la santificación o guarda santa para Dios de todo aquel tiempo que Dios ha señalado en su Palabra, y con especialidad todo un día en cada siete; el que era el séptimo desde el principio del mundo hasta la resurrección de Cristo, y desde esta última época, el primer día de la semana, y así continuará hasta el fin del mundo. Este es el Reposo Cristiano, x) llamado en el Nuevo Testamento Día del Señor. y)",
+          "references": [
+            "x) Gén. 2:3; 1 Cor. 16:1, 2; Hch. 20:7; Juan 20:19‐27; Mat. 5:17,18; Isa. 56:2, 4, 6, 7;",
+            "y) Rev. 1:10."
+          ]
+        },
+        {
+          "id": "question-117",
+          "title": "Pregunta 117",
+          "question": "¿Cómo ha de santificarse el día de Reposo o del Señor?",
+          "body": "El día de Reposo o del Señor debe santificar se por un santo descanso en todo ese día, z) no sólo de las obras que en todo tiempo son pecaminosas, sino aun de aquellos empleos y recreaciones mundanales que son lícitos en los otros días; a) y debe ser nuestra delicia emplear todo el tiempo (excepto el que se emplee en obras de necesidad y misericordia) b) en los ejercicios públicos y privados del culto de Dios. c) Para esto debemos preparar nuestro corazón y despachar nuestros negocios mundanales con tal previsión, diligencia, moderación y arreglo tan oportuno, que podamos estar libres y aptos para cumplir los deberes del día; d)",
+          "references": [
+            "z) Ex. 20:8, 10;",
+            "a) Ex. 16:25‐29; Jer. 17:21, 22; Neh. 13: 15‐23;",
+            "b) Mat. 12: 1‐11;",
+            "c) Lev. 23:3; Isa. 58: 13; Lucas 4: 16; Hch. 20:7;",
+            "d) Ex. 20:8; Luc. 23:54, 56, y eran los días de la preparación, etcétera; Neh. 13:19."
+          ]
+        },
+        {
+          "id": "question-118",
+          "title": "Pregunta 118",
+          "question": "¿Por qué se dirige el encargo de guardar el Reposo más especialmente a los jefes de familia y a otros superiores?",
+          "body": "El encargo de guardar el Reposo se dirige especialmente a los jefes de familia y a otros superiores, porque ellos están obligados a guardarlo no sólo ellos mismos, sino también a mirar que sea observado por aquellos que están bajo su cuidado, y porque están propensos a ocupados muchas veces en empleo de su propio interés. e)",
+          "references": [
+            "e) Ex. 16:25‐29; Jer. 17:21,22; Neh. 13:15; Ex. 20: 10. Ex. 23: 12; Ex. 16:22, 25, 29."
+          ]
+        },
+        {
+          "id": "question-119",
+          "title": "Pregunta 119",
+          "question": "¿Cuáles son los pecados prohibidos en el cuarto mandamiento?",
+          "body": "Los pecados prohibidos en el cuarto mandamiento son, toda omisión de los deberes exigidos, f) el cumplimiento negligente, descuidado y estéril de ellos, así como el cansarse de los mismos, g) toda profanación del día por ociosidad y por hacer lo que en sí mismo es pecaminoso, h) y por pensamientos, palabras y obras innecesarias acerca de nuestros empleos y recreaciones mundanas. i)",
+          "references": [
+            "f) Eze. 22:26;",
+            "g) Eze. 33:30‐32; Mal. 1:13; Am. 8:5; Hch. 20:7‐9;",
+            "h) Ez. 23:38;",
+            "i) Jer. 17:24, 27; Isa. 58: 13."
+          ]
+        },
+        {
+          "id": "question-120",
+          "title": "Pregunta 120",
+          "question": "¿Cuáles son las razones anexas al cuarto mandamiento para darle mayor fuerza?",
+          "body": "Las razones anexas al cuarto mandamiento para darle mayor fuerza, son tomadas de la equidad del mismo y de habernos concedido Dios seis días de cada siete para nuestros propios negocios, habiéndose reservado sólo uno para sí mismo en estas palabras: seis días trabajarás y harás toda tu obra; j) el que Dios pretende para sí una propiedad especial sobre este día, cuando dice: mas el séptimo día será Reposo para Jehová tu Díos; l) el ejemplo del mismo Dios: porque en seis días hizo Jehová los cielos y la tierra, la mar y todas las cosas que en ellos hay, y reposó en el séptimo día; de las bendiciones que Dios ha colocado en este día, no sólo porque al santificarlo sea un día para su servicio, sino por disponer que sea uno de los medios para bendecirnos al santificarlo nosotros, por tanto Jehová bendijo el día de Reposo, y lo santificó. ll)",
+          "references": [
+            "j) Ex. 20:9;",
+            "l) Ex. 20:10;",
+            "ll) Ex. 20:11."
+          ]
+        },
+        {
+          "id": "question-121",
+          "title": "Pregunta 121",
+          "question": "¿Por qué se pone la palabra acuérdate al principio del cuarto mandamiento?",
+          "body": "La palabra acuérdate ha sido puesta al principio del cuarto mandamiento, m) en parte porque del gran beneficio de recordado, seremos estimulados en nuestra preparación para guardarlo, n) y al guardar éste, cumpliremos mejor los otros mandamientos, ñ) y así continuará un recuerdo lleno de gratitud por los dos grandes beneficios de la creación y de la redención, que contienen un breve re sumen de la religión; o) también fue puesta por que nosotros estamos propensos a olvidarlo, p) porque la naturaleza nos da poca luz para ello, q) y porque restringe nuestra libertad natural sobre cosas que son lícitas en otro tiempo; r) porque no viene más que una vez cada siete días, viniendo antes nuestros negocios mundanales, que frecuentemente apartan nuestra mente de pensar en él y prepararnos para santificarlo, s) y porque Satanás con sus instrumentos trabaja mucho por arrebatarnos la gloria, y aun la memoria de este día, y traernos a toda irreligión e impiedad. t)",
+          "references": [
+            "m) Ex. 20:8;",
+            "n) Ex. 16:23; Luc. 23:54, 56. Comp. con Mar. 15:42; NE. 13:19.",
+            "ñ) Ez. 20:12 19. 20;",
+            "o) Gén. 2:2, 3; Sal. 118:22, 24; Rev. 1: 10; Heb. 4:9;",
+            "p) Ez. 22:26;",
+            "q) Neh. 9:14;",
+            "r) Ez.34: 21;",
+            "s) Ex. 20:9; Amós 8:5;",
+            "t) Lam. 1:7: Neh. 13: 15‐23; Jer. 17:21‐23."
+          ]
+        },
+        {
+          "id": "question-122",
+          "title": "Pregunta 122",
+          "question": "¿Cuál es el resumen de los seis manda mientas que contienen nuestras deberes para con los hombres?",
+          "body": "El resumen de los seis mandamientos que con tienen nuestros deberes para con los hombres, es, amar a nuestro prójimo como a nosotros mismos, u) y hacer a los otros lo que queramos que ellos nos hagan. v)",
+          "references": [
+            "u) Mat. 22:39;",
+            "v) Mat. 7: 12."
+          ]
+        },
+        {
+          "id": "question-123",
+          "title": "Pregunta 123",
+          "question": "¿Cuál es el quinto mandamiento?",
+          "body": "El quinto mandamiento es: \"Honra a tu padre y a tu madre, porque tus días se alarguen en la tierra que Jehová tu Dios te da.\" x)",
+          "references": [
+            "x) Ex. 20: 12."
+          ]
+        },
+        {
+          "id": "question-124",
+          "title": "Pregunta 124",
+          "question": "¿Qué se quiere dar a entender por padre y madre en el quinto mandamiento?",
+          "body": "Por padre y madre en el quinto mandamiento, se quiere significar no sólo los padres naturales, y) sino todos los superiores, tanto en edad z) como en aptitudes; a) y con especialidad aquellos que por las ordenanzas de Dios están sobre nosotros en un lugar de autoridad, ya sea en la familia, b) en la iglesia c) o en la sociedad. d)",
+          "references": [
+            "y) Prov. 23:22, 25; Efe. 6:1, 2;",
+            "z) 1 Tim. 5:1, 2;",
+            "a) Gén. 4:20,21; Gén. 45:8;",
+            "b) 2 Rey. 5:13;",
+            "c) Gál. 4:19; 2 Rey. 2:12; 2 Rey. 13:14;",
+            "d) Isa. 49:23."
+          ]
+        },
+        {
+          "id": "question-125",
+          "title": "Pregunta 125",
+          "question": "¿Por qué son llamados padre y madre los superiores?",
+          "body": "Los superiores son llamados padre y madre, porque se les enseñan sus deberes para con los inferiores, como a padres naturales; a que expresen amor y ternura hacia ellos, conforme a sus varias relaciones; e) y a los inferiores les enseña a obrar con la más buena voluntad y alegría en el cumplimiento de sus deberes para con sus superiores, como lo hicieran con sus padres. f)",
+          "references": [
+            "e) Efe. 6:4; 1 Tes. 2:7, 8,11; Núm. 11:11, 12, 16;",
+            "f) 1 Corintios 4:14‐16."
+          ]
+        },
+        {
+          "id": "question-126",
+          "title": "Pregunta 126",
+          "question": "¿Hasta dónde llega la extensión general del quinto mandamiento?",
+          "body": "La extensión general del quinto mandamiento alcanza al cumplimiento de todos aquellos deberes que tenemos los unos para con los otros en nuestras diversas relaciones, como superiores, inferiores o iguales. g)",
+          "references": [
+            "g) Efe. 5:21; 1 Ped. 2:17; Rom. 12:10."
+          ]
+        },
+        {
+          "id": "question-127",
+          "title": "Pregunta 127",
+          "question": "¿Cuál es la honra que los inferiores deben a los superiores?",
+          "body": "La honra que los inferiores deben a los superiores es, toda la debida reverencia en corazón, h) palabra, i) porte, j) oración y gratitud para ellos; l) la imitación de sus virtudes y gracias, ll) la obediencia voluntaria a sus mandatos y consejos lícitos, m) la debida sumisión a sus correcciones, n) la fidelidad a ellos. ñ) la defensa o) y sostén de sus personas y autoridad, conforme a sus varios rangos y a la naturaleza de sus puestos; p) sobrellevando sus debilidades y ocultándolas con amor, q)",
+          "references": [
+            "h) Mal. 1:6; Lev. 19:3;",
+            "i) Prov. 31:28; 1 Ped. 3:6;",
+            "j) Levítico 19:32; 1 Rey. 2:19;",
+            "l) 1 Tim. 2: 1,2;",
+            "ll) Heb. 13:7; Fil. 3:17;",
+            "m) Efe. 6:1, 2, 5, 6, 7; 1 Ped. 2:13, 14; Rom. 13:1‐6; Heb. 13:17; Prov. 4:3, 4; 23:22;",
+            "n) Heb. 12:9; 1 Ped. 2: 18‐20;",
+            "ñ) Tit. 2:9,10;",
+            "o) 1 Sam. 26:15,16; 2 Sam. 18:3; Esther 6:2;",
+            "p) Mat. 22:21; Rom. 13:6, 7; 1 Tim. 5: 17; 18; Gál. 6:6; Gén. 45:11; 47:12;",
+            "q) Gén.9:23; 1 Ped. 2:18; Prov. 23:22;",
+            "r) Sal. 127:3‐5; Prov. 31:23."
+          ],
+          "unanchored_references": [
+            "r"
+          ]
+        },
+        {
+          "id": "question-128",
+          "title": "Pregunta 128",
+          "question": "¿Cuáles son los pecados que los inferiores cometen contra los superiores?",
+          "body": "Los pecados de los inferiores contra los superiores son, toda negligencia en los deberes exigidos para con ellos, s) envidiarlos, t) menospreciarlos, u) la rebelión v) contra sus personas x) y posiciones, y) sus buenos consejos, z) mandatos y correcciones; a) maldecirlos, burlarlos, b) así como todo porte refractario y escandaloso, que traiga la vergüenza y la deshonra para los superiores y su gobierno. c)",
+          "references": [
+            "s) Mat. 15:4‐6;",
+            "t) Núm. 11 :28, 29;",
+            "u) 1 Sam. 8:7; Isa. 3:5;",
+            "v) 2 Sam. 15:1‐12;",
+            "x) Ex. 21:15;",
+            "y) I Sam. 10:27;",
+            "z) 1 Sam. 2:25;",
+            "a) Deut.21:18‐21;",
+            "b) Prov. 30:11, 17;",
+            "c) Proverbios 19:26."
+          ]
+        },
+        {
+          "id": "question-129",
+          "title": "Pregunta 129",
+          "question": "¿Qué se exige de los superiores para con los inferiores?",
+          "body": "Se requiere de los superiores que conforme al poder que han recibido de Dios y aquellas relaciones en las que ellos están, amén a sus inferiores, d) oren por ellos, e) y los bendigan; f) los instruyan, g) aconsejen, y amonesten; h) los protejan, i) defiendan, recomienden j) y recompensen como es debido; l) que no los ayuden, ll) que los reprendan y castiguen cuando así sea necesario; m) que los protejan, n) y provean de todas las cosas necesarias para el alma ñ) y para el cuerpo; o) y que por un porte grave, sabio, santo y ejemplar, procuren glorificar a Dios, p) honrarse a sí mismas, q) y así preservar aquella autoridad que Dios les ha confiado. r)",
+          "references": [
+            "d) Col. 3:19; Tit. 2:4;",
+            "e) 1 Sam. 12:23; Job. 1:5;",
+            "f) 1 Reyes 8:55, 56; Gén. 49:28;",
+            "g) Deut. 6:6, 7;",
+            "h) Efe. 6:4;",
+            "i) 1 Ped. 3:7;",
+            "j) Rom. 13:3; 1 Ped. 2: 14;",
+            "l) Est. 6:3;",
+            "ll) Romanos 13:4;",
+            "m) Prov. 29:15; Rom. 13:4;",
+            "n) Job 29:12‐18; Isa. 1:10, 17;",
+            "ñ) Efe. 6:4;",
+            "o) 1 Tim. 5:8;",
+            "p) 1 Tim. 4:12; Tit. 2:3‐5;",
+            "q) 1 Rey. 3:28;",
+            "r) Tit. 2: 15."
+          ]
+        },
+        {
+          "id": "question-130",
+          "title": "Pregunta 130",
+          "question": "¿Cuáles son los pecados de los superiores?",
+          "body": "Los pecados de los superiores son, además de la negligencia en los deberes exigidos a ellos, s) un cuidado desordenado por sí mismo, t) por su propia gloria, u) comodidad, utilidad y placer, v) el mandar cosas ilícitas x) o las que los inferiores no tienen poder para cumplir, y) aconsejar, z) esforzar, a) o favorecer a éstos en lo que es malo; b) disuadirlos, desanimarlos o no ayudarles en lo que es bueno; c) corregirles indebidamente, d) exponerlos sin consideración, o llevarlos a lo malo, a las tentaciones y peligros; e) provocarlos a ira, f) o de algún modo deshonrándose a sí mismos o menoscabando su autoridad por un proceder descuidado, injusto, indiscreto o riguroso. g)",
+          "references": [
+            "s) Eze. 34:2, 3, 4;",
+            "t) Fil. 2:21;",
+            "u) Juan 5:44;",
+            "v) Isa. 56:10,11; Deut.17:17;",
+            "x) Hch.1:17,18; Dan. 3:4‐6",
+            "y) Ex. 5:10‐19; Mat. 23:2, 4;",
+            "z) Mat. 14:8; Mar. 6:24;",
+            "a) Jer.5:30, 31; 2 Sam. 13:28;",
+            "b) Jer.6:13, 14; Eze. 13:9, 10;",
+            "c) Juan 7:46‐49; Juan 9:28;",
+            "d) 1 Ped. 2: 19, 20; Heb. 12: 10; Deut. 25:3;",
+            "e) Lev. 19:29; Isa. 58:7; Gén. 38: 11, 26;",
+            "f) Efe. 6:4;",
+            "g) Gén. 9:21; 1 Rey. 12:13, 14; 1 Rey. 1:6; 1 Sam. 3: 13."
+          ]
+        },
+        {
+          "id": "question-131",
+          "title": "Pregunta 131",
+          "question": "¿Cuáles son los deberes de los iguales?",
+          "body": "Los deberes de los iguales son considerar la dignidad y merecimiento de cada uno h) dar el debido honor al uno delante del otro, i) y regocijarse por las cualidades y avances de los demás como si fueran propios. j)",
+          "references": [
+            "h) 1 Ped. 2:17;",
+            "i) Rom. 12:10; Fil. 2:3;",
+            "j) Rom. 12: 15, 16; Fil. 2: 4."
+          ]
+        },
+        {
+          "id": "question-132",
+          "title": "Pregunta 132",
+          "question": "¿Cuáles son los pecados de los iguales?",
+          "body": "Los pecados de los iguales son, además dela negligencia en los deberes, requeridos de ellos l) el no valorizar debidamente la dignidad; ll) el envidiar las dotes, m) o la tristeza por el adelantamiento o prosperidad de los otros, n) así como usurpar la preeminencia sobre los demás. ñ)",
+          "references": [
+            "l) Rom. 13:8;",
+            "ll) Prov. 14:21; Isa. 65:5; 2 Tim. 3:3;",
+            "m) Hch. 7:9; Gal. 5:26;",
+            "n) 1 Juan 3: 12; Mat. 20:15; Núm. 12:2; Est. 6: 12, 13; Luc. 15:28, 29;",
+            "ñ) Mat. 20:25, 26, 27;3 Juan 9; Luc. 22:24‐26."
+          ]
+        },
+        {
+          "id": "question-133",
+          "title": "Pregunta 133",
+          "question": "¿Cuál es la razón anexa al quinto mandamiento para darle mayor fuerza?",
+          "body": "La razón anexa al quinto mandamiento y contenida en estas palabras, porque tus días se alarguen en la tierra que Jehová tu Dios te da, o) es una promesa expresa de larga vida y prosperidad, tanto cuanto sirva a la gloria de Dios y al bien propio, hecha a todos los que guarden este mandamiento. p)",
+          "references": [
+            "o) Ex. 20:12;",
+            "p) Efes. 6:2, 3; Deut. 5:16; 1 Rey. 8:25."
+          ]
+        },
+        {
+          "id": "question-134",
+          "title": "Pregunta 134",
+          "question": "¿Cuál es el sexto mandamiento?",
+          "body": "El sexto mandamiento es: No matarás. q)",
+          "references": [
+            "q) Ex. 20: 13."
+          ]
+        },
+        {
+          "id": "question-135",
+          "title": "Pregunta 135",
+          "question": "¿Cuáles son los deberes exigidos en el sexto mandamiento?",
+          "body": "Los deberes exigidos en el sexto mandamiento son todos los estudios cuidadosos y los esfuerzos lícitos para preservar nuestra propia vida, r) y la de otros s) por resistir todos los pensamientos y propósitos t) sometiendo las pasiones, u) y evitando todas las ocasiones, v) tentaciones x) y prácticas que tienden a quitar injustamente la vida de alguno; y) por defenderse justamente contra la violencia, z) por la dependencia paciente de la mano de Dios, a) la quietud del ánimo, b) alegría de espíritu, c) sobriedad en la comida, d) bebida, e) medicina f) sueño, g) trabajo h) y recreo; i) por pensamientos caritativos, j) de amor, l) compasión ll) mansedumbre, dulzura y bondad, m) tranquilidad, n) indulgencia y por palabras y maneras corteses; ñ) paciencia y prontitud para reconciliarse, sobrellevando y perdonando las injurias y volviendo bien por mal; o) consolando y socorriendo a los enfermos y protegiendo y defendiendo a los inocentes. p)",
+          "references": [
+            "r) Efes. 5:29; Mat. 10:23;",
+            "s) Job 29:13; 1 Rey 18:4;",
+            "t) 1 Sam. 19:4, 5; Jer. 26: 15, 16; Hch. 23: 21, 27;",
+            "u) Efe. 4:26;",
+            "v) Prov. 22:24, 25; 1 Sam. 25:32, 33; 2 Sam. 2:23; Deut. 22:8;",
+            "x) Prov. 1: 10, 11, 15; Mat. 4:6, 7;",
+            "y) 1 Rey. 21:9, 10, 19; Gén. 37:21, 22; 1 Sam. 24:12; 26:9, 10, 11;",
+            "z) Prov. 24: 11, 12; 1 Sam. 14:45;",
+            "a) Luc. 21: 19; Sant. 5:8; Heb. 12:5;",
+            "b) Sal. 37:8, 11; 1 Ped. 3:3, 4;",
+            "c) Prov. 17:22; 1 Tes. 5:16;",
+            "d) Prov. 23:20; Prov. 25:16;",
+            "e) Prov. 23:29, 30; Ecl. 10:17; 1 Tim. 5:23;",
+            "f) Mat. 9:12; Isa. 38:21;",
+            "g) Ecl. 2:23; Sal. 127:2;",
+            "h) Ecl. 5:12; 2 Tes. 3:10, 12;",
+            "i) Ecl. 3:4;",
+            "j) 1 Cor. 13:4, 5; 1 Sam. 19:4, 5;",
+            "l) Rom. 13: 10; Prov. 10: 12;",
+            "ll) Zac. 7:9; Luc. 10:33, 34;",
+            "m) Col. 3:12;",
+            "n) Rom. 12:18;",
+            "ñ) 1 Ped. 3:8 9; 1 Cor. 4:12, 13;",
+            "o) Col. 3: 13; Sant. 3: 17; 1 Ped. 2:20; Rom. 12:20, 21; Mat. 5:24;",
+            "p) 1 Tes. 5:14; Mat. 25:35, 36; Prov. 31:8, 9; Job. 31:19, 20; Isa. 58:7."
+          ]
+        },
+        {
+          "id": "question-136",
+          "title": "Pregunta 136",
+          "question": "¿Cuáles son los pecados prohibidos en el sexto mandamiento?",
+          "body": "Los pecados prohibidos en el sexto mandamiento son: el quitarnos la vida, q) o quitársela a otros, r) a no ser un caso de justicia pública, s) de guerra lícita t) o de defensa necesaria, u) la negligencia en el uso de los medios necesarios para preservar la vida o el desprecio de ellos; v) el enojo pecaminoso, x) el odio y) y la envidia, z) deseo de venganza; a) toda ira excesiva, b) ocupaciones que acongojan c) el uso inmoderado de la comida o bebida d) trabajo e) y recreaciones; f) palabras provocativas, g) oprimir, h) disputar, i) golpear, herir j) y todo lo que tienda a destruir la vida de alguno. l)",
+          "references": [
+            "q) Hch. 16:28; Prov. 1:18;",
+            "r) Gén. 9:6;",
+            "s) Ex. 21:14; Núm. 35:31, 33;",
+            "t) Deut. 20; Heb. 11:32‐34; Jer. 48:10;",
+            "u) Ex. 22:2;",
+            "v) Mat. 25:42, 43; Sant. 2: 15, 16; Ecl. 6:1, 2;",
+            "x) Mat. 5:22;",
+            "y) 1 Juan 3:15; Prov. 10:12; Lev. 19:17;",
+            "z) Job 5:2;",
+            "a) Rom. 12:19;",
+            "b) Sant. 4:1; Ef. 4:31;",
+            "c) Mat. 6:34; Job 21:25;",
+            "d) Luc. 21:34;",
+            "e) Ecl. 4:8; Ecl. 2:22 y 12:12,",
+            "f) Ecl. 11:9;",
+            "g) Prov. 15:1; Prov. 12:18;",
+            "h) Isa. 3: 15; Ex. 1: 14;",
+            "i) Gál. 5: 15;",
+            "j) Núm. 35: 16, 21;",
+            "l) Prov. 28:17; Ex. 21:18 al fin."
+          ]
+        },
+        {
+          "id": "question-137",
+          "title": "Pregunta 137",
+          "question": "¿Cuál es el séptimo mandamiento?",
+          "body": "El séptimo mandamiento es: No cometerás adulterio. ll)",
+          "references": [
+            "ll) Ex. 20:14."
+          ]
+        },
+        {
+          "id": "question-138",
+          "title": "Pregunta 138",
+          "question": "¿Cuáles son los deberes exigidos en el séptimo mandamiento?",
+          "body": "Los deberes exigidos en el séptimo mandamiento son, castidad en el cuerpo, en la mente y en los afectos, m) en las palabras n) y maneras; ñ) la conservación de nuestra propia castidad y la de otros; o) la vigilancia sobre los ojos y los demás sentidos; p) la templanza, q) compañías castas, r) manera modesta de vestirse; s) el matrimonio para los que no tengan el don de la continencia, t) el amor conyugal u) y la cohabitación; v) el trabajo diligente en nuestros oficios; x) evitando la ocasión de impureza y resistiendo las tentaciones de ella. y)",
+          "references": [
+            "m) 1 Tes. 4:4,5; Job. 31:1;",
+            "n) Efes. 4:20; Col 4:6;",
+            "ñ) 1 Ped. 3:2;",
+            "o) 1 Cor. 7:2; Tit. 2:4, 5;",
+            "p) Mat. 5:28; Job. 31:1;",
+            "q) Prov. 23:31, 33; Jer. 5:7;",
+            "r) Prov. 2: 16, 20; 1 Cor. 5:9;",
+            "s) 1 Tim. 2:9;",
+            "t) 1 Cor. 7:9;",
+            "u) Prov. 5:18, 19;",
+            "v) 1 Ped. 3:7; 1 Cor. 7:5;",
+            "x) 1 Tim. 5: 13, 14; Prov. 31:27;",
+            "y) Prov. 5:8."
+          ]
+        },
+        {
+          "id": "question-139",
+          "title": "Pregunta 139",
+          "question": "¿Cuáles son los pecados prohibidos en el séptimo mandamiento?",
+          "body": "Los pecados prohibidos en el séptimo mandamiento, además de la negligencia en los deberes exigidos, z) son el adulterio, la fornicación, a) el rapto, el incesto, b) la sodomía y toda concupiscencia contra la naturaleza, c) todos los pensamientos, propósitos, imaginaciones y afectos impuros, d) todas las conversaciones impuras así como el prestarles atención; e) miradas lascivas. f) imprudentes, lo mismo que el comportamiento ligero, y maneras destituidas de modestia g) prohibición de los matrimonios lícitos h) y autorizar los ilícitos; i) aceptar, tolerar, cuidar casas públicas o frecuentadas, j) votos enredadores de vida soltera, l) dilación indebida del matrimonio, ll) tener más de un cónyuge a la vez; m) el divorcio injusto n) o la deserción; ñ) la ociosidad, glotonería y borrachera, o) compañías impuras, p) cantos, libros, pinturas, bailes y juegos lascivos; q) y todos los demás actos de impureza o provocaciones a ello, tanto tratándose de nosotros como de los demás r)",
+          "references": [
+            "z) Prov. 5:7; Prov. 4:23, 27;",
+            "a) Heb. 13:4; Efes. 5:5; Gál. 5:19;",
+            "b) 2 Sam. 13:14; Mar. 6:18; 1 Cor. 5:1, 13;",
+            "c) Rom. 1:26,27; Lev. 20:15, 16;",
+            "d) Mat. 15:19; Col. 3:5; Mat. 5:28;",
+            "e) Efes. 5:3, 4; Prov. 7:5, 21; Prov. 19:27;",
+            "f) Isa. 3:16; 2 Ped. 2:14;",
+            "g) Prov. 7:10,13;",
+            "h) 1 Tim. 4:3;",
+            "i) Lev.18: 12;",
+            "j) 2 Rey 23:7; Lev. 19:29; Jer. 5:7;",
+            "l) Mat. 19:10,11;",
+            "ll) 1 Tim. 5:14, 15; Gén. 38:26;",
+            "m) Mat. 19:5; 1 Cor. 7:2;",
+            "n) Mat. 5:32; Mal. 2:16;",
+            "ñ) 1 Ped. 3:7; 1 Cor. 7:5, 12, 13;",
+            "o) Ez. 16:49; véase letra z)",
+            "p) Efe. 5:11; Prov. 5:8;",
+            "q) Rom. 13:13; 1 Ped. 4:3; Ez. 23: 14, 16; Isa. 23: 15, 16; Mar. 6:22;",
+            "r) Rom. 13: 14; 2 Ped. 2: 17, 18."
+          ]
+        },
+        {
+          "id": "question-140",
+          "title": "Pregunta 140",
+          "question": "¿Cuál es el octavo mandamiento?",
+          "body": "El octavo mandamiento es: No hurtarás, s)",
+          "references": [
+            "s) Ex. 20:15."
+          ]
+        },
+        {
+          "id": "question-141",
+          "title": "Pregunta 141",
+          "question": "¿Cuáles son los deberes exigidos en el octavo mandamiento?",
+          "body": "Los deberes exigidos en el octavo mandamiento son: la verdad. fidelidad y justicia en los contratos y en el comercio entre hombre y hombre, t) pagar a cada uno lo que le es debido, u) la restitución de los bienes que han sido quitados ilegalmente a sus legítimos propietarios; v) dar y prestar gratuitamente conforme a nuestras posibilidades y las necesidades de los otros; x) la moderación en nuestros juicios, voluntades y afectos respecto a los bienes mundanales; y) un cuidado prudente en adquirir, z) guardar, usar y disponer de aquellas cosas que son necesarias y convenientes para el sostén de nuestra naturaleza y apropiadas a nuestra condición; a) un oficio lícito b) y diligencia en él; c) la frugalidad, d) evitar litigios innecesarios, e) fianzas o compromisos semejantes, f) y el esfuerzo por todos los medios lícitos y justos para procurar, preservar y acrecentar las riquezas y bienestar de otros, tanto como nuestro. g)",
+          "references": [
+            "t) Sal. 15: 2, 4; Miq. 6: 8; Zac. 8: 16;",
+            "u) Rom. 13: 7;",
+            "v) Lev. 6: 4, 5; Luc. 19: 8;",
+            "x) Deut. 15: 7, 8, 10; Gál. 6: 10; Luc. 6: 30, 38;",
+            "y) 1 Tim. 6: 8, 9;",
+            "z) 1 Tim. 5:8;",
+            "a) Prov. 27: 23, 24; Ecl. 3: 12, 13; 1 Tim. 6: 17, 18;",
+            "b) Efe. 4:28; Ecl. 9:10; Rom. 12:5‐8;",
+            "c) Prov. 10:4; Rom. 12:11;",
+            "d) Prov. 12:27 y 21:20; Juan 6: 12;",
+            "e) 1 Cor. 6:7;",
+            "f) Prov. 11:15; Prov. 6:1‐5;",
+            "g) Lev. 25:35; Fil. 2:4; Deut. 22: 1‐4; Ex. 23:4, 5."
+          ]
+        },
+        {
+          "id": "question-142",
+          "title": "Pregunta 142",
+          "question": "¿Cuáles son los pecados prohibidos en el octavo mandamiento?",
+          "body": "Los pecados prohibidos en el octavo mandamiento, además de la negligencia en los deberes requeridos, h) son: el robo, i) salteamiento, j) ser plagiario o negrero, l) así como el recibir una cosa robada, ll) comercio fraudulento, m) pesas y medidas falsas, n) quitar linderos, ñ) la injusticia y la infidelidad en los contratos entre hombre y hombre, o) o en cosas depositadas; p) la opresión, q) extorsión, r) usura, s) cohechos, t) litigios vejatorios, u) la depredación y destrucción de los linderos, v) monopolios gravosos, x) ocupaciones ilegales, y) y todos los demás modos injustos y pecaminosos para tomar o quitar lo que pertenece a nuestro prójimo, o para enriquecernos; z) la codicia, a) apreciación y afecto desmedido hacia los bienes mundanales, b) cuidados distraídos y desconfiados para adquirir, guardar y usar de dichos bienes; c) envidiar la prosperidad de otros, d) asimismo prohíbe la ociosidad, e) prodigalidad, juegos de azar; y todas las maneras por las cuales perjudicamos indebidamente nuestro estado externo; f) y también el privarnos del uso debido y las comodidades del estado en que Dios nos puso. g)",
+          "references": [
+            "h) Prov. 23:21; 1 Juan 3:17; Sant. 2:15, 16;",
+            "i) Efe. 4:28;",
+            "j) Sal. 62:10;",
+            "l) 1 Tim. 1:10; Ex. 21: 16; Gén. 1 :28;",
+            "ll) Prov. 29:24; Sal. 50: 18;",
+            "m) 1 Tes. 4:6;",
+            "n) Prov. 11:1; Prov. 20:10;",
+            "ñ) Deut. 19: 14; Prov. 23:10;",
+            "o) Am. 8:5; Sal. 37:21;",
+            "p) Luc. 16: 11;",
+            "q) Ez. 22:29; Lev. 25:17;",
+            "r) Mat. 23:25; Ez. 22:12;",
+            "s) Sal. 15:5;",
+            "t) Job. 15:34; Isa. 33:15;",
+            "u) Prov. 3:30; 1 Cor. 6:7;",
+            "v) Isa. 5:8; Miq. 2:2;",
+            "x) Prov. 11:26;",
+            "y) Hch. 19:19,24, 25;",
+            "z) Sant. 5:4; Prov. 21:6; Job. 20:19;",
+            "a) Luc. 12:15; Prov. 1: 19;",
+            "b) 1 Juan 2: 15, 16; Prov. 23:5; Sal. 62: 10;",
+            "c) Mat. 6:25, 34; Ecl. 5: 12;",
+            "d) Sal. 73:3; Sant. 5:9",
+            "e) 2 Tes. 3:11; Prov. 18:9;",
+            "f) Prov. 21:17; Prov. 23:20; Prov. 28:19;",
+            "g) Ecl. 4:8; Ecl. 6:2."
+          ]
+        },
+        {
+          "id": "question-143",
+          "title": "Pregunta 143",
+          "question": "¿Cuál es el nono mandamiento?",
+          "body": "El nono mandamiento es: No hablarás contra tu prójimo falso testimonio. h)",
+          "references": [
+            "h) Ex. 20: 16."
+          ]
+        },
+        {
+          "id": "question-144",
+          "title": "Pregunta 144",
+          "question": "¿Cuáles son los deberes exigidos en el nono mandamiento?",
+          "body": "Los deberes exigidos en el nono mandamiento son: el preservar y promover la verdad entre hombre y hombre, i) y la buena fama tanto nuestra como la del prójimo, j) apariencia y posición a favor de la verdad, l) y de corazón, ll) con sinceridad, m) libertad, n) claridad ñ) y plenitud, o) hablar la verdad, y solamente la verdad, en cuestiones de juicio y justicia, p) así como en las demás cosas; q) una estimación caritativa hacia nuestro prójimo, r) amando, deseando y regocijándonos por su buen nombre, s) entristeciéndonos por sus debilidades, t) y ocultándolas; u) reconocer libremente sus dones y cualidades, v) defendiendo su inocencia; x) prontitud para recibir un buen informe, y) y faltos de disposición para creer un mal rumor con respecto a ellos; z) disuadiendo a los que esparcen tales rumores, a) aduladores b) y calumniadores; c) un amor y cuidado por nuestro nombre defendiéndolo siempre que sea necesario; d) guardar las promesas lícitas, e) estudiar y practicar todas las cosas que son verdaderas, honestas, amables y que den buena recomendación. f)",
+          "references": [
+            "i) Efe. 4:25;",
+            "j) 3 Juan 12;",
+            "l) Prov. 31:9;",
+            "ll) Sal. 15:2;",
+            "m) 2 Crón. 19:9;",
+            "n) Jer. 9:3; 1 Sam. 19:4, 5;",
+            "ñ) Jer. 42:4; Jos. 7:19; Hch. 20:20;",
+            "o) Hch. 20:27; 2 Sam. 14:18‐20;",
+            "p) Lev. 19:15; Prov. 14:5;",
+            "q) Isa. 63:8; Col. 3:9; 2 Coro 1:17;",
+            "r) Heb. 6:9; 1 Cor. 13: 4, 5;",
+            "s) 3 Juan 4; Rom. 1:8;",
+            "t) 2 Cor. 12:21; Sal. 119:158;",
+            "u) Prov. 17:9; 1 Ped. 4:8;",
+            "v) 1 Cor. 1:4, 5: 2 Tim. 1: 4,5;",
+            "x) Sal. 82:3; 1 Sam. 22: 14;",
+            "y) 1 Cor. 13:4, 6, 7;",
+            "z) Sal. 15:3;",
+            "a) Prov. 25:23;",
+            "b) Prov. 26:24, 25;",
+            "c) Sal. 101:5;",
+            "d) 2 Cor. 11:18,23; Prov. 22:1; Hch. 24:12,13; Juan 8:49;",
+            "e) Sal. 15:4;",
+            "f) Fil. 4:8."
+          ]
+        },
+        {
+          "id": "question-145",
+          "title": "Pregunta 145",
+          "question": "¿Cuáles son los pecados prohibidos en el nono mandamiento?",
+          "body": "Los pecados prohibidos en el nono mandamiento son toda preocupación contra la verdad y buen nombre tanto nuestro como del prójimo, g) especialmente delante de los tribunales públicos; h) dar falso testimonio, i) sobornar testigos falsos, j) y a sabiendas comparecer y defender una mala causa, desafiando y subyugando la verdad, l) dictar sentencias injustas, ll) llamar malo a lo bueno y bueno a lo malo, recompensar la obra del malo conforme a la obra del justo, y al justo conforme a la obra del malo; m) falsificar, n) disimular la verdad o callarla indebidamente en una causa justa, ñ) y el estarnos en paz cuando es nuestro deber hablar; o) las quejas a otros, p) hablar la verdad fuera de tiempo q) o maliciosamente por lograr un fin perverso, r) pervertirla con una significación errónea, s) o expresarla dudosa o equivocadamente, en perjuicio de la verdad y la justicia; t) hablar fuera de la verdad, u) mentir, v) calumniar, x) murmurar, y) detractar, z) circular malos rumores, a) cuchichear, b) ridiculizar, c) ultrajar, d) la precipitación, e) la dureza f) y las censuras parciales, g) la mala interpretación de las intenciones, palabras y acciones; h) adular, i) la jactancia y vana gloria, j) pensar o hablar demasiado alto y despreciativamente de nosotros o de los demás, l) negar los dones y gracias de Dios, ll) aumentar las pequeñas faltas, m) ocultar, excusar o atenuar los pecados cuando somos llamados a una confesión de ellos, n) descubrir sin necesidad las debilidades, ñ) levantar falsos rumores, o) recibir y patrocinar malas especies p) y cerrar nuestros oídos a la justa defensa, q) malas sospechas, r) la envidia o la tristeza por el merecido crédito de otro, s) procurar o desear menoscabado; t) regocijarse por su desgracia o infamia, u) el desprecio insolente, v) una admiración vana, x) quebrantar promesas lícitas, y) descuidar cosas tales como las buenas noticias, z) y practicar o no evitar nosotros mismos, o no impedir lo que podamos con otros, cosas que produzcan mala fama. a)",
+          "references": [
+            "g) Luc. 3: 14; 2 Sam. 16:3; 2 Sam. 1:9‐16;",
+            "h) Lev. 19:15; Hab. 1:4;",
+            "i) Prov. 19:5; Prov. 6:16,19;",
+            "j) Hch. 6: 13;",
+            "l) Jer. 9:3; Sal. 12:3, 4; Sal. 52: 1‐4; Hch. 24:2, 5;",
+            "ll) Prov. 17:15; 1 Rey. 21:9‐14;",
+            "m) Isa. 5:23;",
+            "n) 1 Rey 21:8;",
+            "ñ) Lev. 5:1; Hch. 5:3;",
+            "o) Lev. 19:17; Isa. 58:1; 1 Rey. 1:6;",
+            "p) Isa. 59:4;",
+            "q) Prov. 29:11;",
+            "r) 1 Sam. 22:9, 10; Sal. 52:1;",
+            "s) Sal. 56:5; Mat. 26:60, 61;",
+            "t) Gén. 3:5; Gén 26:7, 9;",
+            "u) Isa. 59:13;",
+            "v) Col. 3:9; Lev. 19:11;",
+            "x) Sal. 50:20;",
+            "y) Sal. 15:3; Rom. 1:30;",
+            "z) Sant. 4:11; Tit. 3:2; Jer. 38:4;",
+            "a) Lev. 19:16",
+            "b) Rom. 1:29; Prov. 16:28;",
+            "c) Isa. 28:22; Gén. 21 :9; Gál. 4:29;",
+            "d) 1 Cor. 6: 10;",
+            "e) Mat. 7:1;",
+            "f) Sant. 2:13; Hch. 28:4;",
+            "g) Juan 7: 24; Rom. 2: 1; Gén. 38:24;",
+            "h) Rom. 3:8; Sal. 69: 10; 1 Sam. 1: 13‐15; 2 Sam. 10:3; Neh. 6:6‐8;",
+            "i) Sal. 12: 2,3;",
+            "j) 2 Tim. 3:2;",
+            "l) Luc. 18:11; Gál. 5:26; Ex. 4:10,14; Hch. 12:22;",
+            "ll) Job 27:5,6;",
+            "m) Isa.29:20, 21; Mat. 7:3;",
+            "n) Gén. 3: 12, 13; Prov. 28: 13; 2 Rey. 5:25; Gén. 4:9;",
+            "ñ) Prov. 25:9; Gén. 9:22;",
+            "o) Ex. 23:1;",
+            "p) Jer. 20:10; Prov. 29:12;",
+            "q) Hch. 7:57; Job. 31: 13, 14;",
+            "r) 1 Cor. 13:4, 5; 1 Tim. 6:4;",
+            "s) Mat. 21:15; Núm. 11:29;",
+            "t) Dan. 6:3, 4; Esd. 4:12,13;",
+            "u) Jer. 48:27;",
+            "v) Mat. 27:28, 29; Sal. 35: 15, 16;",
+            "x) 1 Cor. 3:21; Judas 16; Hch. 12:22;",
+            "y) Rom. 1:31; 2 Tim. 3:3;",
+            "z) 2 Sam. 12: 14; 1 Sam. 2:24;",
+            "a) Fil. 3: 18, 19; 2 Ped. 2:2; 2 Sam. 12: 13."
+          ]
+        },
+        {
+          "id": "question-146",
+          "title": "Pregunta 146",
+          "question": "¿Cuál es el décimo mandamiento?",
+          "body": "El décimo mandamiento es: No codiciarás la casa de tu prójimo, ni codiciarás la mujer de tu prójimo, ni su siervo ni su criada, ni su buey, ni su as no, ni cosa alguna de tu prójimo. b)",
+          "references": [
+            "b) Ex. 20:17."
+          ]
+        },
+        {
+          "id": "question-147",
+          "title": "Pregunta 147",
+          "question": "¿Cuáles son los deberes exigidos en el décima mandamiento?",
+          "body": "Los deberes exigidos en el décimo mandamiento son: el contentamiento con nuestra propia condición, c) una disposición caritativa de toda el alma para con nuestro prójimo en todo lo que nuestras emociones y afectos internos toquen a él y tiendan al bien ulterior de lo que es suyo. d)",
+          "references": [
+            "c) Heb. 13:5; 1 Tim. 6:6;",
+            "d) Rom. 12:15; Fil. 2:4; Job. 31:29; 1 Tim. 1:5."
+          ]
+        },
+        {
+          "id": "question-148",
+          "title": "Pregunta 148",
+          "question": "¿Cuáles son los pecados prohibidos en el décimo mandamiento?",
+          "body": "Los pecados prohibidos en el décimo mandamiento son: el descontento con nuestro propia estado, e) la envidia f) y tristeza por el bien de nuestro prójimo, g) juntamente con todas las emociones y afectos desordenados para alguna de las cosas que son suyas, h)",
+          "references": [
+            "e) 1 Cor; 10:10; 1 Rey 21:4;",
+            "f) Gal. 5:26; Sant. 3:14,16;",
+            "g) Sal. 112:9, 10; Neh. 2:10;",
+            "h) Rom. 7:7; Deut. 5:21; Col. 3:5; Rom. 13:9."
+          ]
+        },
+        {
+          "id": "question-149",
+          "title": "Pregunta 149",
+          "question": "¿Puede algún hombre guardar perfectamente los mandamientos de Dios?",
+          "body": "Ningún hombre es capaz, ni por sí mismo, i) ni por alguna gracia recibida en esta vida, de guardar perfectamente los mandamientos de Dios, j) sino que diariamente los quebranta en pensamiento, l) palabra y obra. ll)",
+          "references": [
+            "i) Sant. 3:2; Job. 15:14; Juan 15:5;",
+            "j) Ecl. 7:20; 1 Rey 8:46; 1 Juan 1:8;",
+            "l) Gén. 8:21; Sant. 1:14; Gal. 6:5,",
+            "ll) Sal. 19:12; Rom. 3:9,19; Sant. 3:2,8."
+          ]
+        },
+        {
+          "id": "question-150",
+          "title": "Pregunta 150",
+          "question": "¿Son igualmente detestables en sí mismas a la vista de Dios, todas las trasgresiones de sus mandamientos?",
+          "body": "Todas las trasgresiones de la ley de Dios no son igualmente detestables, pero algunos peca dos en sí mismos, y por razón de varias circunstancias agravantes, son más detestables que otras a la vista de Dios. m)",
+          "references": [
+            "m) Heb. 2:2, 3; Esd. 9:14; Sal. 78:17, 32, 56."
+          ]
+        },
+        {
+          "id": "question-151",
+          "title": "Pregunta 151",
+          "question": "¿Cuáles son las circunstancias agravantes que hacen a algunos pecados más detestables que otros?",
+          "body": "Los pecados pueden ser más graves si se considera:\n\n1. Las personas que ofenden, n) si ellas son personas de mayor edad, ñ) de gran experiencia o gracia, o) eminentes por su profesión, p) cualidades, q) situación, r) oficio, s) si son guías de otros, t) de tal manera que su ejemplo pueda ser seguido por otros. u)\n\n2. Las partes ofendidas: v) Si es directamente contra Dios, x) contra sus atributos y) y culto; z) contra Cristo o su gracia, a) contra el Espíritu Santo, b) su testimonio c) y obras; d) contra los superiores, hombres eminentes e) y en lo que estamos especialmente relacionados u obligados con ellos, f) si es contra alguno de los creyentes, g) especialmente si es un hermano flaco, h) si es contra las almas de ellos o de otro, i) y bien común de todos o de algunos. j)\n\n3. La naturaleza y calidad de la ofensa: l) si es contra la letra expresa de la ley, ll) si quebranta muchos mandamientos, conteniendo así muchos pecados, m) si no solamente concebidos en el alma, sino que se manifiestan en palabras y acciones, n) si escandalizan a otros ñ) y no admiten reparación, o) si son contra los medios, p) misericordias, q) juicios, r) la luz natural, s) convicción del conciencia, t) pública o privada amonestación, u) censuras de la iglesia, v) castigos civiles: x) si son contra nuestras oraciones, propósitos, promesas, y) votos, z) pactos a) y compromisos con Dios y con los hombres; b) si fue hecha deliberada, c) voluntaria, d) presuntuosa, e) imprudente, f) hinchada, g) maliciosa, h) frecuente i) y obstinadamente j) con delicia, l) continuidad ll) o recaída después del arrepentimiento. m)\n\n4. Las circunstancias del tiempo n) y lugar: ñ) si son en el día del Señor o) o en otros momentos del culto divino, p) o inmediatamente antes, q) o después de éste, r) o de otras providencias tomadas para prevenir o remediar tales faltas s) si fue en publico o en la presencia de otros, que puedan ser provocados o manchados por ellos. t)",
+          "references": [
+            "n) Jer. 2:8;",
+            "ñ) Job. 32:9; Ecl. 4:13;",
+            "o) 1 Rey 11:9;",
+            "p) 2 Sam. 12:14; 1 Cor. 5:1;",
+            "q) Sant. 4:17; Luc. 12:47;",
+            "r) Juan 3:10; Jer. 5:4, 5;",
+            "s) 2 Sam. 12:7‐9 Eze. 8:11, 12;",
+            "t) Rom. 2:21, 22, 24;",
+            "u) Gál. 2:14; 2 Ped. 2:1, 2;",
+            "v) 1 Juan 5:10; Mat. 21:38, 39;",
+            "x) 1 Sam. 2:25; Hch. 5:4;",
+            "y) Rom. 2:4;",
+            "z) Mal. 1:14; 1 Cor. 10:21, 22;",
+            "a) Juan 3: 18, 36; Heb. 12:25;",
+            "b) Heb. 10:29; Mat. 12:31, 32;",
+            "c) Efe. 4:30;",
+            "d) Heb. 6:4. 5. 6;",
+            "e) Núm. 12:8; Judas 8: Isa. 3:5;",
+            "f) Prov. 30:17; Sal. 41:9; Sal. 55:12‐14;",
+            "g) Zac. 2:8;",
+            "h) 1 Cor. 8:11, 12; Rom. 14:13.15.21;",
+            "i) Ez. 13:19;",
+            "j) 1 Tes. 2:15,16; Mat. 23:34‐38;",
+            "l) Isa. 3:9; Prov. 6:30‐33;",
+            "ll) Ez. 20: 12. 13;",
+            "m) Col. 3:5; 1 Tim. 6:10;",
+            "n) Miq. 2:1, 2;",
+            "ñ) Rom. 2:23, 24; Mat. 18:7;",
+            "o) Prov. 6:32‐35; Mat. 16:26;",
+            "p) Mat. 11:21‐24; Juan 15:22;",
+            "q) Deut. 32:6; Isa. 1:2. 3; Esd. 9: 13. 14;",
+            "r) Jer. 5:3; Am. 4:8‐11;",
+            "s) Rom. 1:20.21;",
+            "t) Rom. 1:32; Dan. 5: 22;",
+            "u) Prov. 29:1;",
+            "v) Mat. 18:17; Tit. 3:10;",
+            "x) Prov. 27:22;",
+            "y) Sal. 78:34, 36, 37; Jer. 42:5. 6. 20‐22;",
+            "z) Ecl. 5:5; Prov. 20:25;",
+            "a) Lev. 26:25; Jer. 31:32;",
+            "b) Prov. 2:17; Ez. 17:18;",
+            "c) Sal. 36:4;",
+            "d) Jer. 6:16;",
+            "e) Núm. 15:30; Ex. 21:14;",
+            "f) Jer. 6: 15; Prov. 7:13;",
+            "g) Sal. 52:1;",
+            "h) Ez. 35:5. 6; 3 Juan 10;",
+            "i) Núm: 14:22;",
+            "j) Zac. 7:11. 12;",
+            "l) Prov. 2:14;",
+            "ll) Jer. 9:3. 5; Isa. 57:17;",
+            "m) 2 Ped. 2:20, 21; Heb. 6:4,6;",
+            "n) Isa. 22:12. 13, 14; 2 Rey. 5:26;",
+            "ñ) Jer. 7:10, 11;",
+            "o) Eze. 23:38;",
+            "p) Isa. 58:3, 4;",
+            "q) 1 Cor. 11:20, 21; Jer. 7:9, 10, 14;",
+            "r) Prov. 7:14, 15;",
+            "s) Neh. 9:13. 16; 2 Crón. 36:15. 16;",
+            "t) Isa. 3:9; 1 Sam. 2:22‐24."
+          ]
+        },
+        {
+          "id": "question-152",
+          "title": "Pregunta 152",
+          "question": "¿Qué es lo que cada pecado merece a la vista de Dios?",
+          "body": "Cada pecado, aun el más pequeño, siendo contra la soberanía, u) bondad v) y santidad de Dios x) y contra su justa ley, y) merece su ira y maldición, z) tanto en esta vida a) como en la venidera, b) y nada puede expiarlo sino la sangre de Cristo. c)",
+          "references": [
+            "u) Stg. 2:10,11;",
+            "v) Deut. 32:6;",
+            "x) Hab. 1:13; 1 Ped. 1:15, 16; Lev. 11:45;",
+            "y) 1 Juan 3:4; Rom. 7:12;",
+            "z) Gál. 3:10; Efe. 5:6;",
+            "a) Deut. 28:15; Prov. 13:21;",
+            "b) Mat. 25:41; Rom. 6:21, 23;",
+            "c) Heb. 9: 22; 1 Juan 1:7; 1 Ped. 1:18, 19."
+          ]
+        },
+        {
+          "id": "question-153",
+          "title": "Pregunta 153",
+          "question": "¿Qué es lo que Dios requiere de nosotros para que escapemos de la ira y maldición que hemos merecido por razón de las trasgresiones de la ley?",
+          "body": "Para que escapemos de la ira y maldición de Dios que hemos merecido por razón de las trasgresiones de la ley, él requiere de nosotros el arrepentimiento para con Dios y la fe en nuestro Señor Jesucristo d) y el uso diligente de los medios externos por los que Cristo nos comunica los beneficios de su mediación. e)",
+          "references": [
+            "d) Act. 20:21; Mar. 1:15; Juan 3:18;",
+            "e) Prov. 8:33‐35; Luc. 13:24."
+          ]
+        },
+        {
+          "id": "question-154",
+          "title": "Pregunta 154",
+          "question": "¿Cuáles son los medios externos por los que Cristo nos comunica los beneficios de su mediación?",
+          "body": "Los medios externos y ordinarios por los que Cristo comunica a su iglesia los beneficios de su mediación, son todas sus ordenanzas; especialmente la palabra, los sacramentos y la oración; todos los cuales son eficaces para la salvación de los elegidos. f)",
+          "references": [
+            "f) Mat. 28: 19, 20; Hch. 2:42,46; 1 Tim. 4:16; 1 Cor. 1:21; Efe. 5:19, 20 y 6:17,18."
+          ]
+        },
+        {
+          "id": "question-155",
+          "title": "Pregunta 155",
+          "question": "¿Cómo es hecha eficaz la palabra para la salvación?",
+          "body": "El Espíritu de Dios hace de la lectura de la palabra, y especialmente de la predicación de ella, un medio eficaz para iluminar, g) convencer y humillar a los pecadores, h) sacándolos de sí mismos y conduciéndolos a Cristo, i) conformándolos a su imagen j) y subyugándolos a su voluntad; l) fortaleciéndolos contra las tentaciones y corrupciones, ll) edificándolos en su gracia m) y afirmando el corazón de ellos en santidad y consuelo por medio de la fe para salvación. n)",
+          "references": [
+            "g) Sal. 19:8; Hch. 26:18;",
+            "h) Jer. 23:28,29; Heb. 4:12; Rom. 8:16;",
+            "i) Hch. 2:37; Hch. 8:27‐38;",
+            "j) 2 Coro 3:18; Col. 1:27;",
+            "l) 2 Cor. 10:4, 5; Rom. 6:17;",
+            "ll) Sal. 19:11; Col. 1:28; Efe. 6:16,17; Mat. 4:7,10;",
+            "m) Efe. 4:11,12; Hch. 20:32; 2 Timo 3:15,16; 1 Cor. 9:9‐11;",
+            "n) Rom. 16:25; 1 Tes. 3:2,13; Rom. 10: 14‐17."
+          ]
+        },
+        {
+          "id": "question-156",
+          "title": "Pregunta 156",
+          "question": "¿La palabra de Dios debe ser leída por todos?",
+          "body": "Aunque no a todos les es permitido leer la palabra de Dios públicamente a la congregación, ñ) sin embargo, toda clase de personas está obligada a leerla para sí misma o) y con sus familias; p) para lo cual las Santas Escrituras deben traducirse del original al lenguaje común q)",
+          "references": [
+            "ñ) Deut. 31:9, 12, 13;",
+            "o) Deut. 17:18, 19; Isa. 34: 16; Juan 5:39; Rev. 1:3;",
+            "p) Deut. 6:6, 7; Sal. 78:5,6;",
+            "q) 1 Cor. 14:2‐29."
+          ]
+        },
+        {
+          "id": "question-157",
+          "title": "Pregunta 157",
+          "question": "¿Cómo debe leerse la palabra de Dios?",
+          "body": "Las Santas Escrituras deben leerse con estimación alta y reverente del valor de ellas, r) con la persuasión firme de que son la verdadera palabra de Dios s) y de que sólo él puede capacitarnos para entenderlas; t) con el deseo de conocer, creer y obedecer la voluntad de Dios revelada en ellas, u) con diligencia v) y atención tanto al contenido como a la extensión; x) con meditación, y) aplicación, z) abnegación a) y oración. b)",
+          "references": [
+            "r) Sal. 119:97; Neh. 8:5; Isa. 66:2;",
+            "s) 2 Ped. 1:21; 1 Tes. 2:13;",
+            "t) Sal. 119:18; Luc. 24:45;",
+            "u) Sant. 1:21, 22; 1 Ped. 2:2; Mar. 4:20;",
+            "v) Hch. 17: 11; Deut. 11: 13;",
+            "x) Hch. 8:30, 34; Mat. 13:23;",
+            "y) Sal. 1:2; Sal. 119:97;",
+            "z) Hch. 2:38, 39; 2 Sam. 12:7; 2 Crón. 34:21;",
+            "a) Gál. 1:15, 16; Prov. 3:5;",
+            "b) Neh. 8:6, 8."
+          ]
+        },
+        {
+          "id": "question-158",
+          "title": "Pregunta 158",
+          "question": "¿Por quién debe ser predicada la palabra de Dios?",
+          "body": "La palabra de Dios debe ser predicada sola mente por aquellos que están dotados de las cualidades necesarias de un modo suficiente, c) y que han sido llamados y aprobados de la manera debida para este oficio. d)",
+          "references": [
+            "c) 1 Tim. 3:2‐6; 2 Tim. 2:2; Mal. 2:7;",
+            "d) Rom.10:15; Heb. 5:4; 1 Tim. 4:14."
+          ]
+        },
+        {
+          "id": "question-159",
+          "title": "Pregunta 159",
+          "question": "¿Cómo debe ser predicada la palabra de Dios por los que son llamados para ello?",
+          "body": "Los que son llamados para trabajar en el ministerio de la palabra deben predicar doctrina sana, e) con diligencia, f) a tiempo y fuera de tiempo; g) plenamente, h) no con palabras persuasivas de humana sabiduría, sino con demostración del Espíritu y con poder, i) con fidelidad, j) dando a conocer todo el consejo de Dios; l) con sabiduría, ll) adaptándose a las necesidades y capacidades de los oyentes; m) con celo n) con amor ferviente a Dios ñ) y a las almas de su pueblo; o) con sinceridad, p) buscando la gloria de Dios, q) y la conversión, r) edificación, s) y salvación de las almas. t)",
+          "references": [
+            "e) Tit. 2:1, 8;",
+            "f) Hch. 18:25;",
+            "g) 2 Tim. 4:2;",
+            "h) 1 Cor. 14:9;",
+            "i) 1 Cor. 2:4;",
+            "j) Jer. 23:28; 1 Cor.4:1,2; Mat. 24:45‐47;",
+            "l) Hch. 20:27;",
+            "ll) Col. 1:28; 2 Tim. 2:15;",
+            "m) 1 Cor. 3:2; Heb. 5:12‐14; 1 Tes.2:7; Luc. 12:42;",
+            "n) Hch. 18:25; 2 Tim. 4:5;",
+            "ñ) 2 Cor. 5:13, 14; Fil. 1:15‐17;",
+            "o) 2 Cor. 12:15; 1 Tes. 3:12;",
+            "p) 2 Cor. 4:2; 2 Cor. 2:17;",
+            "q) Juan 7:18; 1 Tes. 2:4‐6;",
+            "r) 1 Cor. 9:19‐22;",
+            "s) 2 Cor. 12:19; Efe. 4:12;",
+            "t) 1 Tim. 4:16; 2 Tim. 2:10; Hch. 26:16‐18."
+          ]
+        },
+        {
+          "id": "question-160",
+          "title": "Pregunta 160",
+          "question": "¿Qué se requiere de aquellos que oyen la palabra predicada?",
+          "body": "De aquellos que oyen la palabra predicada se requiere que la atiendan con diligencia, u) preparación, v) y oración; x) que comprueben lo que oyen con las Escrituras y; y) que reciban la verdad con fe; z) amor, a) mansedumbre, b) y prontitud de ánimo, c) como la palabra de Dios; d) meditando e) y conferenciando sobre ella, f) guardándola en el corazón, g) y manifestando los frutos de ella en la vida. h)",
+          "references": [
+            "u) Sal. 84:1, 2, 4; Sal. 27:4; Prov. 8:34;",
+            "v) Luc. 8:18; 1 Ped. 2:1, 2; Sant. 1:21;",
+            "x) Sal. 119:18; Efe. 6:18, 19;",
+            "y) Hch. 17:11;",
+            "z) Heb. 4:2;",
+            "a) 2 Tes. 2:10;",
+            "b) Sant. 1:21; Sal. 25:9;",
+            "c) Hch. 17:11; Hch. 2:41;",
+            "d) 1 Tes. 2:13;",
+            "e) Heb. 2:1;",
+            "f) Deut. 6:6, 7;",
+            "g) Sal. 119:11; Prov. 2:1;",
+            "h) Luc. 8:15; Sant. 1:25."
+          ]
+        },
+        {
+          "id": "question-161",
+          "title": "Pregunta 161",
+          "question": "¿Cómo vienen a ser los sacramentos medios eficaces de salvación?",
+          "body": "Los sacramentos vienen a ser medios eficaces de salvación, no por algún poder que haya en ellos ni por virtud alguna derivada de la piedad o intención de aquel que los administra, sino solamente por la operación del Espíritu Santo y las bendiciones de Cristo que los instituyó. i)",
+          "references": [
+            "i) 1 Ped. 3:21; Hch. 8: 13, 23; 1 Cor. 3:7; 1 Cor. 6:11."
+          ]
+        },
+        {
+          "id": "question-162",
+          "title": "Pregunta 162",
+          "question": "¿Qué es un sacramento?",
+          "body": "Un sacramento es una santa ordenanza instituida por Cristo en su Iglesia, j) para significar, sellar y aplicar l) a aquellos que están dentro del pacto de gracia, ll) los beneficios de su mediación; m) para fortalecer y acrecentar la fe y otras gracias, n) para obligarlos a la obediencia, ñ) para testificar y mantener el amor y comunión del uno con el otro, o) y distinguirlos de los que están fuera. p)",
+          "references": [
+            "j) Mat. 28:19; Mat. 26:26, 27;",
+            "l) Rom. 4:11; 1 Cor. 11:24,25;",
+            "ll) Rom. 9:8; Gál. 4:28; Rom. 15:8,9;",
+            "m) Hch. 2:38; 1 Cor. 10:16; Hch. 22:16;",
+            "n) Rom. 15:8, 9; Gál. 3:27;",
+            "ñ) Rom. 6:4; 1 Cor. 10:21;",
+            "o) 1 Cor. 12:13; 1 Cor. 10:17; Efe. 4:3‐5;",
+            "p) Efe. 2: 19; Gén. 34:14."
+          ]
+        },
+        {
+          "id": "question-163",
+          "title": "Pregunta 163",
+          "question": "¿Cuáles son las partes de un sacramento?",
+          "body": "Las partes de un sacramento son dos: el signo externo y sensible usado conforme al mismo mandato de Cristo; la otra es, la gracia interna y espiritual significada por aquella. q)",
+          "references": [
+            "q) Mat. 3:11; 1 Ped. 3:21."
+          ]
+        },
+        {
+          "id": "question-164",
+          "title": "Pregunta 164",
+          "question": "¿Cuántos sacramentos instituyó Cristo en su iglesia bajo el nuevo Testamento?",
+          "body": "Bajo el Nuevo Testamento Cristo instituyó en su iglesia solamente dos sacramentos, el Bautismo y la Cena del Señor. r)",
+          "references": [
+            "r) 1 Cor. 11:23; Mat. 28: 19."
+          ]
+        },
+        {
+          "id": "question-165",
+          "title": "Pregunta 165",
+          "question": "¿Qué es el Bautismo?",
+          "body": "El Bautismo es un sacramento del nuevo pacto, en el cual Cristo ha ordenado que el lavamiento con agua en el nombre del Padre, del Hijo y del Espíritu Santo, s) sea un signo y un sello de unión con El, t) de remisión de pecado por su sangre u) y de regeneración por su Espíritu; v) de adopción x) de resurrección a la vida eterna. y) Por el mismo sacramento los que se bautizan son admitidos solemnemente en la iglesia visible z) y entran en un compromiso profesado y abierto de ser del todo solamente del Señor. a)",
+          "references": [
+            "s) Mat. 28: 19;",
+            "t) Gal. 3:27; Rom. 6:3;",
+            "u) Hch. 22:16; Mar. 1:4; Rev. 1:5;",
+            "v) Juan 3:5, Tit. 3:5;",
+            "x) Gal. 3:26, 27;",
+            "y) I Cor. 15:29;",
+            "z) 1 Cor. 12:13;",
+            "a) Rom. 6:4."
+          ]
+        },
+        {
+          "id": "question-166",
+          "title": "Pregunta 166",
+          "question": "¿A quiénes debe administrarse el Bautismo?",
+          "body": "El Bautismo no debe administrarse a ninguno de los que están fuera de la iglesia visible y por lo tanto son extraños al pacto de la promesa si no es hasta que profesen su fe en Cristo y obediencia a él; b) pero los niños que descienden de padres de los cuales alguno de ellos haya profesado su fe en Cristo y su obediencia a él, por este hecho están dentro del pacto y deben ser bautizados. c)",
+          "references": [
+            "b) Hch. 8:36, 37; Hch. 2:41;",
+            "c) Hch. 2:38, 39; Luc. 18:16; 1 Cor. 7:14; Rom. 11:16; Gén. 17:7‐9; compárense con Gál. 3:9‐14 y Col. 2: 11, 12."
+          ]
+        },
+        {
+          "id": "question-167",
+          "title": "Pregunta 167",
+          "question": "¿Cómo debemos aprovechamos de nuestro bautismo?",
+          "body": "El deber indispensable, pero muchas veces descuidado de aprovechamos de nuestro bautismo, debe ser cumplido por nosotros toda nuestra vida, especialmente en el tiempo de la tentación, y cuando estamos presentes en la administración de él a otros, d) por una consideración seria y lleno de gratitud por su naturaleza y de los fines para el cual Cristo lo instituyó, los privilegios y beneficios conferidos y sellados por medio de él, y del voto solemne que hicimos; e) por ser humildes por nuestras debilidades pecaminosas, de nuestra falta de cumplimiento, de andar por el camino contrario a la gracia del bautismo y de nuestras promesas; f) por el crecimiento en la seguridad del perdón del pecado, y de todas las otras bendiciones selladas en nosotros por este sacramento; g) por derivar fuerza de la muerte y resurrección de Cristo, en quien somos bautizados, por la mortificación de la carne y avivamiento de la gracia, h) por los esfuerzos en vivir por la fe, i) por tener nuestra conversación en santidad y justicia. j) como aquellos que han entregado su nombre a Cristo, l) y andan en amor fraternal, como siendo bautizados por el mismo Espíritu en un cuerpo. ll)",
+          "references": [
+            "d) Sal. 22:10, 11;",
+            "e) Rom. 6:3‐5;",
+            "f) Rom.6:2,3; 1 Cor. 1:11‐13; Gál. 3:1;",
+            "g) Fil. 3:7‐11; Rom. 4: 11,12; 1 Ped. 3:21;",
+            "h) Rom. 6:2‐4;",
+            "i) Gál. 3:26,27;",
+            "j) Rom. 6:22;",
+            "l) Hch. 2:38;",
+            "ll) 1 Cor. 12:13‐26."
+          ]
+        },
+        {
+          "id": "question-168",
+          "title": "Pregunta 168",
+          "question": "¿Qué es la Cena del Señor?",
+          "body": "La Cena del Señor es un sacramento del Nuevo Pacto, m) en el cual, dando y recibiendo pan y vino conforme a la ordenanza de Jesucristo, se simboliza su muerte; y aquellos que participan dignamente, se alimentan de su cuerpo y de su sangre, para su nutrimiento espiritual y crecimiento en la gracia; n) confirman así su unión y comunión con él; ñ) testifican y renuevan su gratitud o) y comprometimiento para con Dios p) y su amor y amistad del uno con el otro como miembros del mismo cuerpo místico. q)",
+          "references": [
+            "m) Luc. 22:20;",
+            "n) Mat. 26:26, 27; Juan 6:55, 56; 1 Cor. 11:23‐27;",
+            "ñ) 1 Cor. 10: 16;",
+            "o) 1 Cor. 11:25;",
+            "p) 1 Cor. 10:16‐21;",
+            "q) 1 Cor. 10:17."
+          ]
+        },
+        {
+          "id": "question-169",
+          "title": "Pregunta 169",
+          "question": "¿Cómo mandó Cristo que fuesen dados el pan y el vino en el sacramento de la Cena del Señor?",
+          "body": "Cristo mandó que los ministros de la palabra, en la administración del sacramento de la Cena del Señor, apartasen del uso común el pan y el vino por medio de las palabras de la institución, acción de gracias y oración; tomando y rompiendo el pan, y dando a los comulgantes tanto el pan como el vino. Los que los reciben, por la misma ordenanza toman y comen el pan y beben el vino, recordando con gratitud que el cuerpo de Cristo fue partido y dado por el1os, así como la sangre derramada para su bien. r)",
+          "references": [
+            "r) Mar. 14:22‐24; 1 Cor. 11:23, 24; Mat. 26:26‐28; Efe. 2:11, 13."
+          ]
+        },
+        {
+          "id": "question-170",
+          "title": "Pregunta 170",
+          "question": "Los que participan dignamente de la Cena del Señor ¿cómo se alimentan del cuerpo y de la sangre de Cristo?",
+          "body": "Como el cuerpo y la sangre de Cristo no están corporal o carnalmente presentes en, con o bajo el pan y el vino en la Cena del Señor, s) y sin embargo están presentes espiritualmente a la fe del que recibe, no con menos verdad y realidad que los elementos mismos a los sentidos externos; t) así que los que participan dignamente del sacramento de la Cena del Señor, se alimentan del cuerpo y de la sangre de Cristo, no corporal o carnalmente, sino de una manera espiritual; y verdadera y realmente, u) por la fe reciben y se aplican a sí mismos a Cristo crucificado y a los beneficios de su muerte. v)",
+          "references": [
+            "s) Hch. 3:21;",
+            "t) Gal. 3:1; Heb. 11:1;",
+            "u) Juan 6:51‐53;",
+            "v) 1 Cor. 10:16."
+          ]
+        },
+        {
+          "id": "question-171",
+          "title": "Pregunta 171",
+          "question": "¿Cómo deben prepararse los que reciben el sacramento de la Cena del Señor antes de venir a él?",
+          "body": "Aquellos que reciben el sacramento de la Cena del Señor, deben prepararse antes de venir a él, por un examen de sí mismos, x) si están en Cristo, y) de sus pecados y necesidades, z) de la verdad y medida de su conocimiento, a) fe, b) arrepentimiento, c) amor a Dios y a los hermanos, d) caridad para con todos los hombres, e) perdón de aquellos que les han hecho mal, f) de sus deseos de obtener a Cristo, g) y de su nueva obediencia, h) así como por renovar el ejercicio de aquellas gracias, i) por meditación seria j) y oración ferviente. l)",
+          "references": [
+            "x) 1 Cor. 11:28;",
+            "y) 2 Cor. 13:5;",
+            "z) 1 Cor. 5:7; Compárese con Ex. 12:15;",
+            "a) 1 Cor. 11:29;",
+            "b) 2 Cor. 13:5;",
+            "c) Zac. 12:10; 1 Cor. 11:31;",
+            "d) 1 Cor. 10:17;",
+            "e) 1 Cor. 5:8; 1 Cor. 11:18,20;",
+            "f) Mat. 5:23,24;",
+            "g) Juan 7:37; Luc. 1:53; Isa. 55:1;",
+            "h) 1 Cor. 5:8;",
+            "i) Heb. 10:21, 22, 24; Sal. 26:6:",
+            "j) 1 Cor. 11:24;",
+            "l) Mat. 26:26; 2 Crón. 30:18,19."
+          ]
+        },
+        {
+          "id": "question-172",
+          "title": "Pregunta 172",
+          "question": "¿Puede alguno que duda de que está en Cristo o de su preparación, acercarse a la Cena del Señor?",
+          "body": "Uno que dude de que está en Cristo o de su debida preparación para el sacramento de la Cena del Señor, puede tener un verdadero interés en Cristo aun cuando no esté seguro de ello, ll) y según Dios ve las cosas la tiene, si está debidamente afectado por la aprehensión de la necesidad de ella m) y desea sinceramente ser hallado en Cristo n) y apartarse de la iniquidad: ñ) en cuyo caso (porque las promesas son hechas, y este sacramento fue establecido para el bien de los cristianos débiles y que dudan) o) él debe lamentar su incredulidad, p) y trabajar para resolver sus dudas, q) y, siendo así, él puede y debe acercarse a la Cena del Señor, para que sea más fortalecido. r)",
+          "references": [
+            "ll) Is. 50:10; 1 Juan 5:13;",
+            "m) Is. 54:7, 8, 10; Mat. 5:3,4; Sal. 31:22;",
+            "n) Sal. 42:11;",
+            "ñ) 2 Tim. 2:19; Rom. 7:24, 25;",
+            "o) Mat. 26:28; Mat. 11:28; Is. 40:11, 29, 31;",
+            "p) Mar. 9:24;",
+            "q) Hch. 16:30; Hch. 9:6;",
+            "r) 1 Coro 11:28; Mat. 11:28."
+          ]
+        },
+        {
+          "id": "question-173",
+          "title": "Pregunta 173",
+          "question": "¿Se puede prohibir a alguno de los que profesan tener deseo de acercarse a la Cena del Señor el que lo haga?",
+          "body": "Aquellos que son hallados ignorantes y escandalosos, no obstante su profesión de fe y su deseo de acercarse a la Cena del Señor, pueden y deben ser apartados de este sacramento por el poder que Cristo ha dejado a su iglesia, s) hasta que reciban instrucción y manifiesten su reforma. t)",
+          "references": [
+            "s) 1 Cor. 11:29; 1 Cor. 5:11; Mat. 7:6; Jud. 23;",
+            "t) Gál. 6: 1."
+          ]
+        },
+        {
+          "id": "question-174",
+          "title": "Pregunta 174",
+          "question": "¿Qué se requiere de aquellos que reciben el sacramento de la Cena del Señor al tiempo de la administración de él?",
+          "body": "Se requiere de aquellos que reciben el sacramento de la Cena del Señor, que, durante el tiempo de la administración de él, con toda atención y santa reverencia esperen en Dios en esta ordenanza, u) observando diligentemente las acciones y elementos sacramentales, v) discerniendo cuidadosamente el cuerpo del Señor, x) y meditando con ternura en su muerte y sufrimientos, y) y se sientan estimulados al ejercicio vigoroso de sus gracias; z) en juzgarse a sí mismos a) y entristecerse por su pecado, b) en tener una hambre y sed ardiente de Cristo, c) alimentándose de él por la fe, d) recibiendo de su plenitud, e) confiando en sus méritos, f) regocijándose en su amor, g) dando gracias por su favor, h) renovando su pacto con Dios i) y su amor para todos los santos. j)",
+          "references": [
+            "u) Heb. 12:28; Lev. 10:3;",
+            "v) Gál. 3:1;",
+            "x) 1 Cor. 11:29;",
+            "y) Luc. 22:19;",
+            "z) Efe. 3:17~19;",
+            "a) 1 Cor. 11:31;",
+            "b) Zac. 12:10;",
+            "c) Rev. 22:17;",
+            "d) Gál. 2:20; Juan 6:35;",
+            "e) Juan 1: 16; Col. 1:19;",
+            "f) Fil. 3:9;",
+            "g) 1 Ped. 1:8; 2 Crón. 30:21;",
+            "h) Sal. 22:26;",
+            "i) Jer. 50:5; Sal. 50:5;",
+            "j) 1 Cor. 10:17; Hch. 2:42."
+          ]
+        },
+        {
+          "id": "question-175",
+          "title": "Pregunta 175",
+          "question": "¿Cuál es el deber de los cristianos después que han recibido el sacramento de la Cena del Señor?",
+          "body": "El deber de los cristianos después de que han recibido el sacramento de la Cena del Señor, es pensar seriamente cómo han obrado en ella y con cuál resultado; l) si hallan avivamiento y consuelo, bendecir a Dios, ll) pedir la continuación de ello; m) velar contra las recaídas, n) cumplir sus votos, ñ) y animarse a la asistencia frecuente a esta ordenanza; o) pero si no encuentran ningún beneficio inmediato, revisar más escrupulosamente su preparación para el sacramento y su conducta durante el mismo. p) y si pueden ser aprobados por Dios y por su propia conciencia, esperar el fruto a su tiempo debido; q) pero si ven que han salido vacíos de cada una de estas cosas, deben humillarse, r) y asistir en lo sucesivo con más cuidado y diligencia. s)",
+          "references": [
+            "l) 1 Cor. 11:17,30,31; Sal. 73:28;",
+            "ll) 2 Cor. 2: 14; Hch. 2:42, 46, 47;",
+            "m) Rom. 15: 13; Sal. 36: 10;",
+            "n) 1 Cor. 10:12; Rom. 11:20;",
+            "ñ) Sal. 50:14;",
+            "o) 1 Cor. 11:25, 26; Sal. 27:4; Hch. 2:42;",
+            "p) Sal. 77:6; Sal. 139:23,24;",
+            "q) Sal. 123:1,2; Isa. 8:17;",
+            "r) Ose. 14:2; Ose. 6:1, 2;",
+            "s) 2 Cor. 7:11; 1 Crón. 15:12‐14."
+          ]
+        },
+        {
+          "id": "question-176",
+          "title": "Pregunta 176",
+          "question": "¿En qué son semejantes el sacramento del Bautismo y el de la Cena del Señor?",
+          "body": "El sacramento del Bautismo y el de la Cena del Señor son semejantes en que el autor de ambos es Dios, t) en que la parte espiritual de los dos es Cristo y sus beneficios, u) ambos son sellos del mismo pacto, v) deben ser administrados por ministros del evangelio, y no por otras personas, x) y continuaran en la iglesia hasta la segunda venida. y)",
+          "references": [
+            "t) Mat. 28: 19; 1 Cor. 11:23;",
+            "u) Rom. 6:3, 4; 1 Cor. 10:16;",
+            "v) Col. 2: 11, 12; comp. con Rom. 4:11; Mat. 26:27, 28;",
+            "x) Mat. 28:19; 1 Cor. 11:23; 1 Cor. 4:1; Heb. 5:4;",
+            "y) Mat. 28:20; 1 Cor. 11:26."
+          ]
+        },
+        {
+          "id": "question-177",
+          "title": "Pregunta 177",
+          "question": "¿En qué difieren los sacramentos del Bautismo y de la Cena del Señor?",
+          "body": "Los sacramentos del Bautismo y de la Cena del Señor difieren en que el Bautismo sólo ha de administrarse una vez, con agua, para que sea un signo y un sello de nuestra regeneración y de que estamos ingeridos en Cristo, z) y en que es administrado aun a los niños, a) mientras que la Cena del Señor debe administrarse con frecuencia, bajo los elementos de pan y vino, para representar y exhibir a Cristo como el alimento espiritual del alma b) y confirmar nuestra permanencia y crecimiento en él c) y en que sólo participan de dicho sacramento los que tienen la edad necesaria y que son capaces de examinarse a sí mismos. d)",
+          "references": [
+            "z) Mat. 3: 11; Gal. 3:27; Tit. 3:5;",
+            "a) Hch. 2:38, 39; 1 Coro 7:14;",
+            "b) 1 Cor. 11:26; Col. 2:19;",
+            "c) 1 Cor 10:16; Efe. 1:15,16;",
+            "d) 1 Cor. 11:28."
+          ]
+        },
+        {
+          "id": "question-178",
+          "title": "Pregunta 178",
+          "question": "¿Qué es la oración?",
+          "body": "La oración es el ofrecimiento de nuestros deseos a Dios, e) en el nombre de Cristo, f) y por la ayuda de su Espíritu; g) confesando nuestros pecados h) y reconociendo con gratitud sus beneficios. i)",
+          "references": [
+            "e) Sal. 62:8;",
+            "f) Juan 16:23,24;",
+            "g) Rom. 8:26;",
+            "h) Dan. 9:4; Sal. 32:5,6;",
+            "i) Fil. 4:6."
+          ]
+        },
+        {
+          "id": "question-179",
+          "title": "Pregunta 179",
+          "question": "¿Debemos orar a Dios solamente?",
+          "body": "Dios es el único capaz de escudriñar los corazones, j) de oír las súplicas, l) perdonar los pecados ll) y cumplir los deseos de todos; m) y solamente en él debe creerse, n) y asimismo debemos adorarle con culto religioso; ñ) y la oración, que es una parte de este culto, o) debe ser hecha por todos únicamente a él, p) y a ninguno otro. q)",
+          "references": [
+            "j) 1 Rey. 8:39; Hch. 1:24; Rom. 8:27;",
+            "l) Sal. 65:2;",
+            "ll) Miq. 7:18;",
+            "m) Sal. 145:16, 19;",
+            "n) 2 Sam. 22:32; Juan 14:1;",
+            "ñ) Mat. 4:10;",
+            "o) 1 Cor. 1:2;",
+            "p) Isa. 42:8; Luc. 4:8; Sal. 50:15;",
+            "q) Jer. 3:23; Jer. 14:22; Rom. 10:14."
+          ]
+        },
+        {
+          "id": "question-180",
+          "title": "Pregunta 180",
+          "question": "¿Qué es orar en el nombre de Cristo?",
+          "body": "Orar en el nombre de Cristo, es, en obediencia a su mandamiento, y en confianza a sus promesas, pedir misericordia a él: r) no por el simple hecho de mencionar su nombre, s) sino por derivar un incentivo para orar, y nuestro aliento, fuerza y esperanza de hallar aceptación para nuestra súplica, en Cristo y en su mediación. t)",
+          "references": [
+            "r) Juan 14:13,14; Dan. 9:17;",
+            "s) Luc. 6:46; Mat. 7:21;",
+            "t) Heb. 4:14‐16; 1 Juan 5:13‐15."
+          ]
+        },
+        {
+          "id": "question-181",
+          "title": "Pregunta 181",
+          "question": "¿Por qué debemos orar en el nombre de Cristo?",
+          "body": "Lo pecaminoso del hombre, y su distancia de Dios por esta causa, como es tan grande que no podemos tener acceso a su presencia si no es por un mediador, u) y no habiendo en el cielo ni en la tierra ningún otro señalado o apto para esta obra gloriosa sino sólo Cristo, v) no debemos pedir en ningún otro nombre más que en el suyo. x)",
+          "references": [
+            "u) Juan 14:6; Efe. 3:12;",
+            "v) Heb. 7:25‐27; 1 Tim. 2:5; Juan 6:27;",
+            "x) Col. 3:17; Heb. 13:15."
+          ]
+        },
+        {
+          "id": "question-182",
+          "title": "Pregunta 182",
+          "question": "¿Cómo nos ayuda el Espíritu Santo a orar?",
+          "body": "No sabiendo nosotros pedir lo que conviene el Espíritu ayuda nuestra flaqueza, capacitándonos para entender para quiénes, por qué y cómo debemos pedir; por obrar y vivificar en nuestro corazón (aunque no en todas las personas, ni en todos los tiempos en la misma medida), aquellas aprehensiones, afectos y gracias que son requisitos para el cumplimiento recto de este deber. y)",
+          "references": [
+            "y) Rom. 8:26; Sal. 80:18; Sal. 10:17; Zac. 12:10."
+          ]
+        },
+        {
+          "id": "question-183",
+          "title": "Pregunta 183",
+          "question": "¿Por quiénes debemos orar?",
+          "body": "Debemos orar por toda la Iglesia que está sobre la tierra, z) por las autoridades a) y ministros; b) por nosotros mismos, c) por nuestros hermanos d) y también por nuestros enemigos, e) por toda clase de los hombres que viven f) a que vivirán; g) mas no por los muertos h) ni por aquellos que sabemos han cometido el pecado de muerte. i)",
+          "references": [
+            "z) Efe. 6:18; Sal. 28:9;",
+            "a) 1 Tim. 2:1,2;",
+            "b) 2 Tes. 3:1; Col. 4:3;",
+            "c) Gén. 32:11;",
+            "d) Sant. 5:16; 2 Tes. 1: 11;",
+            "e) Mat. 5:44;",
+            "f) 1 Tim. 2: 1, 2;",
+            "g) Juan 17:20; 2 Sam. 7:29;",
+            "h) 2 Sam. 12:23;",
+            "i) 1 Juan 5:16."
+          ]
+        },
+        {
+          "id": "question-184",
+          "title": "Pregunta 184",
+          "question": "¿Por cuáles cosas debemos orar?",
+          "body": "Debemos orar por todas las cosas que tienden a la gloria de Dios, j) al bienestar de la iglesia, l) de nosotros mismos ll) o al bien de los demás; m) pero no por ninguna cosa que sea ilícita. n)",
+          "references": [
+            "j) Mat. 6:9;",
+            "l) Sal. 51:18; Sal. 122:6;",
+            "ll) Mat. 7:11;",
+            "m) Sal. 125:4; 1 Tes. 5:23 y 2 Tes. 3:16;",
+            "n) 1 Juan 5: 14; Sant. 4:3."
+          ]
+        },
+        {
+          "id": "question-185",
+          "title": "Pregunta 185",
+          "question": "¿Cómo debemos orar?",
+          "body": "Debemos orar can una aprehensión temerosa de la majestad de Dios, ñ) y con un sentimiento profundo de nuestra indignidad, o) necesidades p) y pecados; q) con contrición, r) gratitud s) y corazones ensanchados; t) con entendimiento u) fe, v) sinceridad, x) fervor, y) amor z) y perseverancia, a) esperando en él. b) con sumisión humilde a su voluntad. c)",
+          "references": [
+            "ñ) Sal. 33:8; Sal. 95:6;",
+            "o) Gén. 18: 27; Sal. 144: 3;",
+            "p) Sal. 86:1; Luc. 15:17, 19;",
+            "q) Sal. 130:3; Luc. 18:13;",
+            "r) Sal. 51:17; Zac. 12:10;",
+            "s) Fil. 4:6; 1 Tes. 5:18;",
+            "t) Sal. 81:10; Efe. 3:20, 21;",
+            "u) 1 Cor. 14:15;",
+            "v) Heb. 10:22; Sant. 1:6;",
+            "x) Heb. 10:22; Sal. 145: 18; Sal. 17:1; Juan 4:24;",
+            "y) Sant. 5:16;",
+            "z) 1 Tim. 2:8; Mat. 5:23, 24;",
+            "a) Efe. 6:18;",
+            "b) Miq. 7:7;",
+            "c) Mat. 26:39."
+          ]
+        },
+        {
+          "id": "question-186",
+          "title": "Pregunta 186",
+          "question": "¿Qué regla nos ha dado Dios para dirigirnos en el deber de la oración?",
+          "body": "Toda la palabra de Dios es útil para dirigir nos en el deber de la oración; d) pero la regla especial para dirigirnos, es aquella forma de oración que Cristo nuestro Salvador enseñó a sus discípulos, comúnmente llamada La oración del Señor. e)",
+          "references": [
+            "d) 2 Tim. 3:16,17; 1 Juan 5:14;",
+            "e) Mat. 6:9‐13; Luc. 11:2‐4."
+          ]
+        },
+        {
+          "id": "question-187",
+          "title": "Pregunta 187",
+          "question": "¿Cómo debe usarse la oración del Señor?",
+          "body": "La oración del Señor no solamente debe usarse para dirigirnos, como un dechado conforme al cual debamos hacer otras oraciones, sino que puede también usarse como una oración si se hace con entendimiento, fe, reverencia y otras gracias necesarias para el cumplimiento recto del deber de la oración. f)",
+          "references": [
+            "f) Mat. 6:9; Luc. 11:2."
+          ]
+        },
+        {
+          "id": "question-188",
+          "title": "Pregunta 188",
+          "question": "¿De cuántas partes se compone la oración del Señor?",
+          "body": "La oración del Señor está compuesta de tres partes: el prefacio, peticiones y conclusión.",
+          "references": []
+        },
+        {
+          "id": "question-189",
+          "title": "Pregunta 189",
+          "question": "¿Qué nos enseña el prefacio de la oración del Señor?",
+          "body": "El prefacio de la oración del Señor (contenido en estas palabras: Padre nuestro que estás en los cielos), g) nos enseña que cuando oremos nos acerquemos a Dios con confianza en su bondad paternal y de nuestra participación en ella, h) con reverencia y todas las demás disposiciones filiales, i) afectos celestes j) y aprehensiones debidas de su poder soberano, majestad y condescendencia misericordiosa, l) como también a orar con otros y por otros. ll)",
+          "references": [
+            "g) Mat. 6:9;",
+            "h) Luc. 11:13; Rom. 8:15;",
+            "i) Sal. 95:6,7; Is. 64:9;",
+            "j) Sal. 123:1; Lam. 3:41;",
+            "l) Sal. 104:1,2; Is. 63:15; Sal. 113:4‐6;",
+            "ll) Hch. 12:5; Zac. 8:21."
+          ]
+        },
+        {
+          "id": "question-190",
+          "title": "Pregunta 190",
+          "question": "¿Qué pedimos en la primera petición?",
+          "body": "En la primera petición (que dice: Santificado sea tu nombre), m) reconociendo la profunda incapacidad e indisposición que hay en nosotros y en todos los hombres para honrar a Dios rectamente, n) pedimos que Dios por su gracia nos capacite como también a nosotros y a los demás para conocerlo, aceptarlo y estimarlo altamente, ñ) a sus títulos, o) atributos, p) ordenanzas, palabra, q) obras y todas aquellas cosas por las cuales a él le place darse a conocer, r) y que podamos glorificarle en pensamiento, palabra s) y obra; t) que él evite y destruya el ateismo, u) la ignorancia, v) idolatría, x) impiedad y) y todo lo que le deshonra; z) y que por su providencia que todo lo gobierna, dirija y disponga todas las cosas para su propia gloria. a)",
+          "references": [
+            "m) Mat. 6:9;",
+            "n) 2 Cor. 3:5; Sal. 51: 15;",
+            "ñ) Sal. 57:2, 3; Sal. 72:19; Efe. 3:20, 21;",
+            "o) Sal. 83:18;",
+            "p) Sal. 145:6‐8; Sal. 86:10,15;",
+            "q) 2 Tes, 3:1; Sal. 107:32; 2 Cor. 2:14;",
+            "r) Sal. 8 y 145;",
+            "s) Sal. 19:14;",
+            "t) Fil. 1:11;",
+            "u) Sal. 79:10; Sal. 67:1‐4;",
+            "v) Efe. 1:17,18;",
+            "x) Sal. 97:7;",
+            "y) Sal. 74:18, 22;",
+            "z) Jer. 14:21; 2 Rey. 19:16;",
+            "a) Isa. 64:1, 2; 2 Crón. 20:6, 10‐12."
+          ]
+        },
+        {
+          "id": "question-191",
+          "title": "Pregunta 191",
+          "question": "¿Qué pedimos en la segunda petición?",
+          "body": "En la segunda petición (que dice: Venga tu reino), b) reconociendo que nosotros y toda la humanidad estamos por naturaleza bajo el dominio del pecado y de Satanás, c) pedimos que el reino del pecado y de Satanás, sea destruido, d) y el evangelio propagado por todo el mundo, e) que los judíos sean llamados, f) y se cumpla la plenitud de los gentiles; g) que la iglesia sea dotada de todos los oficiales y ordenanzas del evangelio, h) purgada de la corrupción, i) protegida y sostenida por autoridad civil: j) que las ordenanzas de Cristo sean administradas con pureza, y sean eficaces para la conversión de aquellos que aún están en sus pecados y para confirmar, confortar y edificar a los ya convertidos; l) que Cristo gobierne aquí en nuestro corazón, ll) que apresure su segunda venida y nuestro reinado con él para siempre m) y que a él le plazca ejercer el reinado de su poder en todo el mundo, según conduzca mejor a aquellos fines. n)",
+          "references": [
+            "b) Mat. 6:10;",
+            "c) Efe. 2:2, 3;",
+            "d) Sal. 68:1; Rev. 12:9;",
+            "e) 2 Tes. 3:1; Sal. 67:2;",
+            "f) Rom. 10:1;",
+            "g) Rom. 11:25; Sal. 67:1;",
+            "h) Mat. 9:38;",
+            "i) Efes.5:26, 27; Mal. 1:11;",
+            "j) 1 Tim. 2:1, 2; Is. 49:23;",
+            "l) 2 Cor. 4:2; Hch. 26: 18, 2 Tes. 2: 16, 17;",
+            "ll) Efe. 3: 14, 17;",
+            "m) Rev. 22:20; 2 Tim. 2: 12;",
+            "n) Sal. 45:3, 4."
+          ]
+        },
+        {
+          "id": "question-192",
+          "title": "Pregunta 192",
+          "question": "¿Qué rogamos en la tercera petición?",
+          "body": "En la tercera petición, (que dice: sea hecha tu voluntad, como en el cielo, así también en la tierra), ñ) reconociendo que por naturaleza nosotros y todos los hombres somos no solamente incapaces y sin voluntad para conocer y hacer lo que Dios quiere, o) sino inclinados a rebelarnos contra su palabra, p) a quejarnos y a murmurar contra su providencia, q) y totalmente inclinados a hacer la voluntad de la carne y del malo; r) pedimos que Dios por su Espíritu quite de nosotros y de los demás toda ceguedad, s) maldad, t) indisposición, u) y perversidad de corazón; v) y por su gracia nos haga capaces y voluntarios para conocer, hacer, y someterse a su voluntad en todas las cosas, x) con la misma humildad, y) alegría, z) fidelidad, a) diligencia, b) celo, c) sinceridad, d) y constancia, e) de los ángeles en el cielo. f)",
+          "references": [
+            "ñ) Mat. 6:10;",
+            "o) 1 Cor. 2:14; Rom. 8:5, 8;",
+            "p) Rom. 8:7;",
+            "q) Mat. 20:11, 12; Sal. 73:3;",
+            "r) Tit. 3:3; Efe. 2:2, 3;",
+            "s) Efe. 1:17, 18;",
+            "t) Efe. 3:16;",
+            "u) Mat. 26:40, 41; Rom. 7:24, 25;",
+            "v) Eze. 11:19; Jer. 31:18;",
+            "x) Sal. 119:35; Hch. 21:14; 1 Sam. 3:18;",
+            "y) Sal. 123:2; Sal. 131:2; Miq. 6:8;",
+            "z) Sal. 100:2;",
+            "a) Isa. 38:3; Efe. 6:6;",
+            "b) Sal. 119:4;",
+            "c) Rom. 12:11;",
+            "d) 2 Cor. 1:12;",
+            "e) Sal. 119:112; Rom. 2:7;",
+            "f) Sal. 103: 20‐22; Dan. 7:10."
+          ]
+        },
+        {
+          "id": "question-193",
+          "title": "Pregunta 193",
+          "question": "¿Qué pedimos en la cuarta petición?",
+          "body": "En la cuarta petición (que dice: Danos hoy nuestro pan cotidiano), g) reconociendo que en Adam, y por nuestro propio pecado hemos perdido el derecho a todas las bendiciones externas de esta vida y merecemos que Dios nos prive totalmente de ellas y de tener maldición en el uso de ellas; h) Y que ni ellas por sí mismas son capaces de sustentarnos, i) ni nosotros las merecemos; j) ni podemos procurárnoslas por nuestra industria, l) sino que somos inclinados a desearlas, ll) tomarlas, m) y usar las ilícitamente: n) pedimos para nosotros y los demás, pues, que tanto ellos como nosotros, descansamos en la providencia de Dios día tras día en el uso de los medios lícitos, por su don libre y como a su sabiduría paternal mejor convenga, podamos gozar una porción competente de tales cosas, ñ) y tengamos lo mismo, continuado y bendito para nosotros en el uso santo y confortable de ellas, o) contentamiento de ellas, p) y ser guardados de todas las cosas que son contrarias a nuestro consuelo y comodidad temporal. q)",
+          "references": [
+            "g) Mat. 6:11;",
+            "h) Gén. 3:17; Lam. 3:22; Deut. 28: 15, 68;",
+            "i) Deut. 8:3;",
+            "j) Gén. 32: 10;",
+            "l) Deut. 8:18; Prov. 10:22;",
+            "ll) Lucas 12:15; Jer. 6:13;",
+            "m) Os. 12:7;",
+            "n) Sant. 4:3;",
+            "ñ) Gén. 28:20, 21; Sant. 4:13, 15; Sal. 90:17; Sal. 144:12‐15;",
+            "o) 1 Tim.4:4, 5; Prov. 10:22;",
+            "p) 1 Tim. 6:6, 8;",
+            "q) Prov. 30:8, 9."
+          ]
+        },
+        {
+          "id": "question-194",
+          "title": "Pregunta 194",
+          "question": "¿Qué rogamos en la quinta petición?",
+          "body": "En la quinta petición, (que dice: Perdónanos nuestras deudas, como también nosotros perdonamos a nuestros deudores), r) reconociendo que nosotros y todos los demás somos culpables tanto del pecado original como del actual y por lo mismo deudores a la justicia de Dios, y que ni nosotros ni las otras criaturas pueden dar la más mínima satisfacción por esta deuda: s) pedimos para nosotros y para los demás, que Dios por su libre gracia, quiera, por la obediencia y satisfacción de Cristo asegurada y aplicada por la fe, libertarnos tanto de la culpa como del castigo del pecado, t) nos acepte en su Amado, u) continúe en su gracia y favor para con nosotros, v) perdone nuestras caídas diarias, x) y nos llene de paz y gozo, al darnos diariamente más y más seguridad de perdón, y) a lo que somos más alentados a pedir, y animados a esperar, cuando tenemos el testimonio en nosotros de que hemos perdonado de corazón a los demás sus ofensas. z)",
+          "references": [
+            "r) Mat. 6:12;",
+            "s) Mat. 18:24; Rom. 5:19; Rom. 3:9, 19; Sal. 130:3; Miq. 6:6, 7;",
+            "t) Rom. 5: 19; Rom. 3:24, 25; Hch. 13:39;",
+            "u) Efe. 1:6;",
+            "v) 2 Ped. 1:2;",
+            "x) Ose 14:2; Sal. 143:2; Sal. 130:3;",
+            "y) Rom. 15:13; Rom. 5: 1, 2; Sal. 51:7‐12;",
+            "z) Luc. 11:4; Mat. 18: 35; Mat. 6:14, 15."
+          ]
+        },
+        {
+          "id": "question-195",
+          "title": "Pregunta 195",
+          "question": "¿Qué pedimos en la sexta petición?",
+          "body": "En la sexta petición (que dice: No nos metas en tentación, mas líbranos del mal), a) reconociendo que el Dios sabio, justo y misericordioso, por diversos fines justos y santos, puede ordenar las cosas de tal manera que podamos ser asaltados, chasqueados y por un tiempo tenidos cautivos por las tentaciones; b) que Satanás, c) el mundo d) y la carne, están prontos poderosamente para desviarnos y hacernos caer; e) y que nosotros, aun después del perdón de nuestros pecados por razón de nuestra corrupción, f) debilidad y falta de vigilancia, g) no sólo estamos expuestos a las tentaciones, y prontos a exponernos a ellas, h) sino también somos incapaces y sin voluntad para resistirlas, libertamos o aprovecharnos de ellas, i) y por lo tanto dignos de ser abandonados en poder de ellas, j) pedimos que Dios quiera gobernar al mundo y todo lo que hay en éste, l) subyugar la carne, ll) restringir a Satanás, m) ordenar todas las cosas n) otorgar y bendecir todos los medios de gracia, ñ) vivificarnos para ser vigilantes en el uso de ellos, para que nosotros y todo su pueblo seamos guardados por su providencia de ser tentados a pecar; o) o que si somos tentados, que por su Espíritu seamos sostenidos y capacitados poderosamente para estar firmes a la hora de la tentación, p) o si caemos que nos levantarnos y quedemos libres de ellas, q) y tengamos un uso y provecho santo de las mismas; r) que nuestra santificación y salvación sean perfeccionadas, s) Satanás sea puesto bajo nuestros pies, t) y seamos enteramente libertados del pecado, tentación y todo mal para siempre. u)",
+          "references": [
+            "a) Mat. 6:13;",
+            "b) 2 Crón. 32:31; Job 2:6;",
+            "c) 1 Ped. 5:8; Job 2:2;",
+            "d) Lucas 21:34; Marcos 4:19;",
+            "e) Sant. 1:14;",
+            "f) Gál. 5:17; Rom. 7:18;",
+            "g) Mat. 26:41;",
+            "h) Ecle. 9:12; 1 Tim. 6:9; Prov. 7:22;",
+            "i) Efe. 6:11, 12; 1 Crón. 21:1‐4; 2 Crón. 16:7‐10;",
+            "j) Sal. 81:11, 12;",
+            "l) Juan 17:15; Rom. 8:28;",
+            "ll) Sal. 51:10; Sal. 119:133;",
+            "m) Heb. 2:18; 1 Cor. 10:13; 2 Cor. 12:8;",
+            "n) Rom. 8:28;",
+            "ñ) Heb. 13:20, 21; Efe. 4:11, 12;",
+            "o) Mat. 26:41; Sal. 19:13;",
+            "p) 1 Cor. 10: 13; Efe. 3:14‐16;",
+            "q) Sal. 51:12;",
+            "r) 1 Pedro 5:10; 1 Pedro 1:6, 7;",
+            "s) 1 Tes. 3: 13;",
+            "t) Rom. 16:20;",
+            "u) 1 Tes. 5:23."
+          ]
+        },
+        {
+          "id": "question-196",
+          "title": "Pregunta 196",
+          "question": "¿Qué nos enseña el final de la oración del Señor?",
+          "body": "El final de la oración del Señor, (que dice: Porque tuyo es el reino y la potencia y la gloria, por todos los siglos. Amén), v) nos enseña a corroborar nuestras peticiones con argumentos x) que son tomados, no de algo digno que haya en nosotros o en otra criatura, sino de Dios, y) y con nuestras oraciones unidas a las alabanzas, z) atribuir a Dios solamente la soberanía eterna, la omnipotencia y la excelencia gloriosa, a) conforme a los cuales como él puede y quiere ayudarnos b) así por la fe somos animados a suplicarle que quiera, c) y esperar quietamente que él querrá cumplir nuestras peticiones, d) y como un testimonio de nuestros deseos y seguridad, decimos. Amén. e)",
+          "references": [
+            "v) Mat. 6:13;",
+            "x) Job 23:3, 4; Jer. 14:20, 21;",
+            "y) Dan. 9:4, 7‐9, 16, 19;",
+            "z) Fil. 4:6;",
+            "a) 1 Crón. 29:10,13;",
+            "b) Efe. 3:20, 21; Luc. 11:13; Sal. 84:11;",
+            "c) Efe. 3:12; Heb. 10:19‐22;",
+            "d) 1 Juan 5:14; Rom. 8:32;",
+            "e) 1 Cor. 14:16; Rev. 22:20, 21."
+          ]
+        }
+      ]
+    }
+  ]
+}

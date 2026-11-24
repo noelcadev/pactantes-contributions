@@ -9,9 +9,11 @@ void main() {
     expect(catalog.all.map((ReadingDocument document) => document.id), <String>[
       'westminster-confession',
       'heidelberg-catechism',
+      'westminster-larger-catechism',
       'canons-of-dort',
       'belgic-confession',
       'scots-confession',
+      'nicene-creed',
       'augustine-confessions',
       'three-forms-of-unity',
     ]);
@@ -20,16 +22,18 @@ void main() {
       <String>[
         'Confesión de Fe de Westminster',
         'Catecismo de Heidelberg',
+        'Catecismo mayor de Westminster',
         'Cánones de Dort',
         'Confesión Belga',
         'Confesión Escocesa de 1560',
+        'Credo Niceno',
         'Confesiones de san Agustín',
         'Las tres formas de unidad',
       ],
     );
     expect(
       catalog.all.map((ReadingDocument document) => document.id).toSet(),
-      hasLength(7),
+      hasLength(9),
     );
     expect(() => catalog.all.clear(), throwsUnsupportedError);
   });
@@ -39,20 +43,18 @@ void main() {
       <String>[
         'westminster-confession',
         'heidelberg-catechism',
+        'westminster-larger-catechism',
         'canons-of-dort',
         'belgic-confession',
         'scots-confession',
+        'nicene-creed',
         'augustine-confessions',
       ],
     );
   });
-  test('catalog does not guess edition-specific reading totals', () {
-    expect(
-      catalog.all.every(
-        (ReadingDocument document) => document.totalUnits == null,
-      ),
-      isTrue,
-    );
+  test('catalog leaves edition-specific reading totals unresolved', () {
+    expect(catalog.findById('heidelberg-catechism')?.totalUnits, isNull);
+    expect(catalog.findById('westminster-larger-catechism')?.totalUnits, 196);
   });
   test('lookup resolves metadata and safely returns null for unknown IDs', () {
     expect(
@@ -72,14 +74,14 @@ void main() {
       ],
     );
     expect(
-      catalog.byType(DocumentType.catechism).single.id,
-      'heidelberg-catechism',
+      catalog.byType(DocumentType.catechism).map((item) => item.id),
+      <String>['heidelberg-catechism', 'westminster-larger-catechism'],
     );
     expect(
       catalog.byType(DocumentType.collection).single.id,
       'three-forms-of-unity',
     );
-    expect(catalog.byType(DocumentType.creed), isEmpty);
+    expect(catalog.byType(DocumentType.creed).single.id, 'nicene-creed');
     expect(
       catalog.byType(DocumentType.document).single.id,
       'augustine-confessions',
@@ -101,8 +103,8 @@ void main() {
         expect(member.type, isNot(DocumentType.collection));
       }
       expect(
-        catalog.inCollection('westminster-standards').single.id,
-        'westminster-confession',
+        catalog.inCollection('westminster-standards').map((item) => item.id),
+        <String>['westminster-confession', 'westminster-larger-catechism'],
       );
       expect(catalog.inCollection('unknown'), isEmpty);
     },

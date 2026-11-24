@@ -9,6 +9,7 @@ class ReadingUnit {
     this.parentTitle,
     this.references = const <String>[],
     this.hasNumberedReferences = false,
+    this.referenceLinks,
     this.editionNotes = '',
   });
   final String id;
@@ -20,10 +21,70 @@ class ReadingUnit {
   final String? parentTitle;
   final List<String> references;
   final bool hasNumberedReferences;
+  final ReadingReferenceLinks? referenceLinks;
   final String editionNotes;
 
   String get referenceText =>
       references.join(hasNumberedReferences ? '\n' : ' · ');
+}
+
+typedef ReadingReferenceCall = ({int start, int end, int referenceIndex});
+
+class ReadingReferenceLinks {
+  const ReadingReferenceLinks._({required this.question, required this.body});
+
+  final List<ReadingReferenceCall> question;
+  final List<ReadingReferenceCall> body;
+
+  static final RegExp _call = RegExp(
+    r'(?<![\p{L}\p{N}_(])(ll|[a-zñ])\)',
+    unicode: true,
+  );
+  static final RegExp _reference = RegExp(r'^(ll|[a-zñ])\)\s+\S');
+
+  /// Pair full sequences to keep repeated letters attached to their own note.
+  static ReadingReferenceLinks? fromLetteredNotes({
+    required String? question,
+    required String body,
+    required List<String> references,
+  }) {
+    if (references.isEmpty) return null;
+    final List<RegExpMatch> questionCalls = _call
+        .allMatches(question ?? '')
+        .toList();
+    final List<RegExpMatch> bodyCalls = _call.allMatches(body).toList();
+    final List<RegExpMatch> calls = <RegExpMatch>[
+      ...questionCalls,
+      ...bodyCalls,
+    ];
+    if (calls.isEmpty) return null;
+
+    final Set<String> calledLabels = <String>{
+      for (final RegExpMatch call in calls) call[1]!,
+    };
+    final List<(int, String)> linkedReferences = <(int, String)>[];
+    for (final (int index, String reference) in references.indexed) {
+      final String? label = _reference.firstMatch(reference)?[1];
+      if (label == null) return null;
+      if (calledLabels.contains(label)) linkedReferences.add((index, label));
+    }
+    if (calls.length != linkedReferences.length) return null;
+
+    final List<ReadingReferenceCall> ordered = <ReadingReferenceCall>[];
+    for (final (int position, RegExpMatch call) in calls.indexed) {
+      final (int index, String label) = linkedReferences[position];
+      if (call[1] != label) return null;
+      ordered.add((start: call.start, end: call.end, referenceIndex: index));
+    }
+    return ReadingReferenceLinks._(
+      question: List<ReadingReferenceCall>.unmodifiable(
+        ordered.take(questionCalls.length),
+      ),
+      body: List<ReadingReferenceCall>.unmodifiable(
+        ordered.skip(questionCalls.length),
+      ),
+    );
+  }
 }
 
 typedef ReadingPreview = ({

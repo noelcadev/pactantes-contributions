@@ -257,5 +257,96 @@
       52
     ],
     "augustine_numbering": "section"
+  },
+  {
+    "document_key": "westminster_larger_catechism_es",
+    "document_id": "westminster-larger-catechism",
+    "title": "Catecismo mayor de Westminster",
+    "language_code": "es",
+    "source_filename": "Catecismo mayor de Westminster.pdf",
+    "source_sha256": "447e82eefaf569e0a017c05a72ad69df02a60a1f081445ca2d926c87d27eff8e",
+    "attribution": "Asamblea de Westminster. Transcripción del PDF español de 2008, cuyos metadatos acreditan a Marcelo Sánchez como autor del archivo. La edición no identifica al traductor. Las referencias bíblicas se cotejaron con otras ediciones del Catecismo Mayor.",
+    "source_url": "https://ibe.org.mx/wp-content/uploads/2025/09/catecismo-mayor-de-westminster.pdf",
+    "text": "westminster-larger-es.json",
+    "content_version": 3,
+    "group_sizes": [
+      5,
+      85,
+      106
+    ]
+  },
+  {
+    "document_key": "westminster_larger_catechism_en",
+    "document_id": "westminster-larger-catechism",
+    "title": "Westminster Larger Catechism",
+    "language_code": "en",
+    "source_filename": "confessions-corpus/json/corpus.json (commit 01ed626ffaabccbe14f3df3ff25c3e7b1b7935d6)",
+    "source_sha256": "35ee21073cdc6eac9831a69b32ba48a7dd2bf8c02185317df421c69966603b33",
+    "attribution": "Westminster Assembly. The Confession of Faith; the Larger and Shorter Catechisms, with the Scripture-Proofs at Large. London: T. Nelson and Sons, 1860, pp. 127–281. Catechism text from Ian Buchanan’s confessions-corpus transcription (CC0 1.0). The scan below includes the printed Scripture proofs.",
+    "source_url": "https://archive.org/details/confessionoffait00westuoft/page/127/mode/1up",
+    "text": "westminster-larger-en.json",
+    "group_sizes": [
+      5,
+      85,
+      106
+    ]
+  },
+  {
+    "document_id": "westminster-larger-catechism",
+    "document_key": "westminster_larger_catechism_pt",
+    "language_code": "pt",
+    "title": "Catecismo Maior de Westminster",
+    "source_filename": "confissaodefeeos00west.pdf",
+    "source_sha256": "99097e8fe0884ecdd3c869bd1c23954d43df0b40f49a9918bb2111e3e071dcbf",
+    "attribution": "Assembleia de Westminster. O Catecismo Maior, em A Confissão de fé e os Catecismos da Egreja Presbyteriana, pp. 81–181. Tradução portuguesa sem indicação de tradutor. Lisboa: Typ. de João Ferreira de Medeiros, 1907. Exemplar da Princeton Theological Seminary Library, digitalizado pelo Internet Archive. Transcrição com a ortografia e as referências da edição histórica.",
+    "source_url": "https://archive.org/details/confissaodefeeos00west/page/81/mode/1up",
+    "text": "westminster-larger-pt.json",
+    "group_sizes": [
+      5,
+      85,
+      106
+    ]
+  },
+  {
+    "document_key": "nicene_creed_es",
+    "document_id": "nicene-creed",
+    "title": "Credo Niceno",
+    "language_code": "es",
+    "source_filename": "Credo Niceno.pdf",
+    "source_sha256": "78df0f13cd80c9f7c0bdc7cb8ccfc47c2b9d06472f167cedb4d010e5965d7247",
+    "attribution": "Texto citado de La Biblia de Estudio de La Reforma (pág. 2335). PDF de Iglesia Gracia Sobre Gracia (Bautista Reformada).",
+    "source_url": "https://graciasobregracia.org/storage/documents/MDLF21_Recursos_Credo_Niceno.pdf",
+    "text": "nicene-es.json",
+    "group_sizes": [
+      1
+    ]
+  },
+  {
+    "document_id": "nicene-creed",
+    "document_key": "nicene_creed_en",
+    "language_code": "en",
+    "title": "Nicene Creed",
+    "source_filename": "bookcommonpraye00conggoog.pdf",
+    "source_sha256": "7e48e836b4b9f052d523b42bfa51b5f25b2978175dc9423ab3ccdec2710c9145",
+    "attribution": "Protestant Episcopal Church in the United States of America. The Book of Common Prayer, printed for the General Convention, New York, 1892, pp. 224–225. Public domain.",
+    "source_url": "https://archive.org/details/bookcommonpraye00conggoog",
+    "text": "nicene-en.json",
+    "group_sizes": [
+      1
+    ]
+  },
+  {
+    "document_id": "nicene-creed",
+    "document_key": "nicene_creed_pt",
+    "language_code": "pt",
+    "title": "Credo Niceno",
+    "source_filename": "pt-BR-001-070.pdf",
+    "source_sha256": "4489d8753c974c496ef0b04f0b55f7370c9b4937ea96472677c91885aa042397",
+    "attribution": "Egreja Lusitana. O Livro de Oração Commum. Porto, Typ. de Fraga Lamares, 1884, pp. 67–68. Texto em domínio público. Grafia da edição original.",
+    "source_url": "https://thefpec.org/prayer-book/scans/pt-BR-001-070.pdf",
+    "text": "nicene-pt.json",
+    "group_sizes": [
+      1
+    ]
   }
 ]

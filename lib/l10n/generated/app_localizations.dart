@@ -424,6 +424,12 @@ abstract class AppLocalizations {
   /// **'Biblical references:'**
   String get readerReferences;
 
+  /// Accessibility label for an inline link to a biblical reference
+  ///
+  /// In en, this message translates to:
+  /// **'Open biblical reference {marker}, note {number}'**
+  String readerReferenceLink(String marker, int number);
+
   /// No description provided for @readerQuestionPrefix.
   ///
   /// In en, this message translates to:

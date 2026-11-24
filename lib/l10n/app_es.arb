@@ -54,6 +54,7 @@
   "readerPrevious": "Unidad anterior",
   "readerNext": "Unidad siguiente",
   "readerReferences": "Referencias bíblicas:",
+  "readerReferenceLink": "Abrir referencia bíblica {marker}, nota {number}",
   "readerQuestionPrefix": "P.",
   "readerAnswerPrefix": "R.",
   "readerAttribution": "Compartido desde Pactantes — Recursos Reformados.",

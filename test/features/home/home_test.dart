@@ -7,6 +7,7 @@ import 'package:pactantes/features/home/models/home_reading_item.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pactantes/core/library/repository/document_catalog_local_repository.dart';
 import 'package:pactantes/core/preferences/preferences_reader.dart';
 import 'package:pactantes/design_system/theme/app_theme.dart';
 import 'package:pactantes/core/reading_progress/models/reading_progress.dart';
@@ -145,6 +146,42 @@ void main() {
       expect(tester.widget<BottomNavigationBar>(tabs).currentIndex, 0);
     },
   );
+
+  testWidgets('library opens the Westminster catechism and Nicene Creed', (
+    WidgetTester tester,
+  ) async {
+    final HomeViewModel model = HomeViewModel(
+      FakeRepository(<ReadingProgress>[]),
+      const DocumentCatalogLocalRepositoryImpl(),
+    );
+    final List<HomeReadingItem> opened = <HomeReadingItem>[];
+    await renderModel(tester, model, onOpenReading: opened.add);
+    final AppLocalizations strings = lookupAppLocalizations(const Locale('es'));
+    await tester.tap(
+      find.descendant(
+        of: find.byType(BottomNavigationBar),
+        matching: find.text(strings.library),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text(strings.catechisms));
+    await tester.pumpAndSettle();
+    const String catechism = 'Catecismo mayor de Westminster';
+    const String creed = 'Credo Niceno';
+    expect(find.widgetWithText(ListTile, creed), findsNothing);
+    await tester.tap(find.widgetWithText(ListTile, catechism));
+    expect(opened.single.document.id, 'westminster-larger-catechism');
+
+    await tester.tap(find.byType(BackButton));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text(strings.creeds));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(ListTile, catechism), findsNothing);
+    await tester.tap(find.widgetWithText(ListTile, creed));
+    expect(opened.last.document.id, 'nicene-creed');
+    expect(opened, hasLength(2));
+  });
 
   testWidgets(
     'library opens an unread confession while preserving Continue and resume',
@@ -431,7 +468,7 @@ void main() {
       );
       addTearDown(model.dispose);
       await model.initialize();
-      expect(model.readingItems, hasLength(6));
+      expect(model.readingItems, hasLength(8));
       expect(
         model.readingItems.every(
           (HomeReadingItem item) =>

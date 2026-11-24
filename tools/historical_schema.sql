@@ -21,13 +21,14 @@ CREATE TABLE IF NOT EXISTS historical_units (
     body TEXT NOT NULL CHECK (length(trim(body)) > 0),
     reference_text TEXT NOT NULL DEFAULT '',
     edition_notes TEXT NOT NULL DEFAULT '',
+    question TEXT,
     FOREIGN KEY (document_key, group_id) REFERENCES historical_groups(document_key, group_id),
     UNIQUE (document_key, unit_id),
     UNIQUE (document_key, position)
 );
 
 CREATE VIRTUAL TABLE IF NOT EXISTS historical_search USING fts4(
-    group_title, title, body, reference_text, edition_notes, tokenize=unicode61
+    group_title, title, body, reference_text, edition_notes, question, tokenize=unicode61
 );
 
 CREATE TABLE IF NOT EXISTS historical_unit_aliases (

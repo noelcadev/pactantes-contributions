@@ -8,7 +8,7 @@ class HistoricalReadingContentSource implements ReadingPreviewSource {
   final ReadingDatabase _database;
   static const String _passages = '''
     SELECT u.unit_id, u.position, u.group_id, g.title AS group_title,
-           u.title, u.body, u.reference_text, u.edition_notes
+           u.title, u.question, u.body, u.reference_text, u.edition_notes
     FROM historical_units u JOIN historical_groups g USING (document_key, group_id)
     WHERE u.document_key = ?
   ''';
@@ -30,19 +30,30 @@ class HistoricalReadingContentSource implements ReadingPreviewSource {
     return editions;
   }
 
-  ReadingUnit _unit(Map<String, Object?> row) {
-    final String references = row['reference_text']! as String;
+  ReadingUnit _unit(Map<String, Object?> row, {bool linkReferences = false}) {
+    final String referenceText = row['reference_text']! as String;
+    final List<String> references = referenceText.isEmpty
+        ? const <String>[]
+        : List<String>.unmodifiable(referenceText.split('\n'));
+    final String? question = row['question'] as String?;
+    final String body = row['body']! as String;
     return ReadingUnit(
       id: row['unit_id']! as String,
       number: row['position']! as int,
       title: row['title']! as String,
-      body: row['body']! as String,
+      question: question,
+      body: body,
       parentId: row['group_id']! as String,
       parentTitle: row['group_title'] as String?,
-      references: references.isEmpty
-          ? const <String>[]
-          : List<String>.unmodifiable(references.split('\n')),
+      references: references,
       hasNumberedReferences: references.isNotEmpty,
+      referenceLinks: linkReferences
+          ? ReadingReferenceLinks.fromLetteredNotes(
+              question: question,
+              body: body,
+              references: references,
+            )
+          : null,
       editionNotes: row['edition_notes']! as String,
     );
   }
@@ -66,7 +77,13 @@ class HistoricalReadingContentSource implements ReadingPreviewSource {
     );
     if (rows.isEmpty) throw const ReadingDatabaseException();
     final List<ReadingUnit> units = List<ReadingUnit>.unmodifiable(
-      rows.map(_unit),
+      rows.map(
+        (Map<String, Object?> row) => _unit(
+          row,
+          linkReferences:
+              edition['document_key'] == 'westminster_larger_catechism_es',
+        ),
+      ),
     );
     final List<Map<String, Object?>> aliases = await _database.query(
       '''SELECT alias_id, unit_id FROM historical_unit_aliases WHERE document_key = ?''',

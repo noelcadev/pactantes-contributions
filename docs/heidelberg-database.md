@@ -1,8 +1,8 @@
 # Heidelberg Catechism database
 
-`assets/db/reformed_documents.db` uses schema version 6. Its Heidelberg tables contain 129 English,
+`assets/db/reformed_documents.db` uses schema version 7. Its Heidelberg tables contain 129 English,
 129 Portuguese, and 128 Spanish questions and answers, with an offline FTS4 index.
-The Flutter reader installs the corpus revision 8 asset into a separate read-only local file, preserving earlier installed files and mutable user preferences. The same database also contains the [Canons of Dort](dort-database.md).
+The Flutter reader installs the corpus revision 11 asset into a separate read-only local file, preserving earlier installed files and mutable user preferences. The same database also contains the [Canons of Dort](dort-database.md).
 
 ## Sources and text
 

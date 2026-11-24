@@ -184,6 +184,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readerReferences => 'Biblical references:';
 
   @override
+  String readerReferenceLink(String marker, int number) {
+    return 'Open biblical reference $marker, note $number';
+  }
+
+  @override
   String get readerQuestionPrefix => 'Q.';
 
   @override
