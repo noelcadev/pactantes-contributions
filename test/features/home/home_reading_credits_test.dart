@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pactantes/core/library/models/reading_document.dart';
+import 'package:pactantes/core/reading_progress/models/reading_progress.dart';
 import 'package:pactantes/design_system/theme/app_theme.dart';
 import 'package:pactantes/design_system/widgets/edition_credits_sheet.dart';
 import 'package:pactantes/features/home/models/home_reading_item.dart';
+import 'package:pactantes/features/home/views/components/home_action.dart';
 import 'package:pactantes/features/home/views/components/reading_section.dart';
 import 'package:pactantes/features/reader/models/reader_preferences.dart';
 import 'package:pactantes/features/reader/models/reading_content.dart';
@@ -22,18 +24,30 @@ const ReadingUnit _excerpt = ReadingUnit(
   number: 1,
   body: 'First article from the source edition.',
 );
+final ReadingProgress _progress = ReadingProgress(
+  documentId: _document.id,
+  sectionId: _excerpt.id,
+  paragraph: 1,
+  progress: .21,
+  lastReadAt: DateTime.utc(2026),
+);
 const String _notice =
     'Author and edition. Source https://example.com/edition\n'
     'License https://creativecommons.org/licenses/by/4.0/';
 
-Widget _app(Widget child, {ThemeData? theme}) => MaterialApp(
+Widget _app(
+  Widget child, {
+  ThemeData? theme,
+  Locale locale = const Locale('en'),
+  double textScale = 2,
+}) => MaterialApp(
   theme: theme ?? AppTheme.light,
-  locale: const Locale('en'),
+  locale: locale,
   localizationsDelegates: AppLocalizations.localizationsDelegates,
   supportedLocales: AppLocalizations.supportedLocales,
   builder: (BuildContext context, Widget? child) => MediaQuery(
     data: MediaQuery.of(context)
-        .copyWith(textScaler: const TextScaler.linear(2)),
+        .copyWith(textScaler: TextScaler.linear(textScale)),
     child: child!,
   ),
   home: Scaffold(body: child),
@@ -46,8 +60,9 @@ void main() {
       await tester.binding.setSurfaceSize(const Size(320, 700));
       addTearDown(() => tester.binding.setSurfaceSize(null));
       final List<HomeReadingItem> opened = <HomeReadingItem>[];
-      const HomeReadingItem item = HomeReadingItem(
+      final HomeReadingItem item = HomeReadingItem(
         document: _document,
+        progress: _progress,
         unit: _excerpt,
         attribution: _notice,
       );
@@ -56,9 +71,9 @@ void main() {
           SingleChildScrollView(
             child: ReadingSection(
               title: 'Study',
-              items: const <HomeReadingItem>[
+              items: <HomeReadingItem>[
                 item,
-                HomeReadingItem(document: _document, unit: _excerpt),
+                const HomeReadingItem(document: _document, unit: _excerpt),
               ],
               onOpen: opened.add,
             ),
@@ -67,6 +82,11 @@ void main() {
       );
 
       final Finder credits = find.widgetWithText(TextButton, 'Edition credits');
+      final Finder cards = find.byType(HomeAction);
+      expect(
+        tester.getSize(cards.first).height,
+        tester.getSize(cards.last).height,
+      );
       final Finder article = find.text('Study document').first;
       final Finder card = find.widgetWithText(InkWell, 'Study document').first;
       expect(credits, findsOneWidget);
@@ -97,6 +117,77 @@ void main() {
       expect(opened, <HomeReadingItem>[item]);
     },
   );
+
+  testWidgets('resume stays at the trailing edge on long and short cards', (
+    WidgetTester tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(420, 800));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(
+      _app(
+        ReadingSection(
+          title: 'Continuar leyendo',
+          items: <HomeReadingItem>[
+            HomeReadingItem(
+              document: _document,
+              progress: _progress,
+              unit: const ReadingUnit(
+                id: 'article-1',
+                number: 1,
+                parentTitle: 'A long chapter heading that spans several lines',
+                title: 'Article 1',
+                body: 'An excerpt from the source edition.',
+              ),
+              attribution: _notice,
+            ),
+            HomeReadingItem(
+              document: _document,
+              progress: _progress,
+              unit: _excerpt,
+              attribution: _notice,
+            ),
+          ],
+        ),
+        locale: const Locale('es'),
+        textScale: 1,
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final Finder cards = find.byType(HomeAction);
+    const String resume = 'Retomar estudio';
+    final Finder labels = find.text(resume);
+    final Finder arrows = find.byIcon(Icons.chevron_right);
+    final Finder bars = find.byType(LinearProgressIndicator);
+    for (int index = 0; index < 2; index++) {
+      final RenderParagraph label = tester.renderObject(labels.at(index));
+      final List<TextBox> lines = label.getBoxesForSelection(
+        TextSelection(baseOffset: 0, extentOffset: resume.length),
+      );
+      final Rect arrow = tester.getRect(arrows.at(index));
+      final Rect bar = tester.getRect(bars.at(index));
+      expect(lines, hasLength(1));
+      final double textEnd = label
+          .localToGlobal(Offset(lines.single.right, 0))
+          .dx;
+      expect(arrow.left - textEnd, closeTo(4, .5));
+      expect(arrow.right, closeTo(bar.right, .01));
+    }
+    expect(
+      tester.getSize(cards.first).height,
+      tester.getSize(cards.last).height,
+    );
+    expect(tester.getCenter(arrows.first).dy, tester.getCenter(arrows.last).dy);
+    await tester.binding.setSurfaceSize(const Size(700, 800));
+    await tester.pump();
+    final Rect percentage = tester.getRect(find.text('21% COMPLETADO').first);
+    final Rect bar = tester.getRect(bars.first);
+    final Rect arrow = tester.getRect(arrows.first);
+    expect(percentage.left, closeTo(bar.left, .01));
+    expect(percentage.center.dy, closeTo(arrow.center.dy, .5));
+    expect(arrow.right, closeTo(bar.right, .01));
+    expect(tester.takeException(), isNull);
+  });
 
   testWidgets('a card without an excerpt does not show edition credits', (
     WidgetTester tester,
