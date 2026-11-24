@@ -1,0 +1,93 @@
+[
+  {
+    "id": "book-1",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-1/",
+    "sha256": "6a5a4401d0866654540e0cc6f9bad0fe0c434cbf464e58239811f03ee6a455d1",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-2",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-2/",
+    "sha256": "3afaba4f862898af35313268001c442aaf22a2be0c6ce28006706cb1070726d5",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-3",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-3/",
+    "sha256": "06d64e4a0fc431919578b40dd4bb7a1cfb85c41949a7503bd9e2edd55f0bf447",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-4",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-4/",
+    "sha256": "a2c107f05503a5bc0acef9bc7975c3e5082981d1a985d1b97f79f550ef712b28",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-5",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-5/",
+    "sha256": "a2bc9037f23e2e11e36be288f19f9ae6ee4ed9245d1f962be5455823af580671",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-6",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-6/",
+    "sha256": "b8ce7a39686dea020aa2a8d223e8543d9bb76845ed704fb24c31ce9446449741",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-7",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-7/",
+    "sha256": "3860e9835b9f37a7a262d5afef8dd30168d2efbb131db22a62fdde20feb441da",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-8",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-8/",
+    "sha256": "7cf3c88abe0148233f638cd1a0dc98c7d5bc32e9f11f6646f6f582f9d5cabbe8",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-9",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-9/",
+    "sha256": "e5e1b0ae8d896d3e4e990be97ac6672079cc6b4f1045e2b3b096bbe1e6c8c779",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-10",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-10/",
+    "sha256": "5719e6da46ed3d8924f49e697bd5f94ecb1d30d40dddf61fc0a74246850bd440",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-11",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-11/",
+    "sha256": "9839442555409f839a261db24ac623a43e76b083eb13d7bc738aa7ed609de30b",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-12",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-12/",
+    "sha256": "479a3442477b7ddf4dd6c29642ad3921ce2262f138186137b91a73b1697ffc21",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  },
+  {
+    "id": "book-13",
+    "url": "https://unesacra.com/pt/ler/classicos-cristaos/confissoes-de-santo-agostinho/livro-13/",
+    "sha256": "7194ef39f1d68fa06a3dec3010ffce249c43f822fd4c59c5e5a308bde57f268a",
+    "edition": "edição 1",
+    "modified": "2026-11-22T13:15:27-03:00"
+  }
+]

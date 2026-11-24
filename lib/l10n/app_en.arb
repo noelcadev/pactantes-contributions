@@ -1,5 +1,6 @@
 {
   "@@locale": "en",
+  "readerEditionNotes": "Edition notes",
   "brandSubtitle": "Reformed Resources",
   "introTitle": "Growing in Grace and Truth",
   "introDescription": "Bibles, confessions, catechisms and historical texts of the Reformed faith.",
@@ -11,7 +12,7 @@
   "confessions": "Confessions of faith",
   "catechisms": "Catechisms",
   "creeds": "Historic creeds",
-  "documents": "Reformed documents",
+  "documents": "Historical writings",
   "home": "Home",
   "bible": "Bible",
   "library": "Library",
@@ -54,7 +55,7 @@
   "documentConfession": "Confession of faith",
   "documentCatechism": "Catechism",
   "documentCreed": "Historic creed",
-  "documentHistorical": "Reformed document",
+  "documentHistorical": "Historical writing",
   "documentCollection": "Collection",
   "@question": {
     "placeholders": {
@@ -103,6 +104,18 @@
   "readerTheme": "Theme",
   "readerTranslation": "Translation",
   "readerEditionCredits": "Edition credits",
+  "readerOriginalPages": "View original pages",
+  "readerPdfPage": "PDF page {number}",
+  "@readerPdfPage": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "readerPdfPreviousPage": "Previous PDF page",
+  "readerPdfNextPage": "Next PDF page",
+  "readerPdfPageError": "Could not open this PDF page.",
   "readerDeviceLanguage": "Device language",
   "readerCurrentEdition": "Current edition: {language}",
   "@readerCurrentEdition": {
@@ -118,7 +131,7 @@
   "homeConfessionsSummary": "Confessional texts",
   "homeCatechismsSummary": "Questions and answers",
   "homeCreedsSummary": "Statements of faith",
-  "homeDocumentsSummary": "Historical texts",
+  "homeDocumentsSummary": "Writings from church history",
   "homeScriptureQuote": "“for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,”",
   "homeScriptureReference": "EPHESIANS 2:8 · WORLD ENGLISH BIBLE",
   "homeScriptureAttribution": "World English Bible Classic (WEB). Public domain.\nhttps://ebible.org/eng-web/EPH02.htm\nhttps://ebible.org/eng-web/copyright.htm",

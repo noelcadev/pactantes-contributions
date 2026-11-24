@@ -23,6 +23,8 @@ class LibraryDocumentsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final AppLocalizations strings = AppLocalizations.of(context);
+    final String interfaceLanguage = Localizations.localeOf(context)
+        .languageCode;
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: SafeArea(
@@ -46,7 +48,25 @@ class LibraryDocumentsView extends StatelessWidget {
                       (item) => item.document.isAvailable,
                     ))
                       ListTile(
-                        title: Text(item.sourceTitle ?? item.document.title),
+                        title: Text(
+                          interfaceLanguage == 'es' && item.languageCode != 'es'
+                              ? item.document.title
+                              : item.sourceTitle ?? item.document.title,
+                        ),
+                        subtitle:
+                            item.languageCode == null ||
+                                item.languageCode == interfaceLanguage
+                            ? null
+                            : Text(
+                                strings.readerCurrentEdition(
+                                  switch (item.languageCode) {
+                                    'en' => strings.readerEnglish,
+                                    'pt' => strings.readerPortuguese,
+                                    'es' => strings.readerSpanish,
+                                    _ => item.languageCode!,
+                                  },
+                                ),
+                              ),
                         enabled: onOpenReading != null,
                         trailing: const Icon(Icons.chevron_right),
                         onTap: onOpenReading == null

@@ -36,6 +36,8 @@ class ReaderViewModel extends ChangeNotifier {
   bool favoriteAvailable = false;
   bool _disposed = false;
   int _loadGeneration = 0;
+  String? _documentId;
+  String? _passageAnchor;
   String _deviceLanguageCode = 'es';
   bool saveError = false;
   Future<void> _writes = Future<void>.value();
@@ -51,6 +53,8 @@ class ReaderViewModel extends ChangeNotifier {
     String languageCode = 'es',
   }) async {
     final int generation = ++_loadGeneration;
+    _documentId = documentId;
+    _passageAnchor = unitId;
     _deviceLanguageCode = languageCode;
     state = ReaderState.loading;
     saveError = false;
@@ -66,9 +70,15 @@ class ReaderViewModel extends ChangeNotifier {
           unitId ?? await _progressRepository.readUnit(documentId);
       if (_disposed || generation != _loadGeneration) return;
       final int savedIndex = content.resolveUnitIndex(savedUnit);
+      final String displayedId = content.units[savedIndex].id;
       _content = content;
       preferences = restored;
       _index = savedIndex;
+      // An explicit alias can lose precision when several passages share one
+      // displayed unit. Keep its anchor until the reader moves to a new unit.
+      _passageAnchor = content.unitAliases[savedUnit] == displayedId
+          ? savedUnit
+          : displayedId;
       state = ReaderState.ready;
       await _loadFavorite();
       if (generation == _loadGeneration) _saveProgress();
@@ -81,9 +91,18 @@ class ReaderViewModel extends ChangeNotifier {
     }
   }
 
+  Future<void> reload({String? languageCode}) async {
+    final String? documentId = _documentId;
+    if (documentId == null || _disposed) return;
+    await initialize(
+      documentId,
+      unitId: _passageAnchor,
+      languageCode: languageCode ?? _deviceLanguageCode,
+    );
+  }
+
   Future<void> changeTranslation(ReaderTranslation translation) async {
     final ReadingContent? current = _content;
-    final String? currentUnitId = unit?.id;
     if (state != ReaderState.ready ||
         current == null ||
         preferences.translation == translation) {
@@ -91,29 +110,37 @@ class ReaderViewModel extends ChangeNotifier {
     }
     updatePreferences(preferences.copyWith(translation: translation));
     await pendingWrites;
-    if (_disposed) return;
-    await initialize(
-      current.documentId,
-      unitId: currentUnitId,
-      languageCode: _deviceLanguageCode,
-    );
+    if (_documentId != current.documentId) return;
+    await reload();
   }
 
   Future<void> _loadFavorite() async {
+    final ReadingContent? content = _content;
     final ReadingUnit? current = unit;
-    if (current == null) return;
+    if (content == null || current == null) return;
+    final int generation = _loadGeneration;
     favoriteAvailable = false;
     favorite = false;
     try {
       final bool value = await _favoritesRepository.contains(
-        _content!.documentId,
+        content.documentId,
         current.id,
+        alternateUnitIds: content.aliasesFor(current.id),
       );
-      if (_disposed || unit?.id != current.id) return;
+      if (_disposed ||
+          generation != _loadGeneration ||
+          unit?.id != current.id) {
+        return;
+      }
       favorite = value;
       favoriteAvailable = true;
     } on Exception {
-      if (!_disposed) saveError = true;
+      if (_disposed ||
+          generation != _loadGeneration ||
+          unit?.id != current.id) {
+        return;
+      }
+      saveError = true;
     }
     _notify();
   }
@@ -125,6 +152,7 @@ class ReaderViewModel extends ChangeNotifier {
     );
     if (next < 0 || next == _index) return;
     _index = next;
+    _passageAnchor = unitId;
     _notify();
     _loadFavorite();
     _saveProgress();
@@ -160,11 +188,12 @@ class ReaderViewModel extends ChangeNotifier {
     final ReadingContent? content = _content;
     final ReadingUnit? current = unit;
     if (content == null || current == null) return;
+    final String anchor = _passageAnchor ?? current.id;
     final double progress = (_index + 1) / content.units.length;
     _enqueue(
       () => _progressRepository.save(
         documentId: content.documentId,
-        unitId: current.id,
+        unitId: anchor,
         title: current.title ?? current.parentTitle ?? content.title,
         progress: progress,
       ),
@@ -172,18 +201,35 @@ class ReaderViewModel extends ChangeNotifier {
   }
 
   Future<void> toggleFavorite() async {
-    if (!favoriteAvailable || favoriteBusy || unit == null) return;
+    if (state != ReaderState.ready ||
+        !favoriteAvailable ||
+        favoriteBusy ||
+        unit == null) {
+      return;
+    }
+    final ReadingContent content = _content!;
     final ReadingUnit current = unit!;
+    final String anchor = _passageAnchor ?? current.id;
+    final List<String> alternateIds = <String>[
+      current.id,
+      ...content.aliasesFor(current.id),
+    ];
+    final int generation = _loadGeneration;
     final bool value = !favorite;
     favoriteBusy = true;
     _notify();
     try {
       await _favoritesRepository.setFavorite(
-        _content!.documentId,
-        current.id,
+        content.documentId,
+        anchor,
         value,
+        alternateUnitIds: alternateIds,
       );
-      if (!_disposed && unit?.id == current.id) favorite = value;
+      if (!_disposed &&
+          generation == _loadGeneration &&
+          unit?.id == current.id) {
+        favorite = value;
+      }
     } on Exception {
       saveError = true;
     } finally {
@@ -197,6 +243,7 @@ class ReaderViewModel extends ChangeNotifier {
     required String questionPrefix,
     required String answerPrefix,
     required String referencesLabel,
+    String? notesLabel,
     required String attribution,
   }) => const ReadingShareFormatter().format(
     document: _content!,
@@ -205,6 +252,7 @@ class ReaderViewModel extends ChangeNotifier {
     questionPrefix: questionPrefix,
     answerPrefix: answerPrefix,
     referencesLabel: referencesLabel,
+    notesLabel: notesLabel,
     attribution: attribution,
   );
 

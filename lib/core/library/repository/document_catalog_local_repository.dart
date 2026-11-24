@@ -19,7 +19,7 @@ class DocumentCatalogLocalRepositoryImpl
       title: 'Confesión de Fe de Westminster',
       type: DocumentType.confession,
       collectionId: 'westminster-standards',
-      isAvailable: false,
+      isAvailable: true,
     ),
     ReadingDocument(
       id: 'heidelberg-catechism',
@@ -41,7 +41,19 @@ class DocumentCatalogLocalRepositoryImpl
       title: 'Confesión Belga',
       type: DocumentType.confession,
       collectionId: 'three-forms-of-unity',
-      isAvailable: false,
+      isAvailable: true,
+    ),
+    ReadingDocument(
+      id: 'scots-confession',
+      title: 'Confesión Escocesa de 1560',
+      type: DocumentType.confession,
+      isAvailable: true,
+    ),
+    ReadingDocument(
+      id: 'augustine-confessions',
+      title: 'Confesiones de san Agustín',
+      type: DocumentType.document,
+      isAvailable: true,
     ),
     ReadingDocument(
       id: 'three-forms-of-unity',

@@ -10,6 +10,7 @@ class ReadingShareFormatter {
     required String questionPrefix,
     required String answerPrefix,
     required String referencesLabel,
+    String? notesLabel,
     required String attribution,
   }) {
     final String? editionAttribution = document.attribution?.trim();
@@ -20,6 +21,10 @@ class ReadingShareFormatter {
       if (unit.question != null) '$answerPrefix ${unit.body}' else unit.body,
       if (unit.references.isNotEmpty)
         '*$referencesLabel*\n${unit.references.join('\n')}',
+      if (unit.editionNotes.isNotEmpty)
+        notesLabel == null
+            ? unit.editionNotes
+            : '*$notesLabel*\n${unit.editionNotes}',
       if (editionAttribution != null && editionAttribution.isNotEmpty)
         editionAttribution,
       '_${attribution}_',

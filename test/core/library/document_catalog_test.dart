@@ -5,12 +5,14 @@ import 'package:pactantes/core/library/repository/document_catalog_local_reposit
 void main() {
   const DocumentCatalogLocalRepositoryImpl catalog =
       DocumentCatalogLocalRepositoryImpl();
-  test('registers exactly the five initial resources with stable IDs', () {
+  test('registers historical works and collections with stable IDs', () {
     expect(catalog.all.map((ReadingDocument document) => document.id), <String>[
       'westminster-confession',
       'heidelberg-catechism',
       'canons-of-dort',
       'belgic-confession',
+      'scots-confession',
+      'augustine-confessions',
       'three-forms-of-unity',
     ]);
     expect(
@@ -20,19 +22,28 @@ void main() {
         'Catecismo de Heidelberg',
         'Cánones de Dort',
         'Confesión Belga',
+        'Confesión Escocesa de 1560',
+        'Confesiones de san Agustín',
         'Las tres formas de unidad',
       ],
     );
     expect(
       catalog.all.map((ReadingDocument document) => document.id).toSet(),
-      hasLength(5),
+      hasLength(7),
     );
     expect(() => catalog.all.clear(), throwsUnsupportedError);
   });
-  test('Heidelberg and Dort are available in the offline reader', () {
+  test('only books with a bundled reading edition are available', () {
     expect(
       catalog.available.map((ReadingDocument document) => document.id),
-      <String>['heidelberg-catechism', 'canons-of-dort'],
+      <String>[
+        'westminster-confession',
+        'heidelberg-catechism',
+        'canons-of-dort',
+        'belgic-confession',
+        'scots-confession',
+        'augustine-confessions',
+      ],
     );
   });
   test('catalog does not guess edition-specific reading totals', () {
@@ -51,7 +62,15 @@ void main() {
     expect(catalog.findById('unknown'), isNull);
   });
   test('filters types independently from collections', () {
-    expect(catalog.byType(DocumentType.confession), hasLength(3));
+    expect(
+      catalog.byType(DocumentType.confession).map((item) => item.id),
+      <String>[
+        'westminster-confession',
+        'canons-of-dort',
+        'belgic-confession',
+        'scots-confession',
+      ],
+    );
     expect(
       catalog.byType(DocumentType.catechism).single.id,
       'heidelberg-catechism',
@@ -61,7 +80,10 @@ void main() {
       'three-forms-of-unity',
     );
     expect(catalog.byType(DocumentType.creed), isEmpty);
-    expect(catalog.byType(DocumentType.document), isEmpty);
+    expect(
+      catalog.byType(DocumentType.document).single.id,
+      'augustine-confessions',
+    );
   });
   test(
     'collection membership references existing entries without duplication',

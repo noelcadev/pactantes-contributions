@@ -16,6 +16,8 @@ import 'package:pactantes/features/reader/repository/reader_content_local_reposi
 import 'package:pactantes/features/reader/repository/reader_preferences_local_repository.dart';
 import 'package:pactantes/l10n/generated/app_localizations.dart';
 
+import '../../core/library/fake_document_catalog.dart';
+
 class EmptyProgress implements ReadingProgressLocalRepository {
   @override
   Future<List<ReadingProgress>> read() async => <ReadingProgress>[];
@@ -45,6 +47,14 @@ class FailingPreferences implements ReaderPreferencesLocalRepository {
 
 class PreviewContent implements ReaderContentLocalRepository {
   @override
+  Future<ReadingPreview> readPreview(
+    String documentId, {
+    String languageCode = 'es',
+    String? unitId,
+  }) async =>
+      (await read(documentId, languageCode: languageCode)).preview(unitId);
+
+  @override
   Future<ReadingContent> read(
     String documentId, {
     String languageCode = 'es',
@@ -63,6 +73,19 @@ class PreviewContent implements ReaderContentLocalRepository {
   );
 }
 
+class WestminsterPreview extends PreviewContent {
+  @override
+  Future<ReadingContent> read(
+    String documentId, {
+    String languageCode = 'es',
+  }) => super.read(
+    documentId,
+    languageCode: documentId == 'westminster-confession' && languageCode == 'pt'
+        ? 'es'
+        : languageCode,
+  );
+}
+
 class PendingPreviewContent extends PreviewContent {
   final Completer<void> started = Completer<void>();
   final Completer<ReadingContent> pending = Completer<ReadingContent>();
@@ -78,6 +101,66 @@ class PendingPreviewContent extends PreviewContent {
 }
 
 void main() {
+  testWidgets(
+    'the Portuguese library opens Westminster in Spanish and a historical writing',
+    (WidgetTester tester) async {
+      final HomeViewModel model = HomeViewModel(
+        EmptyProgress(),
+        const DocumentCatalogLocalRepositoryImpl(),
+        readerContentRepository: WestminsterPreview(),
+      );
+      addTearDown(model.dispose);
+      final List<String> opened = <String>[];
+      final AppLocalizations strings = lookupAppLocalizations(
+        const Locale('pt'),
+      );
+      await tester.pumpWidget(
+        MaterialApp(
+          locale: const Locale('pt'),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: HomeView(
+            viewModel: model,
+            onOpenReading: (item) => opened.add(item.document.id),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(
+        find.descendant(
+          of: find.byType(BottomNavigationBar),
+          matching: find.text(strings.library),
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.text(strings.confessions));
+      await tester.pumpAndSettle();
+      final Finder westminster = find.widgetWithText(ListTile, 'Source es');
+      expect(
+        find.descendant(
+          of: westminster,
+          matching: find.text(
+            strings.readerCurrentEdition(strings.readerSpanish),
+          ),
+        ),
+        findsOneWidget,
+      );
+      await tester.tap(westminster);
+      await tester.tap(
+        find.byTooltip(
+          MaterialLocalizations.of(tester.element(westminster))
+              .backButtonTooltip,
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.text(strings.documents));
+      await tester.pumpAndSettle();
+      expect(find.byType(ListTile), findsOneWidget);
+      await tester.tap(find.byType(ListTile));
+      expect(opened, ['westminster-confession', 'augustine-confessions']);
+    },
+  );
+
   for (final bool staleFailure in <bool>[false, true]) {
     test(
       'new translation survives a stale load (failure: $staleFailure)',
@@ -86,7 +169,9 @@ void main() {
         final PendingPreviewContent content = PendingPreviewContent();
         final HomeViewModel model = HomeViewModel(
           EmptyProgress(),
-          const DocumentCatalogLocalRepositoryImpl(),
+          FakeDocumentCatalog(
+            availableIds: <String>{'heidelberg-catechism', 'canons-of-dort'},
+          ),
           readerPreferencesRepository: ReaderPreferencesLocalRepositoryImpl(
             SharedPreferencesReader(SharedPreferences.getInstance),
           ),
@@ -124,7 +209,9 @@ void main() {
     final PendingPreviewContent content = PendingPreviewContent();
     final HomeViewModel model = HomeViewModel(
       EmptyProgress(),
-      const DocumentCatalogLocalRepositoryImpl(),
+      FakeDocumentCatalog(
+        availableIds: <String>{'heidelberg-catechism', 'canons-of-dort'},
+      ),
       readerContentRepository: content,
     );
     addTearDown(model.dispose);

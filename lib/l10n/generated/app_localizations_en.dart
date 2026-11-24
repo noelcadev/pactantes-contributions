@@ -10,6 +10,9 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get readerEditionNotes => 'Edition notes';
+
+  @override
   String get brandSubtitle => 'Reformed Resources';
 
   @override
@@ -44,7 +47,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get creeds => 'Historic creeds';
 
   @override
-  String get documents => 'Reformed documents';
+  String get documents => 'Historical writings';
 
   @override
   String get home => 'Home';
@@ -112,7 +115,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get documentCreed => 'Historic creed';
 
   @override
-  String get documentHistorical => 'Reformed document';
+  String get documentHistorical => 'Historical writing';
 
   @override
   String get documentCollection => 'Collection';
@@ -219,6 +222,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readerEditionCredits => 'Edition credits';
 
   @override
+  String get readerOriginalPages => 'View original pages';
+
+  @override
+  String readerPdfPage(int number) {
+    return 'PDF page $number';
+  }
+
+  @override
+  String get readerPdfPreviousPage => 'Previous PDF page';
+
+  @override
+  String get readerPdfNextPage => 'Next PDF page';
+
+  @override
+  String get readerPdfPageError => 'Could not open this PDF page.';
+
+  @override
   String get readerDeviceLanguage => 'Device language';
 
   @override
@@ -251,7 +271,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeCreedsSummary => 'Statements of faith';
 
   @override
-  String get homeDocumentsSummary => 'Historical texts';
+  String get homeDocumentsSummary => 'Writings from church history';
 
   @override
   String get homeScriptureQuote =>

@@ -100,6 +100,12 @@ abstract class AppLocalizations {
     Locale('es'),
   ];
 
+  /// No description provided for @readerEditionNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Edition notes'**
+  String get readerEditionNotes;
+
   /// No description provided for @brandSubtitle.
   ///
   /// In en, this message translates to:
@@ -169,7 +175,7 @@ abstract class AppLocalizations {
   /// No description provided for @documents.
   ///
   /// In en, this message translates to:
-  /// **'Reformed documents'**
+  /// **'Historical writings'**
   String get documents;
 
   /// No description provided for @home.
@@ -283,7 +289,7 @@ abstract class AppLocalizations {
   /// No description provided for @documentHistorical.
   ///
   /// In en, this message translates to:
-  /// **'Reformed document'**
+  /// **'Historical writing'**
   String get documentHistorical;
 
   /// No description provided for @documentCollection.
@@ -490,6 +496,36 @@ abstract class AppLocalizations {
   /// **'Edition credits'**
   String get readerEditionCredits;
 
+  /// No description provided for @readerOriginalPages.
+  ///
+  /// In en, this message translates to:
+  /// **'View original pages'**
+  String get readerOriginalPages;
+
+  /// No description provided for @readerPdfPage.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF page {number}'**
+  String readerPdfPage(int number);
+
+  /// No description provided for @readerPdfPreviousPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous PDF page'**
+  String get readerPdfPreviousPage;
+
+  /// No description provided for @readerPdfNextPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Next PDF page'**
+  String get readerPdfNextPage;
+
+  /// No description provided for @readerPdfPageError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this PDF page.'**
+  String get readerPdfPageError;
+
   /// No description provided for @readerDeviceLanguage.
   ///
   /// In en, this message translates to:
@@ -553,7 +589,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeDocumentsSummary.
   ///
   /// In en, this message translates to:
-  /// **'Historical texts'**
+  /// **'Writings from church history'**
   String get homeDocumentsSummary;
 
   /// No description provided for @homeScriptureQuote.

@@ -160,24 +160,21 @@ class HomeViewModel extends ChangeNotifier {
           hydrated.add(item);
           continue;
         }
-        final ReadingContent content = await _readerContentRepository.read(
-          item.document.id,
-          languageCode:
-              preferences.translation.languageCode ?? requestedLanguage,
-        );
-        if (content.units.isEmpty) {
-          throw const FormatException('Empty document');
-        }
-        final ReadingUnit unit =
-            content.units[content.resolveUnitIndex(item.progress?.sectionId)];
+        final ReadingPreview preview = await _readerContentRepository
+            .readPreview(
+              item.document.id,
+              languageCode:
+                  preferences.translation.languageCode ?? requestedLanguage,
+              unitId: item.progress?.sectionId,
+            );
         hydrated.add(
           HomeReadingItem(
             document: item.document,
             progress: item.progress,
-            unit: unit,
-            sourceTitle: content.title,
-            languageCode: content.languageCode,
-            attribution: content.attribution,
+            unit: preview.unit,
+            sourceTitle: preview.title,
+            languageCode: preview.languageCode,
+            attribution: preview.attribution,
           ),
         );
       }

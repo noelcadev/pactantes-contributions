@@ -3,8 +3,17 @@ import 'dart:convert';
 import '../../../core/preferences/preferences_store.dart';
 
 abstract interface class ReaderFavoritesLocalRepository {
-  Future<bool> contains(String documentId, String unitId);
-  Future<void> setFavorite(String documentId, String unitId, bool favorite);
+  Future<bool> contains(
+    String documentId,
+    String unitId, {
+    Iterable<String> alternateUnitIds = const <String>[],
+  });
+  Future<void> setFavorite(
+    String documentId,
+    String unitId,
+    bool favorite, {
+    Iterable<String> alternateUnitIds = const <String>[],
+  });
 }
 
 class ReaderFavoritesLocalRepositoryImpl
@@ -27,19 +36,35 @@ class ReaderFavoritesLocalRepositoryImpl
   String _id(String documentId, String unitId) =>
       jsonEncode(<String>[documentId, unitId]);
   @override
-  Future<bool> contains(String documentId, String unitId) async {
+  Future<bool> contains(
+    String documentId,
+    String unitId, {
+    Iterable<String> alternateUnitIds = const <String>[],
+  }) async {
     await _pending;
-    return (await _read()).contains(_id(documentId, unitId));
+    final Set<String> values = await _read();
+    return values.contains(_id(documentId, unitId)) ||
+        alternateUnitIds.any(
+          (String id) => values.contains(_id(documentId, id)),
+        );
   }
 
   @override
-  Future<void> setFavorite(String documentId, String unitId, bool favorite) {
+  Future<void> setFavorite(
+    String documentId,
+    String unitId,
+    bool favorite, {
+    Iterable<String> alternateUnitIds = const <String>[],
+  }) {
     final Future<void> operation = _pending.then((_) async {
       final Set<String> values = await _read();
       if (favorite) {
         values.add(_id(documentId, unitId));
       } else {
         values.remove(_id(documentId, unitId));
+        values.removeAll(
+          alternateUnitIds.map((String id) => _id(documentId, id)),
+        );
       }
       await _store.writeString(key, jsonEncode(values.toList()));
     });

@@ -352,7 +352,7 @@ void main() {
         'Confesiones de fe',
         'Catecismos',
         'Credos históricos',
-        'Documentos reformados',
+        'Documentos históricos',
       ]) {
         expect(find.text(label), findsOneWidget);
       }
@@ -431,7 +431,7 @@ void main() {
       );
       addTearDown(model.dispose);
       await model.initialize();
-      expect(model.readingItems, hasLength(4));
+      expect(model.readingItems, hasLength(6));
       expect(
         model.readingItems.every(
           (HomeReadingItem item) =>
@@ -558,7 +558,7 @@ void main() {
         item(id: 'heidelberg-catechism'),
       ]);
       await tester.scrollUntilVisible(
-        find.text('Documentos reformados'),
+        find.text('Documentos históricos'),
         250,
         scrollable: find
             .descendant(
@@ -568,7 +568,7 @@ void main() {
             .first,
       );
       await tester.pumpAndSettle();
-      expect(find.text('Documentos reformados'), findsOneWidget);
+      expect(find.text('Documentos históricos'), findsOneWidget);
       expect(tester.takeException(), isNull);
     },
   );

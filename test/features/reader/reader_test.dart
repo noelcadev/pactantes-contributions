@@ -2,16 +2,12 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:pactantes/app/dependency_injection.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:pactantes/core/database/sqflite_reading_database.dart';
-import 'package:pactantes/core/database/reading_database.dart';
-import 'package:pactantes/features/reader/repository/sources/reading_content_source.dart';
-import 'package:pactantes/features/reader/repository/sources/dort_reading_content_source.dart';
-import 'package:pactantes/features/reader/repository/sources/heidelberg_reading_content_source.dart';
-import 'package:pactantes/l10n/localized_bible_book_names.dart';
 import 'package:pactantes/core/preferences/preferences_store.dart';
 import 'package:pactantes/core/library/repository/document_catalog_local_repository.dart';
 import 'package:pactantes/features/home/view_models/home_view_model.dart';
@@ -71,6 +67,13 @@ const ReadingContent sample = ReadingContent(
 );
 
 class ContentRepository implements ReaderContentLocalRepository {
+  @override
+  Future<ReadingPreview> readPreview(
+    String documentId, {
+    String languageCode = 'es',
+    String? unitId,
+  }) async => (await read(documentId, languageCode: languageCode)).preview(unitId);
+
   bool fail = false;
   ReadingContent document = sample;
   String? requestedLanguage;
@@ -110,6 +113,7 @@ Future<void> render(
   ReaderViewModel model, {
   Locale locale = const Locale('es'),
   ValueChanged<String>? copied,
+  String? initialUnitId,
   void Function(String text, Rect origin)? shared,
 }) async {
   await tester.pumpWidget(
@@ -121,6 +125,7 @@ Future<void> render(
         viewModel: model,
         documentId: 'sample',
         documentTitle: sample.title,
+        initialUnitId: initialUnitId,
         onShare: (String text, Rect origin) async {
           shared?.call(text, origin);
         },
@@ -132,15 +137,6 @@ Future<void> render(
   );
   await tester.pumpAndSettle();
 }
-
-ReaderContentLocalRepository contentRepository(ReadingDatabase database) =>
-    ReaderContentLocalRepositoryImpl(<String, ReadingContentSource>{
-      'canons-of-dort': DortReadingContentSource(database),
-      'heidelberg-catechism': HeidelbergReadingContentSource(
-        database,
-        const LocalizedBibleBookNames(),
-      ),
-    });
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -601,6 +597,29 @@ void main() {
     },
   );
 
+  testWidgets(
+    'retry after an edition change reopens the last displayed passage',
+    (WidgetTester tester) async {
+      final Fixture fixture = Fixture();
+      final ReaderViewModel model = fixture.model();
+      addTearDown(model.dispose);
+      await render(tester, model, initialUnitId: 'a');
+      model.select('c');
+      fixture.content.fail = true;
+      await model.changeTranslation(ReaderTranslation.english);
+      await tester.pumpAndSettle();
+      expect(model.state, ReaderState.error);
+      fixture.content.fail = false;
+      await tester.tap(
+        find.text(lookupAppLocalizations(const Locale('es')).retry),
+      );
+      await tester.pumpAndSettle();
+      expect(model.state, ReaderState.ready);
+      expect(model.unit?.id, 'c');
+      await model.pendingWrites;
+    },
+  );
+
   test('translation selection persists and device mode follows the next device locale', () async {
     final Fixture fixture = Fixture();
     final ReaderViewModel model = fixture.model();
@@ -912,7 +931,7 @@ void main() {
       final String previous = await factory.getDatabasesPath();
       await factory.setDatabasesPath(directory.path);
       try {
-        final String oldPath = '${directory.path}/reformed_documents_v4.db';
+        final String oldPath = '${directory.path}/reformed_documents_v6.db';
         final ByteData asset = await rootBundle.load(
           'assets/db/reformed_documents.db',
         );
@@ -932,7 +951,7 @@ void main() {
           factory,
           rootBundle,
         );
-        final ReadingContent document = await contentRepository(database)
+        final ReadingContent document = await createReaderContentRepository(database)
             .read('heidelberg-catechism');
         expect(document.units, hasLength(128));
         expect(
@@ -965,7 +984,7 @@ void main() {
         await preservedCorpus.close();
 
         for (final String language in <String>['en', 'pt']) {
-          final ReadingContent localized = await contentRepository(database)
+          final ReadingContent localized = await createReaderContentRepository(database)
               .read('heidelberg-catechism', languageCode: language);
           expect(localized.languageCode, language);
           expect(localized.units, hasLength(129));
@@ -1062,7 +1081,7 @@ void main() {
             ReaderPreferencesLocalRepositoryImpl(progressStore);
         final ReaderProgressLocalRepository progress =
             ReaderProgressLocalRepositoryImpl(progressStore);
-        final ReaderContentLocalRepository content = contentRepository(
+        final ReaderContentLocalRepository content = createReaderContentRepository(
           database,
         );
         await preferences.save(
@@ -1100,12 +1119,12 @@ void main() {
         spanish.dispose();
         home.dispose();
 
-        final ReadingContent reopened = await contentRepository(
+        final ReadingContent reopened = await createReaderContentRepository(
           SqfliteReadingDatabase(factory, rootBundle),
         ).read('heidelberg-catechism');
         expect(reopened.units.last.body, document.units.last.body);
         final Database handle = await factory.openDatabase(
-          '${directory.path}/reformed_documents_v5.db',
+          '${directory.path}/reformed_documents_v7.db',
           options: OpenDatabaseOptions(readOnly: true),
         );
         await handle.close();

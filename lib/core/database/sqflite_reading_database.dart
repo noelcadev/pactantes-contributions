@@ -16,7 +16,7 @@ class SqfliteReadingDatabase implements ReadingDatabase {
     // Versioned corpus files never overwrite user preferences or a previous corpus.
     final String directory = await _factory.getDatabasesPath();
     await Directory(directory).create(recursive: true);
-    final String destination = path.join(directory, 'reformed_documents_v5.db');
+    final String destination = path.join(directory, 'reformed_documents_v7.db');
     if (!await File(destination).exists()) {
       final ByteData bytes = await _assets.load(
         'assets/db/reformed_documents.db',
@@ -47,6 +47,17 @@ class SqfliteReadingDatabase implements ReadingDatabase {
              GROUP BY s.language_code''',
         );
         if (editions.length != 2) throw const ReadingDatabaseException();
+        final List<Map<String, Object?>> passages = await candidate.rawQuery(
+          '''SELECT u.unit_id FROM historical_editions e
+             LEFT JOIN historical_units u ON u.document_key = e.document_key AND u.position = 1''',
+        );
+        if (passages.isEmpty || passages.any((row) => row['unit_id'] == null)) {
+          throw const ReadingDatabaseException();
+        }
+        final List<Map<String, Object?>> aliases = await candidate.rawQuery(
+          'SELECT 1 FROM historical_unit_aliases LIMIT 1',
+        );
+        if (aliases.isEmpty) throw const ReadingDatabaseException();
       } finally {
         await candidate.close();
       }

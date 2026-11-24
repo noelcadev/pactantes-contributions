@@ -10,6 +10,9 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
+  String get readerEditionNotes => 'Notas da edição';
+
+  @override
   String get brandSubtitle => 'Recursos Reformados';
 
   @override
@@ -44,7 +47,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get creeds => 'Credos históricos';
 
   @override
-  String get documents => 'Documentos reformados';
+  String get documents => 'Documentos históricos';
 
   @override
   String get home => 'Início';
@@ -111,7 +114,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get documentCreed => 'Credo histórico';
 
   @override
-  String get documentHistorical => 'Documento reformado';
+  String get documentHistorical => 'Documento histórico';
 
   @override
   String get documentCollection => 'Coleção';
@@ -220,6 +223,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String get readerEditionCredits => 'Créditos da edição';
 
   @override
+  String get readerOriginalPages => 'Ver páginas originais';
+
+  @override
+  String readerPdfPage(int number) {
+    return 'Página do PDF $number';
+  }
+
+  @override
+  String get readerPdfPreviousPage => 'Página anterior do PDF';
+
+  @override
+  String get readerPdfNextPage => 'Próxima página do PDF';
+
+  @override
+  String get readerPdfPageError => 'Não foi possível abrir esta página do PDF.';
+
+  @override
   String get readerDeviceLanguage => 'Idioma do aparelho';
 
   @override
@@ -252,7 +272,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeCreedsSummary => 'Símbolos da fé';
 
   @override
-  String get homeDocumentsSummary => 'Textos históricos';
+  String get homeDocumentsSummary => 'Escritos da história da Igreja';
 
   @override
   String get homeScriptureQuote =>

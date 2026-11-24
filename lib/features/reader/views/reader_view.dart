@@ -14,6 +14,7 @@ import 'components/reader_bottom_navigation.dart';
 import 'components/reader_navigation_sheet.dart';
 import 'components/reader_settings_sheet.dart';
 import 'components/reader_translation_sheet.dart';
+import 'reader_facsimile_view.dart';
 
 class ReaderView extends StatefulWidget {
   const ReaderView({
@@ -49,16 +50,16 @@ class _ReaderViewState extends State<ReaderView> {
     super.didChangeDependencies();
     final String language = Localizations.localeOf(context).languageCode;
     if (_languageCode == language) return;
-    final String? unitId = _languageCode == null
-        ? widget.initialUnitId
-        : widget.viewModel.unit?.id;
+    final bool firstLoad = _languageCode == null;
     _languageCode = language;
     unawaited(
-      widget.viewModel.initialize(
-        widget.documentId,
-        unitId: unitId,
-        languageCode: language,
-      ),
+      firstLoad
+          ? widget.viewModel.initialize(
+              widget.documentId,
+              unitId: widget.initialUnitId,
+              languageCode: language,
+            )
+          : widget.viewModel.reload(languageCode: language),
     );
   }
 
@@ -92,6 +93,7 @@ class _ReaderViewState extends State<ReaderView> {
       questionPrefix: strings.readerQuestionPrefix,
       answerPrefix: strings.readerAnswerPrefix,
       referencesLabel: strings.readerReferences,
+      notesLabel: strings.readerEditionNotes,
       attribution: strings.readerAttribution,
     );
   }
@@ -251,13 +253,7 @@ class _ReaderViewState extends State<ReaderView> {
                               children: <Widget>[
                                 Text(strings.readerLoadError),
                                 TextButton(
-                                  onPressed: () => unawaited(
-                                    vm.initialize(
-                                      widget.documentId,
-                                      unitId: widget.initialUnitId,
-                                      languageCode: _languageCode!,
-                                    ),
-                                  ),
+                                  onPressed: () => unawaited(vm.reload()),
                                   child: Text(strings.retry),
                                 ),
                               ],
@@ -430,6 +426,33 @@ class _ReadingPage extends StatelessWidget {
                   strings: strings,
                   onNavigation: onNavigation,
                 ),
+                if (unit.facsimile case final ReadingFacsimileRange range)
+                  Align(
+                    alignment: Alignment.center,
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        minimumSize: const Size(48, 48),
+                      ),
+                      onPressed: () {
+                        final ThemeData theme = Theme.of(context);
+                        unawaited(
+                          Navigator.of(context).push<void>(
+                            MaterialPageRoute<void>(
+                              fullscreenDialog: true,
+                              builder: (context) => Theme(
+                                data: theme,
+                                child: ReaderFacsimileView(range: range),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        AppLocalizations.of(context).readerOriginalPages,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 32),
                   child: Divider(),
@@ -449,7 +472,12 @@ class _ReadingPage extends StatelessWidget {
                   text: unit.body,
                   style: readingStyle,
                 ),
-                if (unit.references.isNotEmpty) ...<Widget>[
+                for (final (String label, String text) in <(String, String)>[
+                  if (unit.references.isNotEmpty)
+                    (strings.readerReferences, unit.referenceText),
+                  if (unit.editionNotes.isNotEmpty)
+                    (strings.readerEditionNotes, unit.editionNotes),
+                ]) ...<Widget>[
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 32),
                     child: Divider(),
@@ -468,7 +496,7 @@ class _ReadingPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              strings.readerReferences,
+                              label,
                               style: TextStyle(
                                 fontStyle: FontStyle.italic,
                                 color: colors.secondaryText,
@@ -476,7 +504,7 @@ class _ReadingPage extends StatelessWidget {
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              unit.referenceText,
+                              text,
                               style: TextStyle(
                                 color: colors.reference,
                                 fontSize: viewModel.preferences.textSize * .8,

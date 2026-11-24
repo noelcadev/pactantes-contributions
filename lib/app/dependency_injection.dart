@@ -7,6 +7,7 @@ import '../core/database/reading_database.dart';
 import '../features/reader/repository/sources/reading_content_source.dart';
 import '../features/reader/repository/sources/dort_reading_content_source.dart';
 import '../features/reader/repository/sources/heidelberg_reading_content_source.dart';
+import '../features/reader/repository/sources/historical_reading_content_source.dart';
 import '../l10n/localized_bible_book_names.dart';
 import '../core/database/sqflite_reading_database.dart';
 import '../core/preferences/preferences_store.dart';
@@ -26,6 +27,24 @@ import '../core/preferences/shared_preferences_reader.dart';
 import '../features/home/repository/reading_progress_local_repository.dart';
 import '../features/home/view_models/home_view_model.dart';
 
+ReaderContentLocalRepository createReaderContentRepository(
+  ReadingDatabase database,
+) {
+  final HistoricalReadingContentSource historical =
+      HistoricalReadingContentSource(database);
+  return ReaderContentLocalRepositoryImpl(<String, ReadingContentSource>{
+    'heidelberg-catechism': HeidelbergReadingContentSource(
+      database,
+      const LocalizedBibleBookNames(),
+    ),
+    'canons-of-dort': DortReadingContentSource(database),
+    'westminster-confession': historical,
+    'belgic-confession': historical,
+    'scots-confession': historical,
+    'augustine-confessions': historical,
+  });
+}
+
 void registerDependencies(GetIt container) {
   container.registerLazySingleton<PreferencesStore>(
     () => SharedPreferencesReader(SharedPreferences.getInstance),
@@ -37,13 +56,7 @@ void registerDependencies(GetIt container) {
     () => SqfliteReadingDatabase(databaseFactory, rootBundle),
   );
   container.registerLazySingleton<ReaderContentLocalRepository>(
-    () => ReaderContentLocalRepositoryImpl(<String, ReadingContentSource>{
-      'heidelberg-catechism': HeidelbergReadingContentSource(
-        container<ReadingDatabase>(),
-        const LocalizedBibleBookNames(),
-      ),
-      'canons-of-dort': DortReadingContentSource(container<ReadingDatabase>()),
-    }),
+    () => createReaderContentRepository(container<ReadingDatabase>()),
   );
   container.registerLazySingleton<ReaderPreferencesLocalRepository>(
     () => ReaderPreferencesLocalRepositoryImpl(container<PreferencesStore>()),
