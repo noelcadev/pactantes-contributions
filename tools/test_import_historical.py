@@ -26,7 +26,6 @@ class HistoricalImportTest(unittest.TestCase):
                     "SELECT * FROM dort_units ORDER BY id",
                     "SELECT * FROM historical_units ORDER BY id",
                     "SELECT * FROM historical_unit_aliases ORDER BY document_key, alias_id",
-                    "SELECT * FROM historical_facsimile_ranges ORDER BY document_key, unit_id",
                     "SELECT docid, * FROM historical_search ORDER BY docid",
                 )]
             before = snapshot()
@@ -75,21 +74,54 @@ class HistoricalImportTest(unittest.TestCase):
                 self.assertEqual(found[0], digest)
                 self.assertIn(credit, found[1])
 
-    def test_augustine_alignment_and_original_pages(self):
+    def test_augustine_alignment_and_source_pagination(self):
         with closing(sqlite3.connect(self.database)) as db:
             for language, count in (("es", 461), ("en", 453), ("pt", 453)):
                 key = f"augustine_confessions_{language}"
                 self.assertEqual(db.execute("SELECT COUNT(*) FROM historical_unit_aliases WHERE document_key = ?",
                                             (key,)).fetchone()[0], count)
-            ranges = db.execute("SELECT asset_directory, first_page, last_page FROM historical_facsimile_ranges").fetchall()
-            self.assertEqual(len(ranges), 453)
-            assets = {TOOLS.parent / directory / f"{page}.png"
-                      for directory, first, last in ranges for page in range(first, last + 1)}
-            self.assertEqual(len(assets), 542)
-            self.assertEqual(assets, set((TOOLS.parent / ranges[0][0]).glob("*.png")))
-            for asset in assets:
-                with asset.open("rb") as image:
-                    self.assertEqual(image.read(8), b"\x89PNG\r\n\x1a\n")
+        source = json.loads((CONTENT / "augustine-es.json").read_text())
+        pages = [unit["source_pages"] for group in source["groups"] for unit in group["units"]]
+        self.assertEqual(len(pages), 453)
+        self.assertEqual(pages[0][0], 111)
+        self.assertEqual(pages[-1][-1], 670)
+
+    def test_import_removes_obsolete_page_index_and_updates_title(self):
+        with closing(sqlite3.connect(self.database)) as db:
+            def legacy_page_index():
+                return db.execute("""
+                    SELECT name FROM sqlite_master WHERE name = 'historical_facsimile_ranges'
+                    """).fetchone()
+
+            self.assertEqual(db.execute("PRAGMA user_version").fetchone()[0], 6)
+            self.assertIsNone(legacy_page_index())
+            db.execute("""
+                CREATE TABLE historical_facsimile_ranges (
+                    document_key TEXT NOT NULL,
+                    unit_id TEXT NOT NULL,
+                    first_page INTEGER NOT NULL,
+                    last_page INTEGER NOT NULL,
+                    asset_directory TEXT NOT NULL,
+                    PRIMARY KEY(document_key, unit_id),
+                    FOREIGN KEY(document_key, unit_id) REFERENCES historical_units(document_key, unit_id)
+                )
+                """)
+            db.execute("""
+                INSERT INTO historical_facsimile_ranges VALUES
+                    ('augustine_confessions_es', 'book-1-paragraph-1', 111, 113, 'legacy-pages')
+                """)
+            db.execute("""
+                UPDATE document_sources SET title = 'Confesiones'
+                WHERE document_key = 'augustine_confessions_es'
+                """)
+            db.execute("PRAGMA user_version = 5")
+            db.commit()
+            import_database(self.database)
+            self.assertEqual(db.execute("PRAGMA user_version").fetchone()[0], 6)
+            self.assertIsNone(legacy_page_index())
+            self.assertEqual(db.execute("""
+                SELECT title FROM document_sources WHERE document_key = 'augustine_confessions_es'
+                """).fetchone()[0], "Confesiones de san Agustín")
 
     def test_interrupted_import_keeps_previous_corpus_and_index(self):
         with closing(sqlite3.connect(self.database)) as db:

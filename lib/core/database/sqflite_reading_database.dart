@@ -16,7 +16,7 @@ class SqfliteReadingDatabase implements ReadingDatabase {
     // Versioned corpus files never overwrite user preferences or a previous corpus.
     final String directory = await _factory.getDatabasesPath();
     await Directory(directory).create(recursive: true);
-    final String destination = path.join(directory, 'reformed_documents_v7.db');
+    final String destination = path.join(directory, 'reformed_documents_v8.db');
     if (!await File(destination).exists()) {
       final ByteData bytes = await _assets.load(
         'assets/db/reformed_documents.db',

@@ -14,7 +14,6 @@ import 'components/reader_bottom_navigation.dart';
 import 'components/reader_navigation_sheet.dart';
 import 'components/reader_settings_sheet.dart';
 import 'components/reader_translation_sheet.dart';
-import 'reader_facsimile_view.dart';
 
 class ReaderView extends StatefulWidget {
   const ReaderView({
@@ -426,33 +425,6 @@ class _ReadingPage extends StatelessWidget {
                   strings: strings,
                   onNavigation: onNavigation,
                 ),
-                if (unit.facsimile case final ReadingFacsimileRange range)
-                  Align(
-                    alignment: Alignment.center,
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        minimumSize: const Size(48, 48),
-                      ),
-                      onPressed: () {
-                        final ThemeData theme = Theme.of(context);
-                        unawaited(
-                          Navigator.of(context).push<void>(
-                            MaterialPageRoute<void>(
-                              fullscreenDialog: true,
-                              builder: (context) => Theme(
-                                data: theme,
-                                child: ReaderFacsimileView(range: range),
-                              ),
-                            ),
-                          ),
-                        );
-                      },
-                      child: Text(
-                        AppLocalizations.of(context).readerOriginalPages,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 32),
                   child: Divider(),

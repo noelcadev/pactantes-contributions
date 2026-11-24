@@ -93,12 +93,6 @@ Future<void> _seedFixture(Database database) async {
       PRIMARY KEY (document_key, alias_id)
     )
   ''');
-  await database.execute('''
-    CREATE TABLE historical_facsimile_ranges (
-      document_key TEXT, unit_id TEXT, first_page INTEGER, last_page INTEGER,
-      asset_directory TEXT, PRIMARY KEY (document_key, unit_id)
-    )
-  ''');
   final Batch seed = database.batch();
   const Map<String, List<String>> editions = <String, List<String>>{
     'en': <String>[_section1, _section2, _section3, _section4],
@@ -152,10 +146,6 @@ Future<void> _seedFixture(Database database) async {
       <Object?>[language, alias, target],
     );
   }
-  seed.rawInsert(
-    'INSERT INTO historical_facsimile_ranges VALUES (?, ?, ?, ?, ?)',
-    <Object?>['es', _paragraph2, 111, 112, 'assets/facsimiles/augustine-es'],
-  );
   await seed.commit(noResult: true);
 }
 
@@ -200,20 +190,12 @@ void main() {
         unitId: _section3,
       );
       expect(aliased.unit.id, _paragraph2);
-      expect(aliased.unit.facsimile?.firstPage, 111);
-      expect(aliased.unit.facsimile?.lastPage, 112);
-      expect(
-        aliased.unit.facsimile?.assetPath(112),
-        'assets/facsimiles/augustine-es/112.png',
-      );
       expect(
         (await content.readPreview(_documentId, unitId: 'unknown')).unit.id,
         _paragraph1,
       );
       expect(database.bodyRows, <int>[1, 1, 1]);
       final ReadingContent edition = await content.read(_documentId);
-      expect(edition.units[0].facsimile, isNull);
-      expect(edition.units[1].facsimile?.firstPage, 111);
       expect(
         edition.units[edition.resolveUnitIndex(_paragraph3)].id,
         _paragraph3,

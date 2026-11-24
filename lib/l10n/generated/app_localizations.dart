@@ -496,36 +496,6 @@ abstract class AppLocalizations {
   /// **'Edition credits'**
   String get readerEditionCredits;
 
-  /// No description provided for @readerOriginalPages.
-  ///
-  /// In en, this message translates to:
-  /// **'View original pages'**
-  String get readerOriginalPages;
-
-  /// No description provided for @readerPdfPage.
-  ///
-  /// In en, this message translates to:
-  /// **'PDF page {number}'**
-  String readerPdfPage(int number);
-
-  /// No description provided for @readerPdfPreviousPage.
-  ///
-  /// In en, this message translates to:
-  /// **'Previous PDF page'**
-  String get readerPdfPreviousPage;
-
-  /// No description provided for @readerPdfNextPage.
-  ///
-  /// In en, this message translates to:
-  /// **'Next PDF page'**
-  String get readerPdfNextPage;
-
-  /// No description provided for @readerPdfPageError.
-  ///
-  /// In en, this message translates to:
-  /// **'Could not open this PDF page.'**
-  String get readerPdfPageError;
-
   /// No description provided for @readerDeviceLanguage.
   ///
   /// In en, this message translates to:

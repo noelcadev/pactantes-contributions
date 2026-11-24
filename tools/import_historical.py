@@ -38,8 +38,8 @@ def load_edition(edition, directory):
                 raise ValueError(f"Empty passage: {unit_id}")
             if any(not line.strip() or "\n" in line for line in unit.get("references", [])):
                 raise ValueError(f"Invalid reference lines: {unit_id}")
-            if edition.get("facsimile_directory"):
-                pages = unit.get("source_pages")
+            if "source_pages" in unit:
+                pages = unit["source_pages"]
                 if (not isinstance(pages, list) or len(pages) != 2
                         or not all(type(page) is int for page in pages)
                         or not 0 < pages[0] <= pages[1]):
@@ -67,12 +67,6 @@ def insert_edition(db, edition, groups):
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 """, (key, group["id"], unit["id"], position, unit["title"],
                       unit["body"], "\n".join(unit.get("references", [])), "\n\n".join(unit.get("notes", []))))
-            if directory := edition.get("facsimile_directory"):
-                db.execute("""
-                    INSERT INTO historical_facsimile_ranges
-                        (document_key, unit_id, first_page, last_page, asset_directory)
-                    VALUES (?, ?, ?, ?, ?)
-                    """, (key, unit["id"], *unit["source_pages"], directory))
 
 
 def insert_augustine_aliases(db, edition, groups, directory):
@@ -115,7 +109,7 @@ def import_database(database, directory=CONTENT):
         old_keys = db.execute("SELECT document_key FROM historical_editions").fetchall()
         db.execute("DELETE FROM historical_search")
         db.execute("DELETE FROM historical_unit_aliases")
-        db.execute("DELETE FROM historical_facsimile_ranges")
+        db.execute("DROP TABLE IF EXISTS historical_facsimile_ranges")
         db.execute("DELETE FROM historical_units")
         db.execute("DELETE FROM historical_groups")
         db.execute("DELETE FROM historical_editions")
@@ -134,8 +128,8 @@ def import_database(database, directory=CONTENT):
             "PRAGMA integrity_check"
         ).fetchall() != [("ok",)]:
             raise ValueError("Corpus integrity check failed")
-        if db.execute("PRAGMA user_version").fetchone()[0] < 5:
-            db.execute("PRAGMA user_version = 5")
+        if db.execute("PRAGMA user_version").fetchone()[0] < 6:
+            db.execute("PRAGMA user_version = 6")
 
 
 if __name__ == "__main__":

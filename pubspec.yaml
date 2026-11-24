@@ -30,7 +30,6 @@ flutter:
   assets:
     - assets/logo/pactantes.png
     - assets/db/reformed_documents.db
-    - assets/facsimiles/augustine-es/
   fonts:
     - family: SourceSerif4
       fonts:

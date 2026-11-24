@@ -8,10 +8,8 @@ class HistoricalReadingContentSource implements ReadingPreviewSource {
   final ReadingDatabase _database;
   static const String _passages = '''
     SELECT u.unit_id, u.position, u.group_id, g.title AS group_title,
-           u.title, u.body, u.reference_text, u.edition_notes,
-           f.asset_directory, f.first_page, f.last_page
+           u.title, u.body, u.reference_text, u.edition_notes
     FROM historical_units u JOIN historical_groups g USING (document_key, group_id)
-    LEFT JOIN historical_facsimile_ranges f USING (document_key, unit_id)
     WHERE u.document_key = ?
   ''';
 
@@ -46,22 +44,6 @@ class HistoricalReadingContentSource implements ReadingPreviewSource {
           : List<String>.unmodifiable(references.split('\n')),
       hasNumberedReferences: references.isNotEmpty,
       editionNotes: row['edition_notes']! as String,
-      facsimile: switch (row) {
-        {
-          'asset_directory': final String directory,
-          'first_page': final int firstPage,
-          'last_page': final int lastPage,
-        }
-            when directory.isNotEmpty &&
-                firstPage > 0 &&
-                lastPage >= firstPage =>
-          ReadingFacsimileRange(
-            assetDirectory: directory,
-            firstPage: firstPage,
-            lastPage: lastPage,
-          ),
-        _ => null,
-      },
     );
   }
 

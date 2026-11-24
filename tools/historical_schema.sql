@@ -37,13 +37,3 @@ CREATE TABLE IF NOT EXISTS historical_unit_aliases (
     PRIMARY KEY (document_key, alias_id),
     FOREIGN KEY (document_key, unit_id) REFERENCES historical_units(document_key, unit_id)
 );
-
-CREATE TABLE IF NOT EXISTS historical_facsimile_ranges (
-    document_key TEXT NOT NULL,
-    unit_id TEXT NOT NULL,
-    first_page INTEGER NOT NULL CHECK (first_page > 0),
-    last_page INTEGER NOT NULL CHECK (last_page >= first_page),
-    asset_directory TEXT NOT NULL,
-    PRIMARY KEY (document_key, unit_id),
-    FOREIGN KEY (document_key, unit_id) REFERENCES historical_units(document_key, unit_id)
-);

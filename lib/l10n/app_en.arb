@@ -104,18 +104,6 @@
   "readerTheme": "Theme",
   "readerTranslation": "Translation",
   "readerEditionCredits": "Edition credits",
-  "readerOriginalPages": "View original pages",
-  "readerPdfPage": "PDF page {number}",
-  "@readerPdfPage": {
-    "placeholders": {
-      "number": {
-        "type": "int"
-      }
-    }
-  },
-  "readerPdfPreviousPage": "Previous PDF page",
-  "readerPdfNextPage": "Next PDF page",
-  "readerPdfPageError": "Could not open this PDF page.",
   "readerDeviceLanguage": "Device language",
   "readerCurrentEdition": "Current edition: {language}",
   "@readerCurrentEdition": {

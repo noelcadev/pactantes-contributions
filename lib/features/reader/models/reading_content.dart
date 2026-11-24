@@ -10,7 +10,6 @@ class ReadingUnit {
     this.references = const <String>[],
     this.hasNumberedReferences = false,
     this.editionNotes = '',
-    this.facsimile,
   });
   final String id;
   final int number;
@@ -22,24 +21,9 @@ class ReadingUnit {
   final List<String> references;
   final bool hasNumberedReferences;
   final String editionNotes;
-  final ReadingFacsimileRange? facsimile;
 
   String get referenceText =>
       references.join(hasNumberedReferences ? '\n' : ' · ');
-}
-
-class ReadingFacsimileRange {
-  const ReadingFacsimileRange({
-    required this.assetDirectory,
-    required this.firstPage,
-    required this.lastPage,
-  });
-
-  final String assetDirectory;
-  final int firstPage;
-  final int lastPage;
-
-  String assetPath(int page) => '$assetDirectory/$page.png';
 }
 
 typedef ReadingPreview = ({

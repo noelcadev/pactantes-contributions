@@ -224,23 +224,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get readerEditionCredits => 'Créditos de la edición';
 
   @override
-  String get readerOriginalPages => 'Ver páginas originales';
-
-  @override
-  String readerPdfPage(int number) {
-    return 'Página del PDF $number';
-  }
-
-  @override
-  String get readerPdfPreviousPage => 'Página anterior del PDF';
-
-  @override
-  String get readerPdfNextPage => 'Página siguiente del PDF';
-
-  @override
-  String get readerPdfPageError => 'No se pudo abrir esta página del PDF.';
-
-  @override
   String get readerDeviceLanguage => 'Idioma del dispositivo';
 
   @override

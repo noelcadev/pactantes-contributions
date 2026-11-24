@@ -179,11 +179,11 @@
   {
     "document_key": "augustine_confessions_es",
     "document_id": "augustine-confessions",
-    "title": "Confesiones",
+    "title": "Confesiones de san Agustín",
     "language_code": "es",
     "source_filename": "Confesiones de San Agustín .pdf",
     "source_sha256": "e9099bdecc37a6bb19f3db1eb8cb956f01d1e98aa8fa1a4822f0b4456986e01b",
-    "attribution": "San Agustín de Hipona. Confesiones. Traducción y notas de Alfredo Encuentra Ortega. Traducción revisada por Alberto Medina González. © Editorial Gredos, S. A., Madrid, 2010. ISBN 978-84-249-1505-6. Reproducida con permiso en Pactantes. Texto de lectura transcrito del escaneo. Las páginas originales conservan la tipografía y las notas de la edición.",
+    "attribution": "San Agustín de Hipona. Confesiones. Traducción y notas de Alfredo Encuentra Ortega. Traducción revisada por Alberto Medina González. © Editorial Gredos, S. A., Madrid, 2010. ISBN 978-84-249-1505-6. Reproducida con permiso en Pactantes. Texto de lectura transcrito del escaneo.",
     "source_url": "https://catalogo.upsa.es/cgi-bin/koha/opac-detail.pl?biblionumber=205449",
     "text": "augustine-es.json",
     "group_sizes": [
@@ -201,9 +201,8 @@
       43,
       53
     ],
-    "content_version": 2,
-    "augustine_numbering": "paragraph",
-    "facsimile_directory": "assets/facsimiles/augustine-es"
+    "content_version": 3,
+    "augustine_numbering": "paragraph"
   },
   {
     "document_key": "augustine_confessions_en",

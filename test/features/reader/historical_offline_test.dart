@@ -39,7 +39,7 @@ void main() {
       addTearDown(() async {
         await container.reset();
         final Database handle = await factory.openDatabase(
-          '${directory.path}/reformed_documents_v7.db',
+          '${directory.path}/reformed_documents_v8.db',
           options: OpenDatabaseOptions(readOnly: true),
         );
         await handle.close();
@@ -210,35 +210,31 @@ void main() {
       expect(augustine.units.last.id, 'book-13-paragraph-53');
       expect(augustine.units.first.body, startsWith('Grande eres, Señor'));
       expect(augustine.units.last.body, endsWith('Amén.'));
-      final ReadingFacsimileRange opening = augustine.units.first.facsimile!;
-      final ReadingFacsimileRange ending = augustine.units.last.facsimile!;
-      expect(opening.firstPage, 111);
-      expect(ending.lastPage, 670);
-      for (final String asset in [
-        opening.assetPath(111),
-        ending.assetPath(670),
-      ]) {
-        expect((await rootBundle.load(asset)).getUint32(0), 0x89504e47);
-      }
-      expect(article.facsimile, isNull);
       expect(
         augustine.attribution,
         allOf(
-          contains('Alfredo Encuentra Ortega'),
+          contains(
+            'Confesiones. Traducción y notas de Alfredo Encuentra Ortega',
+          ),
           contains('Editorial Gredos'),
         ),
       );
-      for (final String language in <String>['es', 'en', 'pt']) {
+      const Map<String, String> augustineTitles = <String, String>{
+        'es': 'Confesiones de san Agustín',
+        'en': 'The Confessions of Saint Augustine',
+        'pt': 'Confissões de Santo Agostinho',
+      };
+      for (final String language in augustineTitles.keys) {
         final ReadingContent translation = await books.read(
           'augustine-confessions',
           languageCode: language,
         );
         expect(translation.languageCode, language);
+        expect(translation.title, augustineTitles[language]);
         expect(translation.groups, hasLength(13));
         expect(translation.units, hasLength(language == 'es' ? 453 : 461));
         if (language != 'es') {
           expect(translation.attribution, contains('Pusey'));
-          expect(translation.units.first.facsimile, isNull);
         }
         if (language == 'pt') {
           expect(translation.attribution, contains('Une Sacra (unesacra.com)'));
@@ -252,6 +248,7 @@ void main() {
           languageCode: language,
           unitId: 'book-10-section-70',
         );
+        expect(paragraph.title, augustineTitles[language]);
         expect(paragraph.unit.body, translation.groups[9].units.last.body);
       }
       final ReadingPreview late = await books.readPreview(
@@ -281,6 +278,12 @@ void main() {
             .singleWhere((item) => item.document.id == 'scots-confession')
             .languageCode,
         'es',
+      );
+      expect(
+        home.libraryItems
+            .singleWhere((item) => item.document.id == 'augustine-confessions')
+            .sourceTitle,
+        augustineTitles['es'],
       );
       home.dispose();
 
